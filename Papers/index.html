@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Papers - AeonLoop</title>
-  <!-- Adjust the path to your CSS file as needed -->
-  <link rel="stylesheet" href="../css/styles.css">
+  <!-- Link to your central CSS file if you have one -->
+  <!--<link rel="stylesheet" href="../css/styles.css">-->
+  <!-- You can include specific CSS for this page directly, or merge it with your global CSS -->
   <style>
-    /* Optional inline styles for the papers index page */
+    /* Base styling for the page */
     body {
       font-family: Arial, sans-serif;
       background: #f5f5f5;
       color: #333;
       padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
     }
     header, footer {
       text-align: center;
       margin-bottom: 20px;
     }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    /* Styling for the list wrapping each link */
     ul {
       list-style: none;
       padding: 0;
     }
     li {
-      margin: 0.5em 0;
+      margin: 10px 0;
+      padding: 12px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+    li:hover {
+      background: #f0f8ff;
     }
     a {
       color: #0077cc;
       text-decoration: none;
+      font-size: 1.1em;
+      display: block;
     }
     a:hover {
       text-decoration: underline;
@@ -106,3 +124,4 @@
   </footer>
 </body>
 </html>
+
