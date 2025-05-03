@@ -17,8 +17,9 @@ body {
   background-color: #f9f9f9;
   color: #333;
   display: flex;
-  flex-direction: column; /* stack children vertically */
-  align-items: center;    /* center them horizontally if needed */
+  flex-direction: column;   /* stack elements vertically */
+  align-items: center;      /* optional: centers items horizontally */
+  justify-content: flex-start; /* aligns items at the top */
   padding: 20px;
   min-height: 100vh;
 }
