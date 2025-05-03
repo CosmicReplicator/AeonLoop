@@ -1,0 +1,170 @@
+/* =====================================================================
+   Global Reset
+===================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================================================
+   Body Styling
+---------------------------------------------------------------------
+   Center overall content in the viewport with a subtle background.
+===================================================================== */
+body {
+  font-family: "Calibri", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* =====================================================================
+   Container Setup (A4 Page-Style)
+---------------------------------------------------------------------
+   Fixed to 210mm (~8.27 in) wide with generous internal padding.
+===================================================================== */
+.container {
+  width: 210mm;       /* A4 width */
+  max-width: 210mm;
+  background-color: #fff;
+  padding: 20mm;      /* Internal padding for overall margins */
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;  /* Break long words if needed */
+}
+
+/* =====================================================================
+   Extra Horizontal Spacing for Block-Level Elements
+---------------------------------------------------------------------
+   This rule adds extra left/right margin for paragraphs, headings, 
+   list items, and other block elements within the container.
+===================================================================== */
+.container p,
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6,
+.container ul,
+.container ol,
+.container li,
+.container div,
+.container blockquote {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* =====================================================================
+   Paragraphs
+---------------------------------------------------------------------
+   Standard bottom spacing.
+===================================================================== */
+p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+/* =====================================================================
+   Headings
+---------------------------------------------------------------------
+   Sizes and spacing for headings.
+===================================================================== */
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+h4, h5, h6 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+/* =====================================================================
+   Lists
+---------------------------------------------------------------------
+   Adds indentation and spacing.
+===================================================================== */
+ul, ol {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/* =====================================================================
+   Blockquotes
+---------------------------------------------------------------------
+   Visual styling for blockquotes.
+===================================================================== */
+blockquote {
+  margin: 1em 10px;   /* Vertical margin with horizontal 10px extra */
+  padding-left: 10px;
+  border-left: 2px solid #ccc;
+  color: #666;
+}
+
+/* =====================================================================
+   Horizontal Rules
+===================================================================== */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1em 10px;
+}
+
+/* =====================================================================
+   Links
+---------------------------------------------------------------------
+   Styling for anchor tags.
+===================================================================== */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================================
+   Code Blocks & Inline Code
+---------------------------------------------------------------------
+   Monospaced text styling.
+===================================================================== */
+pre,
+code {
+  font-family: Consolas, "Courier New", monospace;
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* =====================================================================
+   MathJax or Formula Rendering
+===================================================================== */
+.MathJax_Display, .MathJax {
+  font-family: "Cambria Math", Cambria, serif;
+}
+
+/* =====================================================================
+   Responsive Adjustments for Smaller Screens
+---------------------------------------------------------------------
+   Fluid container on smaller viewports.
+===================================================================== */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    max-width: 95%;
+    padding: 10mm;
+  }
+}
