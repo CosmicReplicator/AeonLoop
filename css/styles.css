@@ -17,10 +17,16 @@ body {
   background-color: #f9f9f9;
   color: #333;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* stack children vertically */
+  align-items: center;    /* center them horizontally if needed */
   padding: 20px;
   min-height: 100vh;
+}
+
+/* Optionally, if you don't want vertical centering, remove or adjust justify-content */
+/* For example, you might have: */
+/* justify-content: flex-start; */
+
 }
 
 /* =====================================================================
