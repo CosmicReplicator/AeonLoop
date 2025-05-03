@@ -13,7 +13,7 @@
    Center overall content in the viewport with a subtle background.
 ===================================================================== */
 body {
-	background: url('../Images/background.jpg') no-repeat center center fixed;
+	background: url('Images/background.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: "Calibri", sans-serif;
   background-color: #f9f9f9;
