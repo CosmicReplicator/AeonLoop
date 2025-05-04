@@ -68,7 +68,38 @@ nav a {
   text-decoration: none;
   color: #0077cc;
   font-size: 1.1em;
+}/* =====================================================================
+   Footer Styling
+===================================================================== */
+footer {
+  background-color: #f5f5f5;  /* You can use a cream or grayish tone */
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;  /* Space above the footer */
+  border-top: 1px solid #ddd;
 }
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav .footer-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-nav .footer-link:hover {
+  color: #005fa3;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #666;
+}
+
 
 nav a:hover {
   text-decoration: underline;
@@ -125,4 +156,12 @@ a.button:active {
 p {
   white-space: pre-wrap;
   margin-bottom: 1em;
-}
+}<footer>
+  <nav class="footer-nav">
+    <a href="{{ '/' | relative_url }}" class="footer-link">Home</a>
+    <a href="{{ '/about.html' | relative_url }}" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 Your Site Name. All rights reserved.</p>
+</footer>
+
