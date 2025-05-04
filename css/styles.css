@@ -23,11 +23,8 @@ body {
   justify-content: flex-start; /* aligns items at the top */
   padding: 20px;
   min-height: 100vh;
+  font-size: 16px; /* setting a default font size */
 }
-
-/* Optionally, if you don't want vertical centering, remove or adjust justify-content */
-/* For example, you might have: */
-/* justify-content: flex-start; */
 
 /* =====================================================================
    Container Setup (A4 Page-Style)
@@ -43,8 +40,18 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
 }
-}.preformatted {
+
+/* =====================================================================
+   Preformatted Text
+---------------------------------------------------------------------
+   Allows line breaks within preformatted sections.
+===================================================================== */
+.preformatted {
   white-space: pre-wrap;
+}
+
+/* ... rest of your CSS ... */
+
 }
 
 
