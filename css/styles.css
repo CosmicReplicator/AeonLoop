@@ -10,7 +10,7 @@
 /* =====================================================================
    Body Styling
 ---------------------------------------------------------------------
-   Center overall content in the viewport with a subtle background.
+   Centers overall content in the viewport with a subtle background.
 ===================================================================== */
 body {
   font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@ body {
   justify-content: flex-start; /* aligns items at the top */
   padding: 20px;
   min-height: 100vh;
-  font-size: 16px; /* setting a default font size */
+  font-size: 18px; /* increased default font size */
 }
 
 /* =====================================================================
@@ -42,6 +42,41 @@ body {
 }
 
 /* =====================================================================
+   Header Styling
+---------------------------------------------------------------------
+   Centers the header content and adds spacing below.
+===================================================================== */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  max-width: 200px; /* Ensures the logo isn't too wide */
+}
+
+/* =====================================================================
+   Navigation Styling
+---------------------------------------------------------------------
+   Centers navigation and provides spacing between links.
+===================================================================== */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =====================================================================
    Preformatted Text
 ---------------------------------------------------------------------
    Allows line breaks within preformatted sections.
@@ -50,9 +85,3 @@ body {
   white-space: pre-wrap;
 }
 
-/* ... rest of your CSS ... */
-
-}
-
-
-/* ... rest of your CSS ... */
