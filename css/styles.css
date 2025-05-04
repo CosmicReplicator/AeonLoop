@@ -13,7 +13,6 @@
    Sets overall font, background, and padding for the page.
 ===================================================================== */
 body {
- body {
   font-family: Arial, sans-serif;
   /* Background image and background color remain defined as needed */
   background: url('../Images/background.jpg') no-repeat center center fixed;
