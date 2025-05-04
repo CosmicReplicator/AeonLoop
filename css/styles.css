@@ -52,6 +52,46 @@ header {
 header img {
   max-width: 200px; /* Ensures the logo isn't too wide */
 }
+/* =====================================================
+   Fancy Heading Styles
+====================================================== */
+
+h1, h2, h3 {
+  font-family: "Georgia", "Times New Roman", serif; /* Elegant font */
+  font-weight: bold;
+  color: #005fa3; /* Rich deep blue */
+  text-align: center; /* Centered for emphasis */
+  letter-spacing: 1px;
+}
+
+/* Major Title Styling */
+h1 {
+  font-size: 2.8em; /* Large and bold */
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(0, 95, 163, 0.4); /* Subtle shadow */
+  padding: 20px;
+  border-bottom: 4px double #005fa3; /* Decorative underline */
+  display: inline-block;
+}
+
+/* Secondary Titles */
+h2 {
+  font-size: 2.2em;
+  background: linear-gradient(135deg, #005fa3, #0077cc); /* Subtle gradient */
+  color: white; /* High contrast */
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+/* Tertiary Titles */
+h3 {
+  font-size: 1.8em;
+  color: #444;
+  padding: 8px;
+  border-left: 6px solid #005fa3; /* Fancy sidebar effect */
+}
 
 /* =====================================================================
    Navigation Styling
