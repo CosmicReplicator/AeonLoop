@@ -13,10 +13,13 @@
    Center overall content in the viewport with a subtle background.
 ===================================================================== */
 body {
-  background-size: cover;
-  font-family: "Calibri", sans-serif;
-  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background: #f0e6d2; /* slightly darker, creamy tone */
   color: #333;
+  line-height: 1.6;
+}
+
+ 
   display: flex;
   flex-direction: column;   /* stack elements vertically */
   align-items: center;      /* centers items horizontally */
