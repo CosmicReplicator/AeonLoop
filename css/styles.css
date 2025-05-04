@@ -77,8 +77,8 @@ h1 {
   background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
   text-transform: uppercase;
   text-shadow: 3px 3px 5px rgba(0, 95, 163, 0.4); /* Subtle shadow */
-  padding: 20px;
   border-bottom: 4px double #f5f5dc; /* Decorative underline */
+  padding: 20px;
   display: inline-block;
 }
 
