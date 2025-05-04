@@ -30,12 +30,13 @@ body {
 .container {
   width: 210mm;       /* A4 width */
   max-width: 210mm;
-  background-color: #fffdd0;  /* Cream color */
+  background-color: #f5f5f5;  /* Light gray color */
   padding: 20mm;      /* Internal padding for overall margins */
   margin: 0 auto;     /* Centers the container horizontally */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
 }
+
 
 
 /* =====================================================================
