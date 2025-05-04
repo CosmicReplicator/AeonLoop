@@ -36,6 +36,7 @@ body {
   background-color: #444; /* darkish gray */
   padding: 20px;
   border-radius: 8px; /* optional, for a softer box look */
+  border: 2px solid #f5f5dc; /* cream colored border */
   padding: 20mm;      /* Internal padding for overall margins */
   margin: 0 auto;     /* Centers the container horizontally */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
