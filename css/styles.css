@@ -10,36 +10,29 @@
 /* =====================================================================
    Body Styling
 ---------------------------------------------------------------------
-   Centers overall content in the viewport with a subtle background.
+   Sets overall font, background, and padding for the page.
 ===================================================================== */
 body {
   font-family: Arial, sans-serif;
   background: #f0e6d2; /* slightly darker, creamy tone */
   color: #333;
   line-height: 1.6;
-  display: flex;
-  flex-direction: column;   /* stack elements vertically */
-  align-items: center;      /* centers items horizontally */
-  justify-content: flex-start; /* aligns items at the top */
   padding: 20px;
-  margin: 0 auto;           /* centers the content, adding side margins */
-  max-width: 800px;         /* limits the width for better readability */
   min-height: 100vh;
   font-size: 18px; /* increased default font size */
 }
 
-
 /* =====================================================================
    Container Setup (A4 Page-Style)
 ---------------------------------------------------------------------
-   Fixed to 210mm (~8.27 in) wide with generous internal padding.
+   Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
 ===================================================================== */
 .container {
   width: 210mm;       /* A4 width */
   max-width: 210mm;
   background-color: #fff;
   padding: 20mm;      /* Internal padding for overall margins */
-  margin: auto;
+  margin: 0 auto;     /* Centers the container horizontally */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
 }
@@ -47,7 +40,7 @@ body {
 /* =====================================================================
    Header Styling
 ---------------------------------------------------------------------
-   Centers the header content and adds spacing below.
+   Centers header content and adds spacing.
 ===================================================================== */
 header {
   text-align: center;
@@ -87,4 +80,3 @@ nav a:hover {
 .preformatted {
   white-space: pre-wrap;
 }
-
