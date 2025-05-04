@@ -85,7 +85,8 @@ h1 {
 h2 {
   font-size: 2.2em;
   background: linear-gradient(135deg, #005fa3, #0077cc); /* Subtle gradient */
-  color: white; /* High contrast */
+  /*color: white;  High contrast */
+  color: #f5f5dc; /* cream color */
   padding: 10px 20px;
   border-radius: 12px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -95,7 +96,7 @@ h2 {
 /* Tertiary Titles */
 h3 {
   font-size: 1.8em;
-  color: #444;
+  color: #f5f5dc; /* cream color */
   padding: 8px;
   border-left: 6px solid #005fa3; /* Fancy sidebar effect */
 }
