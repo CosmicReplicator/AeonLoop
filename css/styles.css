@@ -13,15 +13,17 @@
    Sets overall font, background, and padding for the page.
 ===================================================================== */
 body {
+ body {
   font-family: Arial, sans-serif;
-  background: #f0e6d2; /* slightly darker, creamy tone */
-  color: #333;
+  /* Background image and background color remain defined as needed */
+  background: url('../Images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  /* Set the text color to cream */
+  color: #f5f5dc; /* cream color */
   line-height: 1.6;
   padding: 20px;
   min-height: 100vh;
-  background: url('../Images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-size: 18px; /* increased default font size */
+  font-size: 18px;
 }
 
 /* =====================================================================
@@ -32,7 +34,9 @@ body {
 .container {
   width: 210mm;       /* A4 width */
   max-width: 210mm;
-  background-color: #f5f5f5;  /* Light gray color */
+  background-color: #444; /* darkish gray */
+  padding: 20px;
+  border-radius: 8px; /* optional, for a softer box look */
   padding: 20mm;      /* Internal padding for overall margins */
   margin: 0 auto;     /* Centers the container horizontally */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
