@@ -73,7 +73,7 @@ h1, h2, h3 {
 
 /* Major Title Styling */
 h1 {
-  font-size: 1.8em; /* Large and bold */
+  font-size: 2.0em; /* Large and bold */
   text-transform: uppercase;
   text-shadow: 3px 3px 5px rgba(0, 95, 163, 0.4); /* Subtle shadow */
   padding: 20px;
@@ -83,7 +83,7 @@ h1 {
 
 /* Secondary Titles */
 h2 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   /*background: linear-gradient(135deg, #005fa3, #0077cc);  Subtle gradient */
   background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
   /*color: white;  High contrast */
@@ -96,7 +96,7 @@ h2 {
 
 /* Tertiary Titles */
 h3 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: #f5f5dc; /* cream color */
   padding: 8px;
   border-left: 6px solid #005fa3; /* Fancy sidebar effect */
