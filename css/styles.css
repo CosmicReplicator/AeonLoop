@@ -17,9 +17,6 @@ body {
   background: #f0e6d2; /* slightly darker, creamy tone */
   color: #333;
   line-height: 1.6;
-}
-
- 
   display: flex;
   flex-direction: column;   /* stack elements vertically */
   align-items: center;      /* centers items horizontally */
