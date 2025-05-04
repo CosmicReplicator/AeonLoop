@@ -1,0 +1,76 @@
+---
+layout: default
+title: AeonLoop Calculation Explanation
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AeonLoop_Calculation_Explanation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <p>This document explains step by step how we reach the conclusions for our
+model, starting from a fundamental quantum tick (1.667 THz \~ 0.6 ps) and
+deriving an effective energy quantum, with fractal scaling reducing the
+3D value of \~ 6.89 meV down to an effective \~5 meV. This approach allows
+us to replace the continuous Feynman diagram integrals with a discrete,
+tick-based calculation.</p>
+<h1>1. Fundamental Tick and Time Unit</h1>
+<p>We define nature\'s fundamental tick T0 as the inverse of the
+frequency:\
+T0 = 1 / (1.667 x 10\^12 Hz) ≈ 6.0 x 10\^-13 seconds.\
+This is the base time interval over which quantum transitions are
+computed.</p>
+<h1>2. 3D Full-Cycle Condition and Energy Quantum</h1>
+<p>In each tick, the phase accumulated by an energy E is given by:\
+ϕ = (E * T0) / ħ\
+For a complete cycle (n=1), the phase must equal 2π:\
+(E * T0) / ħ = 2π\
+Thus, the energy quantum is:\
+E = (2π * ħ) / T0\
+Using ħ ≈ 1.0546 x 10\^-34 J·s and T0 ≈ 6.0 x 10\^-13 s, we obtain:\
+E ≈ 6.89 meV (in a full 3D Euclidean treatment).</p>
+<h1>3. Effective Fractal Scaling (2.7D)</h1>
+<p>The AeonLoop model assumes that the effective geometry is not strictly
+3D, but exhibits a fractal nature with an effective dimension of about
+2.7. This reduces the effective degrees of freedom, and detailed scaling
+arguments reduce the energy quantum from the 3D value of \~7 meV to an
+effective value of \~5 meV.\
+\
+Thus, while the full-cycle condition yields:\
+E (3D) = (2π * ħ) / T0 ≈ 6.89 meV,\
+after adjusting for the effective fractal dimension, we use:\
+E_eff ≈ 5 meV.</p>
+<h1>4. Discrete, Tick-Based Amplitude Calculation</h1>
+<p>Conventional Feynman diagrams involve continuous integrals over an
+infinite range of intermediate states. In our model, every quantum
+process occurs in discrete ticks of length T0. Only transitions that
+satisfy the full-cycle phase condition are allowed:\
+\
+(ΔE * T0) / ħ = 2π n (with n ∈ ℤ⁺)\
+\
+This restricts ΔE to be integer multiples of the effective energy
+quantum (\~5 meV). Thus, the quantum amplitude for a process occurring
+over N ticks is constructed as a discrete sum over allowed transitions:\
+\
+A = Σ_{{n_i}} ∏_{i=1}\^{N} a(n_i) ,\
+\
+where each a(n_i) corresponds to the transition amplitude in the i-th
+tick, and non-compliant (non-integer phase) paths cancel out.</p>
+<h1>5. Summary and Implications</h1>
+<p>By rigidly implementing quantum mechanical principles at the cosmic
+scale, the AeonLoop model provides a powerful tool that eliminates
+guesswork in quantum processes. Starting from a fixed tick of 0.6 ps and
+using the full-cycle condition, we derive all outcomes in discrete
+steps. The model naturally reduces the effective energy step from 6.89 meV
+(3D) to about 5 meV because of the fractal effective dimension (2.7D).\
+\
+This rigorous approach replaces the standard continuous Feynman diagram
+calculations with a discrete, deterministic method that is both elegant
+and consistent across scales---from the quantum to the cosmic.</p>
+  </main>
+</body>
+</html>

@@ -1,18 +1,10 @@
 ---
 layout: default
-title: Formula Collection
+title: "Formula Collection"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Formula Collection</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main>
-    <p>Digital-Tick Model Formula Collection</p>
+
+<p>Digital-Tick Model Formula Collection</p>
 <p>This document contains key formulas and fundamental relations from the
 digital-tick model. Precision constants such as 0.6 ps (time tick),
 1.667 THz (tick frequency), and 2.667D (fractal correction) are used
@@ -25,27 +17,27 @@ gravitational, and neutrino-related phenomena.</p>
 <p>Energy per Tick (E = hf): Approximately 6.89 meV</p>
 <p>Fractal Correction Factor: 2.667D</p>
 <p><strong>2. Finite Difference Relations</strong></p>
-<p>Discrete Time Update for the Electromagnetic Four-Potential Aμ(t, x):\
-Aμ(t+Δt, x) = Aμ(t, x) + Δt · dAμ/dt + O((Δt)\^2)</p>
-<p>First-Order Time Derivative:\
+<p>Discrete Time Update for the Electromagnetic Four-Potential Aμ(t, x):
+Aμ(t+Δt, x) = Aμ(t, x) + Δt · dAμ/dt + O((Δt)^2)</p>
+<p>First-Order Time Derivative:
 ∂t Aμ(t, x) ≈ [Aμ(t+Δt, x) - Aμ(t, x)] / Δt</p>
-<p>Second-Order Time Derivative:\
-∂t\^2 Aμ(t, x) ≈ [Aμ(t+Δt, x) - 2Aμ(t, x) + Aμ(t-Δt, x)] / (Δt)\^2</p>
-<p>Spatial Derivative:\
+<p>Second-Order Time Derivative:
+∂t^2 Aμ(t, x) ≈ [Aμ(t+Δt, x) - 2Aμ(t, x) + Aμ(t-Δt, x)] / (Δt)^2</p>
+<p>Spatial Derivative:
 ∂x Aμ(t, x) ≈ [Aμ(t, x+Δx) - Aμ(t, x)] / Δx</p>
 <p><strong>3. Electromagnetic Field Construction</strong></p>
-<p>Electromagnetic Field Tensor:\
+<p>Electromagnetic Field Tensor:
 Fμν = ∂μ Aν - ∂ν Aμ</p>
-<p>Classical Lagrangian Density:\
-ℒ = -1/4 FμνF\^μν</p>
+<p>Classical Lagrangian Density:
+ℒ = -1/4 FμνF^μν</p>
 <p>Discrete Euler--Lagrange Equations recover Maxwell's equations in the
 continuum limit.</p>
 <p><strong>4. Derived Quantities</strong></p>
-<p>Dispersion Relation for a Plane Wave:\
-ω\^2 = c\^2 k\^2</p>
+<p>Dispersion Relation for a Plane Wave:
+ω^2 = c^2 k^2</p>
 <p>Optimal Delayed-Choice Interference Distance: 0.18 mm</p>
 <p>Neutrino Mass Prediction: Derived from a base energy of 6.89 meV with
-fractal correction 2.667D, \~5-6 meV effective mass</p>
+fractal correction 2.667D, ~5-6 meV effective mass</p>
 <p>Gravitational Time Dilation: Matches standard predictions when applying
 the digital-tick update.</p>
 <p><strong>5. Precision and Built-In Error Correction</strong></p>
@@ -53,6 +45,3 @@ the digital-tick update.</p>
 and disrupts the correct derivation of Maxwell's equations and related
 phenomena. Exact values are critical to the model's success.</p>
 <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-  </main>
-</body>
-</html>
