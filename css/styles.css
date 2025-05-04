@@ -65,7 +65,8 @@ header img {
 h1, h2, h3 {
   font-family: "Georgia", "Times New Roman", serif; /* Elegant font */
   font-weight: bold;
-  color: #005fa3; /* Rich deep blue */
+  /*color: #005fa3;  Rich deep blue */
+  color: #f5f5dc; /* cream color */
   text-align: center; /* Centered for emphasis */
   letter-spacing: 1px;
 }
