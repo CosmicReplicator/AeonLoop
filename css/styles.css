@@ -163,27 +163,28 @@ nav a:hover {
 }
 a.button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 15px; /* Smaller padding */
   margin: 5px;
-  background: linear-gradient(135deg, #0077cc, #005fa3);
-  color: #f5f5dc;
+  background: linear-gradient(135deg, #777777, #666666);  /* Gray gradient */
+  color: #f5f5dc; /* Cream colored text */
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  border-radius: 50px; /* Increased for more roundness */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 20px; /* Adjusted for a more compact shape */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 a.button:hover {
-  background: linear-gradient(135deg, #005fa3, #0077cc);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #666666, #777777);  /* Reverse gradient for hover */
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 a.button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 
