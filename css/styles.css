@@ -19,6 +19,7 @@ body {
   line-height: 1.6;
   padding: 20px;
   min-height: 100vh;
+  background: url('../images/background.jpg') no-repeat center center fixed;
   font-size: 18px; /* increased default font size */
 }
 
