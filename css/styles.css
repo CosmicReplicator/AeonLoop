@@ -45,6 +45,9 @@ body {
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
+}.preformatted {
+  white-space: pre-wrap;
 }
+
 
 /* ... rest of your CSS ... */
