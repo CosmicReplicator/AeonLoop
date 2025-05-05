@@ -14,11 +14,11 @@
 <body>
   <div class="container">
     <header>
-      <!-- You may have a site header or navigation here -->
+      <!-- Your site header/navigation goes here -->
     </header>
     <main>
       {% comment %}
-        Render structured sections if they exist in YAML.
+        Render the structured sections if they exist.
       {% endcomment %}
       {% if page.sections %}
         {% for section in page.sections %}
@@ -37,7 +37,7 @@
         {% endfor %}
       {% endif %}
 
-      <!-- Render the normal page content (if any) after the structured sections -->
+      <!-- Then render any remaining page content (if present) -->
       {{ content }}
     </main>
     <footer>
@@ -46,6 +46,7 @@
   </div>
 </body>
 </html>
+
 
 
 
