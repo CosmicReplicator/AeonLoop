@@ -70,6 +70,16 @@ body {
   overflow-wrap: break-word;  /* Break long words if needed */
 }
 
+.index-scroll-container {
+  max-height: 80vh;  /* Use 80% of the viewport height (adjust as needed) */
+  overflow-y: auto;  /* Adds a vertical scroll bar when content exceeds the height */
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.95);  /* Light background to separate from the main background */
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+/* You might already have a .button-container and .button styling defined */
 
 
 /* =====================================================================
