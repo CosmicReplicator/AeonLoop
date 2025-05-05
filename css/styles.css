@@ -1,11 +1,15 @@
 /* =====================================================================
    Global Reset
 ===================================================================== */
+/* =====================================================================
+   Global Reset
+===================================================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* =====================================================================
    Main Header Styling
 ---------------------------------------------------------------------
@@ -32,7 +36,6 @@
   margin: 0; /* Reset any default margin */
   padding: 10px 0; /* Adds vertical spacing */
 }
-
 
 /* =====================================================================
    Body Styling
@@ -61,14 +64,14 @@ body {
   width: 210mm;       /* A4 width */
   max-width: 210mm;
   background-color: #444; /* darkish gray */
-  padding: 20px;
-  border-radius: 8px; /* optional, for a softer box look */
   border: 2px solid #f5f5dc; /* cream colored border */
   padding: 20mm;      /* Internal padding for overall margins */
   margin: 0 auto;     /* Centers the container horizontally */
+  border-radius: 8px; /* optional, for a softer box look */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
 }
+
 /* =====================================================================
    Navigation Styling
 ---------------------------------------------------------------------
@@ -84,10 +87,12 @@ nav a {
   text-decoration: none;
   color: #0077cc;
   font-size: 1.1em;
+}  /* <-- Added missing closing bracket here */
 
 .button-container {
   margin-bottom: 20px;
 }
+
 a.button {
   display: inline-block;
   padding: 8px 15px; /* Smaller padding */
@@ -121,10 +126,11 @@ a.button:active {
   background: rgba(255, 255, 255, 0.95);  /* Light background to separate from the main background */
   border-radius: 8px;
   margin-bottom: 1em;
-}html {
-  scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .in-page-nav {
   margin-top: 20px; /* Adds space above the navigation menu */
@@ -146,7 +152,6 @@ a.button:active {
   border-radius: 4px;
 }
 
-
 /* =====================================================================
    Header Styling
 ---------------------------------------------------------------------
@@ -160,10 +165,10 @@ header {
 header img {
   max-width: 200px; /* Ensures the logo isn't too wide */
 }
+
 /* =====================================================
    Fancy Heading Styles
 ====================================================== */
-
 h1, h2, h3 {
   font-family: "Georgia", "Times New Roman", serif; /* Elegant font */
   font-weight: bold;
@@ -206,7 +211,7 @@ h3 {
   border-left: 6px solid #005fa3; /* Fancy sidebar effect */
 }
 
-}/* =====================================================================
+/* =====================================================================
    Footer Styling
 ===================================================================== */
 footer {
@@ -238,22 +243,12 @@ footer p {
   color: #666;
 }
 
-
 nav a:hover {
   text-decoration: underline;
 }
 
 /* =====================================================================
-   Button Styles (for index and reusable across the site)
----------------------------------------------------------------------
-   Refined button styling with a more modern look.
-===================================================================== */
-
-
-/* =====================================================================
    Preformatted Text
----------------------------------------------------------------------
-   Allows line breaks within preformatted sections.
 ===================================================================== */
 .preformatted {
   white-space: pre-wrap;
@@ -261,18 +256,8 @@ nav a:hover {
 
 /* =====================================================================
    Paragraph Styling for Preserving Line Breaks
----------------------------------------------------------------------
-   Ensures that line breaks in paragraphs are rendered as intended.
 ===================================================================== */
 p {
   white-space: pre-wrap;
   margin-bottom: 1em;
-}<footer>
-  <nav class="footer-nav">
-    <a href="{{ '/' | relative_url }}" class="footer-link">Home</a>
-    <a href="{{ '/about.html' | relative_url }}" class="footer-link">About</a>
-    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
-  </nav>
-  <p>&copy; 2025 Your Site Name. All rights reserved.</p>
-</footer>
-
+}
