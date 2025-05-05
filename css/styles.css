@@ -69,6 +69,34 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
 }
+.button-container {
+  margin-bottom: 20px;
+}
+a.button {
+  display: inline-block;
+  padding: 8px 15px; /* Smaller padding */
+  margin: 5px;
+  background: linear-gradient(135deg, #777777, #666666);  /* Gray gradient */
+  color: #f5f5dc; /* Cream colored text */
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px; /* Adjusted for a more compact shape */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.button:hover {
+  background: linear-gradient(135deg, #666666, #777777);  /* Reverse gradient for hover */
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+a.button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
 
 .index-scroll-container {
   max-height: 80vh;  /* Use 80% of the viewport height (adjust as needed) */
@@ -77,7 +105,26 @@ body {
   background: rgba(255, 255, 255, 0.95);  /* Light background to separate from the main background */
   border-radius: 8px;
   margin-bottom: 1em;
+}html {
+  scroll-behavior: smooth;
 }
+
+.in-page-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.in-page-nav li a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background: #777;  /* Example button background */
+  color: #f5f5dc;   /* Example text color */
+  border-radius: 4px;
+}
+
 
 /* You might already have a .button-container and .button styling defined */
 
@@ -197,34 +244,6 @@ nav a:hover {
 ---------------------------------------------------------------------
    Refined button styling with a more modern look.
 ===================================================================== */
-.button-container {
-  margin-bottom: 20px;
-}
-a.button {
-  display: inline-block;
-  padding: 8px 15px; /* Smaller padding */
-  margin: 5px;
-  background: linear-gradient(135deg, #777777, #666666);  /* Gray gradient */
-  color: #f5f5dc; /* Cream colored text */
-  text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px; /* Adjusted for a more compact shape */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-a.button:hover {
-  background: linear-gradient(135deg, #666666, #777777);  /* Reverse gradient for hover */
-  transform: translateY(-1px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-a.button:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-}
 
 
 /* =====================================================================
