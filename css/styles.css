@@ -147,7 +147,7 @@ html {
 .in-page-nav li a {
   text-decoration: none;
   padding: 0.5em 1em;
-  background: #777;  /* Example button background */
+  background: #555;  /* Example button background */
   color: #f5f5dc; /* Cream colored text */
   border-radius: 4px;
 }
