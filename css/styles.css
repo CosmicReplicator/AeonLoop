@@ -6,6 +6,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* =====================================================================
+   Main Header Styling
+---------------------------------------------------------------------
+   Styles specifically for the main header on your homepage.
+===================================================================== */
+.main-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #777777, #999999); /* Subtle gray gradient background */
+  padding: 20px;
+  border-bottom: 4px double #f5f5dc; /* Decorative underline to tie in with your headings */
+  border-radius: 8px; /* Optional: adds a bit of curvature to the header's edges */
+}
+
+.main-header img {
+  max-width: 200px; /* Ensures the logo isn't too wide */
+  height: auto;
+  margin-bottom: 10px; /* Adds spacing between the logo and heading */
+}
+
+.main-header h1 {
+  font-size: 2em; /* Adjust font size as needed */
+  color: #f5f5dc; /* Cream color */
+  margin: 0; /* Reset any default margin */
+  padding: 10px 0; /* Adds vertical spacing */
+}
+
 
 /* =====================================================================
    Body Styling
