@@ -22,17 +22,19 @@
 }
 
 .main-header img {
-  max-width: 200px; /* Ensures the logo isn't too wide */
+  display: block;           /* Forces the logo to take its own line */
+  margin: 0 auto 10px;       /* Centers the image and adds spacing below */
+  max-width: 200px;         /* Ensures the logo isn't too wide */
   height: auto;
-  margin-bottom: 10px; /* Adds spacing between the logo and heading */
 }
 
 .main-header h1 {
-  font-size: 2em; /* Adjust font size as needed */
-  color: #f5f5dc; /* Cream color */
-  margin: 0; /* Reset any default margin */
-  padding: 10px 0; /* Adds vertical spacing */
+  font-size: 2em;           /* Adjust font size as needed */
+  color: #f5f5dc;           /* Cream color */
+  margin: 0;                /* Reset any default margin */
+  padding: 10px 0;          /* Adds vertical spacing */
 }
+
 
 /* =====================================================================
    Body Styling
