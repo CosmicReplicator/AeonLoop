@@ -121,7 +121,7 @@ a.button:active {
   text-decoration: none;
   padding: 0.5em 1em;
   background: #777;  /* Example button background */
-  color: #f5f5dc;   /* Example text color */
+   color: #f5f5dc; /* Cream colored text */
   border-radius: 4px;
 }
 
