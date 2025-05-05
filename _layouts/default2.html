@@ -18,11 +18,10 @@
     </header>
     <main>
       {% comment %}
-      If the page has a "content" key in its front matter (structured YAML),
-      display it using custom HTML tags. Otherwise, fall back to the regular page content.
+        Render structured sections if they exist in YAML.
       {% endcomment %}
-      {% if page.content %}
-        {% for section in page.content %}
+      {% if page.sections %}
+        {% for section in page.sections %}
           <h1>{{ section.section }}</h1>
           {% if section.text %}
             <p>{{ section.text }}</p>
@@ -36,12 +35,12 @@
             {% endfor %}
           {% endif %}
         {% endfor %}
-      {% else %}
-        {{ content }}
       {% endif %}
+
+      <!-- Render the normal page content (if any) after the structured sections -->
+      {{ content }}
     </main>
     <footer>
-      <!-- And a footer if you like -->
       {% include footer.html %}
     </footer>
   </div>
