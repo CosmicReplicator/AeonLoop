@@ -17,14 +17,36 @@
       <!-- You may have a site header or navigation here -->
     </header>
     <main>
-      {{ content }}
+      {% comment %}
+      If the page has a "content" key in its front matter (structured YAML),
+      display it using custom HTML tags. Otherwise, fall back to the regular page content.
+      {% endcomment %}
+      {% if page.content %}
+        {% for section in page.content %}
+          <h1>{{ section.section }}</h1>
+          {% if section.text %}
+            <p>{{ section.text }}</p>
+          {% endif %}
+          {% if section.subsections %}
+            {% for sub in section.subsections %}
+              <h2>{{ sub.title }}</h2>
+              {% if sub.text %}
+                <p>{{ sub.text }}</p>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        {{ content }}
+      {% endif %}
     </main>
     <footer>
       <!-- And a footer if you like -->
-	  {% include footer.html %}
+      {% include footer.html %}
     </footer>
   </div>
 </body>
 </html>
+
 
 
