@@ -208,8 +208,9 @@ h3 {
   font-size: 1.5em;
   /*background: linear-gradient(135deg, #005fa3, #0077cc);  Subtle gradient */
   background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
+  /*color: white;  High contrast */
   color: #f5f5dc; /* cream color */
-  padding: 8px;
+  padding: 10px 20px;
   border-radius: 12px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   display: inline-block;
