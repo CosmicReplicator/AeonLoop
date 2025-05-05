@@ -5,14 +5,14 @@ title: "Maxwells Derivation"
 
 
 <h1>1. Discrete Update of the Electromagnetic Potential</h1>
-<p>In our model, we assume that at each digital tick---every Δt = 0.6
-ps---the electromagnetic four--potential, denoted by A_mu(t, x), is
+<p>In our model, we assume that at each digital tick, every Δt = 0.6
+ps, the electromagnetic four potential, denoted by A_mu(t, x), is
 updated by a rule of the form:
 
 A_mu(t + Δt, x) = A_mu(t, x) + Δt * A_mu_dot(t, x) + O((Δt)^2),
 
 where A_mu_dot(t, x) is determined by the dynamics (ultimately, by an
-underlying error--correction rule). This is analogous to a finite
+underlying error-correction rule). This is analogous to a finite
 difference approximation:
 
 A_mu_dot(t, x) ≈ (A_mu(t + Δt, x) -- A_mu(t, x)) / Δt.</p>
