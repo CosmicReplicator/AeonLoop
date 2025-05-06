@@ -24,14 +24,12 @@
     {% if secContent %}
       <p>{{ secContent }}</p>
     {% endif %}
-    {% if section.subsections %}
-      {% for sub in section.subsections %}
-        <h2>{{ sub.section | default: sub.title }}</h2>
-        {% assign subContent = sub.text | default: sub.content %}
-        {% if subContent %}
-          <p>{{ subContent }}</p>
-        {% endif %}
-      {% endfor %}
+{% if section.sections %}
+  {% for sub in section.sections %}
+    <h2>{{ sub.section | default: sub.title }}</h2>
+    {% assign subContent = sub.text | default: sub.content %}
+    {% if subContent %}
+      <p>{{ subContent }}</p>
     {% endif %}
   {% endfor %}
 {% endif %}
