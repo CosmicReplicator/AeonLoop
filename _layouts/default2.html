@@ -17,24 +17,28 @@
       <!-- Your site header/navigation goes here -->
     </header>
     <main>
-      {% if page.sections %}
+ {% if page.sections %}
   {% for section in page.sections %}
     <h1>{{ section.section | default: section.title }}</h1>
     {% assign secContent = section.text | default: section.content %}
     {% if secContent %}
       <p>{{ secContent }}</p>
     {% endif %}
-{% if section.sections %}
-  {% for sub in section.sections %}
-    <h2>{{ sub.section | default: sub.title }}</h2>
-    {% assign subContent = sub.text | default: sub.content %}
-    {% if subContent %}
-      <p>{{ subContent }}</p>
+    {% if section.sections %}
+      {% for sub in section.sections %}
+        <h2>{{ sub.section | default: sub.title }}</h2>
+        {% assign subContent = sub.text | default: sub.content %}
+        {% if subContent %}
+          <p>{{ subContent }}</p>
+        {% endif %}
+      {% endfor %}
     {% endif %}
   {% endfor %}
 {% endif %}
-      <!-- Then render any remaining page content (if present) -->
-      {{ content }}
+
+<!-- Then render any remaining page content (if present) -->
+{{ content }}
+
     </main>
     <footer>
       {% include footer.html %}
