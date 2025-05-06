@@ -1,7 +1,7 @@
 /* =====================================================================
    Global Reset
 ===================================================================== */
- {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -52,6 +52,12 @@ body {
   padding: 20px;
   min-height: 100vh;
   font-size: 18px;
+}
+.section {
+  display: block;
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #444; /* darkish gray */
 }
 
 /* =====================================================================
