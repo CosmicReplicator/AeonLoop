@@ -5,8 +5,10 @@
     {% if secContent %}
       <p>{{ secContent }}</p>
     {% endif %}
-    {% if section.subsections %}
-      {% for sub in section.subsections %}
+    
+    {% assign nested = section.subsections | default: section.sections %}
+    {% if nested %}
+      {% for sub in nested %}
         <h2>{{ sub.title }}</h2>
         {% assign subContent = sub.text | default: sub.content %}
         {% if subContent %}
@@ -14,6 +16,6 @@
         {% endif %}
       {% endfor %}
     {% endif %}
+    
   {% endfor %}
 {% endif %}
-
