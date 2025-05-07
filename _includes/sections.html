@@ -1,12 +1,13 @@
-{% if page.sections %}
-  {% for section in page.sections %}
-    <h3>{{ section.section | default: section.title }}</h3>
-    {% assign secContent = section.text | default: section.content %}
-    {% if secContent %}
-      <p>{{ secContent }}</p>
+{% assign contentBlocks = page.sections | default: page.chapters %}
+{% if contentBlocks %}
+  {% for block in contentBlocks %}
+    <h3>{{ block.section | default: block.title }}</h3>
+    {% assign blockContent = block.text | default: block.content %}
+    {% if blockContent %}
+      <p>{{ blockContent }}</p>
     {% endif %}
     
-    {% assign nested = section.subsections | default: section.sections %}
+    {% assign nested = block.subsections | default: block.sections %}
     {% if nested %}
       {% for sub in nested %}
         <h3>{{ sub.title }}</h3>
