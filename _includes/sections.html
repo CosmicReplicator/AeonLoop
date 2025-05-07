@@ -1,6 +1,6 @@
 {% if page.sections %}
   {% for section in page.sections %}
-    <h1>{{ section.section | default: section.title }}</h1>
+    <h3>{{ section.section | default: section.title }}</h3>
     {% assign secContent = section.text | default: section.content %}
     {% if secContent %}
       <p>{{ secContent }}</p>
@@ -9,7 +9,7 @@
     {% assign nested = section.subsections | default: section.sections %}
     {% if nested %}
       {% for sub in nested %}
-        <h2>{{ sub.title }}</h2>
+        <h3>{{ sub.title }}</h3>
         {% assign subContent = sub.text | default: sub.content %}
         {% if subContent %}
           <p>{{ subContent }}</p>
