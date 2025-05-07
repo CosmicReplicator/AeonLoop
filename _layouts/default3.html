@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="{{ '/scripts/splitParagraphs.js' | relative_url }}"></script>
+   <!-- Include MathJax for rendering math -->
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+	 </script>
+</head>
+<body>
+  <div class="no-bg-container">
+    <header>
+      <!-- Your site header/navigation goes here -->
+    </header>
+    <main>
+  {% include sections.html %}
+  {{ content }}
+    </main>
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
