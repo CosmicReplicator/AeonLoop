@@ -76,24 +76,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
 }
-/* =====================================================================
-   .no-bg-container Setup (A4 Page-Style)
----------------------------------------------------------------------
-   Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
-===================================================================== */
-.no-bg-container {
-  width: 210mm;       /* A4 width */
-  background: none !important;
-  background-color: transparent !important;
-  /* If there's a background image applied that you wish to remove, add: */
-  background-image: none !important;
-  /* Optionally, reset any box-shadow or borders if needed */
-  box-shadow: none !important;
-  margin: 0 auto;     /* Centers the container horizontally */
-  padding: 20mm;      /* Internal padding for overall margins */
-  border: 2px solid #f5f5dc; /* cream colored border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-wrap: break-word;  /* Break long words if needed */
+
 }
 /* =====================================================================
    Navigation Styling
@@ -152,7 +135,24 @@ a.button:active {
   /*background: rgba(220, 220, 220, 0.95);  Light background to separate from the main background */
   margin-bottom: 1em;
 }
-
+/* =====================================================================
+   .no-bg-container Setup (A4 Page-Style)
+---------------------------------------------------------------------
+   Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
+===================================================================== */
+.no-bg-container {
+  width: 210mm;       /* A4 width */
+  background: none !important;
+  background-color: transparent !important;
+  /* If there's a background image applied that you wish to remove, add: */
+  background-image: none !important;
+  /* Optionally, reset any box-shadow or borders if needed */
+  box-shadow: none !important;
+  margin: 0 auto;     /* Centers the container horizontally */
+  padding: 20mm;      /* Internal padding for overall margins */
+  border: 2px solid #f5f5dc; /* cream colored border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;  /* Break long words if needed */
 html {
   scroll-behavior: smooth;
 }
