@@ -146,7 +146,8 @@ a.button:active {
   max-height: 80vh;  /* Use 80% of the viewport height (adjust as needed) */
   overflow-y: auto;  /* Adds a vertical scroll bar when content exceeds the height */
   padding: 1em;
-  background: rgba(220, 220, 220, 0.95);  /* Light background to separate from the main background */
+  background-color: transparent
+  /*background: rgba(220, 220, 220, 0.95);  Light background to separate from the main background */
   border-radius: 8px;
   margin-bottom: 1em;
 }
