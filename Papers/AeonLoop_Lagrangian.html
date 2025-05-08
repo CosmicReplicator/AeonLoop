@@ -2,73 +2,66 @@
 layout: default2
 title: "DigitalTick Lagrangian"
 ---
-Digital-Tick Lagrangian
 
-**1. Discrete Digital Update**
+<h1>Digital-Tick Lagrangian</h1>
 
-In our AeonLoop model, spacetime updates occur in discrete intervals  
-$$\Delta t = 0.6\,\text{ps}$$  
-corresponding to a frequency of  
-$$1.667\,\text{THz}$$.  
-This replaces continuous time evolution with a finite difference scheme. For example, the electromagnetic four–potential  
-$$A_m$$  
-evolves as
+<h2>1. Discrete Digital Update</h2>
+<div>
+  In our AeonLoop model, spacetime updates occur in discrete intervals<br>
+  $$\Delta t = 0.6\,\text{ps}$$<br>
+  corresponding to a frequency of<br>
+  $$1.667\,\text{THz}$$.<br>
+  This replaces continuous time evolution with a finite difference scheme. For example, the electromagnetic 
+  four–potential $$A_m$$ evolves as:
+</div>
 
-$$
-A_m(t + \Delta t, x) = A_m(t, x) + \Delta t \cdot \frac{dA_m}{dt} + O((\Delta t)^2),
-$$
+<div>
+  $$ 
+  A_m(t + \Delta t, x) = A_m(t, x) + \Delta t \cdot \frac{dA_m}{dt} + O((\Delta t)^2), 
+  $$<br>
+  and spatial derivatives are approximated with a step<br>
+  $$ 
+  \Delta x = c\,\Delta t \approx 0.18\,\text{mm}.
+  $$
+</div>
 
-and spatial derivatives are approximated with a step
+<h2>2. Classical Electromagnetic Lagrangian</h2>
+<div>
+  The traditional electromagnetic Lagrangian is given by<br>
+  $$ 
+  \mathcal{L} = -\frac{1}{4} F_{mn} F^{mn},
+  $$<br>
+  where the field tensor is defined as<br>
+  $$ 
+  F_{mn} = \partial_m A_n - \partial_n A_m.
+  $$<br>
+  In our framework, we reinterpret the continuous derivatives as finite differences, and the quadratic form 
+  $$F_{mn}^2$$ naturally penalizes any phase mismatch. This ensures built-in error correction and phase coherence throughout the digital updates.
+</div>
 
-$$
-\Delta x = c\,\Delta t \approx 0.18\,\text{mm}.
-$$
+<h2>3. Emergence from Digital Updates</h2>
+<div>
+  The Lagrangian in the digital-tick framework is not an arbitrary insertion—it emerges from the necessity to maintain coherence across discrete updates. Each tick advances the field and enforces phase alignment. The squared term in<br>
+  $$ 
+  F_{mn} F^{mn}
+  $$<br>
+  quantifies the cost of deviations from perfect coherence, thus driving error correction naturally. Consequently, the form<br>
+  $$ 
+  \mathcal{L} = -\frac{1}{4} F_{mn} F^{mn}
+  $$<br>
+  is preferred, as it minimizes phase discontinuities inherent to discrete time evolution.
+</div>
 
+<h2>4. Discrete Action and Euler–Lagrange Equations</h2>
+<div>
+  Instead of integrating over continuous time, our action is a sum over digital ticks:<br>
+  $$ 
+  S = \sum_{n} \mathcal{L}_n \,\Delta t,
+  $$<br>
+  where $$\mathcal{L}_n$$ is the Lagrangian evaluated at the nth tick. Using a discrete version of the Euler–Lagrange equations, we recover Maxwell’s equations in the continuum limit. This derivation not only reconstructs the classical form of the Lagrangian but also explains why this form naturally arises from the digital update mechanism.
+</div>
 
-**2. Classical Electromagnetic Lagrangian**
-
-The traditional electromagnetic Lagrangian is given by
-
-$$
-\mathcal{L} = -\frac{1}{4} F_{mn} F^{mn},
-$$
-
-where the field tensor
-
-$$
-F_{mn} = \partial_m A_n - \partial_n A_m
-$$
-
-is defined as above. In our framework, we reinterpret the continuous derivatives as finite differences, and the quadratic form  
-$$F_{mn}^2$$  
-naturally penalizes any phase mismatch. This ensures built-in error correction and phase coherence throughout the digital updates.
-
-**3. Emergence from Digital Updates**
-
-The Lagrangian in the digital-tick framework is not an arbitrary insertion—it emerges from the necessity to maintain coherence across discrete updates. Each tick advances the field and enforces phase alignment. The squared term in
-
-$$
-F_{mn} F^{mn}
-$$
-
-quantifies the cost of deviations from perfect coherence, thus driving error correction naturally. Consequently, the form
-
-$$
-\mathcal{L} = -\frac{1}{4} F_{mn} F^{mn}
-$$
-
-is preferred, as it minimizes phase discontinuities inherent to discrete time evolution.
-
-**4. Discrete Action and Euler–Lagrange Equations**
-
-Instead of integrating over continuous time, our action is a sum over digital ticks:
-
-$$
-S = \sum_{n} \mathcal{L}_n \,\Delta t,
-$$
-
-where $$\mathcal{L}_n$$ is the Lagrangian evaluated at the nth tick. Using a discrete version of the Euler–Lagrange equations, we recover Maxwell’s equations in the continuum limit. This derivation not only reconstructs the classical form of the Lagrangian but also explains why this form naturally arises from the digital update mechanism.
-
-**5. Broader Implications**
-
-Reinterpreting the Lagrangian within a digital-tick framework does more than reproduce known laws—it provides insight into why nature’s classical fields take their observed form. This perspective suggests that similar digital updating and error‐correcting mechanisms underlie gravitational phenomena, neutrino mass scales, and perhaps even other fundamental interactions, unifying diverse phenomena under a single, coherent digital architecture of spacetime.
+<h2>5. Broader Implications</h2>
+<div>
+  Reinterpreting the Lagrangian within a digital-tick framework does more than reproduce known laws—it provides insight into why nature’s classical fields take their observed form. This perspective suggests that similar digital updating and error‐correcting mechanisms underlie gravitational phenomena, neutrino mass scales, and perhaps even other fundamental interactions, unifying diverse phenomena under a single, coherent digital architecture of spacetime.
+</div>
