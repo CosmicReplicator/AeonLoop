@@ -1,6 +1,7 @@
 ---
 layout: papers
 title: "Dark Matter with Numbers"
+---
 sections:
   - title: "Dark Matter: A New Perspective"
     content: >
@@ -41,4 +42,3 @@ sections:
   - title: "Final Remarks"
     content: >
       The emergence of an effective spatial dimension of \(2.667\) and a digital tick of \(1.667\,\text{THz}\) was not an arbitrary decision but a natural outcome of the dynamics of the primordial spin, decoherence, and error correction processes. Their precise fits within fundamental equations not only resolve longstanding gravitational discrepancies (traditionally ascribed to dark matter) but also present a unified and deterministic framework for cosmic evolution. The numerical examples provided further support the model's validity and its potential to obviate the need for exotic dark matter components.
----
