@@ -129,7 +129,7 @@ a.button:active {
   padding: 1em;
   border-radius: 8px;
   border-color: #f5f5dc; /* Cream color */
-  background-color: transparent
+  background-color: transparent;
   /*background: rgba(220, 220, 220, 0.95);  Light background to separate from the main background */
   margin-bottom: 1em;
 }
