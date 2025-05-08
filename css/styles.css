@@ -54,12 +54,11 @@ body {
   min-height: 100vh;
   font-size: 18px;
 }
-.section {
-  display: block;
-  margin: 1em 0;
-  padding: 1em;
-  background-color: #444; /* darkish gray */
-}
+/* =====================================================================
+   Container Setup (A4 Page-Style)
+---------------------------------------------------------------------
+   Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
+===================================================================== */
 .page-content {
    width: 210mm;       /* A4 width */
   max-width: 210mm;
@@ -70,14 +69,6 @@ body {
   border-radius: 8px; /* optional, for a softer box look */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
-}
-
-/* =====================================================================
-   Container Setup (A4 Page-Style)
----------------------------------------------------------------------
-   Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
-===================================================================== */
-
 }
 /* =====================================================================
    Navigation Styling
