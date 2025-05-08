@@ -33,7 +33,7 @@ A major breakthrough of this approach is that recalculating the gravitational ef
 
 - **Standard 3D Integration:**  
   For a sphere of radius \(r = 10\) units, the standard volume is given by  
-  \(V_{\text{standard}} = \frac{4}{3}\pi r^3 \approx \frac{4}{3}\pi \cdot 10^3 \approx 4188.79\text{ units}^3\).
+  \(V_{\text{standard}} = \frac{4}{3}\pi r^3 \approx \frac{4}{3}\pi \cdot 10^3 \approx 4188.79\,\text{units}^3\).
 
 - **Effective \(2.667\)D Integration:**  
   With an effective scaling exponent of \(2.667\), assume a volume of the form  
@@ -48,7 +48,7 @@ This shows that the effective volume is significantly lower than the standard \(
 #### 2. Digital Tick Period Calculation
 
 The tick rate is given as \(1.667\,\text{THz}\). The period \(T\) is the inverse of the frequency:  
-\(T = \frac{1}{1.667 \times 10^{12}\,\text{Hz}} \approx 6.0 \times 10^{-13}\,\text{seconds} \quad \text{(or 0.6 picoseconds)}\).
+\(T = \frac{1}{1.667 \times 10^{12}\,\text{Hz}} \approx 6.0 \times 10^{-13}\,\text{seconds}\) (or \(0.6\,\text{picoseconds}\)).
 
 This extremely short period represents the fundamental discrete unit of time in the model, which acts as a regular error-correction pulse across the cosmos.
 
@@ -56,4 +56,4 @@ This extremely short period represents the fundamental discrete unit of time in 
 
 ### Final Remarks
 
-The emergence of a \(2.667\) effective spatial dimension and a \(1.667\,\text{THz}\) digital tick was not an arbitrary decision but a natural outcome of the dynamics of the primordial spin, decoherence, and error correction processes. Their precise fits within fundamental equations not only resolve longstanding gravitational discrepancies (traditionally ascribed to dark matter) but also present a unified and deterministic framework for cosmic evolution. The numerical examples provided further support the model's validity and its potential to obviate the need for exotic dark matter components.
+The emergence of an effective spatial dimension of \(2.667\) and a digital tick of \(1.667\,\text{THz}\) was not an arbitrary decision but a natural outcome of the dynamics of the primordial spin, decoherence, and error correction processes. Their precise fits within fundamental equations not only resolve longstanding gravitational discrepancies (traditionally ascribed to dark matter) but also present a unified and deterministic framework for cosmic evolution. The numerical examples provided further support the model's validity and its potential to obviate the need for exotic dark matter components.
