@@ -140,12 +140,12 @@ a.button:active {
 ===================================================================== */
 .no-bg-container {
   width: 210mm;       /* A4 width */
-  background: none !important;
-  background-color: transparent !important;
+  background: none; /*!important;*/
+  background-color: transparent; /*!important */
   /* If there's a background image applied that you wish to remove, add: */
-  background-image: none !important;
+  background-image: none /*!important;*/
   /* Optionally, reset any box-shadow or borders if needed */
-  box-shadow: none !important;
+  box-shadow: none /*!important;*/
   margin: 0 auto;     /* Centers the container horizontally */
   padding: 20mm;      /* Internal padding for overall margins */
   border: 2px solid #f5f5dc; /* cream colored border */
