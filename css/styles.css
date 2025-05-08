@@ -60,6 +60,17 @@ body {
   padding: 1em;
   background-color: #444; /* darkish gray */
 }
+.page-content {
+  width: 210mm;
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 20mm;
+  border: 2px solid #f5f5dc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+  background-color: #444;
+}
 
 /* =====================================================================
    Container Setup (A4 Page-Style)
