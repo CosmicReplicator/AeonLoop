@@ -15,7 +15,8 @@
 .main-header {
   text-align: center;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #777777, #999999); /* Subtle gray gradient background */
+  background-color: transparent !important;
+  /*background: linear-gradient(135deg, #777777, #999999);  Subtle gray gradient background */
   padding: 20px;
   border-bottom: 4px double #f5f5dc; /* Decorative underline to tie in with your headings */
   border-radius: 8px; /* Optional: adds a bit of curvature to the header's edges */
