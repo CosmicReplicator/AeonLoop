@@ -140,7 +140,7 @@ a.button:active {
 ===================================================================== */
 .no-bg-container {
   width: 210mm;       /* A4 width */
-  background: none; !important;
+  background: none !important;
   background-color: transparent !important;
   /* If there's a background image applied that you wish to remove, add: */
   background-image: none !important;
