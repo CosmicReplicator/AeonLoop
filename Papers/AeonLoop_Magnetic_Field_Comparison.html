@@ -1,55 +1,98 @@
 ---
-layout: default
-title: "Digital Tick Magnetic Field Comparison"
+layout: papers
+title: "Magnetic Field Comparison"
 ---
 
-
 <p><strong>Digital-Tick Model: Vacuum Magnetic Field Comparison</strong></p>
-<p>--------------------------------------------------------------</p>
-<p>This document presents a stress test of the digital-tick model by
-calculating the vacuum magnetic field</p>
-<p>(B_rms) without using divergent integrals or arbitrary
-renormalization---relying solely on the fundamental digital-tick
-parameters.</p>
-<p>Fundamental Digital-Tick Parameters:</p>
-<p>- Tick Time (Δt): 0.6 ps</p>
-<p>- Tick Frequency (f₀): ~1.667 THz (f₀ = 1/Δt)</p>
-<p>- Characteristic Length (L): L = c/f₀ ≈ 0.18 mm (with c ≈ 3×10^8 m/s)</p>
-<p>- Energy per Tick (E): E = h·f₀ ≈ 6.9 meV (with h ≈ 6.626×10⁻³⁴ Js)</p>
-<p>- Effective Fractal Dimension (Dₑff): 2.667</p>
-<p>Finite Vacuum Energy Density:</p>
-<p>The digital-tick model yields a renormalization-free vacuum energy
-density:</p>
-<p>ρ_vac = (1/2) · ħ·f₀ · [S_Dₑff/(2π)^(Dₑff)] · [(2π·f₀)/c]^(Dₑff)</p>
+<hr>
+<p>
+  This document presents a stress test of the digital-tick model by calculating the vacuum magnetic field 
+  \(B_{\text{rms}}\) without using divergent integrals or arbitrary renormalization—relying solely on the 
+  fundamental digital-tick parameters.
+</p>
+
+<p><strong>Fundamental Digital-Tick Parameters:</strong></p>
+<ul>
+  <li>
+    Tick Time \(\Delta t\): \(0.6\,\text{ps}\)
+  </li>
+  <li>
+    Tick Frequency \(f_0\): \(\sim1.667\,\text{THz}\) (with \(f_0 = \frac{1}{\Delta t}\))
+  </li>
+  <li>
+    Characteristic Length \(L\): \(L = \frac{c}{f_0} \approx 0.18\,\text{mm}\) (with \(c \approx 3\times10^{8}\,\text{m/s}\))
+  </li>
+  <li>
+    Energy per Tick \(E\): \(E = h\cdot f_0 \approx 6.9\,\text{meV}\) (with \(h \approx 6.626\times10^{-34}\,\text{Js}\))
+  </li>
+  <li>
+    Effective Fractal Dimension \(D_{\text{eff}}\): \(2.667\)
+  </li>
+</ul>
+
+<p><strong>Finite Vacuum Energy Density:</strong></p>
+<p>
+  The digital-tick model yields a renormalization‑free vacuum energy density:
+</p>
+<p style="text-align: center; font-weight: bold; margin: 5px 0;">
+  \(\displaystyle \rho_{\text{vac}} = \frac{1}{2}\,\hbar\,f_0 \left[\frac{S_{D_{\text{eff}}}}{(2\pi)^{D_{\text{eff}}}}\right] \left[\frac{2\pi\,f_0}{c}\right]^{D_{\text{eff}}}\)
+</p>
 <p>where:</p>
-<p>- ħ is the reduced Planck constant (h/(2π))</p>
-<p>- S_Dₑff = 2π^(Dₑff/2) / Γ(Dₑff/2) is the effective unit "surface
-area"</p>
-<p>Using the parameters above, a numerical evaluation gives:</p>
-<p>ρ_vac ≈ 8.80e-12 J/m³</p>
-<p>Vacuum Magnetic Field Estimate:</p>
-<p>Assuming that the electromagnetic vacuum energy is partitioned equally
-between electric and magnetic fields, the magnetic field energy density
-is defined by:</p>
-<p>u_B = B²/(2μ₀)</p>
-<p>Equating u_B ≈ ρ_vac leads to an estimate for the rms vacuum magnetic
-field:</p>
-<p>B_rms = √(μ₀ · ρ_vac)</p>
-<p>with μ₀ = 4π×10⁻⁷ H/m. The calculation yields:</p>
-<p>B_rms ≈ 3.33e-09 T</p>
-<p>Comparison with Conventional Expectations:</p>
-<p>Standard QED treatments---when regulated with a physical
-cutoff---predict a vacuum magnetic field amplitude on</p>
-<p>the order of a few nanotesla (1 nT = 1×10⁻⁹ T). Our digital-tick model
-produces a value in the same ballpark, confirming that by imposing an
-invariant tick, the divergences are eliminated and a finite, physically
-meaningful result is obtained.</p>
-<p>Summary:</p>
-<p>- Digital-tick parameters yield a finite vacuum energy density, ρ_vac,
-without ad hoc renormalization.</p>
-<p>This in turn gives a finite vacuum magnetic field:</p>
-<p>B_rms ≈ 3.33e-09 T</p>
-<p>- The magnitude of the vacuum magnetic field (∼a few ×10⁻⁹ to 10⁻⁸ T)
-is comparable with conventional (cutoff-regulated) estimates,
-reinforcing the validity of the digital-tick approach.</p>
-<p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<ul>
+  <li>
+    \(\hbar\) is the reduced Planck constant \(\bigl(h/(2\pi)\bigr)\)
+  </li>
+  <li>
+    \(S_{D_{\text{eff}}} = \frac{2\pi^{(D_{\text{eff}}/2)}}{\Gamma(D_{\text{eff}}/2)}\) is the effective unit "surface area"
+  </li>
+</ul>
+<p>
+  Using the parameters above, a numerical evaluation gives:
+</p>
+<p style="text-align: center;">
+  \(\rho_{\text{vac}} \approx 8.80\times10^{-12}\,\text{J/m}^3\)
+</p>
+
+<p><strong>Vacuum Magnetic Field Estimate:</strong></p>
+<p>
+  Assuming that the electromagnetic vacuum energy is partitioned equally between electric and magnetic fields, 
+  the magnetic field energy density is defined by:
+</p>
+<p style="text-align: center; font-weight: bold; margin: 5px 0;">
+  \(\displaystyle u_B = \frac{B^2}{2\mu_0}\)
+</p>
+<p>
+  Equating \(u_B \approx \rho_{\text{vac}}\) leads to an estimate for the rms vacuum magnetic field:
+</p>
+<p style="text-align: center; font-weight: bold; margin: 5px 0;">
+  \(\displaystyle B_{\text{rms}} = \sqrt{\mu_0\,\rho_{\text{vac}}}\)
+</p>
+<p>
+  with \(\mu_0 = 4\pi\times10^{-7}\,\text{H/m}\). The calculation yields:
+</p>
+<p style="text-align: center;">
+  \(B_{\text{rms}} \approx 3.33\times10^{-9}\,\text{T}\)
+</p>
+
+<p><strong>Comparison with Conventional Expectations:</strong></p>
+<p>
+  Standard QED treatments—when regulated with a physical cutoff—predict a vacuum magnetic field amplitude on 
+  the order of a few nanotesla (i.e., \(1\,\text{nT} = 1\times10^{-9}\,\text{T}\)). Our digital-tick model 
+  produces a value in the same ballpark, confirming that by imposing an invariant tick, the divergences are eliminated 
+  and a finite, physically meaningful result is obtained.
+</p>
+
+<p><strong>Summary:</strong></p>
+<ul>
+  <li>
+    Digital-tick parameters yield a finite vacuum energy density, \(\rho_{\text{vac}}\), without ad hoc renormalization.
+  </li>
+  <li>
+    This, in turn, gives a finite vacuum magnetic field: \(B_{\text{rms}} \approx 3.33\times10^{-9}\,\text{T}\).
+  </li>
+  <li>
+    The magnitude of the vacuum magnetic field (∼ a few \(\times10^{-9}\) to \(10^{-8}\,\text{T}\)) is comparable 
+    with conventional (cutoff-regulated) estimates, reinforcing the validity of the digital-tick approach.
+  </li>
+</ul>
+<hr>
