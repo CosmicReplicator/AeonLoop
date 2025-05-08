@@ -1,65 +1,100 @@
 ---
-layout: default
+layout: papers
 title: "AeonLoop Calculation Explanation"
 ---
 
+This document explains, step by step, how we reach the conclusions for our model—starting from a fundamental quantum tick (1.667 THz ~ 0.6 ps) and deriving an effective energy quantum, with fractal scaling reducing the 3D value of approximately 6.89 meV down to an effective value of about 5 meV. This approach allows us to replace the continuous Feynman diagram integrals with a discrete, tick-based calculation.
 
-<p>This document explains step by step how we reach the conclusions for our
-model, starting from a fundamental quantum tick (1.667 THz ~ 0.6 ps) and
-deriving an effective energy quantum, with fractal scaling reducing the
-3D value of ~ 6.89 meV down to an effective ~5 meV. This approach allows
-us to replace the continuous Feynman diagram integrals with a discrete,
-tick-based calculation.</p>
-<h1>1. Fundamental Tick and Time Unit</h1>
-<p>We define nature's fundamental tick T0 as the inverse of the
-frequency:
-T0 = 1 / (1.667 x 10^12 Hz) ≈ 6.0 x 10^-13 seconds.
-This is the base time interval over which quantum transitions are
-computed.</p>
-<h1>2. 3D Full-Cycle Condition and Energy Quantum</h1>
-<p>In each tick, the phase accumulated by an energy E is given by:
-ϕ = (E * T0) / ħ
-For a complete cycle (n=1), the phase must equal 2π:
-(E * T0) / ħ = 2π
+## 1. Fundamental Tick and Time Unit
+
+We define nature's fundamental tick \( T_0 \) as the inverse of the frequency:
+
+
+\[
+T_0 = \frac{1}{1.667 \times 10^{12}\,\text{Hz}} \approx 6.0 \times 10^{-13}\,\text{s}.
+\]
+
+
+This is the base time interval over which quantum transitions are computed.
+
+## 2. 3D Full-Cycle Condition and Energy Quantum
+
+In each tick, the phase accumulated by an energy \( E \) is given by:
+
+
+\[
+\phi = \frac{E\,T_0}{\hbar}.
+\]
+
+
+For a complete cycle (\( n = 1 \)), the phase must equal \( 2\pi \):
+
+
+\[
+\frac{E\,T_0}{\hbar} = 2\pi.
+\]
+
+
 Thus, the energy quantum is:
-E = (2π * ħ) / T0
-Using ħ ≈ 1.0546 x 10^-34 J·s and T0 ≈ 6.0 x 10^-13 s, we obtain:
-E ≈ 6.89 meV (in a full 3D Euclidean treatment).</p>
-<h1>3. Effective Fractal Scaling (2.667D)</h1>
-<p>The AeonLoop model assumes that the effective geometry is not strictly
-3D, but exhibits a fractal nature with an effective dimension of about
-2.7. This reduces the effective degrees of freedom, and detailed scaling
-arguments reduce the energy quantum from the 3D value of ~ 6.89 meV to an
-effective value of ~5 meV.
+
+
+\[
+E = \frac{2\pi\,\hbar}{T_0}.
+\]
+
+
+Using \(\hbar \approx 1.0546 \times 10^{-34}\,\text{J·s}\) and \( T_0 \approx 6.0 \times 10^{-13}\,\text{s} \), we obtain:
+
+
+\[
+E \approx 6.89\,\text{meV} \quad \text{(in a full 3D Euclidean treatment)}.
+\]
+
+
+
+## 3. Effective Fractal Scaling (2.667D)
+
+The AeonLoop model assumes that the effective geometry is not strictly 3D but exhibits a fractal nature with an effective dimension of about \(2.667\). This reduces the effective degrees of freedom. Detailed scaling arguments then reduce the energy quantum from the 3D value of approximately \(6.89\,\text{meV}\) to an effective value of roughly \(5\,\text{meV}\).
 
 Thus, while the full-cycle condition yields:
-E (3D) = (2π * ħ) / T0 ≈ 6.89 meV,
-after adjusting for the effective fractal dimension, we use:
-E_eff ≈ 5 meV.</p>
-<h1>4. Discrete, Tick-Based Amplitude Calculation</h1>
-<p>Conventional Feynman diagrams involve continuous integrals over an
-infinite range of intermediate states. In our model, every quantum
-process occurs in discrete ticks of length T0. Only transitions that
-satisfy the full-cycle phase condition are allowed:
 
-(ΔE * T0) / ħ = 2π n (with n ∈ ℤ⁺)
 
-This restricts ΔE to be integer multiples of the effective energy
-quantum (~5 meV). Thus, the quantum amplitude for a process occurring
-over N ticks is constructed as a discrete sum over allowed transitions:
+\[
+E_{\text{3D}} = \frac{2\pi\,\hbar}{T_0} \approx 6.89\,\text{meV},
+\]
 
-A = Σ_{{n_i}} ∏_{i=1}^{N} a(n_i) ,
 
-where each a(n_i) corresponds to the transition amplitude in the i-th
-tick, and non-compliant (non-integer phase) paths cancel out.</p>
-<h1>5. Summary and Implications</h1>
-<p>By rigidly implementing quantum mechanical principles at the cosmic
-scale, the AeonLoop model provides a powerful tool that eliminates
-guesswork in quantum processes. Starting from a fixed tick of 0.6 ps and
-using the full-cycle condition, we derive all outcomes in discrete
-steps. The model naturally reduces the effective energy step from 6.89 meV
-(3D) to about 5 meV because of the fractal effective dimension (2.667D).
+after adjusting for the effective fractal dimension, we find:
 
-This rigorous approach replaces the standard continuous Feynman diagram
-calculations with a discrete, deterministic method that is both elegant
-and consistent across scales---from the quantum to the cosmic.</p>
+
+\[
+E_{\text{eff}} \approx 5\,\text{meV}.
+\]
+
+
+
+## 4. Discrete, Tick-Based Amplitude Calculation
+
+Conventional Feynman diagrams involve continuous integrals over an infinite range of intermediate states. In our model, every quantum process occurs in discrete ticks of length \( T_0 \). Only transitions that satisfy the full-cycle phase condition are allowed:
+
+
+\[
+\frac{\Delta E\,T_0}{\hbar} = 2\pi\,n,\quad \text{with } n \in \mathbb{Z}^+.
+\]
+
+
+This restricts \( \Delta E \) to be integer multiples of the effective energy quantum (approximately \(5\,\text{meV}\)). Thus, the quantum amplitude for a process occurring over \( N \) ticks is constructed as a discrete sum over allowed transitions:
+
+
+\[
+\mathcal{A} = \sum_{\{ n_i \}} \prod_{i=1}^{N} a(n_i),
+\]
+
+
+where each \( a(n_i) \) corresponds to the transition amplitude in the \( i \)-th tick, and non-compliant (non-integer phase) paths cancel out.
+
+## 5. Summary and Implications
+
+By rigidly implementing quantum mechanical principles at the cosmic scale, the AeonLoop model provides a powerful tool that eliminates guesswork in quantum processes. Starting from a fixed tick of \(0.6\,\text{ps}\) and using the full-cycle condition, we derive all outcomes in discrete steps. The model naturally reduces the effective energy step from \(6.89\,\text{meV}\) (3D) to about \(5\,\text{meV}\) due to the fractal effective dimension (\(2.667\)D).
+
+This rigorous approach replaces the standard continuous Feynman diagram calculations with a discrete, deterministic method that is both elegant and consistent across scales—from the quantum to the cosmic.
