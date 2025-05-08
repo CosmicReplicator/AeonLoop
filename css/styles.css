@@ -61,15 +61,15 @@ body {
   background-color: #444; /* darkish gray */
 }
 .page-content {
-  width: 210mm;
+   width: 210mm;       /* A4 width */
   max-width: 210mm;
-  margin: 0 auto;
-  padding: 20mm;
-  border: 2px solid #f5f5dc;
-  border-radius: 8px;
+  background-color: #444; /* darkish gray */
+  border: 2px solid #f5f5dc; /* cream colored border */
+  padding: 20mm;      /* Internal padding for overall margins */
+  margin: 0 auto;     /* Centers the container horizontally */
+  border-radius: 8px; /* optional, for a softer box look */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-wrap: break-word;
-  background-color: #444;
+  overflow-wrap: break-word;  /* Break long words if needed */
 }
 
 /* =====================================================================
