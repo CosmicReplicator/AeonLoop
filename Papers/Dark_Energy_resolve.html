@@ -7,7 +7,7 @@ author:
 abstract: >
   We propose a novel framework for quantum field theory that reinterprets the fundamental
   scales of time, space, and energy through a series of discrete updates—the digital ticks.
-  With a fundamental time tick of $$\\Delta t = 0.6\\,\\text{ps}$$, a corresponding frequency of 
+  With a fundamental time tick of $\\Delta t = 0.6\\,\\text{ps}$, a corresponding frequency of 
   $1.667\\,\\text{THz}$, a natural spatial scale of approximately $0.18\\,\\text{mm}$, and an energy 
   quantum of roughly $6.89\\,\\text{meV}$, the framework enforces that only perfectly quantized energy emerges.
   The discrete update, which can be thought of as an error‑correction mechanism, prevents ultraviolet
@@ -35,16 +35,16 @@ sections:
       These parameters form an interlocking set of scales that serve as the backbone of our unified model.
   - title: "Discrete Update of the Electromagnetic Potential"
     content: >
-      The electromagnetic four-potential $A_\\mu(t, x)$ is updated at each tick via a finite difference:
+      The electromagnetic four-potential $A_{\\mu}(t, x)$ is updated at each tick via a finite difference:
       
       $$
-      A_\\mu(t + \\Delta t, x) = A_\\mu(t, x) + \\Delta t \\cdot \\dot{A}_\\mu(t, x) + O((\\Delta t)^2),
+      A_{\\mu}(t + \\Delta t, x) = A_{\\mu}(t, x) + \\Delta t \\cdot \\dot{A}_{\\mu}(t, x) + O((\\Delta t)^2),
       $$
       
       where the derivative is approximated as:
       
       $$
-      \\dot{A}_\\mu(t, x) \\approx \\frac{A_\\mu(t + \\Delta t, x) - A_\\mu(t, x)}{\\Delta t}.
+      \\dot{A}_{\\mu}(t, x) \\approx \\frac{A_{\\mu}(t + \\Delta t, x) - A_{\\mu}(t, x)}{\\Delta t}.
       $$
       
       This discrete update is the foundation for re-formulating the dynamics of electromagnetism.
@@ -53,13 +53,13 @@ sections:
       The electromagnetic field tensor is given by:
       
       $$
-      F_{\\mu\\nu} = \\partial_\\mu A_\\nu - \\partial_\\nu A_\\mu.
+      F_{\\mu\\nu} = \\partial_{\\mu} A_{\\nu} - \\partial_{\\nu} A_{\\mu}.
       $$
       
       In our model, continuous derivatives are replaced by finite differences. For example:
       
       $$
-      \\partial_t A_\\nu(t, x) \\approx \\frac{A_\\nu(t + \\Delta t, x) - A_\\nu(t, x)}{\\Delta t}.
+      \\partial_t A_{\\nu}(t, x) \\approx \\frac{A_{\\nu}(t + \\Delta t, x) - A_{\\nu}(t, x)}{\\Delta t}.
       $$
       
       With the discrete formulation, the classical Lagrangian density:
