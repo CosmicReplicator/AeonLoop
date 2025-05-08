@@ -4,7 +4,7 @@ title: "Dark Matter with Numbers"
 sections:
   - title: "Dark Matter: A New Perspective"
     content: >
-      This document explains a model that recalibrates our understanding of dark matter. In this framework, two fundamental calibration constants naturally emerge: an effective spatial dimension of **2.667** (denoted by \(D_{\text{eff}} = 2.667\)) and a digital tick of time at **1.667 THz**. Initially estimated in ranges from \(1.6\) to \(1.7\) THz and \(2.6\) to \(2.8\) for \(D_{\text{eff}}\), these values were rigorously tested. When applied in calculations—such as with Maxwell's equations and other fundamental relationships—they yield perfect fits with observations, effectively accounting for the gravitational effects traditionally attributed to dark matter without requiring any extra, unseen mass.
+      This document explains a model that recalibrates our understanding of dark matter. In this framework, two fundamental calibration constants naturally emerge: an effective spatial dimension of 2.667 (denoted by \(D_{\text{eff}} = 2.667\)) and a digital tick of time at 1.667 THz. Initially estimated in ranges from \(1.6\) to \(1.7\) THz and \(2.6\) to \(2.8\) for \(D_{\text{eff}}\), these values were rigorously tested. When applied in calculations—such as with Maxwell's equations and other fundamental relationships—they yield perfect fits with observations, effectively accounting for the gravitational effects traditionally ascribed to dark matter without requiring any extra, unseen mass.
       
   - title: "Effective Spatial Dimension \( \left(2.667\,D_{\text{eff}}\right) \)"
     content: >
@@ -20,12 +20,12 @@ sections:
       
   - title: "Real Number Examples"
     content: >
-      **1. Effective Volume Comparison**  
-      - **Standard 3D Integration:**  
+      1. Effective Volume Comparison  
+      - Standard 3D Integration:  
         For a sphere of radius \(r = 10\) units, the standard volume is given by  
         \(V_{\text{standard}} = \frac{4}{3}\pi r^3 \approx \frac{4}{3}\pi \cdot 10^3 \approx 4188.79\,\text{units}^3\).
       
-      - **Effective \(2.667\)D Integration:**  
+      - Effective \(2.667\)D Integration:  
         With an effective scaling exponent of \(2.667\), assume a volume of the form  
         \(V_{\text{effective}} = C \cdot r^{2.667}\),  
         where \(C\) is a proportionality constant. For \(r = 10\),  
@@ -33,7 +33,7 @@ sections:
         If we choose \(C \approx 4\) (for unit consistency), then  
         \(V_{\text{effective}} \approx 4 \times 468 \approx 1872\,\text{units}^{2.667}\).
       
-      **2. Digital Tick Period Calculation**  
+      2. Digital Tick Period Calculation  
       The tick rate is given as \(1.667\,\text{THz}\). The period \(T\) is the inverse of the frequency:  
       \(T = \frac{1}{1.667 \times 10^{12}\,\text{Hz}} \approx 6.0 \times 10^{-13}\,\text{seconds}\) (or \(0.6\,\text{picoseconds}\)).  
       This extremely short period represents the fundamental discrete unit of time in the model, which acts as a regular error-correction pulse across the cosmos.
