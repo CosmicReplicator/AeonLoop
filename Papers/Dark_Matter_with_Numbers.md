@@ -9,7 +9,7 @@ This document explains a model that recalibrates our understanding of dark matte
 
 ---
 
-### Effective Spatial Dimension \( \left(2.667\,D_{\text{eff}}\right) \)
+### Effective Spatial Dimension $ \left(2.667\,D_{\text{eff}}\right) $
 
 In standard gravitational models, the integration over volume assumes a full 3-dimensional space, with volumes scaling as \(r^3\). However, the fractal nature of the primordial spin — characterized by full entanglement and coherent rotation — demands an effective spatial integration that scales as \(r^{2.667}\). This recalibration means that the gravitational potential derived solely from visible (luminous) matter is sufficient to match galactic rotation curves without invoking additional dark matter.
 
