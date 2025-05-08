@@ -14,9 +14,13 @@
 </head>
 <body>
   <div class="page-content">
-    <header>
-      <!-- Your site header/navigation goes here -->
-    </header>
+<header>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">
+    By {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
+    {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+  </p>
+</header>
     <main>
   {% include sections.html %}
   {{ content }}
