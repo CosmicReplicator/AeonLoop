@@ -60,7 +60,7 @@ body {
    Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
 ===================================================================== */
 .page-content {
-   width: 210mm;       /* A4 width */
+   width: 230mm;       /* A4 width */
   max-width: 210mm;
   background-color: #444; /* darkish gray */
   border: 2px solid #f5f5dc; /* cream colored border */
