@@ -7,18 +7,20 @@
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
   <script src="{{ '/scripts/splitParagraphs.js' | relative_url }}"></script>
   <!-- Include MathJax for rendering math -->
-  <script type="text/javascript">
-  window.MathJax = {
-    tex: {
-      inlineMath: [['\\(', '\\)']]
-    }
-  };
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']]  // For example, to support inline math with \( ... \)
+    // To add dollar signs, you could use:
+    // inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  options: {
+    processEscapes: true
+  }
+};
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-  <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 </head>
 <body>
