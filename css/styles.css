@@ -151,6 +151,7 @@ a.button:active {
   border: 2px solid #f5f5dc; /* cream colored border */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
+  }
 html {
   scroll-behavior: smooth;
 }
