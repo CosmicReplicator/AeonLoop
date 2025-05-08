@@ -4,5 +4,6 @@ kramdown:
   input: GFM
   hard_wrap: true
   math_engine: mathjax
-
+  math_engine_opts:
+    inline_math_delimiters: ["$", "$"]
 author: "jonsvein Heinesen"
