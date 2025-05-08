@@ -5,30 +5,23 @@
     <h3>{{ block.section | default: block.title }}</h3>
     {% assign blockContent = block.text | default: block.content %}
     {% if blockContent %}
-      <p>{{ blockContent }}</p>
+      <p>{{ blockContent | safe }}</p>
     {% endif %}
     
-    <!-- Check and render nested subsections only if they exist -->
+    <!-- Render nested subsections if they exist -->
     {% if block.subsections %}
       {% for sub in block.subsections %}
         <h3>{{ sub.title }}</h3>
         {% assign subContent = sub.text | default: sub.content %}
         {% if subContent %}
-          <p>{{ subContent }}</p>
+          <p>{{ subContent | safe }}</p>
         {% endif %}
       {% endfor %}
     {% endif %}
     
   {% endfor %}
 {% endif %}
-{% raw %}
 
 
-\[
-      
-\]
-
-
-{% endraw %}
 
 
