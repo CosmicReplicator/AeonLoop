@@ -1,66 +1,66 @@
 ---
-layout: default2
+layout: papers
 title: "Maxwells Derivation"
 sections:
   - title: "1. Discrete Update of the Electromagnetic Potential"
     content: >
-      In our model, we assume that at each digital tick – every Δt = 0.6 ps – the electromagnetic four-potential, denoted by A_mu(t, x), is updated by a rule of the form:
+      In our model, we assume that at each digital tick – every \( \Delta t = 0.6\,\text{ps} \) – the electromagnetic four-potential, denoted by \( A_\mu(t, x) \), is updated by a rule of the form:
       
-      A_mu(t + Δt, x) = A_mu(t, x) + Δt * A_mu_dot(t, x) + O((Δt)^2),
+      \( A_\mu(t + \Delta t, x) = A_\mu(t, x) + \Delta t \cdot \dot{A_\mu}(t, x) + O((\Delta t)^2) \),
       
-      where A_mu_dot(t, x) is determined by the dynamics (ultimately, by an underlying error-correction rule). This is analogous to a finite difference approximation:
+      where \( \dot{A_\mu}(t, x) \) is determined by the dynamics (ultimately, by an underlying error-correction rule). This is analogous to a finite difference approximation:
       
-      A_mu_dot(t, x) ≈ (A_mu(t + Δt, x) - A_mu(t, x)) / Δt.
+      \( \dot{A_\mu}(t, x) \approx \frac{A_\mu(t + \Delta t, x) - A_\mu(t, x)}{\Delta t} \).
       
   - title: "2. Constructing the Field Tensor from Finite Differences"
     content: >
       Recall that the electromagnetic field tensor is defined through the potential as:
       
-      F_{mu nu} = ∂_mu A_nu - ∂_nu A_mu.
+      \( F_{\mu \nu} = \partial_\mu A_\nu - \partial_\nu A_\mu \).
       
       In our discrete picture, the partial derivatives are approximated by finite differences. For example, the time derivative is given by:
       
-      ∂_t A_nu(t, x) ≈ (A_nu(t + Δt, x) - A_nu(t, x)) / Δt.
+      \( \partial_t A_\nu(t, x) \approx \frac{A_\nu(t + \Delta t, x) - A_\nu(t, x)}{\Delta t} \).
       
-      Similarly, spatial derivatives are replaced by finite differences over the appropriate spatial intervals. In the limit as Δt (and the spatial step Δx) → 0, these finite differences approach the standard derivatives, recovering the familiar definition of F_{mu nu}.
+      Similarly, spatial derivatives are replaced by finite differences over the appropriate spatial intervals. In the limit as \( \Delta t \) (and the spatial step \( \Delta x \)) \( \to 0 \), these finite differences approach the standard derivatives, recovering the familiar definition of \( F_{\mu \nu} \).
       
   - title: "3. Discrete Version of the Lagrangian and Euler--Lagrange Equations"
     content: >
       For electromagnetism, the classical Lagrangian density is given by:
       
-      L = -1/4 F_{mu nu} F^{mu nu}.
+      \( L = -\frac{1}{4} F_{\mu \nu} F^{\mu \nu} \).
       
-      In our discrete framework, we formulate a lattice version of this Lagrangian by replacing the derivatives with finite differences. Defining an action by summing over the nodes and digital ticks (t, t+Δt, t+2Δt, …), the discrete Euler--Lagrange equations take the form:
+      In our discrete framework, we formulate a lattice version of this Lagrangian by replacing the derivatives with finite differences. Defining an action by summing over the nodes and digital ticks \((t,\; t+\Delta t,\; t+2\Delta t, \dots)\), the discrete Euler--Lagrange equations take the form:
       
-      (A_mu(t + Δt, x) - A_mu(t, x)) / Δt = ∂L/∂(∂_t A^mu),
+      \( \frac{A_\mu(t + \Delta t, x) - A_\mu(t, x)}{\Delta t} = \frac{\partial L}{\partial (\partial_t A^\mu)} \),
       
-      and in the continuum limit (Δt → 0), we recover the standard Euler--Lagrange equations. Variation of the continuum action then yields:
+      and in the continuum limit \((\Delta t \to 0)\), we recover the standard Euler--Lagrange equations. Variation of the continuum action then yields:
       
-      ∂_mu F^{mu nu} = J^nu,
+      \( \partial_\mu F^{\mu \nu} = J^\nu \),
       
-      which are precisely Maxwell's equations (with source terms, where J^nu is the four-current).
+      which are precisely Maxwell's equations (with source terms, where \( J^\nu \) is the four-current).
       
   - title: "4. Emergence of Maxwell's Equations from the Discrete Model"
     content: >
       Thus, by:
-      (i) updating A_mu(t, x) via our universal digital tick,
-      (ii) computing the field tensor F_{mu nu} as the finite differences of A_mu, and
-      (iii) formulating a discrete version of the electromagnetic Lagrangian and applying the Euler--Lagrange procedure,
+      \( (i) \) updating \( A_\mu(t, x) \) via our universal digital tick,
+      \( (ii) \) computing the field tensor \( F_{\mu \nu} \) as the finite differences of \( A_\mu \), and
+      \( (iii) \) formulating a discrete version of the electromagnetic Lagrangian and applying the Euler--Lagrange procedure,
       
       we obtain, in the continuum limit, the familiar differential equations:
       
-      ∇ · E = ρ,
-      ∇ × B - ∂E/∂t = J,
-      ∇ · B = 0,
-      ∇ × E + ∂B/∂t = 0,
+      \( \nabla \cdot E = \rho \),
+      \( \nabla \times B - \frac{\partial E}{\partial t} = J \),
+      \( \nabla \cdot B = 0 \),
+      \( \nabla \times E + \frac{\partial B}{\partial t} = 0 \),
       
-      where the electric field E and the magnetic field B are identified from the components of F_{mu nu}. The digital model's error-correction at each tick prevents divergences from emerging, preempting the need for renormalization and yielding a deterministic evolution that aligns with Maxwell's equations.
+      where the electric field \( E \) and the magnetic field \( B \) are identified from the components of \( F_{\mu \nu} \). The digital model's error-correction at each tick prevents divergences from emerging, preempting the need for renormalization and yielding a deterministic evolution that aligns with Maxwell's equations.
       
   - title: "5. Summary"
     content: >
-      • The discrete update with Δt = 0.6 ps replaces continuous derivatives with finite differences.
-      • The electromagnetic field tensor is computed via finite differences of A_mu.
+      • The discrete update with \( \Delta t = 0.6\,\text{ps} \) replaces continuous derivatives with finite differences.
+      • The electromagnetic field tensor is computed via finite differences of \( A_\mu \).
       • A discrete Lagrangian formulation and the Euler--Lagrange procedure yield Maxwell's equations in the continuum limit.
-      • Gauge invariance is maintained by ensuring that the update rules respect the transformation A_mu -> A_mu + ∂_mu Λ.
+      • Gauge invariance is maintained by ensuring that the update rules respect the transformation \( A_\mu \to A_\mu + \partial_\mu \Lambda \).
       • The inherent digital error-correction mechanism naturally eliminates divergences and the need for renormalization, leading to a deterministic model.
 ---
