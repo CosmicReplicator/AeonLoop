@@ -34,7 +34,9 @@ window.MathJax = {
 </header>
     <main>
   {% include sections.html %}
-  {{ content }}
+  {{ content | markdownify }}
+</main>
+
     </main>
     <footer>
       {% include footer.html %}
