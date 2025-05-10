@@ -59,16 +59,24 @@ body {
    Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
 ===================================================================== */
 .page-content {
-   width: 230mm;       /* A4 width */
-  max-width: 210mm;
-  background-color: #444; /* darkish gray */
-  border: 2px solid #f5f5dc; /* cream colored border */
-  padding: 20mm;      /* Internal padding for overall margins */
-  margin: 0 auto;     /* Centers the container horizontally */
-  border-radius: 8px; /* optional, for a softer box look */
+  width: 60%;              /* The container will take up 60% of the viewport width */
+  max-width: 210mm;        /* On very large screens you still have an upper bound */
+  background-color: #444;
+  border: 2px solid #f5f5dc;
+  padding: 20mm;           /* You might change this to relative units too, e.g., rem */
+  margin: 0 auto;          /* This centers the container horizontally */
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-wrap: break-word;  /* Break long words if needed */
+  overflow-wrap: break-word;
 }
+
+@media (max-width: 600px) {
+  .page-content {
+    width: 90%;      /* Increase the width for smaller screens */
+    padding: 20px;   /* Switch to a more appropriate padding unit */
+  }
+}
+
 /* =====================================================================
    Navigation Styling
 ---------------------------------------------------------------------
