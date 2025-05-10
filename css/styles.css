@@ -21,7 +21,6 @@
   border-bottom: 4px double #f5f5dc; /* Decorative underline to tie in with your headings */
   border-radius: 8px; /* Optional: adds a bit of curvature to the header's edges */
 }
-.name: "jonsvein Heinesen";
 .main-header img {
   display: block;           /* Forces the logo to take its own line */
   margin: 0 auto 10px;       /* Centers the image and adds spacing below */
