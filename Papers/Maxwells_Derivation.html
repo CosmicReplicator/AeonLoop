@@ -4,7 +4,7 @@ title: "Maxwells Derivation"
 sections:
   - title: "1. Discrete Update of the Electromagnetic Potential"
     content: >
-      In our model, we assume that at each digital tick – every \( \Delta t = 0.6\,\text{ps} \) – the electromagnetic four-potential, denoted by \( A_\mu(t, x) \), is updated by a rule of the form:
+      We assume that at each digital tick – every \( \Delta t = 0.6\,\text{ps} \) – the electromagnetic four-potential, denoted by \( A_\mu(t, x) \), is updated by a rule of the form:
       
       \( A_\mu(t + \Delta t, x) = A_\mu(t, x) + \Delta t \cdot \dot{A_\mu}(t, x) + O((\Delta t)^2) \),
       
@@ -18,7 +18,7 @@ sections:
       
       \( F_{\mu \nu} = \partial_\mu A_\nu - \partial_\nu A_\mu \).
       
-      In our discrete picture, the partial derivatives are approximated by finite differences. For example, the time derivative is given by:
+      The partial derivatives are approximated by finite differences. For example, the time derivative is given by:
       
       \( \partial_t A_\nu(t, x) \approx \frac{A_\nu(t + \Delta t, x) - A_\nu(t, x)}{\Delta t} \).
       
@@ -30,7 +30,7 @@ sections:
       
       \( L = -\frac{1}{4} F_{\mu \nu} F^{\mu \nu} \).
       
-      In our discrete framework, we formulate a lattice version of this Lagrangian by replacing the derivatives with finite differences. Defining an action by summing over the nodes and digital ticks \((t,\; t+\Delta t,\; t+2\Delta t, \dots)\), the discrete Euler--Lagrange equations take the form:
+      We formulate a lattice version of this Lagrangian by replacing the derivatives with finite differences. Defining an action by summing over the nodes and digital ticks \((t,\; t+\Delta t,\; t+2\Delta t, \dots)\), the discrete Euler--Lagrange equations take the form:
       
       \( \frac{A_\mu(t + \Delta t, x) - A_\mu(t, x)}{\Delta t} = \frac{\partial L}{\partial (\partial_t A^\mu)} \),
       
