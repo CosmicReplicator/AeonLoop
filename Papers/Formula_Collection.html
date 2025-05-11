@@ -1,0 +1,86 @@
+---
+layout: papers
+title: "Formula Collection"
+---
+<h2>Digital-Tick Model Formula Collection</h2>
+
+<p>
+This document contains key formulas and fundamental relations from the digital-tick model. Precision constants such as <strong>0.6 ps</strong> (time tick), <strong>1.667 THz</strong> (tick frequency), and <strong>2.667D</strong> (fractal correction) are used explicitly to ensure consistency in reproducing electromagnetic, gravitational, and neutrino-related phenomena.
+</p>
+
+<h3>1. Fundamental Constants</h3>
+<ul>
+  <li><strong>Tick Time (Δt):</strong> 0.6 ps (6.0e-13 s)</li>
+  <li><strong>Tick Frequency (f):</strong> 1.667 THz</li>
+  <li><strong>Spatial Scale (Δx = cΔt):</strong> Approximately 0.18 mm</li>
+  <li><strong>Energy per Tick (E = hf):</strong> Approximately 6.89 meV</li>
+  <li><strong>Fractal Correction Factor:</strong> 2.667D</li>
+</ul>
+
+<h3>2. Finite Difference Relations</h3>
+<p>
+<strong>Discrete Time Update for the Electromagnetic Four-Potential \( A_\mu(t, x) \) :</strong>
+</p>
+<p>
+\( A_\mu(t+\Delta t, x) = A_\mu(t, x) + \Delta t \cdot \frac{dA_\mu}{dt} + O((\Delta t)^2) \)
+</p>
+
+<p>
+<strong>First-Order Time Derivative:</strong>
+</p>
+<p>
+\( \partial_t A_\mu(t, x) \approx \frac{A_\mu(t+\Delta t, x) - A_\mu(t, x)}{\Delta t} \)
+</p>
+
+<p>
+<strong>Second-Order Time Derivative:</strong>
+</p>
+<p>
+\( \partial_t^2 A_\mu(t, x) \approx \frac{A_\mu(t+\Delta t, x) - 2A_\mu(t, x) + A_\mu(t-\Delta t, x)}{(\Delta t)^2} \)
+</p>
+
+<p>
+<strong>Spatial Derivative:</strong>
+</p>
+<p>
+\( \partial_x A_\mu(t, x) \approx \frac{A_\mu(t, x+\Delta x) - A_\mu(t, x)}{\Delta x} \)
+</p>
+
+<h3>3. Electromagnetic Field Construction</h3>
+<p>
+<strong>Electromagnetic Field Tensor:</strong>
+</p>
+<p>
+\( F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu \)
+</p>
+
+<p>
+<strong>Classical Lagrangian Density:</strong>
+</p>
+<p>
+\( \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} \)
+</p>
+
+<p>
+Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum limit.
+</p>
+
+<h3>4. Derived Quantities</h3>
+<p>
+<strong>Dispersion Relation for a Plane Wave:</strong>
+</p>
+<p>
+\( \omega^2 = c^2 k^2 \)
+</p>
+
+<p>
+<strong>Optimal Delayed-Choice Interference Distance:</strong> 0.18 mm
+</p>
+
+<p>
+<strong>Neutrino Mass Prediction:</strong> Derived from a base energy of 6.89 meV with fractal correction 2.667D, yielding an effective mass of approximately 5–6 meV.
+</p>
+
+<p>
+<strong>Gravitational Time Dilation:</strong> Matches standard predictions when applying the digital-tick update.
+</p>
