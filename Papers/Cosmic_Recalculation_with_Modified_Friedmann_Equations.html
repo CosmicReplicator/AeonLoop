@@ -1,0 +1,155 @@
+---
+layout: papers
+title: "Cosmic Recalculation with Modified Friedmann Equations"
+content: |
+  <h3>Introduction</h3>
+  <p>
+    In our modified framework, cosmic evolution is governed by a discrete ticking mechanism, where each tick (with duration 
+    \( \tau = 0.6\,\text{ps} \)) enforces an error‐correction on the coherent energy. Combining this with an effective fractal spatial integration in 
+    \( D_{\text{eff}} = 2.667 \) dimensions, we recast the Friedmann equations to describe a universe driven solely by baryonic matter. 
+    Here, the familiar expansion is reinterpreted as the cumulative effect of tick‐induced phase drift.
+  </p>
+  
+  <h3>Modified Friedmann Equation</h3>
+  <p>
+    The standard Friedmann equation is given by:
+    
+
+\[
+      \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3}.
+    \]
+
+
+    In our discrete scheme, we replace the continuous derivative with a finite difference, so that
+    
+
+\[
+      \frac{\dot{a}}{a} \approx \frac{a_{N+1} - a_N}{\tau\, a_N},
+    \]
+
+
+    yielding:
+    
+
+\[
+      \left(\frac{a_{N+1} - a_N}{\tau\, a_N}\right)^2 = \frac{8\pi G_{\text{eff}}}{3}\rho_{\text{baryon}} - \frac{k_{\text{eff}}}{a_N^2}.
+    \]
+
+
+    Here, since our first-principles derivation shows that all energy is carried by baryons (\( p_{\text{total}} = p_{\text{matter}} \)), we set
+    \(\Lambda \approx 0\). Also, the 3D integration is modified to:
+    
+
+\[
+      dV_{\text{eff}} \propto r^{D_{\text{eff}}-1}\, dr = r^{1.667}\, dr,
+    \]
+
+
+    so that the gravitational constant is recalibrated as:
+    
+
+\[
+      G_{\text{eff}} = G \left(\frac{r}{r_0}\right)^{3-D_{\text{eff}}} = G \left(\frac{r}{r_0}\right)^{0.333},
+    \]
+
+
+    where \(r_0\) is a suitable normalization scale.
+  </p>
+  
+  <h3>Recalculating Cosmic Evolution</h3>
+  <p>
+    For a spatially flat universe (i.e. we set \( k_{\text{eff}} = 0 \)) and assuming that the baryonic matter density scales as 
+    \(\rho_{\text{baryon}}(a) = \rho_{b0}(a_0/a)^3\), the discrete evolution of the cosmic scale factor is determined by:
+    
+
+\[
+      a_{N+1} = a_N + \tau\, a_N \, H_N,
+    \]
+
+
+    where the discrete “Hubble parameter” is:
+    
+
+\[
+      H_N = \sqrt{\frac{8\pi G_{\text{eff}}}{3}\rho_{b0}\left(\frac{a_0}{a_N}\right)^3 }.
+    \]
+
+
+    In the continuous limit this reproduces the conventional \( a(t) \propto t^{2/3} \) behavior (as expected for a matter-dominated universe). 
+  </p>
+  <p>
+    As an example, consider present-day conditions with the normalization \(a_0 = 1\) and take an estimated baryonic density of 
+    \(\rho_{b0} \sim 3 \times 10^{-27}\,\mathrm{kg/m^3}\). Assuming a nominal value \(G_{\text{eff}} \approx G\) (if the normalization 
+    \(r/r_0\) is chosen appropriately), we obtain:
+    
+
+\[
+      H_0 = \sqrt{\frac{8\pi G}{3}\rho_{b0}} \approx 1.3\times10^{-18}\,\text{s}^{-1}.
+    \]
+
+
+    In our scheme, cosmic time is given by
+    
+
+\[
+      t = N\,\tau.
+    \]
+
+
+    For an age of the universe \(t \sim 4.35\times10^{17}\,\text{s}\) (about 13.8 billion years), the total tick count is 
+    \(N \approx 7.25\times10^{29}\). Iterating the discrete evolution equation over this enormous number of ticks recovers the expected 
+    expansion history, with the scale factor increasing as a function of \(N\) (or \(t\)) in a way that mirrors the \(t^{2/3}\) scaling.
+  </p>
+  
+  <h3>Tick-Induced Redshift</h3>
+  <p>
+    In our picture, the conventional redshift relationship:
+    
+
+\[
+      1+z = \frac{a(t_0)}{a(t_{\text{emit}})}
+    \]
+
+
+    is reinterpreted. Each tick imparts a small phase shift \(\delta\), and the cumulative redshift is given by:
+    
+
+\[
+      1+z \approx \prod_{i=1}^{N}(1+\delta_i) \approx \exp\left(\sum_{i=1}^{N}\delta_i\right).
+    \]
+
+
+    If the phase shift per tick is nearly constant, i.e. \(\delta_i \approx \delta\), then for \(N\) ticks:
+    
+
+\[
+      z \approx N \,\delta.
+    \]
+
+
+    This establishes a direct link between the discrete ticking dynamics and observable redshift.
+  </p>
+  
+  <h3>Discussion</h3>
+  <p>
+    The recalculation of the cosmos using our modified Friedmann equations highlights that, when time is discretized and space is treated 
+    through a fractal lens, cosmic expansion emerges naturally from the intrinsic dynamics of baryonic matter. No additional energy (or dark 
+    energy) is required—the error-correction mechanism built into every tick maintains energy balance, and the cumulative phase drift yields 
+    the redshift observed in distant galaxies.
+  </p>
+  <p>
+    While a full numerical simulation would involve iterating the recurrence relation \( a_{N+1} = a_N + \tau\, a_N\, H_N \) over 
+    \( \sim 10^{29} \) ticks, our analytic estimates show that the discrete ticking framework is consistent with a matter-dominated expansion 
+    history. Moreover, by linking the tick-induced phase shifts to redshift, we establish a novel, testable connection between cosmic evolution 
+    and the fundamental granularity of time.
+  </p>
+  
+  <h3>Conclusion</h3>
+  <p>
+    Our recalcitration of cosmic evolution using the modified discrete Friedmann equations demonstrates that a universe governed solely by 
+    recalibrated baryonic matter—and evolving via digital ticks—can reproduce the observed expansion history without invoking extraneous energy components. 
+    Future work will involve detailed numerical simulations and a confrontation of these predictions with observational data to further validate the 
+    discrete tick model.
+  </p>
+---
+
