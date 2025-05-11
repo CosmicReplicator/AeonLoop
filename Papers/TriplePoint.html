@@ -1,89 +1,62 @@
----
 layout: papers
 title: "TriplePoint"
----
-<p>
-In classical thermodynamics the triple point of water is defined by the equality of the chemical potentials:
-</p>
-
-<p>
-\( \mu_{\text{ice}}^{(0)}(T_{tp}, P_{tp}) = \mu_{\text{liquid}}^{(0)}(T_{tp}, P_{tp}) = \mu_{\text{vapor}}^{(0)}(T_{tp}, P_{tp}) \)
-</p>
-
-<p>
-where the superscript \( (0) \) denotes the conventional value computed using continuous time and full 3D spatial integration.
-</p>
-
-<p>
-In the digital-tick framework, however, two fundamental modifications are introduced:
-</p>
-
-<p>
-1. <strong>Discrete Time:</strong> Time occurs in discrete intervals (ticks) with a tick duration of 
-\( \Delta t \approx \frac{1}{1.667 \times 10^{12} \, \text{Hz}} \approx 6.0 \times 10^{-13} \, \text{s} \).
-</p>
-
-<p>
-2. <strong>Effective Fractal Space:</strong> Instead of a full 3D continuum, spatial integration is performed over an effective dimension 
-\( D_{\mathrm{eff}} = 2.667 \).
-</p>
-
-<p>
-As a result, the chemical potential for a given phase \( i \) receives a digital correction:
-</p>
-
-<p>
-\( \mu_i^{(\text{digital})} = \mu_i^{(0)}(T, P) \times F_{\text{digital}}^{(i)} \),
-</p>
-
-<p>
-where the correction factor is given by:
-</p>
-
-<p>
-\( F_{\text{digital}}^{(i)} = \left( \frac{\tau_i}{\Delta t} \right)^{\alpha_i} \).
-</p>
-
-<p>
-Here, \( \tau_i \) is the characteristic microscopic time scale for phase \( i \) (which can be different for ice, liquid, and vapor), and \( \alpha_i \) is an exponent reflecting the modification due to the fractal adjustment in spatial integration. A natural choice is to set:
-</p>
-
-<p>
-\( \alpha_i = \frac{3 - D_{\mathrm{eff}}}{3} \).
-</p>
-
-<p>
-Since \( D_{\mathrm{eff}} = 2.667 \), we have \( 3 - 2.667 = 0.333 \), leading to:
-</p>
-
-<p>
-\( \alpha_i \approx 0.111 \).
-</p>
-
-<p>
-Thus, the digital-tick equilibrium condition at the triple point becomes:
-</p>
-
-<p>
+sections:
+  - title: "1. Classical Definition of the Triple Point"
+    content: >
+      In classical thermodynamics the triple point of water is defined by the equality of the chemical potentials:
+      
+      \( \mu_{\text{ice}}^{(0)}(T_{tp}, P_{tp}) = \mu_{\text{liquid}}^{(0)}(T_{tp}, P_{tp}) = \mu_{\text{vapor}}^{(0)}(T_{tp}, P_{tp}) \)
+      
+      where the superscript \( (0) \) denotes the conventional evaluation using continuous time and a full 3D spatial integration.
+      
+  - title: "2. Digital-Tick Modifications"
+    content: >
+      In the digital-tick framework the following modifications are introduced:
+      
+      **(a) Discrete Time:**  
+      Time occurs in discrete intervals (ticks) with a tick duration of  
+      \( \Delta t \approx \frac{1}{1.667 \times 10^{12}\,\text{Hz}} \approx 6.0 \times 10^{-13}\,\text{s} \).
+      
+      **(b) Effective Fractal Space:**  
+      Rather than integrating over a full 3D continuum, spatial integration is carried out over an effective spatial dimension  
+      \( D_{\mathrm{eff}} = 2.667 \).
+      
+  - title: "3. Digital Corrections to the Chemical Potential"
+    content: >
+      As a result, the chemical potential for a given phase \( i \) is modified by a digital correction:
+      
+      \( \mu_i^{(\text{digital})} = \mu_i^{(0)}(T, P) \times F_{\text{digital}}^{(i)} \),
+      
+      where the correction factor is defined as:
+      
+      \( F_{\text{digital}}^{(i)} = \left( \frac{\tau_i}{\Delta t} \right)^{\alpha_i} \).
+      
+      In this expression, \( \tau_i \) represents the characteristic microscopic time scale of phase \( i \) (which differs for ice, liquid, and vapor), and \( \alpha_i \) is an exponent accounting for the fractal adjustment in spatial integration.
+      
+      A natural choice is:
+      
+      \( \alpha_i = \frac{3 - D_{\mathrm{eff}}}{3} \).
+      
+      With \( D_{\mathrm{eff}} = 2.667 \), we have:
+      
+      \( 3 - 2.667 = 0.333 \) and hence \( \alpha_i \approx 0.111 \).
+      
+  - title: "4. Digital-Tick Equilibrium at the Triple Point"
+    content: >
+      Consequently, the digital-tick equilibrium condition at the triple point is:
 \[
-\begin{aligned}
-\mu_{\text{ice}}^{(0)}(T_{tp}, P_{tp}) \times \left( \frac{\tau_{\text{ice}}}{\Delta t} \right)^{\alpha_{\text{ice}}} \\
-\quad =\, \mu_{\text{liquid}}^{(0)}(T_{tp}, P_{tp}) \times \left( \frac{\tau_{\text{liquid}}}{\Delta t} \right)^{\alpha_{\text{liquid}}} \\
-\quad =\, \mu_{\text{vapor}}^{(0)}(T_{tp}, P_{tp}) \times \left( \frac{\tau_{\text{vapor}}}{\Delta t} \right)^{\alpha_{\text{vapor}}}\,.
-\end{aligned}
-\]
-</p>
-
-</p>
-
-<p>
-Since the microscopic timescales (\( \tau_{\text{ice}} \), \( \tau_{\text{liquid}} \), \( \tau_{\text{vapor}} \)) differ among the phases, the digital correction factors are phase-dependent. This leads to small shifts in the effective chemical potentials relative to the classical case, thereby "locking in" the triple point conditions in a quantized, robust manner.
-</p>
-
-<p>
-In summary, while the classical equation simply sets the chemical potentials equal, the digital-tick model adds a new layer of insight. The digital corrections, given by \( \left( \frac{\tau_i}{\Delta t} \right)^{\alpha_i} \), capture the intrinsic quantization of time and the effective fractal nature of spatial integration. This not only explains why the triple point of water is so precisely defined, but also offers a glimpse into how energy exchanges at microscopic scales are subtly modified. Ultimately, it is these digital and fractal corrections that differentiate this model from the traditional continuous formulation.
-</p>
-
-<p>
-Display of \( T_{tp} \): T~tp~ &nbsp;&nbsp; Display of \( P_{tp} \): P~tp~
-</p>
+      \begin{aligned}
+      \mu_{\text{ice}}^{(0)}(T_{tp}, P_{tp}) \times \left( \frac{\tau_{\text{ice}}}{\Delta t} \right)^{\alpha_{\text{ice}}} \\
+      \quad =\, \mu_{\text{liquid}}^{(0)}(T_{tp}, P_{tp}) \times \left( \frac{\tau_{\text{liquid}}}{\Delta t} \right)^{\alpha_{\text{liquid}}} \\
+      \quad =\, \mu_{\text{vapor}}^{(0)}(T_{tp}, P_{tp}) \times \left( \frac{\tau_{\text{vapor}}}{\Delta t} \right)^{\alpha_{\text{vapor}}}\,.
+      \end{aligned}
+      \]     
+      Because the microscopic time scales \( \tau_i \) differ among the phases, the corresponding digital correction factors vary. This phase dependence results in subtle shifts in the effective chemical potentials compared to the classical case, thereby "locking in" the triple point conditions in a quantized and robust manner.
+      
+  - title: "5. Summary and Implications"
+    content: >
+      In summary, while the classical triple point is defined simply by the equality of the uncorrected chemical potentials, the digital-tick formulation incorporates corrections via  
+      \( \left( \frac{\tau_i}{\Delta t} \right)^{\alpha_i} \),  
+      capturing the intrinsic quantization of time and the fractal nature of spatial integration. This refined perspective not only explains the extraordinary precision of the triple point of water but also suggests how microscopic energy exchanges are subtly modified.
+      
+      In this model, no free parameters exist—any deviation from the prescribed digital corrections would disrupt the equilibrium, emphasizing the deterministic foundation of the digital-tick framework.
