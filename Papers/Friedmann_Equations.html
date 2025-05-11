@@ -1,141 +1,142 @@
 ---
 layout: papers
-title: "Modefied Friedmann Equations"
+title: "Modified Friedmann Equations"
+content: |
+  <h2>Abstract</h2>
+  <p>
+    We present a reformulation of the Friedmann equations under the hypothesis that cosmic evolution proceeds via discrete time increments—digital ticks—each of duration \( \tau = 0.6\,\text{ps} \). Within this framework, every tick represents an instance of error correction that synchronizes the coherent energy field. Combined with an effective fractal spatial integration in \( D_{\text{eff}} = 2.667 \) dimensions, this approach recalibrates gravitational dynamics such that the baryonic matter content fully describes cosmic evolution. Traditional expansion is reinterpreted as a cumulative phase drift arising from tick-induced corrections.
+  </p>
+  
+  <h2>Introduction</h2>
+  <p>
+    The Friedmann equations lie at the heart of modern cosmology, linking the rate of change of the cosmic scale factor \( a(t) \) to the energy density, spatial curvature, and the cosmological constant. Conventional theories assume a continuously evolving spacetime and require extra components—such as dark energy—to account for observational discrepancies. In contrast, we propose a model in which time is discretized into fundamental ticks, and cosmic evolution is driven solely by the recalibrated interactions among baryonic matter. This paper reformulates the Friedmann equations to reflect a discrete error-correction mechanism, thereby eliminating the need for any extraneous energy.
+  </p>
+  
+  <h2>Discrete Time and Cosmic Evolution</h2>
+  <p>
+    In our model, time is segmented into discrete intervals (ticks) of fixed duration:
+    
+
+\[
+      \tau = 0.6\,\text{ps}.
+    \]
+
+
+    Defining the tick count \( N \) such that
+    
+
+\[
+      t = N \tau,
+    \]
+
+
+    we replace the continuous scale factor \( a(t) \) with its discrete analogue \( a_N \). The evolution of the scale factor is given by the finite difference
+    
+
+\[
+      a_{N+1} = a_N + \Delta a_N,
+    \]
+
+
+    where \( \Delta a_N \) encapsulates the cumulative effect of synchronization or error-correction at each tick.
+  </p>
+  
+  <h2>Reformulated Friedmann Equation</h2>
+  <p>
+    The standard Friedmann equation is expressed as
+    
+
+\[
+      \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3}.
+    \]
+
+
+    In our discrete framework, we substitute the time derivative with the finite difference approximation:
+    
+
+\[
+      \frac{\dot{a}}{a} \approx \frac{a_{N+1} - a_N}{\tau\, a_N}.
+    \]
+
+
+    Because our first-principles derivation accounts completely for baryonic matter (i.e., \( p_{\text{total}} = p_{\text{matter}} \)) and no excess vacuum energy exists, we set
+    
+
+\[
+      \Lambda \approx 0.
+    \]
+
+
+    Additionally, the traditional 3D volume element is modified to an effective integration over a fractal domain:
+    
+
+\[
+      dV_{\text{eff}} \propto r^{D_{\text{eff}}-1}\,dr = r^{1.667}\,dr \quad \text{with} \quad D_{\text{eff}} = 2.667.
+    \]
+
+
+    This leads to a recalibrated gravitational constant,
+    
+
+\[
+      G_{\text{eff}} = G \left(\frac{r}{r_0}\right)^{3-D_{\text{eff}}} = G \left(\frac{r}{r_0}\right)^{0.333},
+    \]
+
+
+    where \( r_0 \) is a normalization scale.
+  </p>
+  <p>
+    The discrete Friedmann equation, therefore, becomes
+    
+
+\[
+      \left(\frac{a_{N+1} - a_N}{\tau\, a_N}\right)^2 = \frac{8\pi G_{\text{eff}}}{3}\rho_{\text{baryon}} - \frac{k_{\text{eff}}}{a_N^2}.
+    \]
+
+
+    Here, \( k_{\text{eff}} \) represents the effective curvature term adjusted for the discrete and fractal nature of the integration.
+  </p>
+  
+  <h2>Tick-Induced Redshift</h2>
+  <p>
+    In conventional cosmology, redshift is defined by the relation
+    
+
+\[
+      1 + z = \frac{a(t_0)}{a(t_{\text{emit}})}.
+    \]
+
+
+    In our discrete framework, however, redshift emerges from cumulative phase drifts induced by each tick. If each tick introduces a small phase shift \( \delta \), then after \( N \) ticks the total phase drift is
+    
+
+\[
+      1 + z \approx \exp\left(\sum_{i=1}^{N} \delta_i\right),
+    \]
+
+
+    or, in the linear regime,
+    
+
+\[
+      z \approx N\,\delta.
+    \]
+
+
+    Thus, redshift is not the result of a continuously expanding spacetime, but rather a manifestation of the synchronization history of the discrete ticks.
+  </p>
+  
+  <h2>Discussion</h2>
+  <p>
+    The reformulated Friedmann equation emphasizes that cosmic evolution—encompassing both expansion-like behavior and gravitational dynamics—arises solely from the interplay of baryonic matter and discrete ticking events. The adjustment to an effective spatial dimension \( D_{\text{eff}} = 2.667 \) naturally enhances the gravitational influence of baryonic matter, obviating the need for extraneous components such as dark energy.
+  </p>
+  <p>
+    Moreover, the reinterpretation of redshift as a cumulative tick-induced phase drift offers a new perspective on astronomical observations. Every observation of redshift can be seen as a record of the number of synchronization events (ticks) that have occurred between emission and detection, thereby linking cosmological measurements directly to the fundamental discrete dynamics.
+  </p>
+  
+  <h2>Conclusion</h2>
+  <p>
+    We have derived a new formulation of the Friedmann equations based on a discrete ticking framework, where time is segmented into fundamental intervals of \( \tau = 0.6\,\text{ps} \) and space is recalibrated via an effective fractal dimension \( D_{\text{eff}} = 2.667 \). This model removes the need for an independent cosmological constant by demonstrating that all cosmic dynamics, including redshift, are emergent properties of baryonic matter undergoing periodic error correction. Future research will focus on confronting these predictions with observational data to validate the discrete tick hypothesis.
+  </p>
+  </html>
 ---
-    <h2>Abstract</h2>
-    <p>
-      We present a reformulation of the Friedmann equations under the hypothesis that cosmic evolution proceeds via discrete time increments—digital ticks—each of duration \( \tau = 0.6\,\text{ps} \). Within this framework, every tick represents an instance of error correction that synchronizes the coherent energy field. Combined with an effective fractal spatial integration in \( D_{\text{eff}} = 2.667 \) dimensions, this approach recalibrates gravitational dynamics such that the baryonic matter content fully describes cosmic evolution. Traditional expansion is reinterpreted as a cumulative phase drift arising from tick-induced corrections.
-    </p>
-    
-    <h2>Introduction</h2>
-    <p>
-      The Friedmann equations lie at the heart of modern cosmology, linking the rate of change of the cosmic scale factor \( a(t) \) to the energy density, spatial curvature, and the cosmological constant. Conventional theories assume a continuously evolving spacetime and require extra components—such as dark energy—to account for observational discrepancies. In contrast, we propose a model in which time is discretized into fundamental ticks, and cosmic evolution is driven solely by the recalibrated interactions among baryonic matter. This paper reformulates the Friedmann equations to reflect a discrete error-correction mechanism, thereby eliminating the need for any extraneous energy.
-    </p>
-    
-    <h2>Discrete Time and Cosmic Evolution</h2>
-    <p>
-      In our model, time is segmented into discrete intervals (ticks) of fixed duration:
-      
-
-\[
-        \tau = 0.6\,\text{ps}.
-      \]
-
-
-      Defining the tick count \( N \) such that
-      
-
-\[
-        t = N \tau,
-      \]
-
-
-      we replace the continuous scale factor \( a(t) \) with its discrete analogue \( a_N \). The evolution of the scale factor is given by the finite difference
-      
-
-\[
-        a_{N+1} = a_N + \Delta a_N,
-      \]
-
-
-      where \( \Delta a_N \) encapsulates the cumulative effect of synchronization or error-correction at each tick.
-    </p>
-    
-    <h2>Reformulated Friedmann Equation</h2>
-    <p>
-      The standard Friedmann equation is expressed as
-      
-
-\[
-        \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3}.
-      \]
-
-
-      In our discrete framework, we substitute the time derivative with the finite difference approximation:
-      
-
-\[
-        \frac{\dot{a}}{a} \approx \frac{a_{N+1} - a_N}{\tau\, a_N}.
-      \]
-
-
-      Because our first-principles derivation accounts completely for baryonic matter (i.e., \( p_{\text{total}} = p_{\text{matter}} \)) and no excess vacuum energy exists, we set
-      
-
-\[
-        \Lambda \approx 0.
-      \]
-
-
-      Additionally, the traditional 3D volume element is modified to an effective integration over a fractal domain:
-      
-
-\[
-        dV_{\text{eff}} \propto r^{D_{\text{eff}}-1}\,dr = r^{1.667}\,dr \quad \text{with} \quad D_{\text{eff}} = 2.667.
-      \]
-
-
-      This leads to a recalibrated gravitational constant,
-      
-
-\[
-        G_{\text{eff}} = G \left(\frac{r}{r_0}\right)^{3-D_{\text{eff}}} = G \left(\frac{r}{r_0}\right)^{0.333},
-      \]
-
-
-      where \( r_0 \) is a normalization scale.
-    </p>
-    <p>
-      The discrete Friedmann equation, therefore, becomes
-      
-
-\[
-        \left(\frac{a_{N+1} - a_N}{\tau\, a_N}\right)^2 = \frac{8\pi G_{\text{eff}}}{3}\rho_{\text{baryon}} - \frac{k_{\text{eff}}}{a_N^2}.
-      \]
-
-
-      Here, \( k_{\text{eff}} \) represents the effective curvature term adjusted for the discrete and fractal nature of the integration.
-    </p>
-    
-    <h2>Tick-Induced Redshift</h2>
-    <p>
-      In conventional cosmology, redshift is defined by the relation
-      
-
-\[
-        1 + z = \frac{a(t_0)}{a(t_{\text{emit}})}.
-      \]
-
-
-      In our discrete framework, however, redshift emerges from cumulative phase drifts induced by each tick. If each tick introduces a small phase shift \( \delta \), then after \( N \) ticks the total phase drift is
-      
-
-\[
-        1 + z \approx \exp\left(\sum_{i=1}^{N} \delta_i\right),
-      \]
-
-
-      or, in the linear regime,
-      
-
-\[
-        z \approx N\,\delta.
-      \]
-
-
-      Thus, redshift is not the result of a continuously expanding spacetime, but rather a manifestation of the synchronization history of the discrete ticks.
-    </p>
-    
-    <h2>Discussion</h2>
-    <p>
-      The reformulated Friedmann equation emphasizes that cosmic evolution—encompassing both expansion-like behavior and gravitational dynamics—arises solely from the interplay of baryonic matter and discrete ticking events. The adjustment to an effective spatial dimension \( D_{\text{eff}} = 2.667 \) naturally enhances the gravitational influence of baryonic matter, obviating the need for extraneous components such as dark energy.
-    </p>
-    <p>
-      Moreover, the reinterpretation of redshift as a cumulative tick-induced phase drift offers a new perspective on astronomical observations. Every observation of redshift can be seen as a record of the number of synchronization events (ticks) that have occurred between emission and detection, thereby linking cosmological measurements directly to the fundamental discrete dynamics.
-    </p>
-    
-    <h2>Conclusion</h2>
-    <p>
-      We have derived a new formulation of the Friedmann equations based on a discrete ticking framework, where time is segmented into fundamental intervals of \( \tau = 0.6\,\text{ps} \) and space is recalibrated via an effective fractal dimension \( D_{\text{eff}} = 2.667 \). This model removes the need for an independent cosmological constant by demonstrating that all cosmic dynamics, including redshift, are emergent properties of baryonic matter undergoing periodic error correction. Future research will focus on confronting these predictions with observational data to validate the discrete tick hypothesis.
-    </p>
-
