@@ -5,21 +5,22 @@ title: "Formula Collection"
 <h2>Digital-Tick Model Formula Collection</h2>
 
 <p>
-This document contains key formulas and fundamental relations from the digital-tick model. Precision constants such as <strong>0.6 ps</strong> (time tick), <strong>1.667 THz</strong> (tick frequency), and <strong>2.667D</strong> (fractal correction) are used explicitly to ensure consistency in reproducing electromagnetic, gravitational, and neutrino-related phenomena.
+This document contains key formulas and fundamental relations from the digital-tick model. Precision constants such as <strong>0.6 ps</strong> (time tick), <strong>1.667 THz</strong> (tick frequency), <strong>2.667D</strong> (fractal correction), and <strong>κ ≈ 0.447</strong> (effective spatial suppression factor) are used explicitly to ensure consistency in reproducing electromagnetic, gravitational, and neutrino-related phenomena.
 </p>
 
 <h3>1. Fundamental Constants</h3>
 <ul>
   <li><strong>Tick Time (Δt):</strong> 0.6 ps (6.0e-13 s)</li>
   <li><strong>Tick Frequency (f):</strong> 1.667 THz</li>
-  <li><strong>Spatial Scale (Δx = cΔt):</strong>  0.18 mm</li>
-  <li><strong>Energy per Tick (E = hf):</strong>  6.89 meV</li>
+  <li><strong>Spatial Scale (Δx = cΔt):</strong> 0.18 mm</li>
+  <li><strong>Energy per Tick (E = hf):</strong> 6.89 meV</li>
   <li><strong>Fractal Correction Factor:</strong> 2.667D</li>
+  <li><strong>Effective Spatial Suppression Factor (κ):</strong> ≈ 0.447</li>
 </ul>
 
 <h3>2. Finite Difference Relations</h3>
 <p>
-<strong>Discrete Time Update for the Electromagnetic Four-Potential \( A_\mu(t, x) \) :</strong>
+<strong>Discrete Time Update for the Electromagnetic Four-Potential \( A_\mu(t, x) \):</strong>
 </p>
 <p>
 \( A_\mu(t+\Delta t, x) = A_\mu(t, x) + \Delta t \cdot \frac{dA_\mu}{dt} + O((\Delta t)^2) \)
@@ -60,7 +61,6 @@ This document contains key formulas and fundamental relations from the digital-t
 <p>
 \( \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} \)
 </p>
-
 <p>
 Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum limit.
 </p>
