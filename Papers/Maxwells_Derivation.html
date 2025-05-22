@@ -17,7 +17,7 @@ title: "Maxwells Derivation"
     \( \dot{A_\mu}(t, x) \approx \frac{A_\mu(t + \Delta t, x) - A_\mu(t, x)}{\Delta t} \)
   </div>
 </div>
-
+<p></p>
 <div>
   <h2>2. Constructing the Field Tensor from Finite Differences</h2>
   <p>
@@ -96,17 +96,13 @@ title: "Maxwells Derivation"
   <h2>5. Summary</h2>
   <p>
     The discrete update with <span class="math inline">\( \Delta t = 0.6\,\text{ps} \)</span> replaces continuous derivatives with finite differences.
-  </p>
-  <p>
+ 
     The electromagnetic field tensor is computed via finite differences of <span class="math inline">\( A_\mu \)</span>.
-  </p>
-  <p>
+ 
     A discrete Lagrangian formulation and the Euler--Lagrange procedure yield Maxwell's equations in the continuum limit.
-  </p>
-  <p>
+
     Gauge invariance is maintained by ensuring that the update rules respect the transformation <span class="math inline">\( A_\mu \to A_\mu + \partial_\mu \Lambda \)</span>.
-  </p>
-  <p>
+  
     The inherent digital error‑correction mechanism naturally eliminates divergences and the need for renormalization, leading to a deterministic model.
   </p>
 </div>
