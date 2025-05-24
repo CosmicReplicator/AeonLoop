@@ -1,0 +1,20 @@
+---
+layout: Aeonloop
+title: "AeonLoop Interactive Calculator"
+---
+<!-- Your AeonLoop content goes here -->
+
+Here, you could embed a code block that ThebeLab converts into an interactive cell:
+
+<div class="thebe-container">
+  <pre data-executable="true" data-language="python">
+# Example: Digital Tick Calculator
+def digital_tick_calculator(tick=0.6e-12):
+    h = 6.62607015e-34  # Planck's constant in J·s
+    c = 299792458       # Speed of light in m/s
+    E_min = h / tick    # Minimal energy quantum in J
+    L_eff = c * tick    # Effective length scale in m
+    return E_min, L_eff
+print(digital_tick_calculator())
+  </pre>
+</div>
