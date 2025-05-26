@@ -12,7 +12,8 @@ title: "Fine-Structure Constant and Proton Radius"
   We derive the fine-structure constant 
   <span class="math">\( \alpha \)</span> 
   as the ratio of the classical electron radius to the electron’s Compton wavelength, and extend our approach to
-  calculate the proton radius from first principles.
+  calculate the proton radius from first principles. An effective fractal correction factor, 
+  <span class="math">\( D_{\text{eff}} = 2.667 \)</span>, is incorporated to account for the non-Euclidean geometry inherent in the update process.
 </p>
 
 <h3>1. Introduction</h3>
@@ -49,7 +50,7 @@ title: "Fine-Structure Constant and Proton Radius"
 <p class="math">\( \tau_e = \tau_{\text{ref}} \times \frac{E_{\text{ref}}}{m_e c^2} \)</p>
 <p>
   Multiplying by the speed of light 
-  <span class="math">\( c \)</span> transforms this time into a length scale:
+  <span class="math">\( c \)</span> transforms this tick time into a length scale:
 </p>
 <p class="math">\( L_e = c \times \tau_e = c \times \tau_{\text{ref}} \times \frac{E_{\text{ref}}}{m_e c^2} \)</p>
 <p>
@@ -70,6 +71,20 @@ title: "Fine-Structure Constant and Proton Radius"
   Numerically, this yields <span class="math">\( \alpha \approx \frac{1}{137} \)</span>.
 </p>
 
+<h3>2.4 Incorporating the Fractal Correction Factor</h3>
+<p>
+  To reflect the non-Euclidean, fractal nature of the tick update process, we introduce an effective fractal correction factor:
+  <span class="math">\( D_{\text{eff}} = 2.667 \)</span>. This factor modifies the derived length scales.
+</p>
+<p>
+  For example, the corrected electron Compton wavelength becomes:
+</p>
+<p class="math">\( \lambda'_C = \lambda_C \times D_{\text{eff}} \)</p>
+<p>
+  Similarly, the adjusted proton radius becomes:
+</p>
+<p class="math">\( r'_p = r_p \times D_{\text{eff}} \)</p>
+
 <h3>3. Proton Calculations</h3>
 <p>
   We now extend our framework to the proton. The proton is characterized by a much higher energy scale,
@@ -89,19 +104,30 @@ title: "Fine-Structure Constant and Proton Radius"
 </p>
 <p class="math">\( r_p = c \times \tau_p \approx 3 \times 10^8\,\text{m/s} \times 2.75 \times 10^{-24}\,\text{s} \approx 8.25 \times 10^{-16}\,\text{m} \)</p>
 <p>
-  In femtometers, this gives <span class="math">\( r_p \approx 0.83\,\text{fm} \)</span>, in excellent agreement with experimental measurements.
+  In femtometers, this gives <span class="math">\( r_p \approx 0.83\,\text{fm} \)</span>.
+  When the fractal correction is applied, the adjusted proton radius becomes:
+</p>
+<p class="math">\( r'_p = r_p \times D_{\text{eff}} \)</p>
+<p>
+  With <span class="math">\( D_{\text{eff}} = 2.667 \)</span>, this yields an effective proton radius of approximately 
+  <span class="math">\( 0.83\,\text{fm} \times 2.667 \approx 2.21\,\text{fm} \)</span>.
 </p>
 
 <h3>4. Discussion and Conclusion</h3>
 <p>
-  Our digital tick-based model unifies the emergence of fundamental physical scales by assigning discrete, error-correcting updates to the fabric of nature. By scaling the universal reference tick time and energy to a system's characteristic energy, we naturally derive intrinsic lengths.
-  In the electron, the balance of quantum uncertainty and electromagnetic self-interaction yields the Compton wavelength and classical radius,
+  Our digital tick-based model unifies the emergence of fundamental physical scales by assuming discrete, error-correcting updates to the fabric of nature.
+  By scaling a universal reference tick time and energy to a system's characteristic energy, we naturally derive intrinsic length scales.
+  In the electron, the interplay between quantum uncertainty and electromagnetic self-interaction yields the Compton wavelength and classical radius,
   whose ratio produces the fine-structure constant <span class="math">\( \alpha \approx \frac{1}{137} \)</span>.
 </p>
 <p>
-  Extending this reasoning to the proton, our model predicts a proton radius of approximately <span class="math">\( 0.83\,\text{fm} \)</span>, thereby offering a new perspective on the proton radius puzzle.
-  This framework provides a fresh, fundamental derivation of these constants and opens avenues to explore nuclear structure and high-energy phenomena with a discrete time dynamics approach.
+  Extending this reasoning to the proton, our model initially predicts a proton radius of approximately <span class="math">\( 0.83\,\text{fm} \)</span>. However, when 
+  the effective fractal correction <span class="math">\( D_{\text{eff}} = 2.667 \)</span> is applied—accounting for the non-Euclidean geometry inherent in the 
+  digital tick update—the adjusted proton radius becomes roughly <span class="math">\( 2.21\,\text{fm} \)</span>.
 </p>
 <p>
-  Future work will aim to incorporate inter-nucleon interactions and further examine the implications for gravitational and cosmological scales.
+  This framework provides a fresh, fundamental derivation of key constants and offers new insights into nuclear structure and high-energy phenomena.
+  Future work will involve refining the incorporation of the fractal correction factor and extending the model to inter-nucleon interactions 
+  and gravitational as well as cosmological scales.
 </p>
+
