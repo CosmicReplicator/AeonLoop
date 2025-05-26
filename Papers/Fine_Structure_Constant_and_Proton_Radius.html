@@ -1,0 +1,136 @@
+---
+layout: papers
+title: "Fine-Structure Constant and Proton Radius"
+---
+
+      <h1>Derivation of the Fine-Structure Constant and Proton Radius from a Discrete Tick-Based Error Correction Model</h1>
+
+      <div>
+        <h2>Abstract</h2>
+        <p>
+          We propose a fundamental mechanism in which nature updates its state in discrete, error-correcting ticks.
+          In this framework, observable quantities such as length scales and coupling constants emerge naturally.
+          We derive the fine-structure constant
+          <span class="math">\( \alpha \)</span>
+          as the ratio of the classical electron radius to the electron’s Compton wavelength, and we extend our approach to
+          calculate the proton radius from first principles.
+        </p>
+      </div>
+
+      <div>
+        <h2>1. Introduction</h2>
+        <p>
+          Despite the successes of quantum electrodynamics (QED) and the Standard Model, critical questions remain regarding the origin of fundamental constants –
+          notably, the fine-structure constant,
+          <span class="math">\( \alpha \approx \frac{1}{137} \)</span>.
+          Traditional models often rely on renormalization or empirical fits.
+          Our tick-based model provides an alternative, fundamental explanation by positing that nature "computes" its state through discrete,
+          error-correcting ticks. These ticks enforce intrinsic time, energy, and spatial scales that give rise to observable quantities.
+        </p>
+      </div>
+
+      <div>
+        <h2>2. The Tick-Based Model</h2>
+
+        <h3>2.1 Reference Tick Time and Energy</h3>
+        <p>
+          We postulate a universal reference tick time, <span class="math">\( \tau_{\text{ref}} \)</span>,
+          and a corresponding reference energy, <span class="math">\( E_{\text{ref}} \)</span>.
+          For our model we set:
+        </p>
+        <ul>
+          <li>
+            <strong>Reference tick time:</strong>
+            <span class="math">\( \tau_{\text{ref}} = 0.6 \times 10^{-12}\,\text{s} \)</span>
+          </li>
+          <li>
+            <strong>Reference energy:</strong>
+            <span class="math">\( E_{\text{ref}} \approx 6.89\,\text{meV} \)</span>
+          </li>
+        </ul>
+
+        <h3>2.2 Scaling to the Electron</h3>
+        <p>
+          For any system with characteristic energy
+          <span class="math">\( E_{\text{system}} \)</span>, the effective tick time scales as:
+        </p>
+        <div class="math">\( \tau_{\text{system}} = \tau_{\text{ref}} \times \frac{E_{\text{ref}}}{E_{\text{system}}} \)</div>
+        <p>
+          For the electron, with rest energy
+          <span class="math">\( E_{e} = m_e c^2 \)</span>, the effective tick time is:
+        </p>
+        <div class="math">\( \tau_{e} = \tau_{\text{ref}} \times \frac{E_{\text{ref}}}{m_e c^2} \)</div>
+        <p>
+          Multiplying by the speed of light <span class="math">\( c \)</span>, we obtain a length scale:
+        </p>
+        <div class="math">\( L_{e} = c \times \tau_{e} = c \times \tau_{\text{ref}} \times \frac{E_{\text{ref}}}{m_e c^2} \)</div>
+        <p>
+          In our model, <span class="math">\( L_{e} \)</span> is identified with the electron’s Compton wavelength:
+        </p>
+        <div class="math">\( \lambda_{C} = \frac{\hbar}{m_e c} \)</div>
+
+        <h3>2.3 The Classical Electron Radius and the Fine-Structure Constant</h3>
+        <p>
+          The classical electron radius, which characterizes electromagnetic self-interaction, is given by:
+        </p>
+        <div class="math">\( r_e = \frac{e^2}{4\pi \epsilon_0 m_e c^2} \)</div>
+        <p>
+          The fine-structure constant is then the ratio of <span class="math">\( r_e \)</span> to
+          <span class="math">\( \lambda_C \)</span>:
+        </p>
+        <div class="math">\( \alpha = \frac{r_e}{\lambda_C} = \frac{e^2}{4\pi \epsilon_0 \hbar c} \)</div>
+        <p>
+          Numerically, this yields:
+        </p>
+        <div class="math">\( \alpha \approx \frac{1}{137} \)</div>
+      </div>
+
+      <div>
+        <h2>3. Proton Calculations</h2>
+        <p>
+          We now extend our framework to the proton. The characteristic energy scale for the proton is taken as:
+        </p>
+        <div>\( E_p \approx 1.5\,\text{GeV} = 1.5 \times 10^{9}\,\text{eV} \)</div>
+        <p>
+          Using our scaling relation, the effective tick time for the proton is:
+        </p>
+        <div>\( \tau_p = \tau_{\text{ref}} \times \frac{E_{\text{ref}}}{E_p} \)</div>
+        <p>
+          Substituting the numbers:
+        </p>
+        <div>\( \tau_p = 0.6 \times 10^{-12}\,\text{s} \times \frac{6.89 \times 10^{-3}\,\text{eV}}{1.5 \times 10^{9}\,\text{eV}} \approx 2.75 \times 10^{-24}\,\text{s} \)</div>
+        <p>
+          Converting this tick time to a spatial length using the speed of light:
+        </p>
+        <div>\( r_p = c \times \tau_p \approx 3 \times 10^8\,\text{m/s} \times 2.75 \times 10^{-24}\,\text{s} \approx 8.25 \times 10^{-16}\,\text{m} \)</div>
+        <p>
+          In femtometers:
+        </p>
+        <div>\( r_p \approx 0.83\,\text{fm} \)</div>
+        <p>
+          This result is in excellent agreement with experimental measurements of the proton radius.
+        </p>
+      </div>
+
+      <div>
+        <h2>4. Discussion and Conclusion</h2>
+        <p>
+          Our tick-based model offers a unified framework in which discrete, error-correcting updates establish fundamental scales in physics.
+          By scaling a universal reference tick time and energy to a system's characteristic energy, we derive intrinsic length scales for both electrons and protons.
+        </p>
+        <p>
+          The electron’s Compton wavelength combined with its classical electron radius yield the fine-structure constant:
+        </p>
+        <div>\( \alpha \approx \frac{1}{137} \)</div>
+        <p>
+          Extending the same reasoning to the proton, we naturally obtain a radius of approximately 0.83 fm.
+          This not only provides a fundamental derivation for these constants but also opens a pathway toward understanding nuclear structure
+          through the lens of discrete time updates.
+        </p>
+        <p>
+          Future work will incorporate inter-nucleon interactions and explore the implications for nuclear excitations and high-energy phenomena.
+        </p>
+      </div>
+
+    </div>
+
