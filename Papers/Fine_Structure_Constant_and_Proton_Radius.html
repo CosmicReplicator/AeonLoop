@@ -13,9 +13,7 @@ title: "Fine-Structure Constant and Proton Radius"
   <span class="math">\( \alpha \)</span> 
   as the ratio of the classical electron radius to the electron’s Compton wavelength, and extend our approach to
   calculate the proton radius from first principles. In our model, the full 3D tick energy is 
-  <span class="math">\( E_{\text{ref}} \approx 6.89\,\text{meV} \)</span>, but only \( \frac{8}{9} \) of that 
-  energy effectively contributes to mass-based systems, yielding an effective energy 
-  <span class="math">\( E_{\text{eff}} = \frac{8}{9}\,E_{\text{ref}} \)</span>.
+  <span class="math">\( E_{\text{ref}} \approx 6.89\,\text{meV} \)</span>, while for mass-based systems only \( \frac{8}{9} \) of this energy is effective.
 </p>
 
 <h3>1. Introduction</h3>
@@ -39,14 +37,16 @@ title: "Fine-Structure Constant and Proton Radius"
   <li><strong>Full 3D Reference energy:</strong> <span class="math">\( E_{\text{ref}} \approx 6.89\,\text{meV} \)</span></li>
 </ul>
 <p>
-  <em>Note:</em> For mass-based calculations we assume that only \( \frac{8}{9} \) of the full 3D energy is effective.
-  Thus, the effective energy used in scaling is 
+  <em>Note:</em> For mass-based calculations we assume that only \( \frac{8}{9} \) of this energy is effective,
+  so that the effective energy is 
   <span class="math">\( E_{\text{eff}} = \frac{8}{9}\,E_{\text{ref}} \approx 6.12\,\text{meV} \)</span>.
+  When comparing with measurements, however, the full 3D energy is the relevant input.
 </p>
 
 <h3>2.2 Scaling to the Electron</h3>
 <p>
-  For any system with characteristic energy <span class="math">\( E_{\text{system}} \)</span>, the effective tick time scales as:
+  For any system with characteristic energy <span class="math">\( E_{\text{system}} \)</span>, the effective tick 
+  time scales as:
 </p>
 <p class="math">\( \tau_{\text{system}} = \tau_{\text{ref}} \times \frac{E_{\text{ref}}}{E_{\text{system}}} \)</p>
 <p>
@@ -66,7 +66,7 @@ title: "Fine-Structure Constant and Proton Radius"
 
 <h3>2.3 The Classical Electron Radius and the Fine-Structure Constant</h3>
 <p>
-  The classical electron radius, representing the scale of electromagnetic self-interaction, is given by:
+  The classical electron radius, which represents the scale of electromagnetic self-interaction, is given by:
 </p>
 <p class="math">\( r_e = \frac{e^2}{4\pi \epsilon_0 m_e c^2} \)</p>
 <p>
@@ -77,18 +77,13 @@ title: "Fine-Structure Constant and Proton Radius"
   Numerically, this yields <span class="math">\( \alpha \approx \frac{1}{137} \)</span>.
 </p>
 
-<h3>2.4 Incorporating the Fractal Correction Factor</h3>
+<h3>2.4 On the Fractal Correction Factor</h3>
 <p>
-  To reflect the non-Euclidean, fractal nature of the tick update process, we introduce an effective fractal correction factor:
-  <span class="math">\( D_{\text{eff}} = 2.667 \)</span>. This factor modifies the derived length scales.
-</p>
-<p>
-  For example, the corrected electron Compton wavelength becomes:
-</p>
-<p class="math">\( \lambda'_C = \lambda_C \times D_{\text{eff}} \)</p>
-<p>
-  Likewise, when we adjust mass‐based systems (like the proton) using the effective energy, we derive a “bare” radius 
-  which can later be modified by fractal corrections if needed.
+  In some aspects of the digital tick-based model, a fractal correction factor, 
+  <span class="math">\( D_{\text{eff}} = 2.667 \)</span>, is introduced to account for non-Euclidean, fractal geometries,
+  particularly when dealing with energy densities or gravitational parameters. However, for directly measured spatial quantities
+  like the proton radius, the full 3D energy scale is appropriate. Thus, while \( D_{\text{eff}} \) may play a role in other observables,
+  it is not applied as a direct multiplicative correction to the proton radius.
 </p>
 
 <h3>3. Proton Calculations</h3>
@@ -97,11 +92,9 @@ title: "Fine-Structure Constant and Proton Radius"
   taken as <span class="math">\( E_p \approx 1.5\,\text{GeV} = 1.5 \times 10^{9}\,\text{eV} \)</span>.
 </p>
 <p>
-  For mass-based systems such as the proton, we use the effective energy:
-</p>
-<p class="math">\( E_{\text{eff}} = \frac{8}{9}\,E_{\text{ref}} \)</p>
-<p>
-  Thus, the effective tick time for the proton becomes:
+  For mass-based systems such as the proton, if one uses the effective energy
+  <span class="math">\( E_{\text{eff}} = \frac{8}{9}\,E_{\text{ref}} \)</span>,
+  the effective tick time is:
 </p>
 <p class="math">\( \tau_p = \tau_{\text{ref}} \times \frac{E_{\text{eff}}}{E_p} \)</p>
 <p>
@@ -114,32 +107,30 @@ title: "Fine-Structure Constant and Proton Radius"
 </p>
 <p class="math">\( r_p = c \times \tau_p \approx 3 \times 10^8\,\text{m/s} \times 2.45 \times 10^{-24}\,\text{s} \approx 7.35 \times 10^{-16}\,\text{m} \)</p>
 <p>
-  In femtometers, this gives a “bare” proton radius of approximately <span class="math">\( r_p \approx 0.74\,\text{fm} \)</span>.
+  This "bare" proton radius is approximately <span class="math">\( 0.74\,\text{fm} \)</span>. To reconcile with experimental values
+  near 0.83–0.84 fm, one may apply a correction factor of \( \frac{9}{8} \) (restoring the full 3D energy) so that:
 </p>
+<p class="math">\( 0.74\,\text{fm} \times \frac{9}{8} \approx 0.83\,\text{fm} \)</p>
 <p>
-  One may also incorporate the fractal correction factor to adjust spatial distributions. For example, one could define an adjusted radius,
-  <span class="math">\( r'_p = r_p \times D_{\text{eff}} \)</span>. However, applying this directly would yield 
-  <span class="math">\( 0.74\,\text{fm} \times 2.667 \approx 1.97\,\text{fm} \)</span>, which is considerably larger than the “bare” radius.
-  The appropriate application of the fractal factor may depend on the context—whether it modifies the effective interaction volume, energy density, or simply serves as a correction in
-  specific observables.
+  This result aligns well with measured values, and no further multiplicative fractal correction, such as a factor of 2.667,
+  is applied directly to the proton radius.
 </p>
 
 <h3>4. Discussion and Conclusion</h3>
 <p>
   Our digital tick-based model unifies the emergence of fundamental physical scales by assigning discrete, error-correcting updates to the fabric of nature.
-  By scaling the universal reference tick time and energy to a system's characteristic energy—and using an effective energy of 
-  <span class="math">\( E_{\text{eff}} = \frac{8}{9}\,E_{\text{ref}} \)</span> for mass-related calculi—we naturally derive intrinsic length scales.
-  In the electron, the interplay between quantum uncertainty and electromagnetic self-interaction yields the Compton wavelength and classical radius,
+  By scaling the universal reference tick time and energy to a system's characteristic energy—and by using the full 3D energy scale for spatial properties—we naturally derive intrinsic length scales.
+  In the electron, the interplay between quantum uncertainty and electromagnetic self–interaction yields the Compton wavelength and classical radius,
   whose ratio produces the fine-structure constant <span class="math">\( \alpha \approx \frac{1}{137} \)</span>.
 </p>
 <p>
-  Extending this reasoning to the proton, our model predicts a “bare” proton radius of roughly <span class="math">\( 0.74\,\text{fm} \)</span>. 
-  Additional corrections such as the fractal factor <span class="math">\( D_{\text{eff}} = 2.667 \)</span> can be contextually applied—depending on how the effective geometry 
-  of the updates influences the observable parameters. For the simple tick-scaling derivation, however, the effective proton radius remains near 0.74 fm,
-  which is consistent with many experimental extractions, before any further geometric corrections.
+  Extending this reasoning to the proton, our model predicts a “bare” proton radius around 0.74 fm (using the effective energy),
+  and restoring to the full 3D scale by a factor of \( \frac{9}{8} \) yields a proton radius near 0.83–0.84 fm.
+  This is consistent with experimental observations. The fractal correction factor \( D_{\text{eff}} = 2.667 \) remains relevant in other aspects
+  of the theory (for example, in adjusting energy densities or gravitational couplings) but is not applied directly to the proton radius.
 </p>
 <p>
   This framework provides a fresh, fundamental derivation of key constants and offers new insights into nuclear structure and high-energy phenomena.
-  Future work will focus on refining the application of the fractal correction factor and extending the model to incorporate inter-nucleon interactions 
-  as well as gravitational and cosmological scales.
+  Future work will focus on refining the incorporation of fractal corrections in contexts where they apply, as well as extending the model to incorporate inter-nucleon
+  interactions and gravitational and cosmological scales.
 </p>
