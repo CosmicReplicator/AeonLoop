@@ -12,6 +12,7 @@ title: "dilation classical formulas explained"
   
   <h2>Newtonian Mechanics</h2>
   <br>
+  <br>
   <h3>1. Newton's Second Law</h3>
   <p>
     The law is given by<br>
@@ -34,7 +35,7 @@ title: "dilation classical formulas explained"
   </p>
   
   <h2>Electromagnetism</h2>
-  
+  <br>
   <h3>1. Coulomb's Law</h3>
   <p>
     Coulomb’s law is<br>
@@ -53,21 +54,38 @@ title: "dilation classical formulas explained"
   <p>
     The local behavior of electromagnetic fields is captured by<br>
     
+<p>
+  For the divergence equations:
+</p>
+
 
 \[
-    \begin{aligned}
-      \nabla \cdot E &= \frac{\rho}{\varepsilon_0},\
+\begin{aligned}
+  \nabla \cdot E &= \frac{\rho}{\varepsilon_0},\
 
 \[5mm]
-      \nabla \cdot B &= 0,\ <br>
+  \nabla \cdot B &= 0.
+\end{aligned}
+\]
+
+
+
+<p>
+  For the curl equations:
+</p>
+
+
+\[
+\begin{aligned}
+  \nabla \times E &= -\frac{\partial B}{\partial t},\
 
 \[5mm]
-      \nabla \times E &= -\frac{\partial B}{\partial t},\
+  \nabla \times B &= \mu_0 J + \mu_0 \varepsilon_0\,\frac{\partial E}{\partial t}.
+\end{aligned}
+\]
 
-\[5mm]
-      \nabla \times B &= \mu_0 J + \mu_0 \varepsilon_0\,\frac{\partial E}{\partial t}.
-    \end{aligned}
-    \]
+
+
 
 <br>
     However, when calculating global quantities such as fluxes or energy densities, integrating over a space that scales as \( r^{2.667} \) rather than \( r^3 \) introduces subtle corrections.
