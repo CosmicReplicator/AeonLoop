@@ -2,11 +2,8 @@
 layout: papers
 title: "Formula Collection"
 ---
-<<h2>Digital-Tick Model Formula Collection</h2>
-
-<p>
-This document contains key formulas and fundamental relations from the digital‑tick model. Precision constants such as <strong>0.6 ps</strong> (time tick), <strong>1.667 THz</strong> (tick frequency), <strong>2.667D</strong> (fractal correction), and <strong>κ ≈ 0.447</strong> (effective spatial suppression factor) are used explicitly to ensure consistency in reproducing electromagnetic, gravitational, and cosmological phenomena.
-</p>
+<h2>Digital-Tick Model Formula Collection</h2>
+<p>This document contains key formulas and fundamental relations from the digital‑tick model. Precision constants such as <strong>0.6 ps</strong> (time tick), <strong>1.667 THz</strong> (tick frequency), <strong>2.667D</strong> (fractal correction), and <strong>κ ≈ 0.447</strong> (effective spatial suppression factor) are used explicitly to ensure consistency in reproducing electromagnetic, gravitational, and cosmological phenomena.</p>
 
 <h3>1. Fundamental Constants</h3>
 <ul>
@@ -21,204 +18,132 @@ This document contains key formulas and fundamental relations from the digital�
 <h3>2. Finite Difference Relations</h3>
 <p><strong>Discrete Time Update for the Electromagnetic Four-Potential <em>A<sub>μ</sub>(t, x)</em>:</strong></p>
 <p>
-  
 
 \[ A_{\mu}(t+\Delta t, x) = A_{\mu}(t, x) + \Delta t \cdot \frac{dA_{\mu}}{dt} + O((\Delta t)^2) \]
-
 
 </p>
 <p><strong>First-Order Time Derivative:</strong></p>
 <p>
-  
 
 \[ \partial_t A_{\mu}(t, x) \approx \frac{A_{\mu}(t+\Delta t, x) - A_{\mu}(t, x)}{\Delta t} \]
-
 
 </p>
 <p><strong>Second-Order Time Derivative:</strong></p>
 <p>
-  
 
 \[ \partial_t^2 A_{\mu}(t, x) \approx \frac{A_{\mu}(t+\Delta t, x) - 2A_{\mu}(t, x) + A_{\mu}(t-\Delta t, x)}{(\Delta t)^2} \]
-
 
 </p>
 <p><strong>Spatial Derivative:</strong></p>
 <p>
-  
 
 \[ \partial_x A_{\mu}(t, x) \approx \frac{A_{\mu}(t, x+\Delta x) - A_{\mu}(t, x)}{\Delta x} \]
-
 
 </p>
 
 <h3>3. Electromagnetic Field Construction</h3>
 <p><strong>Electromagnetic Field Tensor:</strong></p>
 <p>
-  
 
 \[ F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu} \]
-
 
 </p>
 <p><strong>Classical Lagrangian Density:</strong></p>
 <p>
-  
 
 \[ \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} \]
 
-
 </p>
-<p>
-Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum limit.
-</p>
+<p>Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum limit.</p>
 
 <h3>4. Derived Quantities</h3>
 <p><strong>Dispersion Relation for a Plane Wave:</strong></p>
 <p>
-  
 
-\[ \omega^2 = c^2 \, k^2 \]
-
+\[ \omega^2 = c^2 k^2 \]
 
 </p>
 <p><strong>Optimal Delayed‑Choice Interference Distance:</strong> 0.18 mm</p>
-<p>
-  <strong>Neutrino Mass Prediction:</strong> Derived from a base energy of 6.89 meV with fractal correction 2.667D, yielding an effective mass of approximately 5 meV.
-</p>
-<p>
-  <strong>Gravitational Time Dilation:</strong> Matches standard predictions when applying the digital‑tick update.
-</p>
+<p><strong>Neutrino Mass Prediction:</strong> Derived from a base energy of 6.89 meV with fractal correction 2.667D, yielding an effective mass of approximately 5 meV.</p>
+<p><strong>Gravitational Time Dilation:</strong> Matches standard predictions when applying the digital‑tick update.</p>
 
 <h3>5. Cosmological Constant Derivation</h3>
+<p>In the digital‑tick model the problematic vacuum energy is rendered finite by the invariant tick. The finite vacuum energy density is given by:</p>
 <p>
-  In the digital‑tick model the problematic vacuum energy is rendered finite by the invariant tick. The finite vacuum energy density is given by:
-</p>
-<p>
-  
 
 \[ \rho_{\text{vac}} = \frac{1}{2}\, \hbar\, f \left[\frac{S_{D_{\text{eff}}}}{(2\pi)^{D_{\text{eff}}}}\right] \left[\frac{2\pi\, f}{c}\right]^{D_{\text{eff}}} \]
 
-
 </p>
+<p>where the “surface area” in effective \( D \) dimensions is:</p>
 <p>
-  where the “surface area” in effective \( D \) dimensions is:
-</p>
-<p>
-  
 
 \[ S_{D_{\text{eff}}} = \frac{2\pi^{(D_{\text{eff}}/2)}}{\Gamma(D_{\text{eff}}/2)} \]
 
-
 </p>
+<p>To convert this into conventional 3‑dimensional terms, we “fill in” the missing dimensions using a scaling factor \(\left(\frac{c}{f}\right)^{3-D_{\text{eff}}}\). Dimensional reasoning then gives the curvature scale as:</p>
 <p>
-  To convert this into conventional 3‑dimensional terms, we “fill in” the missing dimensions using a scaling factor \(\left(\frac{c}{f}\right)^{3-D_{\text{eff}}}\). Dimensional reasoning then gives the curvature scale as:
-</p>
-<p>
-  
 
 \[ L_{\text{curv}} \sim \left(\frac{\hbar\, c}{\rho_{\text{vac}}^{(3D)}}\right)^{\frac{1}{4}} \]
 
-
 </p>
+<p>and hence the cosmological constant:</p>
 <p>
-  and hence the cosmological constant:
-</p>
-<p>
-  
 
 \[ \Lambda \sim \frac{1}{L_{\text{curv}}^2} \]
 
-
 </p>
+<p>For our model this simplifies to the dimensional result:</p>
 <p>
-  For our model this simplifies to the dimensional result:
-</p>
-<p>
-  
 
 \[ \Lambda \sim \frac{1}{L^2} \left(\frac{L}{L_{\text{cosmo}}}\right)^2 \]
-
 
 </p>
 <ul>
   <li>\( L = \frac{c}{f} \approx 0.18\,\text{mm} \) (microscopic scale)</li>
   <li>\( L_{\text{cosmo}} \approx 10^{26}\,\text{m} \) (cosmic horizon scale)</li>
 </ul>
-<p>
-  Thus, the enormous hierarchy \( \frac{L}{L_{\text{cosmo}}} \) naturally suppresses \(\Lambda\) to approximately \( 10^{-52}\,\text{m}^{-2} \), in excellent agreement with observations.
-</p>
+<p>Thus, the enormous hierarchy \( \frac{L}{L_{\text{cosmo}}} \) naturally suppresses \(\Lambda\) to approximately \( 10^{-52}\,\text{m}^{-2} \), in excellent agreement with observations.</p>
 
 <h3>6. Fine‑Structure Constant and the Elimination of Fine‑Tuning</h3>
+<p>In standard QED the fine‑structure constant is:</p>
 <p>
-  In standard QED the fine‑structure constant is:
-</p>
-<p>
-  
 
 \[ \alpha = \frac{e^2}{4\pi \varepsilon_0\, \hbar\, c} \]
 
-
 </p>
+<p>with a measured value of roughly \( \frac{1}{137} \approx 0.0073 \). In our model, \(\alpha\) emerges naturally via the effective fractal geometry.</p>
+<p>We postulate an effective charge function:</p>
 <p>
-  with a measured value of roughly \( \frac{1}{137} \approx 0.0073 \). In our model, \(\alpha\) emerges naturally via the effective fractal geometry.
-</p>
-<p>
-  We postulate an effective charge function:
-</p>
-<p>
-  
 
 \[ F(D) \sim \exp[-\beta (D - 2)] \]
 
-
 </p>
+<p>For \( D = 2.667 \) to yield the observed \( \alpha \approx 0.0073 \), we require:</p>
 <p>
-  For \( D = 2.667 \) to yield the observed \( \alpha \approx 0.0073 \), we require:
-</p>
-<p>
-  
 
 \[ \exp[-\beta(0.667)] \approx 0.0073 \]
 
-
 </p>
+<p>Taking logarithms:</p>
 <p>
-  Taking logarithms:
-</p>
-<p>
-  
 
 \[ -\beta(0.667) \approx \ln(0.0073) \approx -4.922 \]
 
-
 </p>
+<p>Solving gives:</p>
 <p>
-  Solving gives:
-</p>
-<p>
-  
 
 \[ \beta \approx \frac{4.922}{0.667} \approx 7.38 \]
 
-
 </p>
+<p>Thus, the fine‑structure constant emerges as:</p>
 <p>
-  Thus, the fine‑structure constant emerges as:
-</p>
-<p>
-  
 
 \[ \alpha \sim F(2.667) \sim \exp[-7.38 \cdot 0.667] \approx 0.0073 \]
 
-
 </p>
-<p>
-  This shows that in our framework, the value of \(\alpha\) is a natural consequence of the digital‑tick dynamics and effective fractal corrections, eliminating the need for external fine‑tuning.
-</p>
-<p>
-  Derivation of \( G \): is too extensive to add in this collection; please refer to the separate document for that.
-</p>
+<p>This shows that in our framework, the value of \(\alpha\) is a natural consequence of the digital‑tick dynamics and effective fractal corrections, eliminating the need for external fine‑tuning.</p>
+<p>Derivation of \( G \): is too extensive to add in this collection; please refer to the separate document for that.</p>
 
 <h3>7. Summary</h3>
 <ul>
@@ -241,14 +166,10 @@ Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum
     (with \(\beta \approx 7.38\)) demonstrates that \(\alpha \sim \frac{1}{137}\) is a predictable outcome of the model, removing the burden of fine‑tuning.
   </li>
 </ul>
-<p>
-  These formulas resolve major challenges in fundamental physics by replacing conventional continuous assumptions with a discrete, invariant digital tick and an effective 2.667-dimensional spatial structure.
-</p>
+<p>These formulas resolve major challenges in fundamental physics by replacing conventional continuous assumptions with a discrete, invariant digital tick and an effective 2.667-dimensional spatial structure.</p>
 
 <h3>8. New: Digital‑Tick Derived Equations</h3>
-<p>
-  Here we introduce a set of equations that emerge directly from the digital‑tick model, without the need to input standard constants like \( c \) or \( h \).
-</p>
+<p>Here we introduce a set of equations that emerge directly from the digital‑tick model, without the need to input standard constants like \( c \) or \( h \).</p>
 <p><strong>Tick Frequency and Duration:</strong></p>
 <ul>
   <li><strong>Tick Duration:</strong><br>
@@ -267,369 +188,48 @@ Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum
   </li>
 </ul>
 <p><strong>Emergence of Invariant Speed:</strong></p>
+<p>Define an effective spatial step \( L_{\text{eff}} \) per tick such that the emergent invariant speed is:</p>
 <p>
-  Define an effective spatial step \( L_{\text{eff}} \) per tick such that the emergent invariant speed is:
-</p>
-<p>
-  
 
 \[ v_{\text{max}} = \frac{L_{\text{eff}}}{\tau} \]
 
-
 </p>
-<p>
-  In this model, \( v_{\text{max}} \) effectively plays the role of the speed of light (c).
-</p>
+<p>In this model, \( v_{\text{max}} \) effectively plays the role of the speed of light (c).</p>
 <p><strong>Digital‑Tick Lorentz‑Like Transformations:</strong></p>
+<p>In a light‑clock experiment, the effective time dilation factor can be expressed as:</p>
 <p>
-  In a light‑clock experiment, the effective time dilation factor can be expressed as:
-</p>
-<p>
-  
 
 \[ \gamma = \frac{1}{\sqrt{1 - \left(\frac{v\,\tau}{L_{\text{eff}}}\right)^2}} \]
 
-
 </p>
+<p>where the effective velocity is given by:</p>
 <p>
-  where the effective velocity is given by:
-</p>
-<p>
-  
 
 \[ \beta = \frac{v\,\tau}{L_{\text{eff}}} = \frac{v}{v_{\text{max}}} \]
 
-
 </p>
-<p>
-  This relation mirrors the conventional Lorentz factor but emerges solely from the digital‑tick parameters.
-</p>
+<p>This relation mirrors the conventional Lorentz factor but emerges solely from the digital‑tick parameters.</p>
 <p><strong>Emergent Gravitational Effects:</strong></p>
+<p>Gravitational interactions can be expressed in terms of digital‑tick quantities; schematically:</p>
 <p>
-  Gravitational interactions can be expressed in terms of digital‑tick quantities; schematically:
-</p>
-<p>
-  
 
-\[ G \propto \frac{L_{\text{eff}}^3}{\tau^2\, M} \]
-
+\[ G \propto \frac{L_{\text{eff}}^3}{\tau^2\,M} \]
 
 </p>
-<p>
-  where \( M \) is an effective mass scale. Here, \( G \) is not an independent input but a derived quantity emerging from the fundamental digital‑tick structure.
-</p>
+<p>where \( M \) is an effective mass scale. Here, \( G \) is not an independent input but a derived quantity emerging from the fundamental digital‑tick structure.</p>
 <p><strong>Digital‑Tick Derived Expression for the Strong Force:</strong></p>
+<p>Starting from our digital‑tick fundamentals, we derived a string tension for the confinement potential. The conventional linear potential is:</p>
 <p>
-  Starting from our digital‑tick fundamentals, we derived a string tension for the confinement potential. The conventional linear potential is:
-</p>
-<p>
-  
 
 \[ V(r) = \sigma\, r \]
 
-
 </p>
+<p>In our model the string tension is given by:</p>
 <p>
-  In our model the string tension is given by:
-</p>
-<p>
-  
 
 \[ \sigma = \frac{2\pi\, E}{L_{\text{eff}}} \]
 
-
 </p>
-<p>
-  where \( E \) is the fundamental energy quantum per tick. This expression shows that the energy required to separate quarks grows linearly with distance as a consequence of the discrete digital‑tick mechanism—entirely free of standard constants.
-</p>
+<p>where \( E \) is the fundamental energy quantum per tick. This expression shows that the energy required to separate quarks grows linearly with distance as a consequence of the discrete digital‑tick mechanism—entirely free of standard constants.</p>
+<p>These equations and derivations form a self-contained collection that unifies quantum mechanics, electromagnetism, gravity, and particle physics—each emerging from the discrete digital‑tick structure and an effective 2.667-dimensional spatial framework.</p>
 
-<p>
-These equations and derivations form a self-contained collection that unifies quantum mechanics, electromagnetism, gravity, and particle physics—each emerging from the discrete digital‑tick structure and an effective 2.667-dimensional spatial framework.
-</p>
-h2>Digital-Tick Model Formula Collection</h2>
-
-<p>
-This document contains key formulas and fundamental relations from the digital‑tick model. Precision constants such as <strong>0.6 ps</strong> (time tick), <strong>1.667 THz</strong> (tick frequency), <strong>2.667D</strong> (fractal correction), and <strong>κ ≈ 0.447</strong> (effective spatial suppression factor) are used explicitly to ensure consistency in reproducing electromagnetic, gravitational, and cosmological phenomena.
-</p>
-
-<h3>1. Fundamental Constants</h3>
-<ul>
-  <li><strong>Tick Time (Δt):</strong> 0.6 ps (6.0e-13 s)</li>
-  <li><strong>Tick Frequency (f):</strong> 1.667 THz (1/Δt)</li>
-  <li><strong>Spatial Scale (Δx = cΔt):</strong> 0.18 mm (with c ≈ 3×10⁸ m/s)</li>
-  <li><strong>Energy per Tick (E = hf):</strong> 6.89 meV (with h ≈ 6.626×10⁻³⁴ Js)</li>
-  <li><strong>Fractal Correction Factor (D):</strong> 2.667D</li>
-  <li><strong>Effective Spatial Suppression Factor (κ):</strong> ≈ 0.447</li>
-</ul>
-
-<h3>2. Finite Difference Relations</h3>
-<p><strong>Discrete Time Update for the Electromagnetic Four-Potential <em>A<sub>μ</sub>(t, x)</em>:</strong></p>
-\[ A_{\mu}(t+\Delta t, x) = A_{\mu}(t, x) + \Delta t \cdot \frac{dA_{\mu}}{dt} + O((\Delta t)^2) \]
-
-<p><strong>First-Order Time Derivative:</strong></p>
-\[ \partial_t A_{\mu}(t, x) \approx \frac{A_{\mu}(t+\Delta t, x) - A_{\mu}(t, x)}{\Delta t} \]
-
-<p><strong>Second-Order Time Derivative:</strong></p>
-
-\[ \partial_t^2 A_{\mu}(t, x) \approx \frac{A_{\mu}(t+\Delta t, x) - 2A_{\mu}(t, x) + A_{\mu}(t-\Delta t, x)}{(\Delta t)^2} \]
-
-
-<p><strong>Spatial Derivative:</strong></p>
-
-\[ \partial_x A_{\mu}(t, x) \approx \frac{A_{\mu}(t, x+\Delta x) - A_{\mu}(t, x)}{\Delta x} \]
-
-
-<h3>3. Electromagnetic Field Construction</h3>
-<p><strong>Electromagnetic Field Tensor:</strong></p>
-<p>
-  
-
-\[ F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu} \]
-
-
-</p>
-<p><strong>Classical Lagrangian Density:</strong></p>
-<p>
-  
-
-\[ \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} \]
-
-
-</p>
-<p>
-Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum limit.
-</p>
-
-<h3>4. Derived Quantities</h3>
-<p><strong>Dispersion Relation for a Plane Wave:</strong></p>
-<p>
-  
-
-\[ \omega^2 = c^2 \, k^2 \]
-
-
-</p>
-<p><strong>Optimal Delayed‑Choice Interference Distance:</strong> 0.18 mm</p>
-<p>
-  <strong>Neutrino Mass Prediction:</strong> Derived from a base energy of 6.89 meV with fractal correction 2.667D, yielding an effective mass of approximately 5 meV.
-</p>
-<p>
-  <strong>Gravitational Time Dilation:</strong> Matches standard predictions when applying the digital‑tick update.
-</p>
-
-<h3>5. Cosmological Constant Derivation</h3>
-<p>
-  In the digital‑tick model the problematic vacuum energy is rendered finite by the invariant tick. The finite vacuum energy density is given by:
-</p> 
-
-\[ \rho_{\text{vac}} = \frac{1}{2}\, \hbar\, f \left[\frac{S_{D_{\text{eff}}}}{(2\pi)^{D_{\text{eff}}}}\right] \left[\frac{2\pi\, f}{c}\right]^{D_{\text{eff}}} \]
-
-<p>
-  where the “surface area” in effective \( D \) dimensions is:
-</p>
-  
-\[ S_{D_{\text{eff}}} = \frac{2\pi^{(D_{\text{eff}}/2)}}{\Gamma(D_{\text{eff}}/2)} \]
-
-<p>
-  To convert this into conventional 3‑dimensional terms, we “fill in” the missing dimensions using a scaling factor \(\left(\frac{c}{f}\right)^{3-D_{\text{eff}}}\). Dimensional reasoning then gives the curvature scale as:
-</p>
-
-\[ L_{\text{curv}} \sim \left(\frac{\hbar\, c}{\rho_{\text{vac}}^{(3D)}}\right)^{\frac{1}{4}} \]
-
-<p>
-  and hence the cosmological constant:
-</p>
-
-\[ \Lambda \sim \frac{1}{L_{\text{curv}}^2} \]
-
-<p>
-  For our model this simplifies to the dimensional result:
-</p>
-
-\[ \Lambda \sim \frac{1}{L^2} \left(\frac{L}{L_{\text{cosmo}}}\right)^2 \]
-
-<ul>
-  <li>\( L = \frac{c}{f} \approx 0.18\,\text{mm} \) (microscopic scale)</li>
-  <li>\( L_{\text{cosmo}} \approx 10^{26}\,\text{m} \) (cosmic horizon scale)</li>
-</ul>
-<p>
-  Thus, the enormous hierarchy \( \frac{L}{L_{\text{cosmo}}} \) naturally suppresses \(\Lambda\) to approximately \( 10^{-52}\,\text{m}^{-2} \), in excellent agreement with observations.
-</p>
-
-<h3>6. Fine‑Structure Constant and the Elimination of Fine‑Tuning</h3>
-<p>
-  In standard QED the fine‑structure constant is:
-</p>
-  
-\[ \alpha = \frac{e^2}{4\pi \varepsilon_0\, \hbar\, c} \]
-
-<p>
-  with a measured value of roughly \( \frac{1}{137} \approx 0.0073 \). In our model, \(\alpha\) emerges naturally via the effective fractal geometry.
-</p>
-<p>
-  We postulate an effective charge function:
-</p>
-\[ F(D) \sim \exp[-\beta (D - 2)] \]
-
-<p>
-  For \( D = 2.667 \) to yield the observed \( \alpha \approx 0.0073 \), we require:
-</p>
-
-\[ \exp[-\beta(0.667)] \approx 0.0073 \]
-
-
-<p>
-  Taking logarithms:
-</p>
-
-
-\[ -\beta(0.667) \approx \ln(0.0073) \approx -4.922 \]
-
-<p>
-  Solving gives:
-</p>
-
-
-\[ \beta \approx \frac{4.922}{0.667} \approx 7.38 \]
-
-
-<p>
-  Thus, the fine‑structure constant emerges as:
-</p>
-
-\[ \alpha \sim F(2.667) \sim \exp[-7.38 \cdot 0.667] \approx 0.0073 \]
-
-
-<p>
-  This shows that in our framework, the value of \(\alpha\) is a natural consequence of the digital‑tick dynamics and effective fractal corrections, eliminating the need for external fine‑tuning.
-</p>
-<p>
-  Derivation of \( G \): is too extensive to add in this collection; please refer to the separate document for that.
-</p>
-
-<h3>7. Summary</h3>
-<ul>
-  <li>The digital‑tick model is constructed entirely from its fundamental parameters: \( \Delta t \), \( f \), \( L = \frac{c}{f} \), \( E = hf \), and an effective fractal dimension \( D = 2.667 \).</li>
-  <li>The constant product \( \hbar\, c \sim E\,L \) illustrates the unity between quantum and relativistic scales.</li>
-  <li>The effective spatial suppression factor \( \kappa \approx 0.447 \) shows that the effective volume of integration is reduced compared to standard 3D, significantly affecting gravitational coupling.</li>
-  <li>A finite vacuum energy density is derived without divergent integrals or arbitrary renormalization, leading to a natural form for the cosmological constant: 
-    
-
-\[ \Lambda \sim \frac{1}{L^2}\left(\frac{L}{L_{\text{cosmo}}}\right)^2 \approx 10^{-52}\,\text{m}^{-2} \]
-
-
-  </li>
-  <li>The emergence of the fine‑structure constant via 
-    
-
-\[ F(D) \sim \exp[-\beta (D - 2)] \]
-
-
-    (with \(\beta \approx 7.38\)) demonstrates that \(\alpha \sim \frac{1}{137}\) is a predictable outcome of the model, removing the burden of fine‑tuning.
-  </li>
-</ul>
-<p>
-  These formulas resolve major challenges in fundamental physics by replacing conventional continuous assumptions with a discrete, invariant digital tick and an effective 2.667-dimensional spatial structure.
-</p>
-
-<h3>8. New: Digital‑Tick Derived Equations</h3>
-<p>
-  Here we introduce a set of equations that emerge directly from the digital‑tick model, without the need to input standard constants like \( c \) or \( h \).
-</p>
-<p><strong>Tick Frequency and Duration:</strong></p>
-<ul>
-  <li><strong>Tick Duration:</strong><br>
-    
-
-\[ \tau = 0.6\,\text{ps} \]
-
-
-  </li>
-  <li><strong>Tick Frequency:</strong><br>
-    
-
-\[ f = \frac{1}{\tau} \approx 1.667\,\text{THz} \]
-
-
-  </li>
-</ul>
-<p><strong>Emergence of Invariant Speed:</strong></p>
-<p>
-  Define an effective spatial step \( L_{\text{eff}} \) per tick such that the emergent invariant speed is:
-</p>
-<p>
-  
-
-\[ v_{\text{max}} = \frac{L_{\text{eff}}}{\tau} \]
-
-
-</p>
-<p>
-  In this model, \( v_{\text{max}} \) effectively plays the role of the speed of light (c).
-</p>
-<p><strong>Digital‑Tick Lorentz‑Like Transformations:</strong></p>
-<p>
-  In a light‑clock experiment, the effective time dilation factor can be expressed as:
-</p>
-<p>
-  
-
-\[ \gamma = \frac{1}{\sqrt{1 - \left(\frac{v\,\tau}{L_{\text{eff}}}\right)^2}} \]
-
-
-</p>
-<p>
-  where the effective velocity is given by:
-</p>
-<p>
-  
-
-\[ \beta = \frac{v\,\tau}{L_{\text{eff}}} = \frac{v}{v_{\text{max}}} \]
-
-
-</p>
-<p>
-  This relation mirrors the conventional Lorentz factor but emerges solely from the digital‑tick parameters.
-</p>
-<p><strong>Emergent Gravitational Effects:</strong></p>
-<p>
-  Gravitational interactions can be expressed in terms of digital‑tick quantities; schematically:
-</p>
-<p>
-  
-
-\[ G \propto \frac{L_{\text{eff}}^3}{\tau^2\, M} \]
-
-
-</p>
-<p>
-  where \( M \) is an effective mass scale. Here, \( G \) is not an independent input but a derived quantity emerging from the fundamental digital‑tick structure.
-</p>
-<p><strong>Digital‑Tick Derived Expression for the Strong Force:</strong></p>
-<p>
-  Starting from our digital‑tick fundamentals, we derived a string tension for the confinement potential. The conventional linear potential is:
-</p>
-<p>
-  
-
-\[ V(r) = \sigma\, r \]
-
-
-</p>
-<p>
-  In our model the string tension is given by:
-</p>
-<p>
-  
-
-\[ \sigma = \frac{2\pi\, E}{L_{\text{eff}}} \]
-
-
-</p>
-<p>
-  where \( E \) is the fundamental energy quantum per tick. This expression shows that the energy required to separate quarks grows linearly with distance as a consequence of the discrete digital‑tick mechanism—entirely free of standard constants.
-</p>
-
-<p>
-These equations and derivations form a self-contained collection that unifies quantum mechanics, electromagnetism, gravity, and particle physics—each emerging from the discrete digital‑tick structure and an effective 2.667-dimensional spatial framework.
-</p>
