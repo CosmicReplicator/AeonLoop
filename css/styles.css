@@ -39,7 +39,6 @@
   margin-bottom: 0;
 }
 
-
 /* =====================================================================
    Body Styling
 ---------------------------------------------------------------------
@@ -156,7 +155,7 @@ a.button:active {
   border: 2px solid #f5f5dc; /* cream colored border */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;  /* Break long words if needed */
-  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -209,7 +208,7 @@ h1, h2, h3 {
 
 /* Major Title Styling */
 h1 {
-  font-size: 1.8.0em; /* Large and bold */
+  font-size: 2em; /* Large and bold */
   background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
   text-transform: uppercase;
   text-shadow: 3px 3px 5px rgba(0, 95, 163, 0.4); /* Subtle shadow */
@@ -294,4 +293,16 @@ nav a:hover {
 p {
   white-space: pre-wrap;
   margin-bottom: 1em;
+}
+
+/* =====================================================================
+   MathJax Display Overrides
+---------------------------------------------------------------------
+   Override default MathJax spacing for display math elements.
+===================================================================== */
+mjx-container, .MathJax_Display, .MathJax, mjx-block, .MathJax_Display > mjx-block {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
