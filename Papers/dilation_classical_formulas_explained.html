@@ -51,20 +51,28 @@ title: "dilation classical formulas explained"
   </p>
   
   <h3>3. Maxwell's Equations</h3>
-  <p>
-    The local behavior of electromagnetic fields is captured by<br>
-    
+<p>
+  The local behavior of electromagnetic fields is captured by Maxwell's equations. Below, the equations are split into two parts.
+</p>
 <p>
   For the divergence equations:
 </p>
 
 \[
 \begin{aligned}
+  \nabla \cdot E &= \frac{\rho}{\varepsilon_0},\\
+  \nabla \cdot B &= 0.
+\end{aligned}
+\]
+<p>
+  For the curl equations:
+</p>
+\[
+\begin{aligned}
   \nabla \times E &= -\frac{\partial B}{\partial t},\\
   \nabla \times B &= \mu_0 J + \mu_0 \varepsilon_0\,\frac{\partial E}{\partial t}.
 \end{aligned}
 \]
-
 <br>
     However, when calculating global quantities such as fluxes or energy densities, integrating over a space that scales as \( r^{2.667} \) rather than \( r^3 \) introduces subtle corrections.
   </p>
