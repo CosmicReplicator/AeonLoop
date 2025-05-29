@@ -1,5 +1,40 @@
----
-layout: papers
-title: "Test Page"
----
-<p>This is a test paragraph. If you see styled text, let me know!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mermaid Test</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true, securityLevel: "loose" });
+  </script>
+</head>
+<body>
+  <div class="mermaid">
+  graph TB
+      A[Energy Density] --> B[Effective 2.667D Space]
+      B --> C[Discrete Ticks (1.667 THz)]
+      C --> D[Error Correction]
+      D --> E[Unified Mass Calculation]
+      E --> F[Observable Effects]
+  </div>
+
+  <script>
+    // Validate the diagram with mermaid.parse()
+    const diagramDefinition = `
+    graph TB
+        A[Energy Density] --> B[Effective 2.667D Space]
+        B --> C[Discrete Ticks (1.667 THz)]
+        C --> D[Error Correction]
+        D --> E[Unified Mass Calculation]
+        E --> F[Observable Effects]
+    `;
+    
+    try {
+      mermaid.parse(diagramDefinition);
+      console.log("Mermaid diagram is valid!");
+    } catch (e) {
+      console.error("Mermaid syntax error:", e);
+    }
+  </script>
+</body>
+</html>
