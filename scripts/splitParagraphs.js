@@ -1,3 +1,4 @@
+<script>
 document.addEventListener("DOMContentLoaded", function() {
   // Target all paragraphs within your container—adjust the selector as needed.
   const paragraphs = document.querySelectorAll(".container p");
@@ -13,4 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
-
+</script>
