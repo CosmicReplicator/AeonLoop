@@ -2,6 +2,7 @@
 layout: papers
 title: "Formula Collection"
 ---
+
 <h2>Digital-Tick Model Formula Collection</h2>
 <p>This document contains key formulas and fundamental relations from the digital‑tick model. Precision constants such as <strong>0.6 ps</strong> (time tick), <strong>1.667 THz</strong> (tick frequency), <strong>2.667D</strong> (fractal correction), and <strong>κ ≈ 0.447</strong> (effective spatial suppression factor) are used explicitly to ensure consistency in reproducing electromagnetic, gravitational, and cosmological phenomena.</p>
 
@@ -19,25 +20,33 @@ title: "Formula Collection"
 <p><strong>Discrete Time Update for the Electromagnetic Four-Potential <em>A<sub>μ</sub>(t, x)</em>:</strong></p>
 <p>
 
+
 \[ A_{\mu}(t+\Delta t, x) = A_{\mu}(t, x) + \Delta t \cdot \frac{dA_{\mu}}{dt} + O((\Delta t)^2) \]
+
 
 </p>
 <p><strong>First-Order Time Derivative:</strong></p>
 <p>
 
+
 \[ \partial_t A_{\mu}(t, x) \approx \frac{A_{\mu}(t+\Delta t, x) - A_{\mu}(t, x)}{\Delta t} \]
+
 
 </p>
 <p><strong>Second-Order Time Derivative:</strong></p>
 <p>
 
+
 \[ \partial_t^2 A_{\mu}(t, x) \approx \frac{A_{\mu}(t+\Delta t, x) - 2A_{\mu}(t, x) + A_{\mu}(t-\Delta t, x)}{(\Delta t)^2} \]
+
 
 </p>
 <p><strong>Spatial Derivative:</strong></p>
 <p>
 
+
 \[ \partial_x A_{\mu}(t, x) \approx \frac{A_{\mu}(t, x+\Delta x) - A_{\mu}(t, x)}{\Delta x} \]
+
 
 </p>
 
@@ -45,13 +54,17 @@ title: "Formula Collection"
 <p><strong>Electromagnetic Field Tensor:</strong></p>
 <p>
 
+
 \[ F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu} \]
+
 
 </p>
 <p><strong>Classical Lagrangian Density:</strong></p>
 <p>
 
+
 \[ \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} \]
+
 
 </p>
 <p>Discrete Euler–Lagrange Equations recover Maxwell's equations in the continuum limit.</p>
@@ -60,7 +73,9 @@ title: "Formula Collection"
 <p><strong>Dispersion Relation for a Plane Wave:</strong></p>
 <p>
 
+
 \[ \omega^2 = c^2 k^2 \]
+
 
 </p>
 <p><strong>Optimal Delayed‑Choice Interference Distance:</strong> 0.18 mm</p>
@@ -71,31 +86,41 @@ title: "Formula Collection"
 <p>In the digital‑tick model the problematic vacuum energy is rendered finite by the invariant tick. The finite vacuum energy density is given by:</p>
 <p>
 
+
 \[ \rho_{\text{vac}} = \frac{1}{2}\, \hbar\, f \left[\frac{S_{D_{\text{eff}}}}{(2\pi)^{D_{\text{eff}}}}\right] \left[\frac{2\pi\, f}{c}\right]^{D_{\text{eff}}} \]
+
 
 </p>
 <p>where the “surface area” in effective \( D \) dimensions is:</p>
 <p>
 
+
 \[ S_{D_{\text{eff}}} = \frac{2\pi^{(D_{\text{eff}}/2)}}{\Gamma(D_{\text{eff}}/2)} \]
+
 
 </p>
 <p>To convert this into conventional 3‑dimensional terms, we “fill in” the missing dimensions using a scaling factor \(\left(\frac{c}{f}\right)^{3-D_{\text{eff}}}\). Dimensional reasoning then gives the curvature scale as:</p>
 <p>
 
+
 \[ L_{\text{curv}} \sim \left(\frac{\hbar\, c}{\rho_{\text{vac}}^{(3D)}}\right)^{\frac{1}{4}} \]
+
 
 </p>
 <p>and hence the cosmological constant:</p>
 <p>
 
+
 \[ \Lambda \sim \frac{1}{L_{\text{curv}}^2} \]
+
 
 </p>
 <p>For our model this simplifies to the dimensional result:</p>
 <p>
 
+
 \[ \Lambda \sim \frac{1}{L^2} \left(\frac{L}{L_{\text{cosmo}}}\right)^2 \]
+
 
 </p>
 <ul>
@@ -108,38 +133,50 @@ title: "Formula Collection"
 <p>In standard QED the fine‑structure constant is:</p>
 <p>
 
+
 \[ \alpha = \frac{e^2}{4\pi \varepsilon_0\, \hbar\, c} \]
+
 
 </p>
 <p>with a measured value of roughly \( \frac{1}{137} \approx 0.0073 \). In our model, \(\alpha\) emerges naturally via the effective fractal geometry.</p>
 <p>We postulate an effective charge function:</p>
 <p>
 
+
 \[ F(D) \sim \exp[-\beta (D - 2)] \]
+
 
 </p>
 <p>For \( D = 2.667 \) to yield the observed \( \alpha \approx 0.0073 \), we require:</p>
 <p>
 
+
 \[ \exp[-\beta(0.667)] \approx 0.0073 \]
+
 
 </p>
 <p>Taking logarithms:</p>
 <p>
 
+
 \[ -\beta(0.667) \approx \ln(0.0073) \approx -4.922 \]
+
 
 </p>
 <p>Solving gives:</p>
 <p>
 
+
 \[ \beta \approx \frac{4.922}{0.667} \approx 7.38 \]
+
 
 </p>
 <p>Thus, the fine‑structure constant emerges as:</p>
 <p>
 
+
 \[ \alpha \sim F(2.667) \sim \exp[-7.38 \cdot 0.667] \approx 0.0073 \]
+
 
 </p>
 <p>This shows that in our framework, the value of \(\alpha\) is a natural consequence of the digital‑tick dynamics and effective fractal corrections, eliminating the need for external fine‑tuning.</p>
@@ -153,6 +190,8 @@ title: "Formula Collection"
   <li>A finite vacuum energy density is derived without divergent integrals or arbitrary renormalization, leading to a natural form for the cosmological constant: 
     
 
+
+
 \[ \Lambda \sim \frac{1}{L^2}\left(\frac{L}{L_{\text{cosmo}}}\right)^2 \approx 10^{-52}\,\text{m}^{-2} \]
 
 
@@ -160,9 +199,12 @@ title: "Formula Collection"
   <li>The emergence of the fine‑structure constant via 
     
 
+
+
 \[ F(D) \sim \exp[-\beta (D - 2)] \]
 
 
+    
     (with \(\beta \approx 7.38\)) demonstrates that \(\alpha \sim \frac{1}{137}\) is a predictable outcome of the model, removing the burden of fine‑tuning.
   </li>
 </ul>
@@ -175,12 +217,16 @@ title: "Formula Collection"
   <li><strong>Tick Duration:</strong><br>
     
 
+
+
 \[ \tau = 0.6\,\text{ps} \]
 
 
   </li>
   <li><strong>Tick Frequency:</strong><br>
     
+
+
 
 \[ f = \frac{1}{\tau} \approx 1.667\,\text{THz} \]
 
@@ -191,7 +237,9 @@ title: "Formula Collection"
 <p>Define an effective spatial step \( L_{\text{eff}} \) per tick such that the emergent invariant speed is:</p>
 <p>
 
+
 \[ v_{\text{max}} = \frac{L_{\text{eff}}}{\tau} \]
+
 
 </p>
 <p>In this model, \( v_{\text{max}} \) effectively plays the role of the speed of light (c).</p>
@@ -199,13 +247,17 @@ title: "Formula Collection"
 <p>In a light‑clock experiment, the effective time dilation factor can be expressed as:</p>
 <p>
 
+
 \[ \gamma = \frac{1}{\sqrt{1 - \left(\frac{v\,\tau}{L_{\text{eff}}}\right)^2}} \]
+
 
 </p>
 <p>where the effective velocity is given by:</p>
 <p>
 
+
 \[ \beta = \frac{v\,\tau}{L_{\text{eff}}} = \frac{v}{v_{\text{max}}} \]
+
 
 </p>
 <p>This relation mirrors the conventional Lorentz factor but emerges solely from the digital‑tick parameters.</p>
@@ -213,7 +265,9 @@ title: "Formula Collection"
 <p>Gravitational interactions can be expressed in terms of digital‑tick quantities; schematically:</p>
 <p>
 
+
 \[ G \propto \frac{L_{\text{eff}}^3}{\tau^2\,M} \]
+
 
 </p>
 <p>where \( M \) is an effective mass scale. Here, \( G \) is not an independent input but a derived quantity emerging from the fundamental digital‑tick structure.</p>
@@ -221,15 +275,28 @@ title: "Formula Collection"
 <p>Starting from our digital‑tick fundamentals, we derived a string tension for the confinement potential. The conventional linear potential is:</p>
 <p>
 
+
 \[ V(r) = \sigma\, r \]
+
 
 </p>
 <p>In our model the string tension is given by:</p>
 <p>
 
+
 \[ \sigma = \frac{2\pi\, E}{L_{\text{eff}}} \]
+
 
 </p>
 <p>where \( E \) is the fundamental energy quantum per tick. This expression shows that the energy required to separate quarks grows linearly with distance as a consequence of the discrete digital‑tick mechanism—entirely free of standard constants.</p>
-<p>These equations and derivations form a self-contained collection that unifies quantum mechanics, electromagnetism, gravity, and particle physics—each emerging from the discrete digital‑tick structure and an effective 2.667-dimensional spatial framework.</p>
+<p><strong>Digital‑Tick Derived Vacuum Energy Density:</strong></p>
+<p>Using our fundamental parameters, the vacuum energy density can be expressed entirely in terms of the tick frequency and the fundamental length scale:</p>
+<p>
 
+
+\[ \rho_{\text{vac}} = \frac{\eta\, S_{D_{\text{eff}}}}{4\pi\,\xi^{D_{\text{eff}}}}\, f^2\, L^{2-D_{\text{eff}}} \]
+
+
+</p>
+<p>This formula replaces standard constants \( c \) and \( \hbar \) with their emergent forms from the digital‑tick model, highlighting the role of discrete time and effective fractal spatial integration in determining vacuum energy.</p>
+<p>These equations and derivations form a self-contained collection that unifies quantum mechanics, electromagnetism, gravity, and particle physics—each emerging from the digital‑tick structure and an effective 2.667-dimensional spatial framework.</p>
