@@ -300,9 +300,22 @@ p {
 ---------------------------------------------------------------------
    Override default MathJax spacing for display math elements.
 ===================================================================== */
-mjx-container, .MathJax_Display, .MathJax, mjx-block, .MathJax_Display > mjx-block {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+mjx-container, 
+.MathJax_Display, 
+.MathJax, 
+mjx-block, 
+.MathJax_Display > mjx-block {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
+
+/* Optional: if you're using MathJax v3 with CHTML output, you can be more specific */
+mjx-container[jax="CHTML"] {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
