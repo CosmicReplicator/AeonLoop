@@ -2,27 +2,72 @@
 layout: papers
 title: "Derivation of G"
 ---
-  <div> 
-     This paper is only to show our entire equations on how we reproduce G from first principle		
-  </div><br>
-  <h3>1. Invariant Digital Ticks and Fixed Time</h3><br>
-  <div>
-    In the DigitalTick (AeonLoop) framework, time is not a continuous flow but a sequence of invariant, discrete ticks. In our model:<br><br>
-    - The tick duration is defined as  
-      \(\Delta t = 0.6\,\text{ps} = 6.0\times10^{-13}\,\text{s}\),<br>
-    - Corresponding to a tick frequency of  
-      \(f = \frac{1}{\Delta t} \approx 1.667\,\text{THz}\).<br><br>
-    No physical evolution occurs between tick boundaries; observable outcomes are recorded only at the tick instants.
-  </div>
-  <br>
-  <h3>2. Effective Spatial Dilation and Energy Scaling</h3><br>
-  <div>
-    Instead of invoking relativistic time dilation, our approach attributes all observable effects to the cumulative effect of digital ticks. Two effective scales emerge:<br><br>
-    - An effective spatial length,  
-      \(L_{\mathrm{eff}} = 0.18\,\text{mm} = 1.8\times10^{-4}\,\text{m}\),<br>
-    - And an effective energy scale,  
-      \(E_{\mathrm{eff}} = 6.89\,\text{meV} \approx 1.103\times10^{-21}\,\text{J}\).<br><br>
-    These scales arise naturally from the tick counting process. Importantly, our digital dynamics determine that the full energy does not collapse entirely into gravitational mass: instead, the energy–to–mass relation is modified as  
+<div>
+  <h2>Deriving G from Digital Ticks: A First-Principles Approach</h2>
+
+  <h3>Abstract</h3>
+  <p>
+    This paper presents our complete derivation of the gravitational constant \(G\) directly from the DigitalTick (AeonLoop) framework. In our model, time is not a continuous flow but a sequence of invariant, discrete ticks, and space is integrated in an effective fractal manner. We show how starting from two fundamental ingredients—a fixed tick duration (\(\Delta t = 0.6\,\text{ps}\)) and an effective spatial length (\(L_{\mathrm{eff}} = 0.18\,\text{mm}\))—and a modified energy–mass relation, we can reconstruct the observed \(G \approx 6.67\times10^{-11}\,\mathrm{m^3/(kg\cdot s^2)}\) without extraneous adjustments. This unified approach also naturally bridges classical gravity with quantum mechanical matter and sub-tick energy, removing the need for renormalization.
+  </p>
+
+  <h3>1. Invariant Digital Ticks and Fixed Time</h3>
+  <p>
+    In the DigitalTick (AeonLoop) framework, time is fundamentally discrete rather than a continuous flow. Observable outcomes arise only at the tick instants. Our model defines:
+  </p>
+  <ul>
+    <li>
+      <strong>Tick Duration:</strong>
+      
+
+\[
+      \Delta t = 0.6\,\text{ps} = 6.0\times10^{-13}\,\text{s}.
+      \]
+
+
+    </li>
+    <li>
+      <strong>Tick Frequency:</strong>
+      
+
+\[
+      f = \frac{1}{\Delta t} \approx 1.667\,\text{THz}.
+      \]
+
+
+    </li>
+  </ul>
+  <p>
+    Between individual ticks nothing evolves; only at the tick boundaries does the system “update”—a picture that forms the core of our derivation.
+  </p>
+
+  <h3>2. Effective Spatial Dilation and Energy Scaling</h3>
+  <p>
+    Instead of invoking conventional relativistic time dilation and spatial contraction, our digital dynamics attribute observed effects to cumulative tick updates. Two effective scales naturally emerge:
+  </p>
+  <ul>
+    <li>
+      <strong>Effective Spatial Length:</strong>
+      
+
+\[
+      L_{\mathrm{eff}} = 0.18\,\text{mm} = 1.8\times10^{-4}\,\text{m}.
+      \]
+
+
+    </li>
+    <li>
+      <strong>Effective Energy Scale:</strong>
+      
+
+\[
+      E_{\mathrm{eff}} = 6.89\,\text{meV} \approx 1.103\times10^{-21}\,\text{J}.
+      \]
+
+
+    </li>
+  </ul>
+  <p>
+    In our framework, the full available energy does not couple entirely as gravitational mass. Instead, the energy–to–mass relation is modified as
     
 
 \[
@@ -30,20 +75,20 @@ title: "Derivation of G"
     \]
 
 
-    so that only an effective mass  
+    so that only an effective mass
     
 
 \[
-      m_{\mathrm{eff}} = \frac{8}{9}\, m_x = \frac{8}{9}\,\frac{E_{\mathrm{eff}}}{c^2}
+      m_{\mathrm{eff}} = \frac{8}{9}\, m_x = \frac{8}{9}\, \frac{E_{\mathrm{eff}}}{c^2}
     \]
 
 
-    contributes to gravity.
-  </div>
-  <br>
-  <h3>3. Converting the Empirical \(g=9.8\,\text{m/s}^2\) into Tick Units</h3><br>
-  <div>
-    The sole empirical anchor in our derivation is the observed gravitational acceleration on Earth:
+    participates in gravitational interactions.
+  </p>
+  
+  <h3>3. Converting the Empirical \(g = 9.8\,\text{m/s}^2\) into Tick Units</h3>
+  <p>
+    Our only experimental anchor is the empirically measured gravitational acceleration on Earth:
     
 
 \[
@@ -51,52 +96,54 @@ title: "Derivation of G"
     \]
 
 
-    To express this in our DigitalTick language we convert it into a dimensionless “tick acceleration” by writing:
+    In order to express this acceleration in DigitalTick language, we convert it to a dimensionless “tick acceleration” as
     
 
 \[
       a_t = \frac{g\, (\Delta t)^2}{L_{\mathrm{eff}}}.
     \]
 
-    <strong>Calculation:</strong><br>
-    - First, square the tick duration:
-      
+
+  </p>
+  <p>
+    <strong>Calculation:</strong><br />
+    - Square the tick duration:
+    
 
 \[
-        (\Delta t)^2 = (6.0\times10^{-13}\,\text{s})^2 = 3.6\times10^{-25}\,\text{s}^2.
-      \]
+      (\Delta t)^2 = (6.0\times10^{-13}\,\text{s})^2 = 3.6\times10^{-25}\,\text{s}^2.
+    \]
 
 
     - Multiply by \(g\):
-      
+    
 
 \[
-        g\, (\Delta t)^2 = 9.8\,\frac{\text{m}}{\text{s}^2}\times 3.6\times10^{-25}\,\text{s}^2 \approx 3.53\times10^{-24}\,\text{m}.
-      \]
+      g\, (\Delta t)^2 = 9.8\,\frac{\text{m}}{\text{s}^2} \times 3.6\times10^{-25}\,\text{s}^2 \approx 3.53\times10^{-24}\,\text{m}.
+    \]
 
 
-    - Divide by \(L_{\mathrm{eff}}=1.8\times10^{-4}\,\text{m}\):
-      
+    - Divide by \(L_{\mathrm{eff}} = 1.8\times10^{-4}\,\text{m}\):
+    
 
 \[
-        a_t \approx \frac{3.53\times10^{-24}\,\text{m}}{1.8\times10^{-4}\,\text{m}} \approx 1.96\times10^{-20}.
-      \]
+      a_t \approx \frac{3.53\times10^{-24}\,\text{m}}{1.8\times10^{-4}\,\text{m}} \approx 1.96\times10^{-20}.
+    \]
 
 
-    <br>
     Thus, in tick units the (dimensionless) gravitational acceleration is  
     
 
 \[
-      a_t \approx 1.96\times10^{-20}\quad \text{(in units of } L_{\mathrm{eff}}\text{ per tick}^2\text{)}.
+      a_t \approx 1.96\times10^{-20}\quad (\text{in units of } L_{\mathrm{eff}} \text{ per tick}^2).
     \]
 
 
-  </div>
-  <br>
-  <h3>4. Deriving the Dimensionless Gravitational Coupling</h3><br>
-  <div>
-    We now reinterpret Newton’s gravitational law in terms of tick units. In conventional SI units the acceleration due to gravity is given by:
+  </p>
+
+  <h3>4. Deriving the Dimensionless Gravitational Coupling</h3>
+  <p>
+    We reinterpret Newton’s gravitational law in tick units. Conventionally, gravitational acceleration is given by
     
 
 \[
@@ -104,10 +151,11 @@ title: "Derivation of G"
     \]
 
 
-    In our scheme, we first express lengths and masses in natural DigitalTick units.
-    
-    <strong>Length Conversion:</strong><br>
-    The Earth’s radius in SI is  
+    To express this in DigitalTick units, we first convert Earth's radius and mass to our natural units.
+  </p>
+  <p>
+    <strong>Length Conversion:</strong><br />
+    The Earth's radius is
     
 
 \[
@@ -115,7 +163,7 @@ title: "Derivation of G"
     \]
 
 
-    Expressed in units of \(L_{\mathrm{eff}}\):
+    In units of \(L_{\mathrm{eff}}\):
     
 
 \[
@@ -123,17 +171,18 @@ title: "Derivation of G"
     \]
 
 
-    
-    <strong>Mass Conversion:</strong><br>
-    We define a reference mass unit from the effective energy:
+  </p>
+  <p>
+    <strong>Mass Conversion:</strong><br />
+    Defining a reference mass unit from the effective energy,
     
 
 \[
-      m_{\mathrm{ref}} = \frac{8}{9}\,\frac{E_{\mathrm{eff}}}{c^2}.
+      m_{\mathrm{ref}} = \frac{8}{9}\, \frac{E_{\mathrm{eff}}}{c^2},
     \]
 
 
-    With \(E_{\mathrm{eff}} \approx 1.103\times10^{-21}\,\text{J}\) and \(c^2\approx9.0\times10^{16}\,\text{m}^2/\text{s}^2\),
+    with
     
 
 \[
@@ -141,7 +190,7 @@ title: "Derivation of G"
     \]
 
 
-    and so:
+    we obtain
     
 
 \[
@@ -149,7 +198,7 @@ title: "Derivation of G"
     \]
 
 
-    The Earth’s mass \(M_\oplus \approx 5.97 \times 10^{24}\,\text{kg}\) then becomes:
+    Then, Earth's mass \(M_\oplus \approx 5.97 \times 10^{24}\,\text{kg}\) converts to:
     
 
 \[
@@ -157,17 +206,18 @@ title: "Derivation of G"
     \]
 
 
-    
-    <strong>Dimensionless Coupling:</strong><br>
-    Rewriting Newton’s law in tick units, we assume a relation of the form:
+  </p>
+  <p>
+    <strong>Dimensionless Coupling:</strong><br />
+    Recasting Newton's law in tick units,
     
 
 \[
-      a_t = G_{\text{tick}}\, \frac{m_{\text{tick}}}{r_{\text{tick}}^2}.
+      a_t = G_{\text{tick}}\, \frac{m_{\text{tick}}}{r_{\text{tick}}^2},
     \]
 
 
-    Solving for \(G_{\text{tick}}\):
+    we solve for
     
 
 \[
@@ -175,15 +225,7 @@ title: "Derivation of G"
     \]
 
 
-    With
-    
-
-\[
-      r_{\text{tick}}^2 \approx (3.54\times10^{10})^2 \approx 1.25\times10^{21},
-    \]
-
-
-    we compute:
+    Computing \(r_{\text{tick}}^2 \approx (3.54\times10^{10})^2 \approx 1.25\times10^{21}\), we arrive at:
     
 
 \[
@@ -191,11 +233,11 @@ title: "Derivation of G"
     \]
 
 
-  </div>
-  <br>
-  <h3>5. Reconstructing \(G\) in SI Units</h3><br>
-  <div>
-    To recover \(G\) in SI units (with dimensions \(\mathrm{m^3/(kg\cdot s^2)}\)), we use our DigitalTick conversion factors. In our scheme:
+  </p>
+
+  <h3>5. Reconstructing \(G\) in SI Units</h3>
+  <p>
+    To recover the familiar SI expression for \(G\) (with units \(\mathrm{m^3/(kg\cdot s^2)}\)), we use our conversion factors. In our scheme:
     
 
 \[
@@ -203,10 +245,11 @@ title: "Derivation of G"
     \]
 
 
-    
-    <strong>Calculations:</strong><br>
-    - \(L_{\mathrm{eff}}^3 = (1.8\times10^{-4}\,\text{m})^3 \approx 5.83\times10^{-12}\,\text{m}^3.\)<br>
-    - \((\Delta t)^2 = (6.0\times10^{-13}\,\text{s})^2 \approx 3.6\times10^{-25}\,\text{s}^2.\)<br>
+    The computations proceed as follows:
+  </p>
+  <p>
+    - \(L_{\mathrm{eff}}^3 = (1.8\times10^{-4}\,\text{m})^3 \approx 5.83\times10^{-12}\,\text{m}^3.\)<br />
+    - \((\Delta t)^2 \approx 3.6\times10^{-25}\,\text{s}^2.\)<br />
     Thus,
     
 
@@ -215,15 +258,17 @@ title: "Derivation of G"
     \]
 
 
-    Dividing by \(m_{\mathrm{ref}} \approx 1.09\times10^{-38}\,\text{kg}\) yields:
+  </p>
+  <p>
+    Dividing by \(m_{\mathrm{ref}} \approx 1.09\times10^{-38}\,\text{kg}\) gives:
     
 
 \[
-      \frac{1.62\times10^{13}}{1.09\times10^{-38}} \approx 1.49\times10^{51}\,\frac{\mathrm{m^3}}{\mathrm{kg\cdot s^2}}.
+      \frac{1.62\times10^{13}}{1.09\times10^{-38}} \approx 1.49\times10^{51}\,\frac{\mathrm{m^3}}{\mathrm{kg\cdot s^2}},
     \]
 
 
-    Finally, multiplying by \(G_{\text{tick}} \approx 4.47\times10^{-62}\), we obtain:
+    and finally,
     
 
 \[
@@ -231,52 +276,85 @@ title: "Derivation of G"
     \]
 
 
-    which matches the observed gravitational constant.
-  </div>
-  <br>
-  <h3>6. AeonLoop Physical Regimes and Unification</h3><br>
-  <div>
-    The DigitalTick framework distinguishes three natural regimes:
-    <ul>
-      <li>
-        <strong>Macroscopic (\(G\)-world):</strong> At large scales, classical gravitational phenomena emerge via effective spatial integration over discrete ticks.
-      </li>
-      <li>
-        <strong>Quantum Mechanical Matter:</strong> At sub-macroscopic scales, deterministic tick-collapse yields quantized, stable matter without invoking probabilistic inter-tick processes.
-      </li>
-      <li>
-        <strong>Sub-Tick Pure Energy:</strong> Between ticks, potential energy exists in a statistical superposition, but no observable state appears until a tick induces collapse.
-      </li>
-    </ul>
-    This unified view naturally bridges classical gravity and quantum mechanics within one coherent DigitalTick framework.
-  </div>
-  <br>
-  <h3>7. Summary</h3><br>
-  <div>
-    <ul>
-      <li>
-        <strong>Invariant Digital Ticks:</strong> Time consists of fixed ticks (\(\Delta t = 0.6\,\text{ps}\)); observable outcomes occur only at tick boundaries.
-      </li>
-      <li>
-        <strong>Emergence of \(G\):</strong> Effective spatial dilation and energy scaling yield 
-        
+    which agrees well with the measured gravitational constant.
+  </p>
+
+  <h3>6. AeonLoop Physical Regimes and Unification</h3>
+  <p>
+    The DigitalTick framework naturally delineates three interrelated regimes:
+  </p>
+  <ul>
+    <li>
+      <strong>Macroscopic (\(G\)-world):</strong> At large scales, classical gravitational phenomena emerge from the effective integration over discrete ticks.
+    </li>
+    <li>
+      <strong>Quantum Mechanical Matter:</strong> At sub-macroscopic scales, deterministic tick-collapse yields quantized, stable matter without invoking probabilistic inter-tick fluctuations.
+    </li>
+    <li>
+      <strong>Sub-Tick Pure Energy:</strong> Between ticks, energy exists in a statistical superposition, but no observable state appears until a tick induces collapse.
+    </li>
+  </ul>
+  <p>
+    This unified perspective bridges classical gravity and quantum mechanics in a single coherent picture.
+  </p>
+
+  <h3>7. Summary and Conclusion</h3>
+  <ul>
+    <li>
+      <strong>Invariant Digital Ticks:</strong> Time is composed of fixed ticks (\(\Delta t = 0.6\,\text{ps}\)) with no evolution between tick instants.
+    </li>
+    <li>
+      <strong>Effective Scales:</strong> An effective spatial length (\(L_{\mathrm{eff}} = 0.18\,\text{mm}\)) and energy scale (\(E_{\mathrm{eff}} \approx 6.89\,\text{meV}\)) emerge naturally.
+    </li>
+    <li>
+      <strong>Modified Energy–Mass Relation:</strong> Only a fraction of the energy contributes to gravitational mass:
+      
 
 \[
-          G_{\text{SI}} = \frac{L_{\mathrm{eff}}^3}{m_{\mathrm{ref}}\, (\Delta t)^2}\,G_{\text{tick}},
-        \]
+        m_{\mathrm{eff}} = \frac{8}{9}\frac{E_{\mathrm{eff}}}{c^2}.
+      \]
 
 
-        which naturally reproduces the measured \(G \approx 6.67\times10^{-11}\,\mathrm{m^3/(kg\cdot s^2)}\) without any extraneous fudge factors.
-      </li>
-      <li>
-        <strong>Unified Regimes:</strong> Macroscopic gravitational phenomena, quantum mechanical matter, and sub-tick potential energy are unified by the DigitalTick dynamics.
-      </li>
-      <li>
-        <strong>Avoidance of Renormalization:</strong> Deterministic tick-collapse eliminates the need for inter-tick probabilistic corrections.
-      </li>
-      <li>
-        <strong>Fundamental Anchor:</strong> By converting the empirical \(g = 9.8\,\text{m/s}^2\) into natural tick units, our derivation is firmly anchored on the one true measured constant.
-      </li>
-    </ul>
-  </div>
+    </li>
+    <li>
+      <strong>Conversion to Tick Units:</strong> The observed gravitational acceleration is re-expressed in tick units as
+      
 
+\[
+        a_t \approx 1.96\times10^{-20},
+      \]
+
+
+      anchoring our derivation to measurable quantities.
+    </li>
+    <li>
+      <strong>Dimensionless Coupling:</strong> By converting lengths and masses into DigitalTick units, we derive a dimensionless gravitational coupling
+      
+
+\[
+        G_{\text{tick}} \approx 4.47\times10^{-62},
+      \]
+
+
+      which is then rescaled to reproduce
+      
+
+\[
+        G_{\text{SI}} \approx 6.66\times10^{-11}\,\mathrm{m^3/(kg\cdot s^2)}.
+      \]
+
+
+    </li>
+    <li>
+      <strong>Unified Regimes:</strong> Our framework unifies macroscopic gravity, quantum mechanical matter, and the sub-tick potential energy into one coherent structure.
+    </li>
+  </ul>
+  <p>
+    In conclusion, by converting the empirical \(g = 9.8\,\text{m/s}^2\) into our natural tick units and defining our effective scales from first principles, we have fully reproduced Newton’s gravitational constant \(G\) without invoking extraneous fudge factors. This derivation not only demonstrates the internal consistency of the DigitalTick approach but also unifies classical gravity and quantum phenomena under a single, discrete updating process.
+  </p>
+
+  <h3>Final Remarks</h3>
+  <p>
+    The DigitalTick (AeonLoop) framework offers a profound new perspective on gravity. By reimagining time as an invariant sequence of ticks and space as effectively dilated, we have derived \(G\) from first principles. This approach promises a unified description of macroscopic gravitational dynamics and quantum mechanical matter, a breakthrough that may pave the way for a deeper understanding of fundamental physics.
+  </p>
+</div>
