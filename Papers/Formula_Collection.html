@@ -169,32 +169,7 @@ title: "Formula Collection"
   </p>
   <p>Derivation of \( G \): is too extensive to add in this collection; please refer to the separate document for that.</p>
   
-  <h3>7. Summary</h3>
-  <ul>
-    <li>The digital‑tick model is constructed entirely from its fundamental parameters: \( \Delta t \), \( f \), \( L = \frac{c}{f} \), \( E = hf \), and an effective fractal dimension \( D = 2.667 \).</li>
-    <li>The constant product \( \hbar\, c \sim E\,L \) illustrates the unity between quantum and relativistic scales.</li>
-    <li>The effective spatial suppression factor \( \kappa \approx 0.447 \) shows that the effective volume of integration is reduced compared to standard 3D, significantly affecting gravitational coupling.</li>
-    <li>A finite vacuum energy density is derived without divergent integrals or arbitrary renormalization, leading to a natural form for the cosmological constant:
-      
-
-\[ \Lambda \sim \frac{1}{L^2}\left(\frac{L}{L_{\text{cosmo}}}\right)^2 \approx 10^{-52}\,\text{m}^{-2}. \]
-
-
-    </li>
-    <li>The emergence of the fine‑structure constant via
-      
-
-\[ F(D) \sim \exp[-\beta (D - 2)] \]
-
-
-      (with \(\beta \approx 7.38\)) demonstrates that \(\alpha \sim \frac{1}{137}\) is a predictable outcome of the model, removing the burden of fine‑tuning.
-    </li>
-  </ul>
-  <p>
-    These formulas resolve major challenges in fundamental physics by replacing conventional continuous assumptions with a discrete, invariant digital tick and an effective 2.667-dimensional spatial structure.
-  </p>
-  
-  <h3>8. New: Digital‑Tick Derived Equations</h3>
+  <h3>7. New: Digital‑Tick Derived Equations</h3>
   <p>
     Here we introduce a set of equations that emerge directly from the digital‑tick model, without the need to input standard constants like \( c \) or \( h \). Note that in our framework the conventional constants are emergent and are given by:
   </p>
@@ -340,9 +315,112 @@ title: "Formula Collection"
     These two forms, though expressed differently, are equivalent representations of the vacuum energy density within the digital‑tick framework.
   </p>
   
+  <h3>8. Modified Friedmann Equations & Cosmic Evolution</h3>
+  <p>
+    In our modified framework, cosmic evolution is governed by a discrete ticking mechanism and an effective fractal spatial integration. The standard Friedmann equation:
+  </p>
+  <p>
+    
+
+\[ \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3} \]
+
+
+  </p>
+  <p>
+    is recast by replacing the continuous time derivative with a finite difference:
+  </p>
+  <p>
+    
+
+\[ \frac{\dot{a}}{a} \approx \frac{a_{N+1} - a_N}{\tau\, a_N}. \]
+
+
+  </p>
+  <p>
+    This yields:
+  </p>
+  <p>
+    
+
+\[ \left(\frac{a_{N+1} - a_N}{\tau\, a_N}\right)^2 = \frac{8\pi G_{\text{eff}}}{3}\rho_{\text{baryon}} - \frac{k_{\text{eff}}}{a_N^2}. \]
+
+
+  </p>
+  <p>
+    Since our derivation suggests that all energy is carried by baryons (i.e. \( p_{\text{total}} = p_{\text{matter}} \)), we set \(\Lambda \approx 0\). Moreover, the integration over space is modified as:
+  </p>
+  <p>
+    
+
+\[ dV_{\text{eff}} \propto r^{D_{\text{eff}}-1}\, dr = r^{1.667}\, dr, \]
+
+
+  </p>
+  <p>
+    so that the gravitational constant becomes recalibrated:
+  </p>
+  <p>
+    
+
+\[ G_{\text{eff}} = G \left(\frac{r}{r_0}\right)^{3-D_{\text{eff}}} = G \left(\frac{r}{r_0}\right)^{0.333}, \]
+
+
+  </p>
+  <p>
+    where \(r_0\) is a normalization scale.
+  </p>
+  <p>
+    For a spatially flat universe (\( k_{\text{eff}} = 0 \)) and assuming the baryonic matter density scales as 
+    \(\rho_{\text{baryon}}(a) = \rho_{b0}(a_0/a)^3\), the discrete evolution of the cosmic scale factor is given by:
+  </p>
+  <p>
+    
+
+\[ a_{N+1} = a_N + \tau\, a_N \, H_N, \]
+
+
+  </p>
+  <p>
+    where the discrete “Hubble parameter” is:
+  </p>
+  <p>
+    
+
+\[ H_N = \sqrt{\frac{8\pi G_{\text{eff}}}{3}\rho_{b0}\left(\frac{a_0}{a_N}\right)^3 }. \]
+
+
+  </p>
+  <p>
+    In the continuous limit, this reproduces the conventional \( a(t) \propto t^{2/3} \) behavior of a matter-dominated universe.
+  </p>
+  <p>
+    For example, with \( a_0 = 1 \) and an estimated baryonic density of 
+    \(\rho_{b0} \sim 3 \times 10^{-27}\,\mathrm{kg/m^3}\), assuming nominally \(G_{\text{eff}} \approx G\), we obtain:
+  </p>
+  <p>
+    
+
+\[ H_0 = \sqrt{\frac{8\pi G}{3}\rho_{b0}} \approx 1.3\times10^{-18}\,\text{s}^{-1}. \]
+
+
+  </p>
+  <p>
+    With cosmic time given by:
+  </p>
+  <p>
+    
+
+\[ t = N\,\tau, \]
+
+
+  </p>
+  <p>
+    an age of \(t \sim 4.35\times10^{17}\,\text{s}\) (about 13.8 billion years) corresponds to \( N \approx 7.25\times10^{29} \) ticks. Iterating the discrete evolution over this tick count recovers the expected expansion history.
+  </p>
+  
   <h3>9. Tick-Induced Redshift</h3>
   <p>
-    In our model, the conventional redshift relation,
+    In our model, the conventional redshift relationship,
   </p>
   <p>
     
@@ -352,7 +430,7 @@ title: "Formula Collection"
 
   </p>
   <p>
-    is reinterpreted by considering that each tick imparts a small phase shift \(\delta\) to the propagating light signal. The cumulative effect over \(N\) ticks is then given by:
+    is reinterpreted by considering that each tick imparts a small phase shift \(\delta\) to the propagating light. The cumulative effect over \(N\) ticks becomes:
   </p>
   <p>
     
@@ -362,7 +440,7 @@ title: "Formula Collection"
 
   </p>
   <p>
-    If the phase shift per tick is nearly constant (i.e. \(\delta_i \approx \delta\)), then for \(N\) ticks the redshift becomes:
+    If the phase shift per tick is nearly constant (i.e., \(\delta_i \approx \delta\)), then for \(N\) ticks:
   </p>
   <p>
     
@@ -372,10 +450,10 @@ title: "Formula Collection"
 
   </p>
   <p>
-    This establishes a direct connection between the discrete ticking dynamics and the observed redshift.
+    This establishes a direct link between the discrete ticking dynamics and the observed redshift.
   </p>
   
   <p>
-    These equations and derivations form a self-contained collection that unifies quantum mechanics, electromagnetism, gravity, and particle physics—each emerging from the digital‑tick structure and an effective 2.667-dimensional spatial framework.
+    These equations and derivations form a self-contained collection that unifies quantum mechanics, electromagnetism, gravity, and particle physics—all emerging from the digital‑tick structure and an effective 2.667-dimensional spatial framework.
   </p>
 </div>
