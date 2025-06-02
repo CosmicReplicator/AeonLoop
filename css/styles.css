@@ -310,6 +310,8 @@ mjx-block,
   margin-bottom: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Optional: if you're using MathJax v3 with CHTML output, you can be more specific */
