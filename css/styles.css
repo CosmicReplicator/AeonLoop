@@ -71,6 +71,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;
+  overflow-x: auto;  /* Added to enable horizontal scrolling */
 }
 
 @media (max-width: 600px) {
