@@ -12,35 +12,27 @@ title: "The Alpha Scaling Factor"
 	
     <strong>Tick Duration:</strong>
     
-
 \[
       \Delta t = 0.6\,\text{ps},
     \]
 
-
     corresponding to a base frequency of 
     
-
 \[
       f_0 \approx 1.667\,\text{THz},
     \]
 
-
     and an effective spatial length of 
     
-
 \[
       L_{\mathrm{eff}} \approx 0.18\,\text{mm},
     \]
 
-
     each tick advances the phase by an equal increment. Although a full 360° phase closure nominally appears to require 7 ticks, our insight is that the base state already contains a complete \(2\pi\) (or “2py”) phase. Therefore, only 6 additional rotations are necessary to achieve the next stable level. Consequently, while multiplying the base energy by 7 initially suggested a 480× factor, the proper treatment of the angular measure yields an energy jump of 
     
-
 \[
       6 \times \frac{1}{2\alpha} = \frac{3}{\alpha},
     \]
-
 
     which for \(\alpha \approx \frac{1}{137}\) is about 411. This factor emerges because the electromagnetic coupling (the 1/137 factor) is not an arbitrary input—it is naturally encoded via the digital-tick update mechanism and full-circle phase closure.
   </p>
@@ -51,50 +43,39 @@ title: "The Alpha Scaling Factor"
 
     <strong>Tick Duration:</strong>
     
-
 \[
       \Delta t = 0.6\,\text{ps} \quad (6.0\times10^{-13}\,\text{s}).
     \]
 
-
-    <strong>Base Frequency:</strong>
-    
+    <strong>Base Frequency:</strong>  
 
 \[
       f_0 = \frac{1}{\Delta t} \approx 1.667\,\text{THz}.
     \]
 
-
-
     <strong>Effective Spatial Scale:</strong>  
     Since light travels a distance \(L_{\mathrm{eff}} = c\,\Delta t\) during one tick,
     
-
 \[
       L_{\mathrm{eff}} \approx 0.18\,\text{mm},
     \]
-
 
     these values constitute the fundamental “clock” and length scale of the system and underpin our discrete update mechanism.
   </p>
   
   <h3>2. Digital-Tick Phase Closure: Completing the Full Circle</h3>
   <p>
-    Each digital tick during which the system updates contributes a fixed phase increment. By design, the phase step is set so that:
-    
+    Each digital tick during which the system updates contributes a fixed phase increment. By design, the phase step is set so that:   
 
 \[
       \Delta \varphi = \frac{360^\circ}{7} \approx 51.43^\circ.
     \]
 
-
     Nominally, accumulating 7 ticks would yield:
     
-
 \[
       7\,\Delta \varphi = 360^\circ.
     \]
-
 
     However, since the initial state is already "pre-loaded" with the full \(2\pi\) (360°) phase, from an angular (phase) viewpoint only 6 extra ticks contribute to the change in energy. This built‑in error‑correcting mechanism ensures that any phase deviation is corrected every cycle and leads to the proper energy transition.
   </p>
