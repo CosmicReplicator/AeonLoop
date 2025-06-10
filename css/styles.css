@@ -213,7 +213,7 @@ h1, h2, h3 {
 
 /* Major Title Styling */
 h1 {
-  font-size: 2em; /* Large and bold */
+  font-size: 1.8em; /* Large and bold */
   background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
   text-transform: uppercase;
   text-shadow: 3px 3px 5px rgba(0, 95, 163, 0.4); /* Subtle shadow */
@@ -225,7 +225,7 @@ h1 {
 
 /* Secondary Titles */
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   /*background: linear-gradient(135deg, #005fa3, #0077cc);  Subtle gradient */
   background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
   /*color: white;  High contrast */
