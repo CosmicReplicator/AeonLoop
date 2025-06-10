@@ -238,7 +238,7 @@ h2 {
 
 /* Tertiary Titles */
 h3 {
-  font-size: 1.4em;
+  font-size: 1.0em;
   /*background: linear-gradient(135deg, #005fa3, #0077cc);  Subtle gradient */
   background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
   /*color: white;  High contrast */
