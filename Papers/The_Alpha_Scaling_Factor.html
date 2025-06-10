@@ -21,8 +21,7 @@ title: "The Alpha Scaling Factor"
     In our model, discrete rotational phase closure is essential for achieving full energy confinement.
     Over 7 discrete rotations (ticks), the phase increments accumulate to enforce nonlinear volumetric scaling.
   </p>
-  <h3>2.2. Deriving the Energy Scaling from Phase Closure</h3>
-  <p>
+  <h3>2.2. Deriving the Energy Scaling from Phase Closure</h3><p>
     We verify that energy amplification follows harmonic step accumulation:
   </p><p>
 \[
@@ -49,81 +48,58 @@ title: "The Alpha Scaling Factor"
 \]
   </p>
   <p>
-    This confirms that superlinear energy scaling emerges directly from the phase closure mechanism.
-  </p><p>
+    This confirms that superlinear energy scaling emerges directly from the phase closure mechanism.</p><p>
   <h3>3. Fine-Structure Constant (α) and Charge Interaction</h3></p>
   <h3>3.1. The Rotational Charge Constraint</h3>
   <p>
     Alpha (1/137) encodes the rotational interaction constraints in charge coupling.
-    The distribution of charge across harmonic phase matching forces energy accumulation.
-  </p>
-  <h3>3.2. Charge-Based Energy Amplification</h3>
-  <p>
-    Using discrete energy reception per tick, we derive:
-  </p><p>
+    The distribution of charge across harmonic phase matching forces energy accumulation.</p>
+  <h3>3.2. Charge-Based Energy Amplification</h3><p>
+    Using discrete energy reception per tick, we derive:</p><p>
 \[
     E_7 = E_0 \times \left( \frac{6}{2\pi} \right)^7.
-\] </p>
-  <p>
-    Computing this verifies that the charge interaction constraints align with the energy amplification observed.
-  </p><p>
+\] </p><p>
+    Computing this verifies that the charge interaction constraints align with the energy amplification observed.</p><p>
   <h3>4. Recovering the Original Energy Scaling Equation</h3></p>
   <h3>4.1. Tick-Based Multiplicative Amplification</h3>
   <p>
-    To formally derive the energy scaling without assuming the 411× factor, we begin with the fundamental tick process:
-  </p>
+    To formally derive the energy scaling without assuming the 411× factor, we begin with the fundamental tick process:</p>
   <ul>
     <li>Base Tick Energy: \( E_0 = 6.89 \) meV</li>
     <li>Base Frequency: \( f_0 = 1.667 \) THz → Tick period \( T_0 \approx 0.6 \) ps</li>
-  </ul>
-  <p>
-    Each tick introduces a multiplicative scaling factor \( f \), so after 7 ticks, the total energy amplification is:
-  </p><p>
+  </ul><p>
+    Each tick introduces a multiplicative scaling factor \( f \), so after 7 ticks, the total energy amplification is:</p><p>
 \[
     E_7 = E_0 \times (f^2)^7.
-\]
-  </p><p>
-    Deriving the per-tick amplification factor from first principles using rotational symmetry gives:
-  </p><p>
+\]</p><p>
+    Deriving the per-tick amplification factor from first principles using rotational symmetry gives:</p><p>
 \[
     f = 410^{\frac{1}{14}} \approx 1.537,
-\]
-</p><p>
-    and hence:
-  </p><p>
+\]</p><p>
+    and hence:</p><p>
 \[
     f^2 \approx 2.363.
-\]
-</p>
-  <h3>4.2. Computing the Energy Amplification</h3>
-  <p>
-    Expanding:
-  </p><p>
+\]</p>
+  <h3>4.2. Computing the Energy Amplification</h3><p>
+    Expanding:</p><p>
 \[
     (f^2)^7 = (2.363)^7 \approx 409.8.
-\]
-  </p><p>
-    Multiplying by the base tick energy:
-  </p><p>
+\]</p><p>
+    Multiplying by the base tick energy:</p><p>
 \[
     E_7 = 6.89\,\text{meV} \times 409.8 \approx 2825.6\,\text{meV}.
-\]
-</p><p>
-    Converting, we obtain:
-  </p><p>
+\]</p><p>
+    Converting, we obtain:</p><p>
 \[
     E_7 \approx 2.83\,\text{eV}.
 \]
-</p><h3>4.3. Why Energy Accumulates Nonlinearly</h3>
-  <p>
+</p><h3>4.3. Why Energy Accumulates Nonlinearly</h3><p>
     This derivation shows that energy does not simply add linearly per tick.
-    Instead, it follows a structured, geometric accumulation driven by:
-  </p>
+    Instead, it follows a structured, geometric accumulation driven by:</p>
   <ul>
     <li>Harmonic resonance enforcing nonlinear charge interaction.</li>
     <li>Rotational closure locking in discrete amplifications at phase-aligned intervals.</li>
-  </ul>
-  <p>
+  </ul><p>
     This geometric accumulation leads naturally to the 411× amplification, proving that the effect is an emergent property of the underlying physics.
   </p>
   <h3>5. Implementation of the 0.38 Correction Factor and Geometric Phase Closure</h3>
@@ -131,25 +107,18 @@ title: "The Alpha Scaling Factor"
     A key insight in our work is that the discrete‐tick process naturally introduces a residual correction that accounts for the extra “fractional” dimension observed in our effective geometry.
     We start with a baseline of 2, corresponding to a 2D system, yet our observations indicate an effective dimension of 2.667.
     This means an additional 0.667 must emerge from the discrete dynamics.
-  </p>
-  <p>
+  </p><p>
     Detailed examination reveals that each tick provides a residual phase correction of approximately 0.38. Over 7 ticks—the natural interval for complete phase closure—this yields:
   </p><p>
 \[
     7 \times 0.38 \approx 2.66.
 \]
-  </p><p>
-    A small additional correction provided by α (≈0.0073) then raises this to the effective value:
-  </p><p>
+  </p><p>A small additional correction provided by α (≈0.0073) then raises this to the effective value:</p><p>
 \[
     2.66 + \alpha \approx 2.667.
 \]
-  </p><p>
-    This demonstrates how discrete rotational dynamics “lift” our 2D baseline via accumulated phase corrections to reproduce the effective 2.667D geometry.
-  </p>
-
-  <h3>6. Conclusion and Implications</h3>
-  <p>
+  </p><p>This demonstrates how discrete rotational dynamics “lift” our 2D baseline via accumulated phase corrections to reproduce the effective 2.667D geometry.
+  </p><h3>6. Conclusion and Implications</h3><p>
     Maxwell’s 1D formulation could never capture the volumetric harmonic scaling observed.
     The 411× amplification factor emerges naturally from the interplay of charge interaction, harmonic phase closure, and discrete rotational symmetry.
     This result underscores the importance of nonlinear energy accumulation and suggests promising applications in quantum field resonance and energy transfer models.
