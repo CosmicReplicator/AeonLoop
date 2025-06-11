@@ -6,45 +6,49 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
   <script src="{{ '/scripts/splitParagraphs.js' | relative_url }}"></script>
+
+  <!-- SEO Meta Tags -->
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% endif %}
+  {% if page.topics %}
+  <meta name="keywords" content="{{ page.topics | join: ', ' }}">
+  {% else %}
+  <meta name="keywords" content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc‑Free Formulation, Discrete Rotations">
+  {% endif %}
+
   <!-- Include MathJax for rendering math -->
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)']]
-  }
-};
-</script>
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']]
+    }
+  };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
- <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });
-</script>
-
-
-</head>
-<body>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });
+  </script>
+ </head>
+ <body>
   <div class="page-content">
-<header>
-  <h1>{{ page.title }}</h1>
-  <p class="meta">
-    By {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
-    {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{% endif %}
-  </p>
-</header>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <p class="meta">
+        By {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
+        {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+      </p>
+    </header>
     <main>
-  {% include sections.html %}
-  {{ page.content | markdownify }}
+      {% include sections.html %}
+      {{ page.content | markdownify }}
     </main>
     <footer>
       {% include footer.html %}
     </footer>
   </div>
-</body>
+ </body>
 </html>
-
-
-
-
-
