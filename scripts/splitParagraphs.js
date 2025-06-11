@@ -1,13 +1,23 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Target all paragraphs within your container—adjust the selector as needed.
+  // Target all paragraphs within .container (adjust the selector if needed)
   const paragraphs = document.querySelectorAll(".container p");
+
   paragraphs.forEach(function(p) {
-    // Replace every period followed by a space with a period and two <br> tags.
-    p.innerHTML = p.innerHTML.replace(/\. /g, ".<br><br>");
+    // Check if the paragraph likely contains math delimiters
+    if (
+      p.innerHTML.includes("$") || 
+      p.innerHTML.includes("$$") || 
+      p.innerHTML.includes("\\(")
+    ) {
+      // If math is found, skip replacement in this paragraph.
+      return;
+    }
+    // For paragraphs without math content, replace ". " with a single <br>
+    p.innerHTML = p.innerHTML.replace(/\. /g, ".<br>");
   });
 
-  // Check if MathJax is loaded, then re-typeset the page.
+  // If MathJax is loaded, re-typeset the page to render math correctly.
   if (window.MathJax) {
     MathJax.typesetPromise().catch(function(err) {
       console.error("MathJax typeset failed: ", err);
