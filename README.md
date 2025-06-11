@@ -1,40 +1,16 @@
 # AeonLoop
-Cosmic and Quantum theory
-im still working in this page to ease the navigation, so bare with me,
-im currently uploading  the  written context
-its best read on a bigger screen like a laptop or pc
-CosmicReplicator
 
-AeonLoop
+**Cosmic and Quantum Theory**
 
-Cosmic and Quantum Theory
+I'm still working on this page to ease navigation, so please bear with me. I'm currently uploading the written context. It's best read on a larger screen, such as a laptop or PC.
 
-Spacetime Discretization
+## Topics
 
-Digital Tick
-
-Discrete Rotations
-
-Quantum Geometry
-
-Fractional Calculus in Physics
-
-Emergent Constants
-
-Planck-Scale Discreteness
-
-Rotational Combinatorics
-
-Finite Tick Rate
-
-2.667D Effective Geometry
-
-Ad Hoc‑Free Formulation
-
-Discrete Time Evolution
-
-Rotational Symmetry
-
-Combinatorial Geometry
-
-Hidden Physics
+- CosmicReplicator
+- Fractional Calculus in Physics
+- Emergent Constants
+- Planck-Scale Discreteness
+- Rotational Combinatorics
+- Rotational Symmetry
+- Combinatorial Geometry
+- Hidden Physics
