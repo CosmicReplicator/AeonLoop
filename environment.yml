@@ -5,4 +5,7 @@ dependencies:
   - python=3.9
   - notebook
   - ipykernel
-
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
