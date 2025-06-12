@@ -1,7 +1,7 @@
-# _config.yml  – minimal, guaranteed valid
+# _config.yml
 markdown: kramdown
 author: 'jonsvein Heinesen'
 
-
-
+kramdown:
+  input: GFM          # 1) add, save, run YAML check
 
