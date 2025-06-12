@@ -1,36 +1,31 @@
 # ---------------------------------------------------------------
-#  _config.yml  –– MathJax-ready and YAML-lint clean
+#  _config.yml   ––  back-slash fixed, MathJax ready
 # ---------------------------------------------------------------
 
-# 1 Markdown engine
 markdown: kramdown
 
 kramdown:
   input: GFM
-  hard_wrap: false           # true inserts <br>; false keeps math intact
+  hard_wrap: false
   math_engine: mathjax
   math_engine_opts:
-    # inline math pairs
     inline_math_delimiters:
-      - ["\\(", "\\)"]
-      - ["$", "$"]
-    # display math pairs
+      - ['\(', '\)']         # ← single quotes, one back-slash each
+      - ['$',  '$']
     display_math_delimiters:
-      - ["\
+      - ['
 
-\[", "\\]
+\[', '\]
 
-"]
-      - ["$$", "$$"]
+']         # ← same here
+      - ['$$', '$$']
   syntax_highlighter_opts:
-    disable: true            # avoid Rouge clobbering TeX backslashes
+    disable: true
 
-# 2 Site metadata
 author: "jonsvein Heinesen"
 
-# 3 Collections
 collections:
   ladder:
     output: true
-    directory: "Ladder"      # physical folder (case-sensitive)
+    directory: "Ladder"
     permalink: "/ladder/:name/"
