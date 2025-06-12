@@ -1,95 +1,82 @@
-/* =====================================================================
-   Global Reset
-===================================================================== */
+/* ===============================================================
+   GLOBAL RESET
+================================================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 p {
   margin: 0;
   padding: 0;
 }
 
-/* =====================================================================
-   Main Header Styling
----------------------------------------------------------------------
-   Styles specifically for the main header on your homepage.
-===================================================================== */
+/* ===============================================================
+   MAIN HEADER
+================================================================ */
 .main-header {
   text-align: center;
   margin-bottom: 20px;
   background-color: transparent !important;
-  /*background: linear-gradient(135deg, #777777, #999999);  Subtle gray gradient background */
+  /* background: linear-gradient(135deg, #777777, #999999); */
   padding: 20px;
-  border-bottom: 4px double #f5f5dc; /* Decorative underline to tie in with your headings */
-  border-radius: 8px; /* Optional: adds a bit of curvature to the header's edges */
+  border-bottom: 4px double #f5f5dc;
+  border-radius: 8px;
 }
+
 .main-header img {
-  display: block;           /* Forces the logo to take its own line */
-  margin: 0 auto 10px;       /* Centers the image and adds spacing below */
-  max-width: 200px;         /* Ensures the logo isn't too wide */
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 200px;
   height: auto;
 }
 
 .main-header h1 {
-  font-size: 2em;           /* Adjust font size as needed */
-  color: #f5f5dc;           /* Cream color */
-  margin: 0;                /* Reset any default margin */
-  padding: 10px 0;          /* Adds vertical spacing */
-}
-.MathJax_Display, .MathJax {
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 2em;
+  color: #f5f5dc;
+  padding: 10px 0;
 }
 
-/* =====================================================================
-   Body Styling
----------------------------------------------------------------------
-   Sets overall font, background, and padding for the page.
-===================================================================== */
+/* ===============================================================
+   BODY
+================================================================ */
 body {
   font-family: Arial, sans-serif;
-  /* Background image and background color remain defined as needed */
   background: url('../Images/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  /* Set the text color to cream */
-  color: #f5f5dc; /* cream color */
+  color: #f5f5dc;
   line-height: 1.6;
   padding: 20px;
   min-height: 100vh;
   font-size: 18px;
 }
-/* =====================================================================
-   Container Setup (A4 Page-Style)
----------------------------------------------------------------------
-   Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
-===================================================================== */
+
+/* ===============================================================
+   A4-STYLE CONTAINER
+================================================================ */
 .page-content {
-  width: 60%;              /* The container will take up 60% of the viewport width */
-  max-width: 210mm;        /* On very large screens you still have an upper bound */
+  width: 60%;
+  max-width: 210mm;
   background-color: #444;
   border: 2px solid #f5f5dc;
-  padding: 20mm;           /* You might change this to relative units too, e.g., rem */
-  margin: 0 auto;          /* This centers the container horizontally */
+  padding: 20mm;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-wrap: break-word;
-  /*overflow-x: auto;   Added to enable horizontal scrolling */
 }
 
 @media (max-width: 600px) {
   .page-content {
-    width: 90%;      /* Increase the width for smaller screens */
-    padding: 20px;   /* Switch to a more appropriate padding unit */
+    width: 90%;
+    padding: 20px;
   }
 }
 
-/* =====================================================================
-   Navigation Styling
----------------------------------------------------------------------
-   Centers navigation and provides spacing between links.
-===================================================================== */
+/* ===============================================================
+   NAVIGATION
+================================================================ */
 nav {
   text-align: center;
   margin-bottom: 20px;
@@ -100,74 +87,69 @@ nav a {
   text-decoration: none;
   color: #0077cc;
   font-size: 1.1em;
-}  
-
-.button-container {
-  margin-bottom: 20px;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Button links */
+.button-container { margin-bottom: 20px; }
 
 a.button {
   display: inline-block;
-  padding: 8px 15px; /* Smaller padding */
+  padding: 8px 15px;
   margin: 5px;
-  background: linear-gradient(135deg, #777777, #666666);  /* Gray gradient */
-  color: #f5f5dc; /* Cream colored text */
+  background: linear-gradient(135deg, #777777, #666666);
+  color: #f5f5dc;
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   border: none;
-  border-radius: 20px; /* Adjusted for a more compact shape */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+  transition: background .3s, transform .2s, box-shadow .2s;
 }
 
 a.button:hover {
-  background: linear-gradient(135deg, #666666, #777777);  /* Reverse gradient for hover */
+  background: linear-gradient(135deg, #666666, #777777);
   transform: translateY(-1px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
 }
 
 a.button:active {
   transform: translateY(0);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
 }
 
+/* Scrollable index panel */
 .index-scroll-container {
-  max-height: 80vh;  /* Use 80% of the viewport height (adjust as needed) */
-  overflow-y: auto;  /* Adds a vertical scroll bar when content exceeds the height */
+  max-height: 80vh;
+  overflow-y: auto;
   padding: 1em;
   border-radius: 8px;
-  border-color: #f5f5dc; /* Cream color */
+  border: 2px solid #f5f5dc;
   background-color: transparent;
-  /*background: rgba(220, 220, 220, 0.95);  Light background to separate from the main background */
   margin-bottom: 1em;
 }
-/* =====================================================================
-   .no-bg-container Setup (A4 Page-Style)
----------------------------------------------------------------------
-   Fixed to 210mm (~8.27 in) wide, centered with internal padding and a subtle shadow.
-===================================================================== */
+
+/* No-background variant */
 .no-bg-container {
-  width: 210mm;       /* A4 width */
+  width: 210mm;
   background: none !important;
   background-color: transparent !important;
-  /* If there's a background image applied that you wish to remove, add: */
-  background-image: none !important;
-  /* Optionally, reset any box-shadow or borders if needed */
-  box-shadow: none !important;
-  margin: 0 auto;     /* Centers the container horizontally */
-  padding: 20mm;      /* Internal padding for overall margins */
-  border: 2px solid #f5f5dc; /* cream colored border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-wrap: break-word;  /* Break long words if needed */
-}
-html {
-  scroll-behavior: smooth;
+  margin: 0 auto;
+  padding: 20mm;
+  border: 2px solid #f5f5dc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  overflow-wrap: break-word;
 }
 
-.in-page-nav {
-  margin-top: 20px; /* Adds space above the navigation menu */
-}
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* In-page nav */
+.in-page-nav { margin-top: 20px; }
 
 .in-page-nav ul {
   list-style: none;
@@ -179,150 +161,75 @@ html {
 
 .in-page-nav li a {
   text-decoration: none;
-  padding: 0.5em 1em;
-  background: #555;  /* Example button background */
-  color: #f5f5dc; /* Cream colored text */
+  padding: .5em 1em;
+  background: #555;
+  color: #f5f5dc;
   border-radius: 4px;
 }
 
-/* =====================================================================
-   Header Styling
----------------------------------------------------------------------
-   Centers header content and adds spacing.
-===================================================================== */
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
+/* ===============================================================
+   TYPOGRAPHY
+================================================================ */
+header { text-align: center; margin-bottom: 20px; }
 
-header img {
-  max-width: 200px; /* Ensures the logo isn't too wide */
-}
-
-/* =====================================================
-   Fancy Heading Styles
-====================================================== */
 h1, h2, h3 {
-  font-family: "Georgia", "Times New Roman", serif; /* Elegant font */
+  font-family: Georgia, "Times New Roman", serif;
   font-weight: bold;
-  /*color: #005fa3;  Rich deep blue */
-  color: #f5f5dc; /* cream color */
-  text-align: center; /* Centered for emphasis */
+  color: #f5f5dc;
+  text-align: center;
   letter-spacing: 1px;
 }
 
-/* Major Title Styling */
+/* Title levels */
 h1 {
-  font-size: 1.8em; /* Large and bold */
-  background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
+  font-size: 1.8em;
+  background: linear-gradient(135deg, #777777, #999999);
   text-transform: uppercase;
-  text-shadow: 3px 3px 5px rgba(0, 95, 163, 0.4); /* Subtle shadow */
-  border-bottom: 4px double #f5f5dc; /* Decorative underline */
+  text-shadow: 3px 3px 5px rgba(0, 95, 163, .4);
+  border-bottom: 4px double #f5f5dc;
   padding: 20px;
   display: inline-block;
-  margin-bottom: 30px; /* Adds space below */
+  margin-bottom: 30px;
 }
 
-/* Secondary Titles */
-h2 {
-  font-size: 1.5em;
-  /*background: linear-gradient(135deg, #005fa3, #0077cc);  Subtle gradient */
-  background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
-  /*color: white;  High contrast */
-  color: #f5f5dc; /* cream color */
+h2, h3 {
+  background: linear-gradient(135deg, #777777, #999999);
+  color: #f5f5dc;
   padding: 10px 20px;
   border-radius: 12px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
   display: inline-block;
 }
 
-/* Tertiary Titles */
-h3 {
-  font-size: 1.0em;
-  /*background: linear-gradient(135deg, #005fa3, #0077cc);  Subtle gradient */
-  background: linear-gradient(135deg, #777777, #999999); /* Gray gradient */
-  /*color: white;  High contrast */
-  color: #f5f5dc; /* cream color */
-  padding: 10px 20px;
-  border-radius: 12px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.0em; }
 
-/* =====================================================================
-   Footer Styling
-===================================================================== */
+/* ===============================================================
+   FOOTER
+================================================================ */
 footer {
-  background-color: #f5f5f5;  /* You can use a cream or grayish tone */
+  background-color: #f5f5f5;
   padding: 20px;
   text-align: center;
-  margin-top: 40px;  /* Space above the footer */
+  margin-top: 40px;
   border-top: 1px solid #ddd;
 }
 
-.footer-nav {
-  margin-bottom: 10px;
-}
+.footer-nav { margin-bottom: 10px; }
 
 .footer-nav .footer-link {
   margin: 0 15px;
   text-decoration: none;
   color: #0077cc;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color .3s;
 }
 
-.footer-nav .footer-link:hover {
-  color: #005fa3;
-}
+.footer-nav .footer-link:hover { color: #005fa3; }
 
-footer p {
-  font-size: 0.9em;
-  color: #666;
-}
+footer p { font-size: .9em; color: #666; }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* =====================================================================
-   Preformatted Text
-===================================================================== */
-.preformatted {
-  white-space: pre-wrap;
-}
-
-/* =====================================================================
-   Paragraph Styling for Preserving Line Breaks
-===================================================================== */
-p {
-  white-space: pre-wrap;
-  margin-bottom: 1em;
-}
-
-/* =====================================================================
-   MathJax Display Overrides
----------------------------------------------------------------------
-   Override default MathJax spacing for display math elements.
-===================================================================== */
-mjx-container, 
-.MathJax_Display, 
-.MathJax, 
-mjx-block, 
-.MathJax_Display > mjx-block {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* Optional: if you're using MathJax v3 with CHTML output, you can be more specific */
-mjx-container[jax="CHTML"] {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
+/* ===============================================================
+   PRE-WRAPPED BLOCKS
+================================================================ */
+.preformatted { white-space: pre-wrap; }
