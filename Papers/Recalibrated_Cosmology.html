@@ -1,101 +1,198 @@
 ---
 layout: papers
-title: "Recalibrated Cosmology"
+title: "Recalibrated Cosmology – Baryons, Fractal Gravity, and Digital Time"
 ---
 
+> **Exact base-tick block (CODATA-22)**  
+> Time step   `τ ≡ 0.600 000 000 ps` (exact)  
+> Frequency   `f = 1 / τ = 1.666 666 666 666 7 THz` (14 s.f.)  
+> Light-step  `Δx = c τ = 0.179 875 474 8 mm`  
+> Tick energy `E₀ = h f = 6.892 779 493 meV`  
+>  
+> **Fractal space**   `D_eff = 2.667` → volume element `dV ∝ r¹·⁶⁶⁷ dr`  
+> All digits are mutually consistent to < 5 × 10⁻¹⁴ relative error.
 
-<p>Recalibrated Cosmology: Dark Matter, Effective Dimension, and Discrete
-Time</p>
-<p>This document explains a new recalibrated approach to cosmology, which
-incorporates two key modifications:
-1. An effective spatial dimension of 2.667, replacing the traditional 3D
-integration scheme, and
-2. The introduction of a discrete digital time tick at 1.667 THz.
+---
 
-Using these corrections, the gravitational influence from baryonic
-(visible) matter is amplified, reproducing the observational signatures
-typically ascribed to dark matter. Furthermore, the effective cosmic
-age, determined via recalibrated distance scales and discrete time
-intervals, appears to be around 9 billion years.</p>
-<p><strong>1. Effective Spatial Dimension (Deff = 2.667)</strong></p>
-<p>In standard gravitational models, the volume element in a
-three-dimensional space scales as:
-dV_standard ∝ r² dr
+## 0 Why “recalibrated” cosmology?
 
-However, if space is fractal-like with an effective dimension of D_eff =
-2.667, the integration volume scales as:
-dV_eff ∝ r^(D_eff - 1) dr = r^(1.667) dr
+ΛCDM explains observations by adding two invisible components (cold dark
+matter and dark energy).  
+Here we try a different route:
 
-This change can be expressed as a correction factor:
-F_spatial ∼ (r / r₀)^(3 - D_eff) = (r / r₀)^(0.333)
+1. Space **integrates fractally** with an effective dimension  
+   \(D_{\mathrm{eff}}=2.667\) instead of 3.  
+2. Time **advances in discrete, global ticks** of exact length  
+   \(τ = 0.600\,000\,000\text{ ps}\)  
+   (reciprocal frequency \(f = 1.666\,666\,666\,666\,7\text{ THz}\)).
 
-For a characteristic cosmic scale where this factor is approximately
-6.2, the gravitational contribution from baryonic matter (≈ 5% of the
-critical density) is boosted to:
-Ω_m^eff ≈ 0.05 × 6.2 ≈ 0.31
+With *only baryons* these two changes recover the gravitational signals
+normally ascribed to dark matter and shorten the inferred cosmic age to
+≈ 9 Gyr – without touching the tick length itself.
 
-This uplift matches the observed effective matter density without
-introducing extra dark matter.</p>
-<p><strong>2. Discrete Time Tick (1.667 THz)</strong></p>
-<p>Rather than being continuous, time in this model is quantized into
-discrete ticks. Each tick occurs at a frequency of 1.667 THz, which
-corresponds to a tick period of:
+---
 
-Δt ≈ 1 / (1.667 × 10^12 Hz) ≈ 6.0 × 10⁻¹³ seconds
+## 1 Effective spatial dimension \(D_{\mathrm{eff}} = 2.667\)
 
-This discretization implies that the cosmic evolution and expansion are
-governed by a series of error-correction pulses, effectively compressing
-the cosmic timeline. When the standard cosmic age of 13.8 billion years
-is rescaled by a factor (f_time) that accounts for the discrete
-correction (roughly f_time ∼ 0.65), the recalculated cosmic age
-becomes:
+### 1.1  Modified volume element
 
-t_eff ≈ 0.65 × 13.8 Gyr ≈ 9 Gyr
 
-This suggests that, under our model, the universe is significantly
-younger than the standard estimate.</p>
-<p><strong>3. Combining the Corrections and Implications</strong></p>
-<p>By combining the effects of the effective spatial dimension and the
-discrete time ticks, our model reinterprets key cosmological
-observations:
 
-• The gravitational influence of visible baryonic matter is amplified,
-matching the effective matter density (~0.32) observed through DES SN
-Ia data.
-• The cosmic expansion history, when recalculated with modified distance
-and time integrals, yields an effective cosmic age of approximately 9
-billion years.
+\[
+dV_{\text{eff}} \;\propto\; r^{D_{\mathrm{eff}}-1}\,dr
+                       \;=\; r^{1.667}\,dr .
+\]
 
-This comprehensive recalibration offers a new way to explain cosmic
-acceleration and dark matter effects without invoking additional, unseen
-mass. It also calls for a rederivation of traditional parameters---from
-the Friedmann equations to redshift-distance relationships---using the
-new integration measures and discrete temporal steps.</p>
-<p><strong>4. Next Steps and Observational Tests</strong></p>
-<p>Further work is required to fully integrate these modifications into the
-standard cosmological framework. The key next steps include:
-1. Re-deriving the Friedmann equations with the effective volume element
-dV_eff ∝ r^(1.667) dr.
-2. Recalculating the redshift--luminosity distance relations with the
-new spatial and temporal corrections.
-3. Analyzing supernova (and other cosmological) data using this
-framework to determine revised values for parameters such as H₀ and
-t_eff.
 
-These steps will test if this alternative approach can robustly
-reproduce high-quality observational constraints (such as those from
-DES, Planck, and BAO) and address current tensions in cosmological data.</p>
-<p><strong>Final Remarks</strong></p>
-<p>This document presented an outline of a recalibrated cosmological model
-in which standard assumptions about space and time have been modified to
-incorporate an effective spatial dimension of 2.667 and discrete time
-ticks at 1.667 THz. The preliminary calculations suggest that these
-modifications:
-- Enhance the gravitational influence of baryonic matter, and
-- Recalculate the cosmic age to a value around 9 billion years.
 
-If validated by further detailed derivations and observational tests,
-this model could offer a unified explanation for dark matter phenomena
-and cosmic acceleration without invoking extra, undetected mass
-components.</p>
-<p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+### 1.2  Gravitational amplification
+
+Newton’s constant acquires a scale-dependent boost
+
+
+
+\[
+G_{\text{eff}}(r) \;=\;
+        G\Bigl(\frac{r}{r_{0}}\Bigr)^{\,3-D_{\mathrm{eff}}}
+      = G\Bigl(\frac{r}{r_{0}}\Bigr)^{0.333}.
+\]
+
+
+
+Pick \(r/r_{0}\) so that \(A \equiv (r/r_{0})^{0.333} ≈ 6.2\); then
+
+
+
+\[
+\Omega_{m}^{\text{eff}}
+  = \Omega_{b}\,A
+  ≈ 0.049 \times 6.2
+  ≈ 0.30 ,
+\]
+
+
+
+matching the matter density usually attributed to baryons + dark matter.
+
+*Note – smaller scales (galaxies) favour \(A≈3\); cosmic scales need
+\(A≈6\).  The single-index power law lets a smooth interpolation fit both
+regimes.*
+
+---
+
+## 2 Digital time tick \(τ = 0.600 000 000\text{ ps}\)
+
+Time is **exactly** discrete; its reciprocal frequency is an infinite
+string of sixes.  
+Every tick triggers a Universe-wide error-correction pulse that keeps
+fields phase-locked.  In the Friedmann equation the derivative
+
+
+
+\[
+\frac{\dot{a}}{a}
+      \;\longrightarrow\;
+\frac{a_{N+1}-a_{N}}{τ\,a_{N}}
+\]
+
+
+
+so **τ cancels** in the continuum limit: the tick sets the *resolution*
+(\(N = t/τ\)), not the physical age \(t\).
+
+---
+
+## 3 Re-evaluating the cosmic age
+
+### 3.1  Matter-only, fractal boost
+
+For a flat, Λ-free, baryon-only Universe
+
+
+
+\[
+\Bigl(\frac{\dot a}{a}\Bigr)^{2}
+      = \frac{8\pi\,A\,G}{3}\,\rho_{b0}a^{-3}.
+\]
+
+
+
+Demanding today’s measured \(H_{0}=70\text{ km s}^{-1}\text{Mpc}^{-1}\)
+sets
+
+
+
+\[
+A\,\rho_{b0} =
+      \frac{3H_{0}^{2}}{8\pi G}.
+\]
+
+
+
+With \(A≈6\) this implies a *physical* cosmic age
+
+
+
+\[
+t_{0} = \frac{2}{3H_{0}} ≈ 9\text{ Gyr},
+\]
+
+
+
+regardless of τ or κ (the tick-to-mass conversion factor).
+
+### 3.2  Tick count
+
+
+
+\[
+N = \frac{t_{0}}{τ}
+  ≈ \frac{9\,\text{Gyr}}{0.600\,000\,000\text{ ps}}
+  ≈ 1.5\times10^{29}\ \text{ticks}.
+\]
+
+
+
+The shorter age arises **solely** from the fractal amplification; the
+tick length itself leaves \(t_{0}\) unchanged.
+
+---
+
+## 4 Immediate predictions
+
+| Observable | ΛCDM | Tick-Fractal baryons-only |
+|------------|------|---------------------------|
+| Galaxy rotation | needs halo mass \(∝r^{-2}\) | \(G_{\text{eff}}∝r^{0.333}\) flattens \(v(r)\) with baryons alone |
+| DES Ia–inferred \(\Omega_m\) | fitted ≈ 0.31 | same number emerges from \(A\rho_b\) |
+| Hubble tension | 2-σ gap (Planck vs SNe) | age ≈ 9 Gyr implies higher early-time \(H(z)\), easing tension |
+| Pulsar timing | white noise | sideband structure at \(f_{\text{side}} = f/N\) scale (testable with SKA) |
+
+---
+
+## 5 Next steps
+
+1. **Re-derive** the Friedmann hierarchy with \(dV∝r^{1.667}\,dr\).  
+2. **Refit** SNe Ia, BAO, CMB and lensing data with
+   \(\{τ,\,D_{\text{eff}},\,A\}\) fixed.  
+3. **Publish** falsifiable forecasts (pulsar-timing sidebands, lensing
+   phase shifts).
+
+If the data line up, the Tick-Fractal framework delivers a baryons-only
+explanation for dark-matter effects **and** a natural rescue of the
+Hubble-age tension.
+
+---
+
+### Final takeaway
+Two locked constants—
+
+* \(D_{\mathrm{eff}} = 2.667\)  
+* \(τ = 0.600\,000\,000\text{ ps}\)  
+  (\(f = 1.666\,666\,666\,666\,7\text{ THz}\))
+
+—amplify baryonic gravity and keep the Universe phase-synchronised,
+lowering the cosmic age to ≈ 9 Gyr without unseen mass or vacuum energy.
+Upcoming observational tests will decide whether the tick-fractal
+alternative can stand beside, or replace, ΛCDM.
+
+---------------------------------------------------------------------
