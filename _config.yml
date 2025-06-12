@@ -1,11 +1,28 @@
+# ---------------------------------------------------------------------
+#  _config.yml  —  MathJax-ready settings
+# ---------------------------------------------------------------------
 
-# --- Markdown & math -------------------------------------------------
+markdown: kramdown      # (default, but state it explicitly)
+
 kramdown:
   input: GFM
-  hard_wrap: true
+  hard_wrap: false      # critical: true inserts <br> that break fractions
   math_engine: mathjax
   math_engine_opts:
-    inline_math_delimiters: [['\\(', '\\)']]
+    # Inline math  →  \( … \)   or   $…$
+    inline_math_delimiters: [['\\(', '\\)'], ['$', '$']]
+    # Display math →  
+
+\[ … \]
+
+   or   $$ … $$
+    display_math_delimiters: [['\
+
+\[', '\\]
+
+'], ['$$', '$$']]
+  syntax_highlighter_opts:
+    disable: true       # prevent Rouge from mangling TeX backslashes
 
 # --- Site metadata ---------------------------------------------------
 author: "jonsvein Heinesen"
@@ -17,10 +34,3 @@ collections:
     directory: Ladder          # physical folder (case-sensitive)
     permalink: /ladder/:name/  # final URL: /ladder/filename/
 
-# If you ever add more collections, list them here at the same indent.
-#
-# Example:
-#   papers:
-#     output: true
-#     directory: Papers
-#     permalink: /papers/:name/
