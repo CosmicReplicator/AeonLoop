@@ -134,5 +134,16 @@ title: "Index"
       <a class="button" href="Research.html" target="_blank">Research</a>
     </div>
   </section>
+<!-- VIII. Ladder Explorer (auto-generated) -->
+<section id="section8">
+  <h3>VIII. Ladder Explorer</h3>
+  <div class="button-container">
+    {% for doc in site.ladder %}
+      <a class="button" href="{{ doc.url }}" target="_blank">
+        {{ doc.title | default: doc.basename }}
+      </a>
+    {% endfor %}
+  </div>
+</section>
 
 </div>

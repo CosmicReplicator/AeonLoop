@@ -1,8 +1,26 @@
 
+# --- Markdown & math -------------------------------------------------
 kramdown:
   input: GFM
   hard_wrap: true
   math_engine: mathjax
   math_engine_opts:
     inline_math_delimiters: [['\\(', '\\)']]
+
+# --- Site metadata ---------------------------------------------------
 author: "jonsvein Heinesen"
+
+# --- Collections -----------------------------------------------------
+collections:
+  ladder:
+    output: true
+    directory: Ladder          # physical folder (case-sensitive)
+    permalink: /ladder/:name/  # final URL: /ladder/filename/
+
+# If you ever add more collections, list them here at the same indent.
+#
+# Example:
+#   papers:
+#     output: true
+#     directory: Papers
+#     permalink: /papers/:name/
