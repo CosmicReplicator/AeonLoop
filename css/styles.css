@@ -62,7 +62,22 @@ body {
     padding: 20px;
   }
 }
-.eq { text-align:center; margin:1.2rem 0; }
+/* equation blocks (already present) */
+.eq{
+  text-align:center;
+  margin:1.2rem 0;
+}
+
+/* NEW: code blocks */
+.code{
+  background:#f7f7f7;
+  border:1px solid #ddd;
+  padding:0.8rem 1rem;
+  overflow-x:auto;
+  font-size:0.9rem;         /* optional tweak */
+  line-height:1.35;
+}
+
 
 /* ===============================================================
    NAVIGATION
