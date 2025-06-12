@@ -1,4 +1,4 @@
-# _config.yml  (with MathJax opts, YAML-safe)
+# _config.yml  ─ MathJax + ladder collection
 
 markdown: kramdown
 author: "jonsvein Heinesen"
