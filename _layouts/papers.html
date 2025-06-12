@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
-  <script src="{{ '/scripts/splitParagraphs.js' | relative_url }}"></script>
 
-  <!-- SEO Meta Tags -->
+  {#—---- OPTIONAL: remove this line unless the file really exists ‑---#}
+  {# <script src="{{ '/scripts/splitParagraphs.js' | relative_url }}"></script> #}
+
+  <!-- SEO -->
   {% if page.description %}
-  <meta name="description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}">
   {% endif %}
   {% if page.topics %}
-  <meta name="keywords" content="{{ page.topics | join: ', ' }}">
+    <meta name="keywords" content="{{ page.topics | join: ', ' }}">
   {% else %}
-  <meta name="keywords" content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc‑Free Formulation, Discrete Rotations">
+    <meta name="keywords"
+          content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations">
   {% endif %}
 
-  <!-- Include MathJax for rendering math -->
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath:  [['\\(', '\\)'], ['$',  '$']],
-    displayMath: [['\
+  <!-- MathJax 3: config FIRST, then load the script -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath:  [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\
 
 \[', '\\]
 
 '], ['$$', '$$']],
-    processEscapes: true
-  }
-};
-</script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        processEscapes: true
+      }
+    };
+  </script>
+
+  <!-- Load order: polyfill → MathJax → Mermaid -->
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
     mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });
   </script>
- </head>
- <body>
+</head>
+
+<body>
   <div class="page-content">
     <header>
       <h1>{{ page.title }}</h1>
@@ -47,14 +54,15 @@ window.MathJax = {
         {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{% endif %}
       </p>
     </header>
+
     <main>
       {% include sections.html %}
       {{ content | markdownify }}
-
     </main>
+
     <footer>
       {% include footer.html %}
     </footer>
   </div>
- </body>
+</body>
 </html>
