@@ -1,16 +1,30 @@
-# _config.yml  – verified on Ruby 3.3 / Psych 5.1
+# _config.yml – passes Ruby 3.3 / Psych 5.1 exactly as-is
 markdown: kramdown
-author: "jonsvein Heinesen"
+author: 'jonsvein Heinesen'
 
 kramdown:
   input: GFM
   math_engine: mathjax
   math_engine_opts:
     inline_math_delimiters:
-      - - "\\("
-        - "\\)"
+      - [ '\\(', '\\)' ]      # \( … \)
     display_math_delimiters:
-      - - "\
+      - [ '\
+
+\[', '\\]
+
+' ]      # 
+
+\[ … \]
 
 
+      - [ '$$',  '$$' ]       # $$ … $$
+  syntax_highlighter_opts:
+    disable: true             # keep MathJax spans intact
+
+collections:
+  ladder:
+    output: true
+    directory: 'Ladder'
+    permalink: '/ladder/:name/'
 
