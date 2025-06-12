@@ -1,33 +1,26 @@
 # ---------------------------------------------------------------
-#  _config.yml  – Markdown everywhere, MathJax v3 ready
+#  _config.yml  – plain, no “$” delimiters
 # ---------------------------------------------------------------
 
-markdown: kramdown
-markdown_ext: "md,markdown,html"   # treat .html with front-matter as Markdown
+markdown: kramdown            # default engine
+# no markdown_ext line → .md / .markdown only
 
 kramdown:
   input: GFM
-  hard_wrap: false
+  math_engine: mathjax        # uses MathJax v3 on GitHub Pages
 
-  math_engine: mathjax
-  math_engine_opts:
-    inline_math_delimiters:
-      - ['\\(', '\\)']   #  \( … \)
-      - ['$',  '$']      #  $ … $
-    display_math_delimiters:
-      - ['\
-
-\[', '\\]
-
-']   #  
+  # we omit math_engine_opts entirely → Kramdown uses:
+  #   inline  : \( … \)
+  #   display : 
 
 \[ … \]
 
+  or  $$ … $$
+  # “$ … $” is ignored
 
-      - ['$$', '$$']     #  $$ … $$
-
+  hard_wrap: false
   syntax_highlighter_opts:
-    disable: true        # you don’t need Rouge if you rely on plain <pre>
+    disable: true             # keeps MathJax spans untouched
 
 author: "jonsvein Heinesen"
 
@@ -36,4 +29,3 @@ collections:
     output: true
     directory: "Ladder"
     permalink: "/ladder/:name/"
-
