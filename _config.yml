@@ -4,4 +4,11 @@ author: 'jonsvein Heinesen'
 
 kramdown:
   input: GFM          # 1) add, save, run YAML check
+math_engine: mathjax
+  math_engine_opts:
+    inline_math_delimiters:  [["\\(", "\\)"]]
+    display_math_delimiters: [["\
 
+\[", "\\]
+
+"], ["$$", "$$"]]
