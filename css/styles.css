@@ -15,16 +15,16 @@ p { margin: 0; padding: 0; }
 .main-header {
   text-align: center;
   margin-bottom: 20px;
-  background-color: transparent !important;
+  background: transparent !important;
   padding: 20px;
   border-bottom: 4px double #f5f5dc;
   border-radius: 8px;
 }
-.main-header img   { display:block; margin:0 auto 10px; max-width:200px; height:auto; }
-.main-header h1    { font-size:2em; color:#f5f5dc; padding:10px 0; }
+.main-header img { display:block; margin:0 auto 10px; max-width:200px; height:auto; }
+.main-header h1 { font-size:2em; color:#f5f5dc; padding:10px 0; }
 
 /* ===============================================================
-   BODY  ( ⟵ added text-align so the sheet can centre )
+   BODY
 ================================================================ */
 body {
   font-family: Arial, sans-serif;
@@ -35,35 +35,31 @@ body {
   padding: 20px;
   min-height: 100vh;
   font-size: 18px;
-  text-align: center;          /* NEW: centres inline-block .page-content   */
+  /* no global centring — block-quotes & lists stay aligned */
 }
 
 /* ===============================================================
-   A4-STYLE FLOATING SHEET
+   FLEXIBLE SHEET  –– width = longest equation
 ================================================================ */
 .page-content {
-  /* 1 — shrink-wrap to the widest line (eqn, table, etc.) */
-  display: inline-block;       /* auto-width possible only if not full-width */
-  width: fit-content;          /* modern browsers → intrinsic width          */
-  max-width: 210mm;            /* never exceed A4 on huge screens            */
+  display: block;              /* margin-auto will centre this block */
+  width: fit-content;          /* shrink-wrap to intrinsic width      */
+  margin: 0 auto;              /* centre horizontally                 */
 
-  /* 2 — original styling kept */
-  background-color: #444;
+  background: #444;
   border: 2px solid #f5f5dc;
-  padding: 20mm;
+  padding: 2rem;               /* responsive padding                 */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
-  overflow-wrap: break-word;
+  overflow-wrap: break-word;   /* wrap long words/URLs               */
+  overflow-x: auto;            /* safety scroll for ultra-long lines */
 }
 
-/* phone fallback: revert to near full-width so nothing overflows */
+/* Phone fallback: turn into full-width column */
 @media (max-width: 600px) {
   .page-content {
-    display: block;
-    width: 90%;
-    max-width: 90%;
+    width: 95%;
     padding: 20px;
-    margin: 0 auto;            /* recentre because we’re block again        */
   }
 }
 
@@ -94,10 +90,10 @@ a.button:active { transform:translateY(0); box-shadow:0 1px 3px rgba(0,0,0,.15);
   margin-bottom:1em;
 }
 
-/* No-background variant */
+/* No-background variant (still useful for print) */
 .no-bg-container {
-  width:210mm; background:none!important; margin:0 auto;
-  padding:20mm; border:2px solid #f5f5dc; box-shadow:0 0 10px rgba(0,0,0,.1);
+  background:none!important; margin:0 auto;
+  padding:2rem; border:2px solid #f5f5dc; box-shadow:0 0 10px rgba(0,0,0,.1);
   overflow-wrap:break-word;
 }
 
