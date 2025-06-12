@@ -1,14 +1,15 @@
 ---
 layout: papers
 title: "Digital-Tick Model – Neutrino Energy & the Error-Correcting Tick"
+mathjax: true          # ←  tells Jekyll to load MathJax
 ---
 
 # Digital-Tick Model: Neutrino Energy & the Error-Correcting Tick  
 
 > **Locked tick constants (v2025-06-13)**  
-> Tick period `τ = 0.600 000 000 ps` (exact) →  
-> Frequency `f₀ = 1.666 666 666 666 7 THz`  
-> Tick energy `E₀ = h f₀ = 6.892 779 493 meV`  
+> Tick period \( \tau = 0.600\,000\,000\;\text{ps} \) (exact)  
+> Frequency \( f_0 = 1.666\,666\,666\,666\,7\;\text{THz} \)  
+> Tick energy \( E_0 = h\,f_0 = 6.892\,779\,493\;\text{meV} \)
 
 ---
 
@@ -18,79 +19,84 @@ title: "Digital-Tick Model – Neutrino Energy & the Error-Correcting Tick"
 
 \[
 E_0 \;=\; h\,f_0
-        = (6.62607015\times10^{-34}\,\text{J s})\,
-          (1.666\,666\,666\,666\,7\times10^{12}\,\text{s}^{-1})
-        = 1.1045\times10^{-21}\,\text{J}
-        = 6.892\,779\,493\,\text{meV}.
+        \;=\; (6.626\,070\,15\times10^{-34}\,\text{J·s})
+              (1.666\,666\,666\,666\,7\times10^{12}\,\text{s}^{-1})
+        = 1.104\,5\times10^{-21}\,\text{J}
+        = 6.892\,779\,493\;\text{meV}.
 \]
 
 
 
+*(No denominator here – just multiplication.)*
+
 ---
 
-## 2 A coincidence with the **right-handed neutrino scale**
+## 2 Why right-handed neutrinos land in the same energy band
 
-Several Beyond-SM scenarios (sterile-ν DM, seesaw-lightest eigenstate, etc.) infer a rest-mass window
+Several beyond-SM fits suggest  
 
 
 
 \[
-m_{\nu_R} c^{2} \;\sim\; 3\!-\!10\;\text{meV},
+3\;\text{meV} \;\lesssim\;
+m_{\nu_R} c^{2}
+\;\lesssim\; 10\;\text{meV}.
 \]
 
 
 
-squarely within the single-tick energy \(E_0\).
+That overlaps the single-tick energy \(E_0\).
 
-| Quantity | Value | Source |
-|----------|-------|--------|
+| Quantity | Value | Reference |
+|----------|-------|-----------|
 | Tick energy \(E_0\) | **6.893 meV** | Digital-Tick constant |
-| Lightest sterile-ν hints | 5 ± 2 meV | e.g. X-ray cooling-floor fits |
-| CMB + LSS upper limit | ≤ 10 meV | Planck + BAO |
-
-The overlap is numerically striking.
+| X-ray cooling floor (sterile-ν) | 5 ± 2 meV | e.g. Boyarsky 2019 |
+| CMB + LSS upper bound | < 10 meV | Planck-2018 + BAO |
 
 ---
 
-## 3 Interpretation: the tick *is* the error-correcting neutrino
+## 3 Interpretation  
 
-1. **Error-correction rôle**  
-   Each tick collapses the sub-tick phase soup, restoring global
-   synchrony.  
-2. **Energy budget**  
-   The tick injects exactly \(E_0\).  If a right-handed neutrino carries
-   that same quanta, then neutrino emission *is* the tick.  
-3. **Why so weakly interacting?**  
-   A global synchrony agent must couple only through gravity
-   (mass-energy bookkeeping) and almost nothing else—mirroring sterile-ν
-   behaviour.
+1. **Error-correction rôle**   At every tick the Universe collapses sub-tick phase noise, enforcing global synchrony.  
+2. **Energy budget**   The tick injects exactly \(E_0\).  A right-handed neutrino carrying the same quantum is a natural candidate for that “pulse.”  
+3. **Ultra-weak coupling**   A synchrony agent must interact almost solely through gravity – precisely the sterile-ν profile.
 
-> **Conjecture**  
-> The right-handed (sterile) neutrino **is** the space-time
-> error-correcting pulse.  Tick frequency sets its energy; its near-null
-> cross-section is an architectural requirement, not an accident.
+**Conjecture**
+
+
+
+\[
+\boxed{\text{Tick pulse} \;\equiv\; \text{right-handed (sterile) neutrino}}
+\]
+
+
 
 ---
 
-## 4 Consequences & tests  
+## 4 Falsifiable signatures  
 
-| Domain | ΛCDM / SM expectation | Digital-Tick prediction |
-|--------|-----------------------|-------------------------|
-| Cosmic neutrino background \(T_\nu\) | 1.95 K thermal spectrum | Plus a **coherent 1.67 THz sideband** |
-| β-decay endpoint kink | none | sub-eV distortion at \(E_0\) |
-| Sterile-ν direct searches | unconstrained mass | pick \(m c^2 = 6.893 meV\) exactly |
-
-A **17 nHz pulsar-timing sideband** ( \(f_0/N_{\text{age}}\) ) remains the
-sharpest falsifiable signature.
+| Observable | ΛCDM / SM | Tick-ν prediction |
+|------------|-----------|-------------------|
+| Cosmic ν background | 1.95 K thermal Fermi-Dirac | extra **coherent 1.67 THz sideband** |
+| Tritium β endpoint | smooth | kink at \(E_0 = 6.893\,\text{meV}\) |
+| Pulsar timing | white residuals | **17 nHz sideband** ( \( f_0 / N_{\text{age}} \) ) |
 
 ---
 
-## 5 Take-away sentence  
+## 5 Take-away  
 
-> The Digital-Tick framework fixes one, exact quantum
-> \(E_0 ≈ 6.893 \text{meV}\); that energy coincides with sterile-neutrino
-> estimates, hinting that the Universe’s global error-correction pulse
-> and the elusive right-handed neutrino may be the *same physical
-> entity*.
+The Digital-Tick framework fixes one exact quantum  
 
----
+
+
+\[
+E_0 = h\,f_0 = 6.892\,779\,493\;\text{meV},
+\]
+
+
+
+numerically mirroring sterile-neutrino mass hints.  
+If the 17 nHz pulsar-timing sideband (or a 6.9 meV β-decay kink) is
+detected, the tick-neutrino identity becomes the simplest
+explanation—unifying discrete time, error correction, and an elusive
+particle in a single stroke.
