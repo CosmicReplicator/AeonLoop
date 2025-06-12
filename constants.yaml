@@ -1,0 +1,16 @@
+# constants.yaml  (11+ significant digits, spaces only)
+tick:
+  tau_ps:       0.600000000          # tick period (ps)
+  f_thz:        1.666666666667       # 1 / tau (THz)
+  distance_mm:  0.179875475          # c·tau (mm)
+
+Planck:
+  h_eVs:        4.135667696e-15      # Planck constant (eV·s)
+  hbar_eVs:     6.582119569e-16
+
+base_energy:
+  E0_meV:       6.892779493          # h·f (meV)
+
+SM:                                  # Standard-Model anchors
+  M_W_GeV:      79.800               # electroweak target (GeV)
+  alpha_codata22: 7.2973525693e-3    # fine-structure constant (CODATA-22)
