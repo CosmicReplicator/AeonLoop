@@ -3,13 +3,18 @@ author: "jonsvein Heinesen"
 
 kramdown:
   input: GFM
-  gfm_quirks: ['math_block', 'math_inline']   # <- add this line
+  gfm_quirks:
+    - math_block
+    - math_inline
   math_engine: mathjax
   math_engine_opts:
-    inline_math_delimiters:  [["\\(", "\\)"]]
-    display_math_delimiters: [["\
+    inline_math_delimiters:
+      - ['\(', '\)']
+    display_math_delimiters:
+      - ['
 
-\[", "\\]
+\[', '\]
 
-"], ["$$", "$$"]]
+']
+      - ['$$', '$$']
 
