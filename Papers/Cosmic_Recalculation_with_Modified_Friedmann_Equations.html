@@ -113,8 +113,7 @@ t_H \approx 24.4\ \text{Gyr}.
 
 ### 2.2 Full fractal amplification  
 
-Adopt global-fit gain A ≈ 3  
-[(r / r<sub>0</sub>)<sup>0.333</sup> = A].  
+Adopt global-fit gain **A ≈ 3** — (r / r<sub>0</sub>)<sup>0.333</sup> = A.  
 That raises H<sub>0</sub> by √3 and lowers the Hubble time to ~ 14 Gyr.
 Tick-by-tick integration (§ 4) pushes the age down further to **≈ 9 Gyr**.
 
@@ -146,9 +145,8 @@ N ≈ 1.4 × 10<sup>33</sup> ticks, requiring
 
 ## 4 Numerical Demonstration  
 
-```c
 /* tick-update loop (simplified) */
 a *= 1.0
-   + tau * sqrt(8.0 * M_PI * G_eff * rho_b0 / pow(a, 3))
-   / 3.0;
+     + tau * sqrt(8.0 * M_PI * G_eff * rho_b0 / pow(a, 3))
+     / 3.0;
 
