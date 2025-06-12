@@ -3,7 +3,6 @@ markdown: kramdown
 author: "jonsvein Heinesen"
 
 kramdown:
-  input: GFM
   math_engine: mathjax
   math_engine_opts:
     inline_math_delimiters:
