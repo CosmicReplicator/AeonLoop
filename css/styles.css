@@ -7,10 +7,7 @@
   box-sizing: border-box;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
+p { margin: 0; padding: 0; }
 
 /* ===============================================================
    MAIN HEADER
@@ -19,27 +16,15 @@ p {
   text-align: center;
   margin-bottom: 20px;
   background-color: transparent !important;
-  /* background: linear-gradient(135deg, #777777, #999999); */
   padding: 20px;
   border-bottom: 4px double #f5f5dc;
   border-radius: 8px;
 }
-
-.main-header img {
-  display: block;
-  margin: 0 auto 10px;
-  max-width: 200px;
-  height: auto;
-}
-
-.main-header h1 {
-  font-size: 2em;
-  color: #f5f5dc;
-  padding: 10px 0;
-}
+.main-header img   { display:block; margin:0 auto 10px; max-width:200px; height:auto; }
+.main-header h1    { font-size:2em; color:#f5f5dc; padding:10px 0; }
 
 /* ===============================================================
-   BODY
+   BODY  ( ⟵ added text-align so the sheet can centre )
 ================================================================ */
 body {
   font-family: Arial, sans-serif;
@@ -50,186 +35,117 @@ body {
   padding: 20px;
   min-height: 100vh;
   font-size: 18px;
+  text-align: center;          /* NEW: centres inline-block .page-content   */
 }
 
 /* ===============================================================
-   A4-STYLE CONTAINER
+   A4-STYLE FLOATING SHEET
 ================================================================ */
 .page-content {
-  width: 60%;
-  max-width: 210mm;
+  /* 1 — shrink-wrap to the widest line (eqn, table, etc.) */
+  display: inline-block;       /* auto-width possible only if not full-width */
+  width: fit-content;          /* modern browsers → intrinsic width          */
+  max-width: 210mm;            /* never exceed A4 on huge screens            */
+
+  /* 2 — original styling kept */
   background-color: #444;
   border: 2px solid #f5f5dc;
   padding: 20mm;
-  margin: 0 auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow-wrap: break-word;
 }
 
+/* phone fallback: revert to near full-width so nothing overflows */
 @media (max-width: 600px) {
   .page-content {
+    display: block;
     width: 90%;
+    max-width: 90%;
     padding: 20px;
+    margin: 0 auto;            /* recentre because we’re block again        */
   }
 }
 
 /* ===============================================================
    NAVIGATION
 ================================================================ */
-nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
+nav           { text-align:center; margin-bottom:20px; }
+nav a         { margin:0 10px; text-decoration:none; color:#0077cc; font-size:1.1em; }
+nav a:hover   { text-decoration:underline; }
 
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #0077cc;
-  font-size: 1.1em;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Button links */
-.button-container { margin-bottom: 20px; }
-
+/* Buttons */
+.button-container { margin-bottom:20px; }
 a.button {
-  display: inline-block;
-  padding: 8px 15px;
-  margin: 5px;
-  background: linear-gradient(135deg, #777777, #666666);
-  color: #f5f5dc;
-  text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-  transition: background .3s, transform .2s, box-shadow .2s;
+  display:inline-block; padding:8px 15px; margin:5px;
+  background:linear-gradient(135deg,#777,#666); color:#f5f5dc;
+  text-decoration:none; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:bold; border:none; border-radius:20px;
+  box-shadow:0 1px 3px rgba(0,0,0,.15);
+  transition:background .3s, transform .2s, box-shadow .2s;
 }
-
-a.button:hover {
-  background: linear-gradient(135deg, #666666, #777777);
-  transform: translateY(-1px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
-}
-
-a.button:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
-}
+a.button:hover  { background:linear-gradient(135deg,#666,#777); transform:translateY(-1px); box-shadow:0 3px 6px rgba(0,0,0,.2); }
+a.button:active { transform:translateY(0); box-shadow:0 1px 3px rgba(0,0,0,.15); }
 
 /* Scrollable index panel */
 .index-scroll-container {
-  max-height: 80vh;
-  overflow-y: auto;
-  padding: 1em;
-  border-radius: 8px;
-  border: 2px solid #f5f5dc;
-  background-color: transparent;
-  margin-bottom: 1em;
+  max-height:80vh; overflow-y:auto; padding:1em;
+  border-radius:8px; border:2px solid #f5f5dc; background:transparent;
+  margin-bottom:1em;
 }
 
 /* No-background variant */
 .no-bg-container {
-  width: 210mm;
-  background: none !important;
-  background-color: transparent !important;
-  margin: 0 auto;
-  padding: 20mm;
-  border: 2px solid #f5f5dc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  overflow-wrap: break-word;
+  width:210mm; background:none!important; margin:0 auto;
+  padding:20mm; border:2px solid #f5f5dc; box-shadow:0 0 10px rgba(0,0,0,.1);
+  overflow-wrap:break-word;
 }
 
 /* Smooth scrolling */
-html { scroll-behavior: smooth; }
+html { scroll-behavior:smooth; }
 
 /* In-page nav */
-.in-page-nav { margin-top: 20px; }
-
-.in-page-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.in-page-nav li a {
-  text-decoration: none;
-  padding: .5em 1em;
-  background: #555;
-  color: #f5f5dc;
-  border-radius: 4px;
-}
+.in-page-nav { margin-top:20px; }
+.in-page-nav ul { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:1em; }
+.in-page-nav li a { text-decoration:none; padding:.5em 1em; background:#555; color:#f5f5dc; border-radius:4px; }
 
 /* ===============================================================
    TYPOGRAPHY
 ================================================================ */
-header { text-align: center; margin-bottom: 20px; }
+header { text-align:center; margin-bottom:20px; }
 
-h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: bold;
-  color: #f5f5dc;
-  text-align: center;
-  letter-spacing: 1px;
+h1,h2,h3 {
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:bold; color:#f5f5dc; text-align:center; letter-spacing:1px;
 }
-
-/* Title levels */
 h1 {
-  font-size: 1.8em;
-  background: linear-gradient(135deg, #777777, #999999);
-  text-transform: uppercase;
-  text-shadow: 3px 3px 5px rgba(0, 95, 163, .4);
-  border-bottom: 4px double #f5f5dc;
-  padding: 20px;
-  display: inline-block;
-  margin-bottom: 30px;
+  font-size:1.8em; background:linear-gradient(135deg,#777,#999);
+  text-transform:uppercase; text-shadow:3px 3px 5px rgba(0,95,163,.4);
+  border-bottom:4px double #f5f5dc; padding:20px; display:inline-block; margin-bottom:30px;
 }
-
-h2, h3 {
-  background: linear-gradient(135deg, #777777, #999999);
-  color: #f5f5dc;
-  padding: 10px 20px;
-  border-radius: 12px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
-  display: inline-block;
+h2,h3 {
+  background:linear-gradient(135deg,#777,#999); color:#f5f5dc;
+  padding:10px 20px; border-radius:12px; text-shadow:2px 2px 4px rgba(0,0,0,.3);
+  display:inline-block;
 }
-
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.0em; }
+h2 { font-size:1.5em; }
+h3 { font-size:1.0em; }
 
 /* ===============================================================
    FOOTER
 ================================================================ */
 footer {
-  background-color: #f5f5f5;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #ddd;
+  background:#f5f5f5; padding:20px; text-align:center;
+  margin-top:40px; border-top:1px solid #ddd;
 }
-
-.footer-nav { margin-bottom: 10px; }
-
+.footer-nav { margin-bottom:10px; }
 .footer-nav .footer-link {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
-  transition: color .3s;
+  margin:0 15px; text-decoration:none; color:#0077cc; font-weight:bold; transition:color .3s;
 }
-
-.footer-nav .footer-link:hover { color: #005fa3; }
-
-footer p { font-size: .9em; color: #666; }
+.footer-nav .footer-link:hover { color:#005fa3; }
+footer p { font-size:.9em; color:#666; }
 
 /* ===============================================================
    PRE-WRAPPED BLOCKS
 ================================================================ */
-.preformatted { white-space: pre-wrap; }
+.preformatted { white-space:pre-wrap; }
