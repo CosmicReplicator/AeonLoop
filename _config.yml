@@ -1,28 +1,27 @@
-# ---------------------------------------------------------------
-#  _config.yml  – plain, no “$” delimiters
-# ---------------------------------------------------------------
+# _config.yml  (with MathJax opts, YAML-safe)
 
-markdown: kramdown            # default engine
-# no markdown_ext line → .md / .markdown only
+markdown: kramdown
+author: "jonsvein Heinesen"
 
 kramdown:
   input: GFM
-  math_engine: mathjax        # uses MathJax v3 on GitHub Pages
+  math_engine: mathjax
+  math_engine_opts:
+    inline_math_delimiters:
+      - ['\\(', '\\)']      # \( … \)
+    display_math_delimiters:
+      - ['\
 
-  # we omit math_engine_opts entirely → Kramdown uses:
-  #   inline  : \( … \)
-  #   display : 
+\[', '\\]
+
+']      # 
 
 \[ … \]
 
-  or  $$ … $$
-  # “$ … $” is ignored
 
-  hard_wrap: false
+      - ['$$', '$$']        # $$ … $$
   syntax_highlighter_opts:
-    disable: true             # keeps MathJax spans untouched
-
-author: "jonsvein Heinesen"
+    disable: true
 
 collections:
   ladder:
