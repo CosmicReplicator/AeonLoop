@@ -43,7 +43,7 @@
     </header>
     <main>
       {% include sections.html %}
-+      {{ content }}   <!-- already-rendered HTML; no second markdown run -->
++      {{ content | markdownify }}
 
     </main>
     <footer>
