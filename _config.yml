@@ -1,21 +1,17 @@
-# _config.yml  – passes PyYAML and GitHub Pages
+# _config.yml  – this one parses
 markdown: kramdown
-author: 'jonsvein Heinesen'
+author: "jonsvein Heinesen"
 
 kramdown:
   input: GFM
   math_engine: mathjax
   math_engine_opts:
     inline_math_delimiters:
-      - ['\(', '\)']          #  \( … \)
+      - ['\(', '\)']
     display_math_delimiters:
       - ['
 
 \[', '\]
 
-']          #  
-
-\[ … \]
-
-
-      - ['$$', '$$']          #  $$ … $$
+']
+      - ['$$', '$$']
