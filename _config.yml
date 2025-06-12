@@ -1,5 +1,4 @@
-# _config.yml  ─ MathJax + ladder collection
-
+# _config.yml – MathJax working, YAML-valid
 markdown: kramdown
 author: "jonsvein Heinesen"
 
@@ -28,3 +27,4 @@ collections:
     output: true
     directory: "Ladder"
     permalink: "/ladder/:name/"
+
