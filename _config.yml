@@ -1,4 +1,4 @@
-# _config.yml  ─ fully valid
+# _config.yml  – passes PyYAML and GitHub Pages
 markdown: kramdown
 author: 'jonsvein Heinesen'
 
@@ -6,10 +6,16 @@ kramdown:
   input: GFM
   math_engine: mathjax
   math_engine_opts:
-    inline_math_delimiters:  [["\\(", "\\)"]]
-    display_math_delimiters: [["\
+    inline_math_delimiters:
+      - ['\(', '\)']          #  \( … \)
+    display_math_delimiters:
+      - ['
 
-\[", "\\]
+\[', '\]
 
-"], ["$$", "$$"]]
+']          #  
 
+\[ … \]
+
+
+      - ['$$', '$$']          #  $$ … $$
