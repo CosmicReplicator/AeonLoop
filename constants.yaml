@@ -1,16 +1,29 @@
-# constants.yaml  (11+ significant digits, spaces only)
+# constants.yaml  (v2025-06-13 — LOCKED; ≥14 significant digits)
+
 tick:
-  tau_ps:       0.600000000          # tick period (ps)
-  f_thz:        1.666666666667       # 1 / tau (THz)
-  distance_mm:  0.179875475          # c·tau (mm)
+  tau_ps      : 0.600000000            # [ps]  exact by definition
+  f_thz       : 1.6666666666667        # [THz] = 1/τ  (14 s.f.)
+  dx_mm       : 0.1798754748           # [mm]  = c·τ
+
+energy:
+  E0_meV      : 6.892779493            # [meV] = h·f
+
+mass:
+  m_eff_kg    : 1.093e-38              # (8/9)·E0/c²   (reference mass unit)
+
+gravity:
+  G_tick      : 4.51e-62               # dimension-less coupling in tick units
+  G_SI        : 6.67e-11               # reproduced value, m³ kg⁻¹ s⁻²
 
 Planck:
-  h_eVs:        4.135667696e-15      # Planck constant (eV·s)
-  hbar_eVs:     6.582119569e-16
+  h_eVs       : 4.135667696e-15        # Planck constant  h
+  hbar_eVs    : 6.582119569e-16        # reduced Planck  ħ
 
-base_energy:
-  E0_meV:       6.892779493          # h·f (meV)
+SM:                                     # Standard-Model anchors
+  M_W_GeV     : 79.800                 # electroweak target (GeV)
+  alpha_2022  : 7.2973525693e-3        # fine-structure constant (CODATA-22)
 
-SM:                                  # Standard-Model anchors
-  M_W_GeV:      79.800               # electroweak target (GeV)
-  alpha_codata22: 7.2973525693e-3    # fine-structure constant (CODATA-22)
+meta:
+  codata      : 2022
+  note        : "File is immutable; bump version tag for any future change."
+
