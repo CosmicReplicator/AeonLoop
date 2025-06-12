@@ -6,32 +6,27 @@ mathjax: true
 
 # Cosmic Re-calculation with Discrete Friedmann Dynamics
 
-> **Base-tick definition**  
-> Time step τ = 0.600 000 000 ps (exact) →  
-> Frequency f = 1 / τ = 1.666 666 666 666 7 THz (14 s.f.)  
+> **Base-tick constants (CODATA-22)**  
+> Time step τ = 0.600 000 000 ps (exact)  
+> Frequency f = 1 / τ = 1.666 666 666 666 7 THz  
 > Light-step Δx = c τ = 0.179 875 474 8 mm  
-> Tick energy **E<sub>0</sub>** = h f = 6.892 779 493 meV  
+> Tick energy E<sub>0</sub> = h f = 6.892 779 493 meV  
 >  
 > **Fractal space** D<sub>eff</sub> = 2.667  
-> (volume element dV ∝ r<sup>1.667</sup> dr)  
-> All digits shown are self-consistent to &lt; 5 × 10⁻¹⁴ relative error.
+> Volume element dV ∝ r<sup>1.667</sup> dr
 
 ---
 
-## Introduction  
+## Introduction
 
-Cosmic evolution is usually cast in smooth time and three-dimensional space.  
-Here we replace **both** assumptions:
+1. **Discrete time.** Each global tick lasts 0.600 ps and executes an
+   error-correction pulse.  
+2. **Fractal space.** Effective dimension D<sub>eff</sub> = 2.667 modifies
+   gravity via  
+   G<sub>eff</sub>(r) = G (r / r<sub>0</sub>)<sup>0.333</sup>.
 
-1. **Time is discrete.** Every tick of exact duration  
-   \(τ = 0.600\,000\,000\;\text{ps}\) executes a global error-correction pulse.  
-2. **Space integrates fractally.** The effective dimension  
-   \(D_{\mathrm{eff}} = 2.667\) modifies Newtonian terms by  
-   \(G_{\mathrm{eff}}(r)=G\,(r/r_{0})^{0.333}\).
-
-With only *baryonic* matter, these two ingredients recast the Friedmann
-equations and still reproduce the observed expansion history—while predicting a
-younger Universe (~ 9 Gyr) once the full fractal amplification is applied.
+These two ingredients re-cast the Friedmann equations, replicate the observed
+expansion history, and suggest a younger Universe (~ 9 Gyr).
 
 ---
 
@@ -41,57 +36,59 @@ younger Universe (~ 9 Gyr) once the full fractal amplification is applied.
 
 
 \[
-\left(\frac{\dot a}{a}\right)^{2}
-  = \frac{8\pi G}{3}\,\rho - \frac{k}{a^{2}} + \frac{\Lambda}{3}
+\left( \frac{\dot a}{a} \right)^2
+  = \frac{8\pi G}{3}\,\rho
+    - \frac{k}{a^2}
+    + \frac{\Lambda}{3}
 \]
 
 
 </div>
 
-is replaced at tick level by the finite difference  
+At tick resolution replace the derivative with a finite difference:
 
 <div class="eq">
 
 
 \[
-\frac{\dot a}{a}\;\longrightarrow\;
-\frac{a_{N+1}-a_{N}}{\,τ\,a_{N}} .
+\frac{a_{N+1} - a_N}{\tau\,a_N}.
 \]
 
 
 </div>
 
-Dropping \(\Lambda\) (error-correction cancels vacuum energy) and inserting
-\(G_{\mathrm{eff}}\),
+Setting Λ = 0 and inserting G<sub>eff</sub> you obtain:
 
 <div class="eq">
 
 
 \[
-\left[\frac{a_{N+1}-a_{N}}{\,τ\,a_{N}}\right]^{2}
-  = \frac{8\pi G}{3}\Bigl(\frac{r}{r_{0}}\Bigr)^{0.333}
-    \rho_{\mathrm b}(a_N) - \frac{k_{\text{eff}}}{a_N^{2}} .
+\left[ \frac{a_{N+1} - a_N}{\tau\,a_N} \right]^2
+  = \frac{8\pi G}{3}
+    \bigl(r/r_0\bigr)^{0.333}
+    \rho_b(a_N)\;.
 \]
 
 
 </div>
 
-We keep \(k_{\text{eff}}=0\) (spatial flatness) throughout this paper.
+Throughout this paper k<sub>eff</sub> = 0 (spatial flatness).
 
 ---
 
 ## 2 Discrete Cosmic Evolution  
 
-With \(\rho_{\mathrm b}(a)=\rho_{b0}(a_{0}/a)^{3}\) and \(a_{0}=1\),
+Define ρ<sub>b</sub>(a) = ρ<sub>b0</sub>(a<sub>0</sub>/a)<sup>3</sup> with
+a<sub>0</sub> = 1. The update rule becomes
 
 <div class="eq">
 
 
 \[
-a_{N+1}=a_{N}+τ\,a_{N}\,
+a_{N+1}=a_N+\tau\,a_N
          \sqrt{\frac{8\pi G}{3}
-               \Bigl(\frac{r}{r_{0}}\Bigr)^{0.333}
-               \rho_{b0}\,a_{N}^{-3}} .
+               \bigl(r/r_0\bigr)^{0.333}
+               \rho_{b0}\,a_N^{-3}}.
 \]
 
 
@@ -99,26 +96,16 @@ a_{N+1}=a_{N}+τ\,a_{N}\,
 
 ### 2.1 Back-of-envelope (standard G)  
 
-Take \(\rho_{b0}=3.0\times10^{-27}\,\text{kg m}^{-3}\) and drop fractal gain:
+Using ρ<sub>b0</sub> = 3 × 10<sup>−27</sup> kg m<sup>−3</sup> and no fractal
+gain,
 
 <div class="eq">
 
 
 \[
-H_{0}=\sqrt{\frac{8\pi G}{3}\rho_{b0}}
-     \approx 1.30\times10^{-18}\,\text{s}^{-1}.
-\]
-
-
-</div>
-
-Cosmic age estimate  
-
-<div class="eq">
-
-
-\[
-t_{H}=1/H_{0}\approx7.7\times10^{17}\,\text{s}=24.4\ \text{Gyr}.
+H_0 \approx 1.30\times10^{-18}\,\text{s}^{-1},
+\qquad
+t_H \approx 24.4\ \text{Gyr}.
 \]
 
 
@@ -126,39 +113,42 @@ t_{H}=1/H_{0}\approx7.7\times10^{17}\,\text{s}=24.4\ \text{Gyr}.
 
 ### 2.2 Full fractal amplification  
 
-Let \((r/r_{0})^{0.333}=A\) with a global-fit gain \(A\approx3\).  
-That boosts \(H_{0}\) by \(\sqrt3\) and lowers the Hubble time to ~ 14 Gyr.  
-Numerical tick-by-tick integration (see §4) tightens the age further to
-**≈ 9 Gyr**.
+Adopt global-fit gain A ≈ 3  
+[(r / r<sub>0</sub>)<sup>0.333</sup> = A].  
+That raises H<sub>0</sub> by √3 and lowers the Hubble time to ~ 14 Gyr.
+Tick-by-tick integration (§ 4) pushes the age down further to **≈ 9 Gyr**.
 
 ---
 
 ## 3 Tick-Induced Redshift  
 
-Ordinary redshift \(1+z = a(t_{0})/a(t_{\text{emit}})\) maps to cumulative
-phase kicks:
+Ordinary redshift 1 + z = a(t<sub>0</sub>) / a(t<sub>emit</sub>) links to
+cumulative phase kicks:
 
 <div class="eq">
 
 
 \[
-1+z = \prod_{i=1}^{N}(1+\delta_i)
-      \;\approx\;\exp\!\bigl(N\,\bar\delta\bigr),
+1+z \;=\;
+\prod_{i=1}^{N}(1+\delta_i)
+\;\approx\;
+\exp\bigl(N\,\bar\delta\bigr).
 \]
 
 
 </div>
 
-where \(\bar\delta\) is the mean per-tick phase drift.  
-With \(τ = 0.600\ \text{ps}\) the CMB emission (\(z\simeq1100\)) spans
-\(N\approx1.4\times10^{33}\) ticks, implying
-\(\bar\delta\approx8.0\times10^{-4}\).
+For τ = 0.600 ps the CMB emission (z ≈ 1100) spans
+N ≈ 1.4 × 10<sup>33</sup> ticks, requiring
+\(\bar\delta\) ≈ 8 × 10<sup>−4</sup>.
 
 ---
 
 ## 4 Numerical Demonstration  
 
 ```c
-/* tick-update loop */
-a *= 1.0 + τ *
-     sqrt(8.0 * M_PI * G_eff * ρb0 / pow(a,3)) / 3.0;
+/* tick-update loop (simplified) */
+a *= 1.0
+   + tau * sqrt(8.0 * M_PI * G_eff * rho_b0 / pow(a, 3))
+   / 3.0;
+
