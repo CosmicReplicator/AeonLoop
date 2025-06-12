@@ -1,4 +1,4 @@
-# _config.yml – MathJax working, YAML-valid
+# _config.yml  – compact & YAML-valid
 markdown: kramdown
 author: "jonsvein Heinesen"
 
@@ -7,20 +7,20 @@ kramdown:
   math_engine: mathjax
   math_engine_opts:
     inline_math_delimiters:
-      - ['\\(', '\\)']      # \( … \)
+      - ['\\(', '\\)']          # \( … \)
     display_math_delimiters:
       - ['\
 
 \[', '\\]
 
-']      # 
+']          # 
 
 \[ … \]
 
 
-      - ['$$', '$$']        # $$ … $$
+      - ['$$',  '$$']           # $$ … $$
   syntax_highlighter_opts:
-    disable: true
+    disable: true               # keep MathJax spans intact
 
 collections:
   ladder:
