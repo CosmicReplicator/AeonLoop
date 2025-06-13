@@ -1,108 +1,117 @@
 ---
 layout: papers
 title: "A Cascade of Resonant Steps"
+mathjax: true
 ---
 
-<div>
-  <h2>From Digital Ticks to Emergent Forces: A Cascade of Resonant Steps</h2>
+<h2>From Digital Ticks to Emergent Forces — A Cascade of Resonant Steps</h2>
 
-  <h3>Abstract</h3>
-  <p>
-    We propose a discrete-time framework in which nature updates every&nbsp;≈ 0.6 ps.  That invariant “tick” (≈ 1.667 THz, 6.89 meV) seeds a resonant energy ladder whose per-step amplifier is \(Q \simeq 409.78\).  In five steps the ladder lands on the electroweak scale (~ 80 GeV) while step 4 coincides with the QCD confinement scale (~ 195 MeV).  Continuing to steps 6–8 projects ~ 32.6 TeV, 13.4 PeV, and 5.47 EeV, hinting that the entire hierarchy of forces is an arithmetic consequence of a single digital tick.
-  </p>
+<h3>Abstract</h3>
+<p>
+  We start from an invariant tick τ ≈ 0.600 ps (f ≈ 1.667 THz,
+  E₀ ≈ 6.892 779 493 meV).  
+  A single amplifier \(Q\) ≈ 409.78 lifts that seed by
+  five resonant steps to the electroweak scale
+  \(E_5\) ≈ 80 GeV; step 4 lands on the QCD confinement
+  scale (~ 195 MeV).  Continuing to steps 6 – 8 predicts
+  ~ 32.6 TeV, 13.4 PeV, and 5.47 EeV, hinting that the hierarchy
+  of forces might be an arithmetic consequence of one digital tick.
+</p>
 
-  <h3>1.&nbsp;Introduction</h3>
-  <p>
-    The origin of the strong/weak hierarchy remains a central puzzle in high-energy physics.  Instead of continuous renormalisation, we consider a <em>digital-tick</em> model: the universe advances in equal time quanta.  Earlier work showed that a seven-segment phase-locking condition fixes geometrical constants; here we extend that logic to energy-scale emergence.
-  </p>
-  <p>
-    A 0.6 ps tick implies a base frequency 1.667 THz and, via \(E = h f\), a base quantum \(E_0 \approx 6.89\;\text{meV}\).  We ask: what fixed multiplier \(Q\) maps that seed to the electroweak scale after precisely five resonant steps?
-  </p>
+---
 
-  <h3>2.&nbsp;Deriving the Step Multiplier</h3>
-  <p>
-    Requiring step 5 to reach \(E_5 \approx 80\;\text{GeV}\) gives
-  </p>
-  <p style="margin:0;">
-    
+## 1  Introduction
+
+<p>
+  The strong/weak hierarchy is usually framed as a continuous
+  renormalisation-group flow.  Here we explore a
+  <em>digital-tick</em> alternative: the universe advances in equal
+  quanta τ.  Earlier work fixed
+  \(D_{\text{eff}}=\tfrac83\) via a seven-segment phase-lock; now we
+  push the same logic up the energy ladder.
+</p>
+
+---
+
+## 2  Deriving the step multiplier
+
+<div class="eq">
+{% raw %}
+
 
 \[
-      Q^5 \;=\; \frac{E_5}{E_0}.
-    \]
+  Q^5 \;=\; \frac{E_5}{E_0}
+           \;=\;
+           \frac{80\,\text{GeV}}{6.892\,779\,493\,\text{meV}}
+           = 1.158\times10^{13},
+  \qquad
+  Q \;=\; \bigl(1.158\times10^{13}\bigr)^{1/5}
+         \approx 4.0978\times10^{2}.
+\]
 
 
-  </p>
-  <p style="margin:0;">
-    
-
-\[
-      \frac{80\times10^{9}\;\text{eV}}{6.89\times10^{-3}\;\text{eV}}
-      \;\approx\; 1.158\times10^{13},
-    \]
-
-
-  </p>
-  <p style="margin:0;">
-    
-
-\[
-      Q \;\approx\; \bigl(1.158\times10^{13}\bigr)^{1/5}
-      \;\approx\; 409.78.
-    \]
-
-
-  </p>
-  <p>
-    Thus each rung multiplies energy by \(Q \approx 4.10\times10^{2}\).  The resulting ladder is:
-  </p>
-
-  <table>
-    <tr><th>Step</th><th>Energy</th><th>Remarks</th></tr>
-    <tr><td>0</td><td>6.89 meV</td><td>Base tick</td></tr>
-    <tr><td>1</td><td>6.89 meV × 409.78 ≈ 2.83 eV</td><td>Atomic scale</td></tr>
-    <tr><td>2</td><td>2.83 eV × 409.78 ≈ 1.16 keV</td><td>X-ray scale</td></tr>
-    <tr><td>3</td><td>1.16 keV × 409.78 ≈ 0.475 MeV</td><td>Sub-MeV</td></tr>
-    <tr><td>4</td><td>0.475 MeV × 409.78 ≈ 194.7 MeV</td><td>Strong (QCD)</td></tr>
-    <tr><td>5</td><td>194.7 MeV × 409.78 ≈ 79.8 GeV</td><td>Electroweak</td></tr>
-  </table>
-
-  <h3>3.&nbsp;Forces from the Ladder</h3>
-  <p>
-    Step 4 reproduces the canonical QCD scale where hadronic confinement sets in; the very next rung lands on the W/Z-boson mass window.  In this picture the weak interaction <em>emerges directly</em> from the strong-force plateau rather than from an unrelated high-energy cut-off.
-  </p>
-
-  <h3>4.&nbsp;Beyond the Electroweak Step</h3>
-  <p>
-    Applying the same \(Q\) further:
-  </p>
-  <ul>
-    <li><strong>Step 6:</strong> 79.8 GeV × 409.78 ≈ 32.6 TeV</li>
-    <li><strong>Step 7:</strong> 32.6 TeV × 409.78 ≈ 13.4 PeV</li>
-    <li><strong>Step 8:</strong> 13.4 PeV × 409.78 ≈ 5.47 EeV</li>
-  </ul>
-
-  <table>
-    <tr><th>Step</th><th>Energy</th><th>Units</th></tr>
-    <tr><td>5</td><td>79.8 GeV</td><td>Electroweak</td></tr>
-    <tr><td>6</td><td>32,600 GeV</td><td>≈ 32.6 TeV</td></tr>
-    <tr><td>7</td><td>13,360,000 GeV</td><td>≈ 13.4 PeV</td></tr>
-    <tr><td>8</td><td>5.47 × 10<sup>9</sup> GeV</td><td>≈ 5.47 EeV</td></tr>
-  </table>
-  <p>
-    The PeV-to-EeV domain overlaps observed knees in cosmic-ray spectra, suggesting that the same tick-driven resonance may govern both particle and astrophysical phenomena.
-  </p>
-
-  <h3>5.&nbsp;Discussion</h3>
-  <p>
-    A single multiplier \(Q\) reproduces the strong and electroweak scales <em>and</em> projects smoothly into the ultra-high-energy realm.  Because \(Q\) is determined once the electroweak target is fixed, the model avoids arbitrary fine-tuning.  The digital-tick paradigm therefore offers a compact alternative to traditional renormalisation-group flow.
-  </p>
-
-  <h3>6.&nbsp;Conclusions</h3>
-  <p>
-    Starting from a 0.6 ps tick (6.89 meV) and an empirically anchored multiplier \(Q \approx 409.78\), a five-step resonant cascade lands on 79.8 GeV, with the strong-force scale appearing one rung below.  Extending the same factor yields natural predictions in the TeV-to-EeV range.  Ongoing work will derive \(Q\) from first-principles lattice geometry and seek observational signatures of discrete-tick harmonics.
-  </p>
-
-  <p style="font-size:0.9em;">
-    <sup>*</sup> The six-rotation “closure” constant \(3/α ≈ 411.108\) arises in the error-correction sector of the wider digital-tick programme; it is within 0.3 % of \(Q\) but not identical, and is kept separate throughout this paper.
-  </p>
+{% endraw %}
 </div>
+
+---
+
+## 3  Energy ladder
+
+<div class="eq">
+{% raw %}
+
+
+\[
+\boxed{
+\begin{array}{@{}c r @{\;\text{→}\;} l@{}}
+\text{Step} & \text{Energy} & \text{Comment}\\
+\hline
+0 & 6.892\,8\;\text{meV} & \text{Base tick}\\
+1 & 2.83\;\text{eV}      & \text{Atomic scale}\\
+2 & 1.16\;\text{keV}     & \text{X-ray}\\
+3 & 0.475\;\text{MeV}    & \text{Sub-MeV}\\
+4 & 194.7\;\text{MeV}    & \text{QCD confinement}\\
+5 & 79.8\;\text{GeV}     & \text{Electroweak}\\
+6 & 32.6\;\text{TeV}     & \text{Bridge to LHC++}\\
+7 & 13.4\;\text{PeV}     & \text{Cosmic-ray knee}\\
+8 & 5.47\;\text{EeV}     & \text{UHE cosmic rays}
+\end{array}}
+\]
+
+
+{% endraw %}
+</div>
+
+---
+
+## 4  Forces from the ladder
+
+Step 4 reproduces Λ<sub>QCD</sub>, step 5 the W/Z mass window, and
+steps 6–8 coincide with observed breaks in the cosmic-ray spectrum.
+Hence the weak interaction may <em>emerge</em> one rung above the
+strong scale, not from an unrelated cutoff.
+
+---
+
+## 5  Discussion
+
+A single Q reproduces two pillars of the Standard Model and projects
+smoothly into the ultra-high-energy regime with no extra knobs.
+Because Q is fixed once \(E_5\) is chosen, the model avoids
+fine-tuning in the usual sense.
+
+---
+
+## 6  Conclusions & next questions
+
+1. Can \(Q\) be derived from the seven-tick error-correction constant  
+   \(C = \tfrac{411.108}{3/\alpha}\)?  
+2. Are the PeV–EeV predictions testable
+   (via IceCube Gen-2 or AugerPrime anisotropies)?  
+3. Does the ladder alter β-functions enough to remove the Landau pole?
+
+<p style="font-size:0.9em;">
+  <sup>*</sup> The “six-rotation closure” constant 3/α ≈ 411.108 differs
+  by only 0.3 % from \(Q\) yet remains conceptually separate; their
+  potential unification is deferred.
+</p>
