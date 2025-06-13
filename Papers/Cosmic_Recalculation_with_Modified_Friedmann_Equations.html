@@ -193,7 +193,7 @@ a_{N+1}=a_{N}
 ---
 
 ```python
-import numpy as np, math
+import math
 
 tau     = 0.600e-12          # s
 G       = 6.674e-11          # m³ kg⁻¹ s⁻²
@@ -202,10 +202,9 @@ rho_b0  = 3e-27              # kg m⁻³
 a = 1e-8                     # initial scale factor
 N = 0                        # tick counter
 while a < 1:
-    # a^{-2.667} = a^(0.333-3)
-    a += tau * a * math.sqrt((8*math.pi*G/3) * a**-2.667 * rho_b0)
+    # a^{-2.667} = a^(0.333 – 3)
+    a += tau * a * math.sqrt((8 * math.pi * G / 3) * a**-2.667 * rho_b0)
     N += 1
 
-t_Gyr = (N * tau) / 3.154e16   # convert seconds → gigayears
+t_Gyr = (N * tau) / 3.154e16   # seconds → gigayears
 print(f"Age ≈ {t_Gyr:.2f} Gyr  (should land ~9 Gyr)")
-...
