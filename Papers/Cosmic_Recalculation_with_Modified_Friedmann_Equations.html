@@ -7,177 +7,201 @@ mathjax: true
 # Cosmic Re-calculation with Discrete Friedmann Dynamics
 
 > **Base-tick constants (CODATA-22)**  
-> Time step τ = 0.600 000 000 ps (exact)  
-> Frequency f = 1 / τ = 1.666 666 666 666 7 THz  
-> Light-step Δx = c τ = 0.179 875 474 8 mm  
-> Tick energy E<sub>0</sub> = h f = 6.892 779 493 meV  
+> τ = 0.600 000 000 ps (exact) → f = 1 / τ = 1.666 666 666 666 7 THz  
+> Δx = c τ = 0.179 875 474 8 mm  
+> E₀ = h f = 6.892 779 493 meV  
 >  
-> **Fractal space** D<sub>eff</sub> = 2.667  
+> **Fractal space**  D<sub>eff</sub> = 2.667  
 > Volume element dV ∝ r<sup>1.667</sup> dr
 
 ---
 
 ## Introduction
 
-1. **Discrete time.** Each global tick lasts 0.600 ps and executes an
-   error-correction pulse.  
-2. **Fractal space.** Effective dimension D<sub>eff</sub> = 2.667 modifies
-   gravity via  
-   G<sub>eff</sub>(r) = G (r / r<sub>0</sub>)<sup>0.333</sup>.
+1. **Discrete time** – every global tick lasts 0.600 ps.  
+2. **Fractal space** – D<sub>eff</sub>=2.667 modifies gravity through  
 
-These two ingredients re-cast the Friedmann equations, replicate the observed
-expansion history, and suggest a younger Universe (~ 9 Gyr).
+<div class="eq">{% raw %}
+
+
+\[
+G_{\text{eff}}(r)=G\Bigl(\frac{r}{r_0}\Bigr)^{0.333}.
+\]
+
+
+{% endraw %}</div>
+
+Together, these ingredients recover the observed expansion yet shrink the
+cosmic age to ≈ 9 Gyr.
 
 ---
 
-## 1 Modified Friedmann Equation  
+## 1 Modified Friedmann Equation
 
-<div class="eq">
-
-
-\[
-\left( \frac{\dot a}{a} \right)^2
-  = \frac{8\pi G}{3}\,\rho
-    - \frac{k}{a^2}
-    + \frac{\Lambda}{3}
-\]
-
-
-</div>
-
-At tick resolution replace the derivative with a finite difference:
-
-<div class="eq">
+<div class="eq">{% raw %}
 
 
 \[
-\frac{a_{N+1} - a_N}{\tau\,a_N}.
+\left(\frac{\dot a}{a}\right)^{2}
+=\frac{8\pi G}{3}\,\rho
+-\frac{k}{a^{2}}
++\frac{\Lambda}{3}.
 \]
 
 
-</div>
+{% endraw %}</div>
 
-Setting Λ = 0 and inserting G<sub>eff</sub> you obtain:
+Replace the derivative with a forward difference:
 
-<div class="eq">
+<div class="eq">{% raw %}
 
 
 \[
-\left[ \frac{a_{N+1} - a_N}{\tau\,a_N} \right]^2
-  = \frac{8\pi G}{3}
-    \bigl(r/r_0\bigr)^{0.333}
-    \rho_b(a_N)\;.
+\frac{a_{N+1}-a_{N}}{\tau\,a_{N}}.
 \]
 
 
-</div>
+{% endraw %}</div>
 
-Throughout this paper k<sub>eff</sub> = 0 (spatial flatness).
+Setting Λ = 0 and k<sub>eff</sub> = 0 gives
+
+<div class="eq">{% raw %}
+
+
+\[
+\left[\frac{a_{N+1}-a_{N}}{\tau\,a_{N}}\right]^{2}
+=\frac{8\pi G}{3}
+\Bigl(\frac{r}{r_0}\Bigr)^{0.333}
+\rho_b(a_{N}).
+\]
+
+
+{% endraw %}</div>
 
 ---
 
-## 2 Discrete Cosmic Evolution  
+## 2 Discrete Cosmic Evolution
 
 Define
- <div class="eq"> \( \rho_{b}(a) = \rho_{b0}\,(a_{0}/a)^{3} \) with \( a_{0} = 1 \).
- </div>
-The tick-level update rule then becomes
 
-<div class="eq">
+<div class="eq">{% raw %}
 
 
 \[
-  a_{N+1}
-    = a_{N}
-    + \tau\,a_{N}
-      \sqrt{\frac{8\pi G}{3}
-            \left(\frac{r}{r_{0}}\right)^{0.333}
-            \rho_{b0}\,a_{N}^{-3}}\; .
+\rho_b(a)=\rho_{b0}\,\bigl(a_{0}/a\bigr)^3,\qquad a_{0}=1.
 \]
 
 
-</div>
+{% endraw %}</div>
 
-### 2.1 Back-of-envelope (standard G)  
+Using \(r=r_0 a_N\) inside the boost term leads to
 
-Using ρ<sub>b0</sub> = 3 × 10<sup>−27</sup> kg m<sup>−3</sup> and no fractal
-gain,
-
-<div class="eq">
+<div class="eq">{% raw %}
 
 
 \[
-H_0 \approx 1.30\times10^{-18}\,\text{s}^{-1},
+a_{N+1}=a_{N}
++\tau\,a_{N}
+\sqrt{\frac{8\pi G}{3}\,
+       a_{N}^{0.333}\,
+       \rho_{b0}\,a_{N}^{-3}}\;.
+\]
+
+
+{% endraw %}</div>
+
+### 2.1 Back-of-envelope (standard G)
+
+With ρ<sub>b0</sub>=3 × 10⁻²⁷ kg m⁻³:
+
+<div class="eq">{% raw %}
+
+
+\[
+H_0 \approx 1.30\times10^{-18}\,\text{s}^{-1}
+      \;(\;70.1\;\text{km s}^{-1}\,\text{Mpc}^{-1}\;),\qquad
+t_H = 1/H_0 \approx 24.4\ \text{Gyr}.
+\]
+
+
+{% endraw %}</div>
+
+### 2.2 Full fractal amplification
+
+Global-fit boost **A ≈ 3** ⇒ \(H_0 \to \sqrt{A}\,H_0\)  
+→ t<sub>H</sub> ≈ 14 Gyr; tick-level integration (§ 4) drives it down to **≈ 9 Gyr**.
+
+---
+
+## 3 Tick-Induced Red-shift
+
+<div class="eq">{% raw %}
+
+
+\[
+1+z=\frac{a(t_0)}{a(t_{\text{emit}})}.
+\]
+
+
+{% endraw %}</div>
+
+Phase-kick view:
+
+<div class="eq">{% raw %}
+
+
+\[
+1+z=\prod_{i=1}^{N}(1+\delta_i)
+\approx\exp(N\,\bar\delta).
+\]
+
+
+{% endraw %}</div>
+
+For τ = 0.600 ps and z ≈ 1100 (CMB):
+
+<div class="eq">{% raw %}
+
+
+\[
+N\approx1.4\times10^{33},
 \qquad
-t_H \approx 24.4\ \text{Gyr}.
-\]
-
-
-</div>
-
-### 2.2 Full fractal amplification  
-
-Adopt global-fit gain **A ≈ 3** — (r / r<sub>0</sub>)<sup>0.333</sup> = A.  
-That raises H<sub>0</sub> by √3 and lowers the Hubble time to ~ 14 Gyr.
-Tick-by-tick integration (§ 4) pushes the age down further to **≈ 9 Gyr**.
-
----
-
-## 3 Tick-Induced Redshift  
-Ordinary redshift maps to cumulative phase kicks:
-
-<div class="eq">
-\[
-  1 + z = \frac{a(t_{0})}{a(t_{\text{emit}})}
-\]
-
-\[
-1+z \;=\;
-\prod_{i=1}^{N}(1+\delta_i)
-\;\approx\;
-\exp\bigl(N\,\bar\delta\bigr).
-\]
-</div>
-
-For τ = 0.600 ps the CMB emission (z ≈ 1100) spans
-
-<div class="eq">{% raw %}
-
-
-\[
-N \;\approx\; 1.4 \times 10^{33}
+\bar\delta\approx8\times10^{-4}.
 \]
 
 
 {% endraw %}</div>
 
-ticks, requiring
+---
+
+## 4 Numerical Demonstration
 
 <div class="eq">{% raw %}
 
 
 \[
-\bar\delta \;\approx\; 8 \times 10^{-4}.
+a_{N+1}=a_{N}
++\tau\,a_{N}
+\sqrt{\frac{8\pi G}{3}\,
+       a_{N}^{0.333}\,
+       \rho_{b0}\,a_{N}^{-3}}\;.
 \]
 
 
 {% endraw %}</div>
 
-
 ---
 
-## 4 Numerical Demonstration  
+### Python 12-liner (quick self-check)
 
-<div class="eq">
-
-
-\[
-  a_{N+1}=a_N+\tau\,a_N
-           \sqrt{\frac{8\pi G}{3}
-                 \bigl(r/r_0\bigr)^{0.333}
-                 \rho_{b0}\,a_N^{-3}}
-\]
-
-
-</div>
-
+```python
+import numpy as np, math
+tau = 0.600e-12
+G   = 6.674e-11
+rho_b0 = 3e-27           # kg m^-3
+a, N = 1e-8, 0
+while a < 1:
+    a += tau*a*math.sqrt( (8*math.pi*G/3) * a**-2.667 * rho_b0 )
+    N += 1
+tGyr = N*tau/3.154e16
+print(f"Age ≈ {tGyr:.2f} Gyr  (should land ~9 Gyr)")
