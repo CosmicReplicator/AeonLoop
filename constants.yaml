@@ -1,29 +1,101 @@
 # constants.yaml  (v2025-06-13 — LOCKED; ≥14 significant digits)
 
 tick:
-  tau_ps      : 0.600000000            # [ps]  exact by definition
-  f_thz       : 1.6666666666667        # [THz] = 1/τ  (14 s.f.)
-  dx_mm       : 0.1798754748           # [mm]  = c·τ
+  tau_ps      : 0.600000000            # [ps] exact
+  f_thz       : 1.6666666666667        # [THz] = 1/τ
+  dx_mm       : 0.1798754748           # [mm] = c·τ
 
 energy:
   E0_meV      : 6.892779493            # [meV] = h·f
 
 mass:
-  m_eff_kg    : 1.093e-38              # (8/9)·E0/c²   (reference mass unit)
+  m_eff_kg    : 1.093e-38              # (8/9)·E0/c²
 
 gravity:
-  G_tick      : 4.51e-62               # dimension-less coupling in tick units
-  G_SI        : 6.67e-11               # reproduced value, m³ kg⁻¹ s⁻²
+  G_tick      : 4.51e-62               # dimension-less (tick units)
+  G_SI        : 6.67e-11               # SI reproduction of G
 
 Planck:
-  h_eVs       : 4.135667696e-15        # Planck constant  h
-  hbar_eVs    : 6.582119569e-16        # reduced Planck  ħ
+  h_eVs       : 4.135667696e-15        # Planck  h
+  hbar_eVs    : 6.582119569e-16        # reduced ħ
 
 SM:                                     # Standard-Model anchors
-  M_W_GeV     : 79.800                 # electroweak target (GeV)
-  alpha_2022  : 7.2973525693e-3        # fine-structure constant (CODATA-22)
+  M_W_GeV     : 79.800                 # electroweak target
+  alpha_2022  : 7.2973525693e-3        # fine-structure constant
+
+derived:                                # ←-- new, formula-based items
+  C_alpha     : 7.379970056            # coefficient in  exp[-C·(D_eff-2)]
 
 meta:
   codata      : 2022
   note        : "File is immutable; bump version tag for any future change."
 
+
+
+<!-- ─── Locked Constants (v2025-06-13) ───────────────────── -->
+<h2>Locked Constants&nbsp;<span style="font-size:0.75em">(v 2025-06-13)</span></h2>
+
+<div class="eq">
+
+
+\[
+\boxed{
+\begin{aligned}
+\text{Tick\ period}&:&\;
+  \tau &= 0.600\,000\,000\;\text{ps} \
+
+\[2pt]
+\text{Tick\ frequency}&:&\;
+  f &= 1.666\,666\,666\,666\,7\;\text{THz} \
+
+\[2pt]
+\text{Light\ step}&:&\;
+  \Delta x &= 0.179\,875\,474\,8\;\text{mm} \
+
+\[2pt]
+\text{Tick\ energy}&:&\;
+  E_{0} &= 6.892\,779\,493\;\text{meV} \
+
+\[6pt]
+%
+\text{Reference\ mass}&:&\;
+  m_{\text{eff}} &= 1.093\times10^{-38}\;\text{kg} \
+
+\[2pt]
+%
+\text{Dim’less }G&:&\;
+  G_{\text{tick}} &= 4.51\times10^{-62} \
+
+\[2pt]
+\text{Newton’s }G&:&\;
+  G_{\text{SI}} &= 6.67\times10^{-11}\;
+                  \text{m}^{3}\,\text{kg}^{-1}\,\text{s}^{-2} \
+
+\[6pt]
+%
+\text{Planck }h&:&\;
+  h &= 4.135\,667\,696\times10^{-15}\;\text{eV·s} \
+
+\[2pt]
+\text{Reduced }\hbar&:&\;
+  \hbar &= 6.582\,119\,569\times10^{-16}\;\text{eV·s} \
+
+\[6pt]
+%
+\text{\(W\)\ boson mass}&:&\;
+  M_{W} &= 79.800\;\text{GeV} \
+
+\[2pt]
+\text{Fine-structure }&:&\;
+  \alpha &= 7.297\,352\,5693\times10^{-3} \
+
+\[6pt]
+%
+\text{α-coefficient}&:&\;
+  C_{\alpha} &= 7.379\,970\,056
+\end{aligned}}
+\]
+
+\alpha = \exp[-7.379970056\,(D_{\mathrm{eff}}-2)].
+</div>
+<!-- ──────────────────────────────────────────────────────── -->
