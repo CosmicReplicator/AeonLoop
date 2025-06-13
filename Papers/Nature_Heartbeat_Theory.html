@@ -10,11 +10,11 @@ markdown: false
 <h2>1. Fundamental Parameters</h2>
 
 <ul>
-  <li><strong>Tick period (τ)</strong> τ = <<< T0_ps >>> ps</li>
-  <li><strong>Tick frequency (f)</strong> f = 1 / τ = <<< f0_THz >>> THz</li>
-  <li><strong>Tick energy (E<sub>tick</sub>)</strong> E<sub>tick</sub> = h f = <<< E0_eV >>> eV</li>
-  <li><strong>Tick length (L<sub>tick</sub>)</strong> L<sub>tick</sub> = c τ = <<< L0_mm >>> mm</li>
-  <li><strong>Effective fractal dimension</strong> D<sub>eff</sub> = <<< D_eff >>></li>
+  <li><strong>Tick period (τ)</strong> τ = 0.600000000 ps</li>
+  <li><strong>Tick frequency (f)</strong> f = 1.666 666 666 666 7 THz</li>
+  <li><strong>Tick energy (E<sub>tick</sub>)</strong> E<sub>tick</sub> = 6.892 779 493 meV</li>
+  <li><strong>Tick length (L<sub>tick</sub>)</strong> L<sub>tick</sub> = 0.179 875 474 8 mm</li>
+  <li><strong>Effective fractal dimension</strong> D<sub>eff</sub> = 2.667</li>
 </ul>
 
 <hr>
@@ -25,15 +25,15 @@ markdown: false
 
 
 \[
-  \Psi(t+\tau)\;=\;
+  \Psi(t+\tau)=
   \hat{P}\,
   e^{-\,i\hat{H}\tau/\hbar}\,
-  \Psi(t)\;.
+  \Psi(t)\;,
+  \qquad \tau=0.600000000\ \text{ps}.
 \]
 
 
 </div>
-<p>The projector \(\hat{P}\) resets/repairs coherence each tick.</p>
 
 <hr>
 
@@ -43,20 +43,20 @@ markdown: false
 
 
 \[
-  S
-  \;=\;
+  S=
   \sum_{n}
-  \int d^{D_{\mathrm{eff}}}x\;
+  \int d^{2.667}x\;
   \Bigl[
-    \tfrac{1}{16\pi G}\bigl(R-2\Lambda\bigr)
-    +\mathcal{L}_{\text{matter}}
-  \Bigr].
+    \tfrac{1}{16\pi G}\bigl(R-2\Lambda\bigr)+\mathcal{L}_{\text{matter}}
+  \Bigr],
+\qquad
+  \Lambda\sim
+  L_{\text{tick}}^{-2}
+  \Bigl(\tfrac{L_{\text{tick}}}{L_{\text{cosmo}}}\Bigr)^{2.667}.
 \]
 
 
 </div>
-<p>With \( \Lambda \sim L_{\mathrm{tick}}^{-2}
-  \bigl(L_{\mathrm{tick}}/L_{\mathrm{cosmo}}\bigr)^{D_{\mathrm{eff}}}\).</p>
 
 <hr>
 
@@ -66,13 +66,8 @@ markdown: false
 
 
 \[
-  \alpha
-  \;=\;
-  \exp\!\bigl[
-    -\,7.38\,
-    (D_{\mathrm{eff}}-2)
-  \bigr]
-  \;=\;\frac{1}{137}.
+  \alpha=
+  \exp\!\bigl[-7.38\,(2.667-2)\bigr]\approx\frac{1}{137}.
 \]
 
 
@@ -82,7 +77,9 @@ markdown: false
 
 <!-- ‑------------- 5 · ENERGY–LENGTH CONSISTENCY ‑------------- -->
 <h2>5. Energy–Length Consistency</h2>
-<p> \(E_{\text{tick}} = h f\quad\) and \(\quad L_{\text{tick}} = c τ\) ⇒</p>
+<p>
+  \(E_{\text{tick}}=h\,f\) and \(L_{\text{tick}}=c\,\tau\)  ⇒
+</p>
 <div class="eq">
 
 
@@ -98,22 +95,20 @@ markdown: false
 
 <hr>
 
-<!-- ‑------------- 6 · ONE-LINE “FULL FORMULA” SUMMARY ‑------------- -->
+<!-- ‑------------- 6 · UNIFIED KERNEL  ‑------------- -->
 <h2>6. Unified Kernel (“Full Formula”)</h2>
-
 <div class="eq">
 
 
 \[
   \boxed{
-    \Psi_{n+1}
-    =\;
+    \Psi_{n+1}=
     \hat{P}\,
-    e^{-i\hat{H}\tau/\hbar}\,
-    \Psi_{n}},
-  \qquad
-  \tau=<<< T0_ps >>>{\rm\,ps},\;
-  f=<<< f0_THz >>>{\rm\,THz}.
+    e^{-\,i\hat{H}\tau/\hbar}\,
+    \Psi_{n}}\!,
+  \quad
+  \tau=0.600000000\ \text{ps},\;
+  f=1.666\,666\,666\,666\,7\ \text{THz}.
 \]
 
 
@@ -123,10 +118,7 @@ markdown: false
 
 <h2>Conclusion</h2>
 <p>
-  With one tick and zero free parameters, every scale—from molecular
-  geometry to cosmic structure—locks to the digital cadence
-  <em>τ = <<< T0_ps >>> ps</em>.  Alter τ by a single part in 10<sup><small>N</small></sup>
-  and the whole lattice collapses—precision isn’t cosmetic, it’s structural.
+  With a single, immutable tick (\(τ=0.600000000\) ps) all scales—from molecular geometry to cosmic structure—lock to this digital cadence.  Any deviation collapses the lattice; precision is structural, not cosmetic.
 </p>
-
 <!-- ====================== END OF FILE ====================== -->
+
