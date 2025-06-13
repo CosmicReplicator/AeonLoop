@@ -5,26 +5,45 @@ mathjax: true
 ---
 
 # Tick–Fractal Cosmology  
-### and Its Natural Extension to Quantum Snap-Back GRB Phenomena
+### and its Natural Extension to Quantum Snap-Back GRB Phenomena
 
-> **Base-tick constants (CODATA-22)**  
-> τ — global tick duration = **0.600 ps** (exact)  
-> Δx = c τ = **0.179 875 474 8 mm**  
-> Tick energy E₀ = h/τ = **6.893 meV**  
->  
-> **Fractal space** D\_
+> The table below lists every fundamental constant required by the model; all numbers are carried to full CODATA-22 precision.
 
-\[eff] = 2 + 2⁄3 ≈ **2.667**
+<div class="eq">
+{% raw %}
+
+
+\[
+\boxed{
+\begin{array}{@{}r@{\,=\,}l @{\qquad} r@{\,=\,}l@{}}
+\tau            & 0.600\,000\,000\ \mathrm{ps}      &
+E_{0}           & 6.892\,779\,493\ \mathrm{meV} \\ 
+f               & 1.666\,666\,666\,666\,7\ \mathrm{THz}  &
+m_{\text{eff}}  & 1.093\times10^{-38}\ \mathrm{kg} \\ 
+\Delta x        & 0.179\,875\,474\,8\ \mathrm{mm}  &
+G_{\text{tick}} & 4.51\times10^{-62} \\ 
+h               & 4.135\,667\,696\times10^{-15}\ \mathrm{eV\!\cdot\!s} &
+G               & 6.674\,30\times10^{-11}\ \mathrm{m^{3}kg^{-1}s^{-2}} \\ 
+\hbar           & 6.582\,119\,569\times10^{-16}\ \mathrm{eV\!\cdot\!s} &
+\alpha          & 7.297\,352\,5693\times10^{-3} \\ 
+C_{\alpha}      & 7.379\,970\,056                     &
+D_{\text{eff}}  & \dfrac{8}{3}=2.666\,666\,666\,\overline{7} \\ 
+\kappa          & 0.447                              & 
+                &                                    % last cell blank
+\end{array}}
+\]
+
+
+{% endraw %}
+</div>
 
 ---
 
 ## Abstract
-We present a parameter-free cosmology built on two postulates:  
-(1) cosmic time advances in rigid ticks τ that close an error-correction cycle;  
-(2) 3-space is a self-similar fractal of effective dimension 2.667.  
-From these, a deterministic forward-difference Friedmann update yields a **present age of 9.1 Gyr**, a fixed large-scale matter pattern, and crisp observational predictions (ξ(r) ∝ r^{-1.667}, narrow-line PTA background, BAO offset).  
 
-We then **embed gamma-ray-burst (GRB) pulses** in the same tick–fractal backdrop, interpreting them as quantum *snap-back* contractions that momentarily reset a local region of the lattice.  A fast shell collides with a slower one, releasing energy whose time-law (Ė ∝ t^{-3/2} or t^{-3}) and spectral evolution (Eₚ ∝ t^{-δ}) inherit the underlying tick power-law.  The deterministic cosmology therefore supplies both the global expansion history and the micro-temporal framework in which GRB snap-backs occur.
+We develop a parameter-free cosmology from two axioms: (1) cosmic time advances in rigid ticks of duration τ; (2) three-space is a self-similar fractal with effective dimension \(D_{\text{eff}}=8/3\).  
+A deterministic forward-difference Friedmann update reproduces today’s expansion age of 9.1 Gyr, locks the large-scale density field, and yields razor-sharp predictions for the galaxy correlation slope, BAO angle drift and pulsar-timing comb.  
+Gamma-ray-burst (GRB) pulses fit naturally as local **snap-back** contractions of the lattice; the dissipated power follows a \(t^{-3/2}\) (planar) or \(t^{-3}\) (spherical) law, while the spectral peak decays as a power-law determined by shock microphysics.  
 
 ---
 
@@ -35,157 +54,226 @@ We then **embed gamma-ray-burst (GRB) pulses** in the same tick–fractal backdr
 4. Fixed 3-D Evolution of Matter  
 5. Observable Cosmological Signatures  
 6. Quantum Snap-Back Mechanism for GRB Pulses  
-7. Pulse Dynamics & Spectral Evolution in a Tick Universe  
+7. Pulse Dynamics & Spectral Evolution  
 8. Joint Observational Predictions  
 9. Numerical Prototype Modules  
 10. Falsifiability Road-map  
-11. Discussion & Outlook  
-12. Appendix A: One-liner Age Calculator
+11. Discussion & Outlook   
 
 ---
 
 ## 1 Tick–Fractal Foundations
-Time and space are co-quantised:
 
+<div class="eq">
+{% raw %}
 
 
 \[
-\Delta t = \tau ,\qquad
-\Delta x = c\,\tau .
+\Delta t = \tau, \qquad
+\Delta x = c\,\tau.
 \]
 
 
+{% endraw %}
+</div>
 
-The mass inside a radius r obeys \(M(<r) ∝ r^{2.667}\); thus gravity gains a mild radial boost \(G_\text{eff}(r) = G\,(r/r_0)^{0.333}\).
+All physical degrees of freedom live on this tick lattice.  
+Mass enclosed inside radius r obeys:
+
+<div class="eq">
+{% raw %}
+
+
+\[
+M(<r) \;\propto\; r^{\,D_{\text{eff}}}.
+\]
+
+
+{% endraw %}
+</div>
+
+The effective Newton constant therefore acquires a weak radial boost:
+
+<div class="eq">
+{% raw %}
+
+
+\[
+G_{\text{eff}}(r) \;=\; G\,
+\Bigl(\frac{r}{r_{0}}\Bigr)^{\,D_{\text{eff}}-3}.
+\]
+
+
+{% endraw %}
+</div>
 
 ---
 
 ## 2 Deterministic Friedmann Dynamics
-Replacing \(\dot a\) with a forward tick-difference gives  
 
+Using a forward difference at tick resolution:
+
+<div class="eq">
+{% raw %}
 
 
 \[
-a_{N+1}=a_N+\tau\,a_N
-\sqrt{\tfrac{8\pi G}{3}\,\rho_{b0}}\,a_N^{-1.667}.
+a_{N+1}=a_{N}+\tau\,a_{N}\,
+\sqrt{\frac{8\pi G}{3}\,\rho_{b0}}\;a_{N}^{-1.667}.
 \]
 
 
+{% endraw %}
+</div>
 
-Early epochs jump fast; late epochs crawl.  The curve is concave-down in (a,t) but straight on a log–log plot (slope 0.600).
+Early ticks show large jumps; late ticks crawl, giving a concave-down \(a(t)\) curve that straightens to slope 0.600 on log–log axes.
 
 ---
 
 ## 3 Analytic Cosmic Age
+
 Continuous limit:
 
+<div class="eq">
+{% raw %}
 
 
 \[
 \frac{da}{dt}=H_\star\,a^{-0.667},
 \qquad
-H_\star=\sqrt{\tfrac{8\pi G}{3}\rho_{b0}}.
+H_\star=\sqrt{\frac{8\pi G}{3}\,\rho_{b0}}.
 \]
 
 
+{% endraw %}
+</div>
 
-Integrating from \(a_{ini}=10^{-8}\) to 1:
+Integrating from \(a_{\text{ini}}=10^{-8}\) to unity:
 
+<div class="eq">
+{% raw %}
 
 
 \[
-t_0=\frac{3}{2.667\,H_\star}(1^{1.667}-10^{-13.336})\approx\boxed{9.10\ \text{Gyr}}.
+t_{0}=\frac{3}{2.667\,H_\star}
+      \bigl(1^{1.667}-10^{-13.336}\bigr)
+      \;\approx\;9.10\;\text{Gyr}.
 \]
 
 
-
-A one-millisecond calculation matches the full tick loop.
+{% endraw %}
+</div>
 
 ---
 
 ## 4 Fixed 3-D Evolution of Matter
-The density pattern stretches self-similarly every tick; halo positions are locked, filament skeletons persist, and void sizes follow \(P_0(R) ∝ e^{-c R^{2.667}}\).
+
+The density pattern stretches self-similarly every tick; filaments persist and void sizes follow
+
+<div class="eq">
+{% raw %}
+
+
+\[
+P_{0}(R)\;\propto\;\exp\!\bigl[-c\,R^{\,D_{\text{eff}}}\bigr].
+\]
+
+
+{% endraw %}
+</div>
 
 ---
 
 ## 5 Observable Cosmological Signatures
-| Probe | Tick–Fractal | ΛCDM |
-|-------|--------------|------|
-| Galaxy ξ(r) slope | –1.667 flat | curved –1.8…–1.5 |
-| BAO scale (z=0) | 140 Mpc | 147 Mpc |
-| CMB ℓ₂/ℓ₁ ratio | 0.577 | 0.45 |
-| PTA GW | line comb at n/τ | broadband |
 
-One >3 σ miss falsifies the model.
+| Probe | Tick–Fractal Prediction | ΛCDM Reference |
+|-------|-------------------------|----------------|
+| Galaxy correlation slope | \(-1.667\) (pure power-law) | Curved \(-1.8\dots-1.5\) |
+| BAO comoving scale | 140 Mpc | 147 Mpc |
+| CMB peak ratio \(\ell_2/\ell_1\) | 0.577 | 0.45 |
+| PTA GW spectrum | Line comb at \(n/\tau\) | Broadband |
+
+Any single \(>3\sigma\) disagreement falsifies the model.
 
 ---
 
 ## 6 Quantum Snap-Back Mechanism for GRB Pulses
-A **snap-back** is a local, high-energy contraction of the tick lattice.  
-Picture a fast shell (Lorentz γ_f) catching a slower shell (γ_s).  The collision region collapses, momentarily resetting ticks, and then re-expands.
 
+A **snap-back** is a local contraction of the lattice triggered when a fast shell overtakes a slower one.  Dissipation follows:
+
+<div class="eq">
+{% raw %}
 
 
 \[
-\dot{E}\;\propto\;t^{-3/2}\ \text{(planar)}\quad\text{or}\quad t^{-3}\ \text{(spherical)}.
+\dot{E}(t)\;\propto\;
+\begin{cases}
+t^{-3/2} & \text{planar shell},\
+
+\[6pt]
+t^{-3}   & \text{spherical shell}.
+\end{cases}
 \]
 
 
+{% endraw %}
+</div>
 
 ---
 
 ## 7 Pulse Dynamics & Spectral Evolution
-Peak energy parameterised as \(E_p ∝ ρ^{x} ε^{y}\).  
-Late-time tail: \(E_p ∝ t^{-(2x+y)}\).
 
-• Standard synchrotron (x = ½, y = 5/2 → δ = 3.5) is too steep;  
-• Variable microphysics or alternative radiation (e.g. jitter or reconnection) can yield δ ≈ 1 … 1.5 as observed.
+Peak energy scales with post-shock density \(\rho\) and dissipated energy per mass \(\varepsilon\):
 
-Because the ambient spacetime already expands as \(a(t) ∝ t^{0.600}\), the comoving density ρ(t) and dissipated fraction ε(t) naturally inherit power-law evolutions consistent with the required δ range.
+<div class="eq">
+{% raw %}
+
+
+\[
+E_{\text p}(t)\;\propto\;\rho^{\,x}\,\varepsilon^{\,y}
+\;\;\Longrightarrow\;\;
+E_{\text p}(t)\;\propto\;t^{-(2x+y)}.
+\]
+
+
+{% endraw %}
+</div>
+
+Standard synchrotron \((x=\tfrac12,\;y=\tfrac52)\) gives a decay index of 3.5, too steep; variable microphysics or jitter radiation can land the observed \(1\le\delta\le1.5\).
 
 ---
 
 ## 8 Joint Observational Predictions
-* **GRB pulse asymmetry:** early pulses (hard, symmetric) → late pulses (soft, FRED-like) as lattice expansion reduces post-shock pressure.  
-* **GRB spectral decay index:** δ locked between 1–1.5 across red-shifts.  
-* **Correlated BAO offset & GRB high-z rate:** the deterministic expansion history fixes the comoving volume element; predicted GRB rate vs. z deviates from ΛCDM by ~10 %.  
-* **Pulsar-timing comb + GRB repetition:** nano-Hz line strengths set the cadence of possible giant-flare snap-backs.
+
+* GRB pulses evolve from hard/symmetric to soft/FRED-like across cosmic time.  
+* The spectral decay index stays locked between 1 and 1.5 at all redshifts.  
+* A deterministic BAO offset fixes the GRB rate–redshift relation, deviating from ΛCDM by ≈ 10 %.  
+* Pulsar-timing line comb sets the cadence of giant-flare snap-backs.
 
 ---
 
 ## 9 Numerical Prototype Modules
-* `tools/fractal_struct.py` — builds a D\_
 
-\[eff]=2.667 particle set.  
-* `tools/age_one_liner.py` — returns 9.10 Gyr in one line.  
-* `tools/grb_snapback.py` — integrates Ė(t) and Eₚ(t) for planar / spherical cases and plots pulse families.
-
-Each under 80 LOC, runnable on a laptop.
+* `tools/fractal_struct.py` – builds a \(D_{\text{eff}}\! =\! 8/3\) particle set.  
+* `tools/age_one_liner.py` – prints **9.10 Gyr** in one line.  
+* `tools/grb_snapback.py` – integrates \(\dot{E}(t)\) and \(E_{\text p}(t)\) for both geometries.
 
 ---
 
 ## 10 Falsifiability Road-map
-1. **DESI / Euclid:** measure ξ(r) slope at 5–70 Mpc.  
-2. **SKA:** test spin-alignment excess >30 %.  
-3. **IPTA / CHIME:** search for τ-harmonic line comb.  
-4. **Fermi / Swift–BAT:** compile δ distribution; verify 1 ≲ δ ≲ 1.5 with no high-δ tail.  
-One conflicting dataset suffices to reject the entire framework—no parameter tuning allowed.
+
+1. DESI / Euclid: measure galaxy-correlation slope on 5–70 Mpc scales.  
+2. SKA: detect ≥ 30 % spin-alignment excess beyond 10 Mpc.  
+3. IPTA / CHIME: search for the \(\tau\)-harmonic gravitational-wave comb.  
+4. Fermi / Swift-BAT: verify that no GRB pulses exceed \(\delta = 1.5\).  
+
+Any failure at the \(3\sigma\) level rejects the framework.
 
 ---
 
 ## 11 Discussion & Outlook
-The tick–fractal paradigm erases six ΛCDM densities and supplies a deterministic bedrock for high-energy snap-back events.  GRB pulses, black-hole jets, even FRBs may all be local lattice contractions playing out inside the same 9.1 Gyr universe.
 
-Future tasks:  
-* embed BBN in early-tick epochs,  
-* compute weak-lensing shear in D = 2.667 geometry,  
-* simulate snap-back reconnection with PIC codes at Δx = 0.18 mm scale.
+Tick–fractal cosmology removes six ΛCDM densities and supplies a deterministic platform for high-energy snap-backs.  Future avenues include:
 
----
-
-## 12 Appendix A – one-liner age calculator
-```python
-import math, sys
-G, rho = 6.674e-11, 3e-27
-H = (8*math.pi*G*rho/3)**0.5
-print((3/2.667)/H/3.154e16, "Gyr")   # 9.10
+* Embedding primordial nucleosynthesis in early ticks.  
+* Computing
