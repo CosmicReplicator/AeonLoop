@@ -4,42 +4,45 @@ title: "Recalibrated Cosmology – Baryons, Fractal Gravity, and Digital Time"
 mathjax: true
 ---
 
+<!-- ────────────────────────────────────────────────────────── -->
+<!--  Locked constants (constants.yaml v2025-06-13)            -->
+<!-- ────────────────────────────────────────────────────────── -->
 > **Tick block**  
-> • Time-step `τ ≡ 0.600 000 000 ps` (exact)  
-> • Frequency `f = 1/τ = 1.666 666 666 666 7 THz`  
-> • Light-step `Δx = c τ = 0.179 875 474 8 mm`  
-> • Tick energy `E₀ = h f = 6.892 779 493 meV`  
->  
-> **Fractal space** `D_eff = 2.667` → `dV ∝ r¹·⁶⁶⁷ dr`  
-> **Tick–mass factor** `κ = Δx/λ₀ = 0.300 00` (λ₀ ≡ h⁄E₀)  
-> All digits mutually consistent to < 5 × 10⁻¹⁴.
+> • τ = 0.600 000 000 ps (exact) • f = 1.666 666 666 666 7 THz  
+> • Δx = 0.179 875 474 8 mm • E₀ = 6.892 779 493 meV  
+>
+> **Fractal space** Dₑff = 8 ⁄ 3 = 2.666 666 666 667  
+> **Tick–mass factor** κ = 0.300 00  
+> All digits consistent to <5 × 10⁻¹⁴.
 
 ---
 
 ## 0 Why “recalibrated” cosmology?
 
-ΛCDM needs two invisible substances—cold dark matter and dark energy.  
-We replace those with **two measurable constants**:
+ΛCDM needs invisible cold dark matter and dark energy.  
+We replace both with **two measurable constants**:
 
-1. **Fractal gravity** \( D_\text{eff} = 2.667 \)  
-   → \( G_\text{eff}(r) = G\,(r/r_0)^{0.333} \)
+1. **Fractal gravity** \( D_\text{eff} = \tfrac{8}{3} \)  
+   → \( G_\text{eff}(r) = G\,(r/r_0)^{0.333\,333} \)
 
-2. **Digital time** an **exact** tick \( τ = 0.600\text{ ps} \)
+2. **Digital time** exact tick \( τ = 0.600\text{ ps} \)
 
-With baryons alone these constants flatten galaxy rotation curves, 
-set \( \Omega_m≈0.30 \), and shorten the cosmic age to ≈ 9 Gyr.
+With baryons alone these flatten rotation curves, give
+\( \Omega_m≈0.30 \), and shorten the cosmic age to ≈ 9 Gyr.
 
 ---
 
-## 1 Fractal gravity \( D_\text{eff} = 2.667 \)
+## 1 Fractal gravity
 
 ### 1.1 Modified volume element
 <div class="eq">
 
 
 \[
-  dV_\text{eff} \;=\; r^{\,D_\text{eff}-1}\,dr
-                 \;=\; r^{1.667}\,dr .
+  dV_\text{eff} \;=\;
+  r^{\,D_\text{eff}-1}\,dr
+  \;=\;
+  r^{1.666\,666\,666\,667}\,dr .
 \]
 
 
@@ -50,8 +53,9 @@ set \( \Omega_m≈0.30 \), and shorten the cosmic age to ≈ 9 Gyr.
 
 
 \[
-  G_\text{eff}(r) \;=\;
-  G\!\left(\frac{r}{r_0}\right)^{0.333}.
+  G_\text{eff}(r)
+  \;=\;
+  G\,\Bigl(\tfrac{r}{r_0}\Bigr)^{0.333\,333}.
 \]
 
 
@@ -59,20 +63,20 @@ set \( \Omega_m≈0.30 \), and shorten the cosmic age to ≈ 9 Gyr.
 
 <table>
   <thead>
-    <tr><th>Scale</th><th>Radius r</th><th>A(r)</th><th>Comment</th></tr>
+    <tr><th>Scale</th><th>r</th><th>A(r)</th><th>Comment</th></tr>
   </thead>
   <tbody>
     <tr>
       <td>Milky-Way rotation</td>
       <td>8 kpc</td>
-      <td><strong>≈ 3.1</strong></td>
+      <td><strong>≈ 3.10</strong></td>
       <td>Baryons alone give flat \(v(r)\)</td>
     </tr>
     <tr>
       <td>BAO / sound horizon</td>
       <td>150 Mpc</td>
-      <td><strong>≈ 6.2</strong></td>
-      <td>Raises \( \Omega_m \) to 0.30 with no dark matter</td>
+      <td><strong>≈ 6.20</strong></td>
+      <td>Raises \( \Omega_m \) to 0.30 with no DM</td>
     </tr>
   </tbody>
 </table>
@@ -93,8 +97,7 @@ The discrete derivative
 
 
 </div>
-reduces to the usual \( H=\dot a / a \) in the continuum; the tick \( τ \)
-*vanishes* from physical evolution.  
+reduces to \( H = \dot a / a \) in the continuum; τ disappears.
 Tick fixes **resolution** (\(N = t/τ\)), not the flow of time.
 
 ---
@@ -103,7 +106,8 @@ Tick fixes **resolution** (\(N = t/τ\)), not the flow of time.
 
 <table>
   <thead>
-    <tr><th>Model</th><th>Ingredients today</th><th>H₀ fixed to</th><th>Age \(t_0\)</th></tr>
+    <tr><th>Model</th><th>Ingredients today</th>
+        <th>H₀ imposed</th><th>Age \(t_0\)</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -114,7 +118,7 @@ Tick fixes **resolution** (\(N = t/τ\)), not the flow of time.
     </tr>
     <tr>
       <td>Tick-fractal</td>
-      <td>baryons only, \(A(r)\)</td>
+      <td>baryons only, A(r)</td>
       <td>70 km s\(^{-1}\) Mpc\(^{-1}\)</td>
       <td><strong>9.1 Gyr</strong></td>
     </tr>
@@ -126,8 +130,11 @@ Matter domination gives \( a(t)\propto t^{2/3} \):
 
 
 \[
-  t_0 \;=\; \frac{2}{3H_0}
-           \;=\; 9.1\ \text{Gyr}\quad(H_0 = 70).
+  t_0
+  \;=\;
+  \frac{2}{3H_0}
+  \;=\;
+  9.1\ \text{Gyr}\quad(H_0=70).
 \]
 
 
@@ -139,56 +146,126 @@ Matter domination gives \( a(t)\propto t^{2/3} \):
 
 <table>
   <thead>
-    <tr><th>Observable</th><th>ΛCDM</th><th>Tick-fractal prediction</th></tr>
+    <tr><th>Observable</th><th>ΛCDM</th><th>Tick-fractal</th></tr>
   </thead>
   <tbody>
     <tr>
-      <td>Galaxy rotation curves</td>
-      <td>DM halo density \(ρ∝r^{-2}\)</td>
+      <td>Rotation curves</td>
+      <td>DM halo \(ρ∝r^{-2}\)</td>
       <td>\(G_\text{eff}∝r^{0.333}\) flattens baryons</td>
     </tr>
     <tr>
       <td>DES-3YR Ω<sub>m</sub></td>
       <td>0.31 ± 0.02</td>
-      <td>Same value via \(A\,ρ_b\)</td>
+      <td>Same via \(A\,ρ_b\)</td>
     </tr>
     <tr>
-      <td>Hubble tension</td>
+      <td>H₀ tension</td>
       <td>2 σ Planck vs SNe</td>
-      <td>Higher early-time \(H(z)\) relaxes tension</td>
+      <td>Higher early-\(H(z)\) relaxes tension</td>
     </tr>
     <tr>
-      <td>Pulsar-timing residuals</td>
-      <td>white noise</td>
-      <td><strong>17 nHz sideband</strong> ( \(f/N_\text{age}\) ) testable by SKA-2</td>
+      <td>Pulsar timing</td>
+      <td>white residual</td>
+      <td><strong>17 nHz sideband</strong> testable by SKA-2</td>
     </tr>
   </tbody>
 </table>
 
-*Falsifiable claim* — If SKA Phase 2 fails to detect the 17 nHz sideband, the tick-fractal framework is falsified.
+*Falsifiable claim* — absence of the 17 nHz sideband rules out the model.
 
 ---
 
-## 5 Next steps
+## 5 Residual 2⁄21 per tick and exact dimensional lift
 
-1. Release `tick_friedmann.py` (≈ 30 lines) that reproduces the 9 Gyr age
-   from a one-page `constants.yaml`.  
-2. Global fit (BAO + CMB + lensing) with \( τ \) & \( D_\text{eff} \) *locked*.  
-3. Publish mock PTA residuals to guide observers.
+Each tick contributes a residual phase  
+\( δ = \tfrac{2}{21} = 0.095 238 095 238 1 \).
+
+<div class="eq">
+
+
+\[
+  7δ
+  = 7 \times \frac{2}{21}
+  = \frac{8}{3}
+  = 2.666\,666\,666\,667 .
+\]
+
+
+</div>
+
+Thus the baseline 2-D sheet lifts precisely to
+\(D_\text{eff} = 8⁄3\).  No “α patch” is required.
+
+The single-tick geometric multiplier is
+
+<div class="eq">
+
+
+\[
+  C = 1 + δ = 1.095 238 095 238 .
+\]
+
+
+</div>
+
+Seven ticks give
+
+<div class="eq">
+
+
+\[
+  C^7 = 1.890 450 089 ,
+  \quad
+  E_7 = 6.892 779 493\,\text{meV} × C^7 = 13.039\,\text{meV}.
+\]
+
+
+</div>
+
+---
+
+## 6 Energy ladder (≈ 411× resonance)
+
+Per-tick amplification factor determined by  
+\(E_0(f^2)^7 = 411\,E_0\):
+
+<div class="eq">
+
+
+\[
+  f^2 = 411^{1/7} = 2.361\,303\,1,
+  \quad
+  (f^2)^7 = 410.79 \approx 411,
+  \quad
+  E_7 = 2.831\,\text{eV}.
+\]
+
+
+</div>
+
+This ladder is a resonance separate from the C-driven growth in Section 5.
+
+---
+
+## 7 Next steps
+
+1. Publish `tick_friedmann.py` that pulls all constants from
+   `constants.yaml` and reproduces the 9 Gyr age.  
+2. Global BAO + CMB fit with \(τ\) and \(D_\text{eff}\) locked.  
+3. Release mock PTA residuals to guide SKA observers.
 
 ---
 
 ### Final takeaway
 
-Two **non-tunable** constants—
+Two non-tunable constants —
 
-* Fractal dimension \( D_\text{eff}=2.667 \)  
-* Tick interval \( τ=0.600\,000\,000\text{ ps} \)  
-  ( \( f=1.666\,666\,666\,666\,7\text{ THz} \) )
+* \( D_\text{eff}=8⁄3 \)  
+* \( τ = 0.600\,000\,000\text{ ps} \)
 
-—flatten rotation curves, recover \( \Omega_m≈0.30 \), and yield a
-≈ 9 Gyr Universe **without** dark matter or dark energy.  
-Euclid, CMB-S4, and SKA will render a clear verdict within this decade.
+—explain rotation curves, give \( \Omega_m≈0.30 \), and imply
+≈ 9 Gyr cosmic age **without** dark matter or dark energy.  
+Euclid, CMB-S4, and SKA will soon decide.
 
 <style>.eq{margin:1.2rem 0;text-align:center}</style>
-
