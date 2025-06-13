@@ -1,131 +1,92 @@
 ---
-layout: default
-title: "UnifiedProcess"
+layout: papers
+title: "Unified Process in ℰ-QFT"
+markdown: false
 ---
 
+<!-- ====================== PAGE BEGINS ====================== -->
 
-<p>Unified Process in ℰ QFT
----------------------------------------------------------------
-Step 1: Establish the Fundamental Discrete Scales
-We begin by defining our three key numbers:
+<h2>Unified Process in ℰ-QFT</h2>
 
-- Time Tick:
-A fundamental time step,
-T0 = 0.6 ps (0.6 x 10^-12 s)
+<h3>1 · Fundamental Discrete Scales</h3>
+<ul>
+  <li><strong>Tick time</strong> T<sub>0</sub> = {{ T0_ps }} ps</li>
+  <li><strong>Base frequency</strong> f<sub>0</sub> = 1∕T<sub>0</sub> = {{ f0_THz }} THz</li>
+  <li><strong>Length per tick</strong> L<sub>0</sub> = c T<sub>0</sub> = {{ L0_mm }} mm</li>
+</ul>
 
-- Frequency:
-The corresponding frequency is
-f0 = 1 / T0 ≈ 1.667 THz</p>
-<p>- Length Scale:
-In the time T0, light travels
-L0 = c * T0 ≈ 3 x 10^8 m/s * 0.6 x 10^-12 s ≈ 0.18 mm
+<h3>2 · Discrete-Step Evolution Rule</h3>
+<div class="eq">
 
-These values tie together time, frequency, and the spatial scale in our
-physical equations.
----------------------------------------------------------------
-Step 2: Replace Continuous Evolution with a Discrete Update
 
-In standard quantum field theory, the time evolution of a state ψ(x, t)
-over an infinitesimal dt is given by:
-ψ(x, t + dt) = exp(-iH dt/ħ) ψ(x, t)
+\[
+  \psi_{\,n+1}(x)=\mathcal{E}\,
+  e^{-\,iH\,T_{0}/\hbar}\,
+  \psi_{\,n}(x),
+  \qquad t=nT_{0}.
+\]
 
-In our framework, we "slice" time into finite steps of length T0 and
-incorporate a digital error-correction operator E (ℰ) that projects onto
-a coherent subspace. Thus, the evolution becomes:
-ψₙ₊₁(x) = ℰ * exp(-iH T0/ħ) * ψₙ(x)
-with n indicating discretized time steps, where t = n·T0.
 
----------------------------------------------------------------
-Step 3: Implement the Coherence (Phase-Locking) Condition
+</div>
 
-The projection operator ℰ enforces a coherence condition such that after
-N ticks the accumulated phase equals an integer multiple of 2π:
-N * (H T0/ħ) = 2π m, with m ∈ ℤ
+<h3>3 · Phase-Lock Constraint</h3>
+<div class="eq">
 
-A common choice is N = 7, yielding:
-7 * (H T0/ħ) = 2π → H = (2π ħ) / (7 T0)
 
-This rule acts as a filter that only allows states (or energy levels)
-satisfying this condition, thus eliminating endless possibilities.
+\[
+  N\,\frac{H\,T_{0}}{\hbar}=2\pi m,
+  \qquad m\in\mathbb{Z}\!.
+\]
 
----------------------------------------------------------------
-Step 4: Discrete Action and Finite Summation
 
-Normally, the action S is an integral:
-S = ∫ L(x(t), ẋ(t)) dt
+</div>
+<p>For <em>N</em>=7 this gives
+H = 2πħ ⁄ (7 T<sub>0</sub>).</p>
 
-In our discrete model, it becomes a finite sum:
-S = Σ (from n=0 to N-1) L(xₙ, (xₙ₊₁ - xₙ)/T0) * T0
-with xₙ ≡ x(n·T0).
+<h3>4 · Discrete Action</h3>
+<div class="eq">
 
-Because T0 is fixed, every term is finite, and this sum does away with
-the divergences that demand renormalization.
 
----------------------------------------------------------------
-Step 5: Emergence of Molecular and Macroscopic Structures
+\[
+  S=\sum_{n=0}^{N-1}
+    L\!\left(
+       x_{n},
+       \frac{x_{n+1}-x_{n}}{T_{0}}
+     \right)
+    T_{0},
+  \qquad x_{n}=x(nT_{0}).
+\]
 
-a. Building Molecules:
-Molecular configurations (such as bond lengths and angles) arise from
-interference and energy minimization.
-For example, an interference condition might be given by:
-δφ = (2π L) / L0,
-where only phase differences that yield integer multiples of 2π survive
-the reset, naturally enforcing correct structural constraints.
 
-b. Double-Slit and Interference Patterns:
-In a double-slit experiment, constructive interference requires:
-(2π Δx) / L0 = 2π k, for k ∈ ℤ,
-which implies:
-Δx = k · L0.
-This relation ensures that the interference fringes match observed
-positions if the reset tick is 0.6 ps.
+</div>
 
-c. Cosmic Structures:
-A similar mechanism operates on cosmic scales: periodic "snap-back"
-events (error corrections) seed coherent nodes leading to large-scale
-structures like black holes and galactic centers.
+<h3>5 · Structure-Formation Examples</h3>
+<ol type="a">
+  <li>Molecular bonds: δφ = 2πL⁄L<sub>0</sub></li>
+  <li>Double-slit fringes: Δx = k L<sub>0</sub></li>
+  <li>Cosmic nodes via periodic “snap-back.”</li>
+</ol>
 
----------------------------------------------------------------
-Step 6: Unification and Removal of Infinities
+<h3>6 · Unification Statement</h3>
+<p>
+  One tick, one frequency—no separate renormalisation scales.
+</p>
 
-By governing all field evolutions with the same digital tick (T0 = 0.6
-ps), the model unifies electromagnetic theory, gravity, and quantum
-fields. There is one fundamental frequency (1.667 THz) that removes the
-need for separate arbitrary constants and ad hoc renormalization
-procedures; the universe computes itself in finite, coherent steps.
+<h3>7 · Benchmarks for Validation</h3>
+<ul>
+  <li>Bond lengths &amp; angles (molecular).</li>
+  <li>Fringe spacing (double-slit).</li>
+  <li>Large-scale structure statistics.</li>
+</ul>
 
----------------------------------------------------------------
-Step 7: Experimental and Computational Validation
+<hr>
 
-The model makes these concrete predictions:
-- Molecular Geometry: Computed bond angles and distances must match
-experimental values.
-- Double-Slit Interference: Fringe spacing dictated by L0 should be
-observable.
-- Cosmic Coherence: Large-scale structure formation should reflect
-periodic snap-back events.
+<h3>Master Constant Sheet (for reference only)</h3>
+<pre style="white-space:pre-wrap;font-size:0.9em;">
+T0 = {{ T0_ps }} ps
+f0 = {{ f0_THz }} THz
+L0 = {{ L0_mm }} mm
+ħ  = {{ hbar_eVs }} eV·s
+</pre>
 
----------------------------------------------------------------
-Summary of the New Equations:
-
-1. Fundamental Scales:
-T0 = 0.6 ps,
-f0 = 1 / T0 ≈ 1.667 THz,
-L0 = c * T0 ≈ 0.18 mm
-
-2. Discrete Field Evolution:
-ψₙ₊₁(x) = ℰ * exp(-iH T0/ħ) * ψₙ(x)
-
-3. Coherence Condition:
-N * (H T0/ħ) = 2π m, (example: N=7)
-
-4. Discrete Action:
-S = Σ L(xₙ, (xₙ₊₁ - xₙ)/T0) * T0
-
-5. Interference Condition (Double-Slit):
-(2π Δx) / L0 = 2π k → Δx = k · L0
-
-This completes the unified process outlining how nature's 0.6 ps digital
-tick could underpin a finite, renormalization-free physical framework.
-
----------------------------------------------------------------</p>
+<!-- ====================== PAGE ENDS ====================== -->
