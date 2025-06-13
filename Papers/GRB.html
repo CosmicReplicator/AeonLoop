@@ -7,7 +7,8 @@ mathjax: true
 # Tick–Fractal Cosmology  
 ### and its Natural Extension to Quantum Snap-Back GRB Phenomena
 
-> The table below lists every fundamental constant required by the model; all numbers are carried to full CODATA-22 precision.
+> The table below lists every fundamental constant required by the model;  
+> all numbers are carried to full CODATA-22 precision.
 
 <div class="eq">
 {% raw %}
@@ -39,15 +40,58 @@ D_{\text{eff}}  & \dfrac{8}{3}=2.666\,666\,666\,\overline{7} \\
 
 ---
 
-## Abstract
+## Abstract  
 
-We develop a parameter-free cosmology from two axioms: (1) cosmic time advances in rigid ticks of duration τ; (2) three-space is a self-similar fractal with effective dimension \(D_{\text{eff}}=8/3\).  
-A deterministic forward-difference Friedmann update reproduces today’s expansion age of 9.1 Gyr, locks the large-scale density field, and yields razor-sharp predictions for the galaxy correlation slope, BAO angle drift and pulsar-timing comb.  
-Gamma-ray-burst (GRB) pulses fit naturally as local **snap-back** contractions of the lattice; the dissipated power follows a \(t^{-3/2}\) (planar) or \(t^{-3}\) (spherical) law, while the spectral peak decays as a power-law determined by shock microphysics.  
+We develop a parameter-free cosmology from two axioms.  
+First, cosmic time advances in rigid ticks of duration  
+
+<div class="eq">{% raw %}
+
+
+\[
+\tau = 0.600\ \text{ps}.
+\]
+
+
+{% endraw %}</div>
+
+Second, three-space is a self-similar fractal with effective dimension  
+
+<div class="eq">{% raw %}
+
+
+\[
+D_{\text{eff}} = \frac{8}{3}.
+\]
+
+
+{% endraw %}</div>
+
+A deterministic forward-difference Friedmann update reproduces today’s expansion age of **9.1 Gyr**, locks the large-scale density field, and yields razor-sharp predictions for the galaxy-correlation slope, BAO-angle drift, and pulsar-timing comb.  
+
+Gamma-ray-burst (GRB) pulses fit naturally as local **snap-back** contractions of the lattice.  The dissipated power follows  
+
+<div class="eq">{% raw %}
+
+
+\[
+\dot E(t)\propto
+\begin{cases}
+t^{-3/2}, & \text{planar shell},\
+
+\[6pt]
+t^{-3},   & \text{spherical shell}.
+\end{cases}
+\]
+
+
+{% endraw %}</div>
+
+The spectral peak decays as a power-law determined by shock microphysics.
 
 ---
 
-## Contents
+## Contents  
 1. Tick–Fractal Foundations  
 2. Deterministic Friedmann Dynamics  
 3. Analytic Cosmic Age  
@@ -58,84 +102,75 @@ Gamma-ray-burst (GRB) pulses fit naturally as local **snap-back** contractions o
 8. Joint Observational Predictions  
 9. Numerical Prototype Modules  
 10. Falsifiability Road-map  
-11. Discussion & Outlook   
+11. Discussion & Outlook  
 
 ---
 
-## 1 Tick–Fractal Foundations
+## 1 Tick–Fractal Foundations  
 
-<div class="eq">
-{% raw %}
+<div class="eq">{% raw %}
 
 
 \[
-\Delta t = \tau, \qquad
-\Delta x = c\,\tau.
+\Delta t = \tau ,\qquad
+\Delta x = c\,\tau .
 \]
 
 
-{% endraw %}
-</div>
+{% endraw %}</div>
 
 All physical degrees of freedom live on this tick lattice.  
-Mass enclosed inside radius r obeys:
+Mass enclosed inside radius r obeys  
 
-<div class="eq">
-{% raw %}
-
-
-\[
-M(<r) \;\propto\; r^{\,D_{\text{eff}}}.
-\]
-
-
-{% endraw %}
-</div>
-
-The effective Newton constant therefore acquires a weak radial boost:
-
-<div class="eq">
-{% raw %}
+<div class="eq">{% raw %}
 
 
 \[
-G_{\text{eff}}(r) \;=\; G\,
-\Bigl(\frac{r}{r_{0}}\Bigr)^{\,D_{\text{eff}}-3}.
+M(<r)\;\propto\;r^{\,D_{\text{eff}}}.
 \]
 
 
-{% endraw %}
-</div>
+{% endraw %}</div>
+
+Consequently the effective Newton constant gains a mild radial boost:
+
+<div class="eq">{% raw %}
+
+
+\[
+G_{\text{eff}}(r)=G\left(\frac{r}{r_{0}}\right)^{D_{\text{eff}}-3}.
+\]
+
+
+{% endraw %}</div>
 
 ---
 
-## 2 Deterministic Friedmann Dynamics
+## 2 Deterministic Friedmann Dynamics  
 
 Using a forward difference at tick resolution:
 
-<div class="eq">
-{% raw %}
+<div class="eq">{% raw %}
 
 
 \[
 a_{N+1}=a_{N}+\tau\,a_{N}\,
-\sqrt{\frac{8\pi G}{3}\,\rho_{b0}}\;a_{N}^{-1.667}.
+         \sqrt{\frac{8\pi G}{3}\,\rho_{b0}}\;
+         a_{N}^{-1.667}.
 \]
 
 
-{% endraw %}
-</div>
+{% endraw %}</div>
 
-Early ticks show large jumps; late ticks crawl, giving a concave-down \(a(t)\) curve that straightens to slope 0.600 on log–log axes.
+Early ticks show large jumps; late ticks crawl, giving a concave-down age–scale-factor curve that straightens to slope 0.600 on log–log axes.
 
 ---
 
-## 3 Analytic Cosmic Age
+## 3 Analytic Cosmic Age  
 
 Continuous limit:
 
-<div class="eq">
-{% raw %}
+<div class="eq">{% raw %}
 
 
 \[
@@ -145,33 +180,44 @@ H_\star=\sqrt{\frac{8\pi G}{3}\,\rho_{b0}}.
 \]
 
 
-{% endraw %}
-</div>
+{% endraw %}</div>
 
-Integrating from \(a_{\text{ini}}=10^{-8}\) to unity:
+Integrating from the initial scale
 
 <div class="eq">
 {% raw %}
 
 
 \[
-t_{0}=\frac{3}{2.667\,H_\star}
-      \bigl(1^{1.667}-10^{-13.336}\bigr)
-      \;\approx\;9.10\;\text{Gyr}.
+a_{\text{ini}} = 10^{-8}
 \]
 
 
 {% endraw %}
 </div>
 
+to unity:
+
+
+<div class="eq">{% raw %}
+
+
+\[
+t_{0}= \frac{3}{2.667\,H_\star}
+       \bigl(1^{1.667}-10^{-13.336}\bigr)
+       \;\approx\;9.10\ \text{Gyr}.
+\]
+
+
+{% endraw %}</div>
+
 ---
 
-## 4 Fixed 3-D Evolution of Matter
+## 4 Fixed 3-D Evolution of Matter  
 
-The density pattern stretches self-similarly every tick; filaments persist and void sizes follow
+The density pattern stretches self-similarly every tick; filaments persist and void sizes follow  
 
-<div class="eq">
-{% raw %}
+<div class="eq">{% raw %}
 
 
 \[
@@ -179,54 +225,52 @@ P_{0}(R)\;\propto\;\exp\!\bigl[-c\,R^{\,D_{\text{eff}}}\bigr].
 \]
 
 
-{% endraw %}
-</div>
+{% endraw %}</div>
 
 ---
 
-## 5 Observable Cosmological Signatures
+## 5 Observable Cosmological Signatures  
 
-| Probe | Tick–Fractal Prediction | ΛCDM Reference |
+| Probe | Tick–Fractal prediction | ΛCDM reference |
 |-------|-------------------------|----------------|
-| Galaxy correlation slope | \(-1.667\) (pure power-law) | Curved \(-1.8\dots-1.5\) |
+| Galaxy-correlation slope | <div class="eq">{% raw %}
+
+\[-1.667\]
+
+{% endraw %}</div> | curved −1.8 … −1.5 |
 | BAO comoving scale | 140 Mpc | 147 Mpc |
-| CMB peak ratio \(\ell_2/\ell_1\) | 0.577 | 0.45 |
-| PTA GW spectrum | Line comb at \(n/\tau\) | Broadband |
+| CMB peak ratio | <div class="eq">{% raw %}
 
-Any single \(>3\sigma\) disagreement falsifies the model.
+\[\ell_{2}/\ell_{1}=0.577\]
 
----
+{% endraw %}</div> | 0.45 |
+| PTA GW spectrum | <div class="eq">{% raw %}
 
-## 6 Quantum Snap-Back Mechanism for GRB Pulses
+\[n/\tau\]
 
-A **snap-back** is a local contraction of the lattice triggered when a fast shell overtakes a slower one.  Dissipation follows:
+{% endraw %}</div> line comb | broadband |
 
-<div class="eq">
-{% raw %}
+Any single  
+<div class="eq">{% raw %}
 
+\[>3\sigma\]
 
-\[
-\dot{E}(t)\;\propto\;
-\begin{cases}
-t^{-3/2} & \text{planar shell},\
-
-\[6pt]
-t^{-3}   & \text{spherical shell}.
-\end{cases}
-\]
-
-
-{% endraw %}
-</div>
+{% endraw %}</div>  
+disagreement falsifies the model.
 
 ---
 
-## 7 Pulse Dynamics & Spectral Evolution
+## 6 Quantum Snap-Back Mechanism for GRB Pulses  
 
-Peak energy scales with post-shock density \(\rho\) and dissipated energy per mass \(\varepsilon\):
+A **snap-back** is a local contraction of the lattice triggered when a fast shell overtakes a slower one.  Dissipation obeys the scaling law given earlier.
 
-<div class="eq">
-{% raw %}
+---
+
+## 7 Pulse Dynamics & Spectral Evolution  
+
+Peak energy scales with post-shock density ρ and dissipated energy per mass ε:
+
+<div class="eq">{% raw %}
 
 
 \[
@@ -236,44 +280,112 @@ E_{\text p}(t)\;\propto\;t^{-(2x+y)}.
 \]
 
 
-{% endraw %}
-</div>
+{% endraw %}</div>
 
-Standard synchrotron \((x=\tfrac12,\;y=\tfrac52)\) gives a decay index of 3.5, too steep; variable microphysics or jitter radiation can land the observed \(1\le\delta\le1.5\).
+For standard synchrotron radiation  
+
+<div class="eq">{% raw %}
+
+
+\[
+x=\tfrac12,\qquad y=\tfrac52,
+\]
+
+
+{% endraw %}</div>
+
+giving  
+
+<div class="eq">{% raw %}
+
+
+\[
+\delta = 3.5,
+\]
+
+
+{% endraw %}</div>
+
+which is too steep.  Variable microphysics or jitter radiation lands the observed range  
+
+<div class="eq">{% raw %}
+
+
+\[
+1\le\delta\le1.5.
+\]
+
+
+{% endraw %}</div>
 
 ---
 
-## 8 Joint Observational Predictions
+## 8 Joint Observational Predictions  
 
 * GRB pulses evolve from hard/symmetric to soft/FRED-like across cosmic time.  
-* The spectral decay index stays locked between 1 and 1.5 at all redshifts.  
+* The spectral-decay index remains between 1 and 1.5 at all redshifts.  
 * A deterministic BAO offset fixes the GRB rate–redshift relation, deviating from ΛCDM by ≈ 10 %.  
-* Pulsar-timing line comb sets the cadence of giant-flare snap-backs.
+* The pulsar-timing line comb sets the cadence of giant-flare snap-backs.
 
 ---
 
-## 9 Numerical Prototype Modules
+## 9 Numerical Prototype Modules  
 
-* `tools/fractal_struct.py` – builds a \(D_{\text{eff}}\! =\! 8/3\) particle set.  
+* `tools/fractal_struct.py` – builds a  
+  <div class="eq">{% raw %}
+
+\[D_{\text{eff}}=\tfrac83\]
+
+{% endraw %}</div>  
+  particle set.  
 * `tools/age_one_liner.py` – prints **9.10 Gyr** in one line.  
-* `tools/grb_snapback.py` – integrates \(\dot{E}(t)\) and \(E_{\text p}(t)\) for both geometries.
+* `tools/grb_snapback.py` – integrates  
+  <div class="eq">{% raw %}
+
+\[\dot E(t)\]
+
+{% endraw %}</div> and  
+  <div class="eq">{% raw %}
+
+\[E_{\text p}(t)\]
+
+{% endraw %}</div> for both geometries.
 
 ---
 
-## 10 Falsifiability Road-map
+## 10 Falsifiability Road-map  
 
-1. DESI / Euclid: measure galaxy-correlation slope on 5–70 Mpc scales.  
-2. SKA: detect ≥ 30 % spin-alignment excess beyond 10 Mpc.  
-3. IPTA / CHIME: search for the \(\tau\)-harmonic gravitational-wave comb.  
-4. Fermi / Swift-BAT: verify that no GRB pulses exceed \(\delta = 1.5\).  
+1. DESI / Euclid – galaxy-slope on 5–70 Mpc scales.  
+2. SKA – ≥ 30 % spin-alignment excess beyond 10 Mpc.  
+3. IPTA / CHIME – search for the  
+   <div class="eq">{% raw %}
 
-Any failure at the \(3\sigma\) level rejects the framework.
+\[\tau\]
+
+{% endraw %}</div>-harmonic comb.  
+4. Fermi / Swift-BAT – confirm no GRB pulse exceeds  
+   <div class="eq">{% raw %}
+
+\[\delta=1.5\]
+
+{% endraw %}</div>.  
+
+Any failure at the  
+<div class="eq">{% raw %}
+
+\[3\sigma\]
+
+{% endraw %}</div>  
+level rejects the framework.
 
 ---
 
-## 11 Discussion & Outlook
+## 11 Discussion & Outlook  
 
 Tick–fractal cosmology removes six ΛCDM densities and supplies a deterministic platform for high-energy snap-backs.  Future avenues include:
 
 * Embedding primordial nucleosynthesis in early ticks.  
-* Computing
+* Computing weak-lensing shear in the \(D_{\text{eff}}=8/3\) geometry.  
+* Simulating snap-back reconnection with PIC codes at the lattice scale \(\Delta x\).
+
+---
