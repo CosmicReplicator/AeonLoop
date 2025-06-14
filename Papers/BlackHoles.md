@@ -51,14 +51,14 @@ A helical world-line of pitch $$\Delta x = c\tau$$ wraps $$360^\circ$$ every sev
 $$
 7\tau = \frac{2\pi R_{\rm H}}{c}
 \;\;\Longrightarrow\;\;
-R_{\rm H} = \frac{7c\tau}{2\pi}.
+R_{\rm H} = \frac{7c\tau}{2\pi}
 $$
 
 With $$\tau = 0.600\,\text{ps}$$ this yields  
 
 $$
 R_{\rm H}\approx0.200\,\text{mm},\qquad
-f_{\rm BH} = \frac{c}{2\pi R_{\rm H}} \approx 240\,\text{GHz}.
+f_{\rm BH} = \frac{c}{2\pi R_{\rm H}} \approx 240\,\text{GHz}
 $$
 
 Any micro-horizon analogue (e.g.\ BEC sonic BH) should show its fundamental mode near $$240$$ GHz.
