@@ -57,6 +57,17 @@ $$
 $$
 R_{\rm H} \;=\; \frac{7c\tau}{2\pi}
 $$
+$$
+\begin{aligned}
+7\tau &= \frac{2\pi R_{\rm H}}{c} \
+
+\[6pt]
+      &\Longrightarrow \
+
+\[6pt]
+R_{\rm H} &= \frac{7c\tau}{2\pi}
+\end{aligned}
+$$
 
 With $$\tau = 0.600\,\text{ps}$$ this yields
 
