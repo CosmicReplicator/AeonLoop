@@ -26,9 +26,9 @@ $$\Delta t_{\text{obs}} = (1+z)N_{\text{tick}}\tau$$ | | **Energy-ladder peak**
 Q^{\,r},\;r\in\mathbb Z$$ | | **Afterglow onset** ($$t_{\text{ag}}$$) | YES
 (Swift/XRT, Chandra) | $$t_{\text{ag}}\approx R_{\text{shell}}/c_s
 \;\Longrightarrow\; r_s(z)$$ | Any two rulers ⇒ solve simultaneously for $$z$$
-and $$D_L$$ ⇒ **$$H_0$$**. --- ### 3 Concrete pipeline _(no free parameters)\* 1.
+and $$D_L$$ ⇒ **$$H_0$$**. --- ### 3 Concrete pipeline *(no free parameters)\* 1.
 **Tick-decompose** each prompt light-curve • Wavelet basis with exact $$\tau$$.
-• Count $$N_{\text{tick}}$$ between micro-pulses → $$\Delta t_{\text{int}}$$. 2.
+• Count $$N*{\text{tick}}$$ between micro-pulses → $$\Delta t_{\text{int}}$$. 2.
 **Identify ladder rung** • Measure $$E_{\text{peak}}$$ (keV–MeV). • Find
 $$r=\mathrm{round}\!\bigl[\log_Q(E_{\text{peak}}/E_0)\bigr]$$(typical long GRBs
 $$r\!\approx\!11$$–12). 3. **Solve for redshift** (works even for “dark” bursts)
@@ -42,16 +42,16 @@ $$
 
 5. **Stack $$N$$ bursts** $$ \sigma*{H_0}\;\propto\;N^{-1/2}, \quad
    N\approx50\text{–}100\;\Rightarrow\;\sigma*{H*0}\sim3\,\text{km
-   s}^{-1}\text{Mpc}^{-1}. $$ --- ### 4 Back-of-envelope check *(GRB 090424)* |
+   s}^{-1}\text{Mpc}^{-1}. $$ --- ### 4 Back-of-envelope check *(GRB 090424)_ |
    Observable | Measured | Tick-interpretation |
-   |------------|----------|---------------------| | $$\Delta t*{\min,\text{obs}}$$
+   |------------|----------|---------------------| | $$\Delta t_{\min,\text{obs}}$$
 | 0.47 ms | $$N\!\approx\!7.83\times10^8$$ ticks | | $$E_{\text{peak}}$$ | 534
    keV | $$r\!\approx\!11$$ | | $$z$$ (tick method) | 1.35 | (spectroscopic
    $$z=1.24$$) | | $$H_0$$ (β = ⅓) | 71 km s⁻¹ Mpc⁻¹ | Matches maser + SH0ES band |
    Promising proof-of-concept without ΛCDM ingredients. --- ### 5 Sound-wave
    angle *(future icing)* If the digital-acoustic module predicts a universal
-   afterglow-trigger time $$ t_c\;\approx\;\frac{r_s(z)}{c_s}, $$ then **the same
-   GRB** delivers a _second_, independent distance, driving total systematics below
+   afterglow-trigger time $$ t*c\;\approx\;\frac{r_s(z)}{c_s}, $$ then **the same
+   GRB** delivers a \_second*, independent distance, driving total systematics below
    2 %. --- ### 6 Next actions | Task | Owner | ETA | |------|-------|-----| |
    `tick_decompose.py` (wavelet + exact $$\tau$$) | you | 2 days | |
    `classify_rung()` ladder module | me | 1 day | | Re-process Swift/Fermi archive
