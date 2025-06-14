@@ -82,9 +82,7 @@ Measure any two rulers ⇒ solve simultaneously for $$z$$ and $$D_L(z)$$ ⇒ **$
 
 ### 5 Sound-wave angle *(future icing)*  
 
-If the digital-acoustic module predicts a universal trigger  
-
-$$t_c \;\approx\;\frac{r_s(z)}{c_s}$$
+If the digital-acoustic module predicts a universal trigger $$t_c \;\approx\;\frac{r_s(z)}{c_s}$$
 
 
 then the **same GRB** delivers a *second*, independent distance, driving total systematics below $$2\%$$.
