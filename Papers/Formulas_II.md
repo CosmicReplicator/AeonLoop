@@ -2,7 +2,18 @@
 layout: papers
 title: 'Formulas II'
 ---
-
+<code>
+flowchart TD
+    A[τ = 0.600 ps] -->|1 / τ| B
+    B[f = 5 / 3 THz] -->|h| C[h]
+    C --> D[E₀ = h f]
+    C -->|Δx = c τ| E[Δx = c τ]
+    E -->|D_eff = 8/3| F[Volume law]
+    D -->|anchor W boson| G[Energy Ladder]
+    G -->|β = 1/3| H[a(t) ∼ t^{3/4}]
+    F -->|β = 1/3| H
+    E -.->|Q = 409.8| G
+</code>
 <h2>4 · Cosmological-Constant Sketch</h2>
 
 <div class="eq">
