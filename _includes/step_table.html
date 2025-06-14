@@ -1,14 +1,18 @@
 {% assign ladder = site.data.numbers.ladder %}
 <table>
-  <tr><th>Step</th><th>Energy</th><th>Comments</th></tr>
+  <tr>
+    <th>Step</th>
+    <th>Energy</th>
+    <th>Comments</th>
+  </tr>
   {% for row in ladder %}
   <tr>
     <td>{{ row.step }}</td>
     <td>{{ row.energy_eV | divided_by: 1e6 | round: 5 }} MeV</td>
-    <td>{% if row.step == 4 %}Strong force{% elsif row.step == 5 %}Electroweak{% endif %}</td>
+    <td>
+      {% if row.step == 4 %}Strong force{% elsif row.step == 5 %}Electroweak{%
+      endif %}
+    </td>
   </tr>
   {% endfor %}
 </table>
-
-
-

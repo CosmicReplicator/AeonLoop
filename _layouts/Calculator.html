@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,10 @@
         },
       };
     </script>
-    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
     <!-- ThebeLab for interactive Python cells (optional, remove if not needed) -->
     <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
   </head>
@@ -26,34 +29,25 @@
       <header>
         <h1>{{ page.title }}</h1>
         <p class="meta">
-          By {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
-          {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+          By {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{%
+          endif %} {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{%
+          endif %}
         </p>
       </header>
-      <main>
-        {% include sections.html %}
-        {{ page.content | markdownify }}
-      </main>
-      <footer>
-        {% include footer.html %}
-      </footer>
+      <main>{% include sections.html %} {{ page.content | markdownify }}</main>
+      <footer>{% include footer.html %}</footer>
     </div>
-    
+
     <!-- Initialize ThebeLab (if you want live code cells on AeonLoop pages) -->
     <script>
       thebelab.bootstrap({
         binderOptions: {
           // Replace with your own GitHub repo to provide the needed environment,
           // e.g., "your-github-username/your-repo"
-          repo: "cosmicreplicator/AeonLoop",
-          ref: "main"
-        }
+          repo: 'cosmicreplicator/AeonLoop',
+          ref: 'main',
+        },
       });
     </script>
   </body>
 </html>
-
-
-
-
-

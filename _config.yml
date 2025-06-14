@@ -2,7 +2,7 @@ markdown: kramdown
 author: "jonsvein Heinesen"
 
 kramdown:
- # input: GFM
+  # input: GFM
   gfm_quirks:
     - math_block
     - math_inline
@@ -11,10 +11,13 @@ kramdown:
     inline_math_delimiters:
       - ['\(', '\)']
     display_math_delimiters:
-      - ['
+      - [
+          '
 
-\[', '\]
+          \[',
 
-']
-      - ['$$', '$$']
+          '\]
 
+          ',
+        ]
+      - ["$$", "$$"]

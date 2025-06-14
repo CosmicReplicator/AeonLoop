@@ -1,6 +1,6 @@
 ---
 layout: papers
-title: "A New Approach in GRB Physics and Cosmic Resets"
+title: 'A New Approach in GRB Physics and Cosmic Resets'
 mathjax: true
 ---
 
@@ -21,58 +21,46 @@ is at work.
 Standard models struggle with the complexity of GRB pulse shapes.
 Observations show pulses are not uniformly FRED-like and become more
 asymmetric and spectrally softer over time.  
-We link these discrepancies to a *quantum collapse* (“snap-back”) that
+We link these discrepancies to a _quantum collapse_ (“snap-back”) that
 contracts space and concentrates energy into a coherent node.
 
 ## 1 Pulse-production mechanism
 
-We assume a slow shell *accretes* fast material.  Depending on shock
-physics and shell geometry the dissipated power obeys  
-
-
+We assume a slow shell _accretes_ fast material. Depending on shock
+physics and shell geometry the dissipated power obeys
 
 \[
 \dot E \propto
 \begin{cases}
 t^{-3/2} & \text{(thin-shell)}\\
-t^{-3}   & \text{(thick-shell)}
+t^{-3} & \text{(thick-shell)}
 \end{cases}
 \]
-
-
 
 ## 2 Spectral evolution
 
 Peak energy is parameterised by
 
-
-
 \[
-E_{p} \;\propto\; \rho^{x}\,\varepsilon^{y},
+E\_{p} \;\propto\; \rho^{x}\,\varepsilon^{y},
 \]
 
-
-
-so at late times  
-
-
+so at late times
 
 \[
-E_{p}(t)\;\propto\;t^{-(2x + y)}.
+E\_{p}(t)\;\propto\;t^{-(2x + y)}.
 \]
-
-
 
 Standard synchrotron with \(x=\tfrac12,\;y=\tfrac52\) gives
-\(E_{p}\!\propto\!t^{-3.5}\), steeper than the observed
-\(E_{p}\!\propto\!t^{-\delta}\) with \(\delta\lesssim1.5\).
+\(E*{p}\!\propto\!t^{-3.5}\), steeper than the observed
+\(E*{p}\!\propto\!t^{-\delta}\) with \(\delta\lesssim1.5\).
 
 ## Observational predictions
 
 - Decay of GRB pulse energy follows the power-law linked to
-  shell-deceleration.  
+  shell-deceleration.
 - Early pulses are harder and symmetric (photospheric origin); later
-  pulses softer and asymmetric (non-thermal).  
+  pulses softer and asymmetric (non-thermal).
 - The snap-back concept may extend to black-hole formation and magnetars.
 
 ## Conclusions

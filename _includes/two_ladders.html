@@ -1,26 +1,29 @@
-{% assign LQ = site.data.numbers.ladder_Q %}
-{% assign LC = site.data.numbers.ladder_C %}
+{% assign LQ = site.data.numbers.ladder_Q %} {% assign LC =
+site.data.numbers.ladder_C %}
 <table>
   <tr>
     <th>Step</th>
-    <th>Quantum ladder E<sub>Q</sub></th>
-    <th>Geom. ladder E<sub>C</sub></th>
+    <th>
+      Quantum ladder E
+      <sub>Q</sub>
+    </th>
+    <th>
+      Geom. ladder E
+      <sub>C</sub>
+    </th>
     <th>Δ (%)</th>
   </tr>
-  {% for r in LQ %}
-    {% assign idx = forloop.index0 %}
-    {% assign eq = r.energy_eV %}
-    {% assign ec = LC[idx].energy_eV %}
-    {% assign pct = (ec | minus:eq) | divided_by:eq | times:100 %}
-    <tr>
-      <td>{{ r.step }}</td>
-      <td>{{ eq | divided_by:1e9 | number:4 }} GeV</td>
-      <td>{{ ec | divided_by:1e9 | number:4 }} GeV</td>
-      <td>{{ pct | number:3 }}</td>
-    </tr>
+  {% for r in LQ %} {% assign idx = forloop.index0 %} {% assign eq = r.energy_eV
+  %} {% assign ec = LC[idx].energy_eV %} {% assign pct = (ec | minus:eq) |
+  divided_by:eq | times:100 %}
+  <tr>
+    <td>{{ r.step }}</td>
+    <td>{{ eq | divided_by:1e9 | number:4 }} GeV</td>
+    <td>{{ ec | divided_by:1e9 | number:4 }} GeV</td>
+    <td>{{ pct | number:3 }}</td>
+  </tr>
   {% endfor %}
 </table>
-<p style="font-size:80%">Per-step scale gap = {{ site.data.numbers.gap_pct | number:3 }} %</p>
-
-
-
+<p style="font-size: 80%">
+  Per-step scale gap = {{ site.data.numbers.gap_pct | number:3 }} %
+</p>

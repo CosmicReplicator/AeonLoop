@@ -31,7 +31,7 @@ I'm still working on this page to ease navigation, so please bear with me. I'm c
 
 This project explores the intersections of cosmic and quantum theories through a discrete, digital-tick framework. The work investigates how emergent constants and geometric discretization may provide a new perspective on spacetime. With terms like **2.667D** and **1.667THz**, we hint at novel approaches aimed at reconciling traditional physics with emerging digital formulations.
 
-*More written context and details will be uploaded soon as the documentation evolves.*
+_More written context and details will be uploaded soon as the documentation evolves._
 
 ---
 

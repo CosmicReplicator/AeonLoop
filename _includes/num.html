@@ -1,11 +1,5 @@
-{%- comment -%}
-Usage:
-  {% include num.html set="core" path="tau_ps" digits=3 unit="ps" %}
-{%- endcomment -%}
-{%- assign src = site.data[include.set] -%}
-{%- for k in include.path | split:"." -%}{%- assign src = src[k] -%}{%- endfor -%}
-{{ src | number:include.digits }}{% if include.unit %}&nbsp;{{ include.unit }}{% endif %}
-
-
-
-
+{%- comment -%} Usage: {% include num.html set="core" path="tau_ps" digits=3
+unit="ps" %} {%- endcomment -%} {%- assign src = site.data[include.set] -%} {%-
+for k in include.path | split:"." -%}{%- assign src = src[k] -%}{%- endfor -%}
+{{ src | number:include.digits }}{% if include.unit %}&nbsp;{{ include.unit }}{%
+endif %}
