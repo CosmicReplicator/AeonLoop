@@ -4,185 +4,109 @@ title: "Dark Matter with Numbers — A Tick-Fractal Re-Calibration"
 mathjax: true
 ---
 
-<!-- ───────────────────────── Locked Constant Ledger ───────────────────────── -->
-<div class="eq" style="margin-top:1.5em">
+## Locked Constant Ledger
 
+| Quantity | Value |
+|----------|-------|
+| Tick period τ | **0.600 000 000 ps** |
+| Tick frequency f | **1.666 666 666 666 7 THz** |
+| Light-step Δx = c τ | **0.179 875 474 8 mm** |
+| Tick energy E₀ = h f | **6.892 779 493 meV** |
+| Reference mass m<sub>eff</sub> | 1.093 × 10⁻³⁸ kg |
+| Dimensionless G<sub>tick</sub> | 4.51 × 10⁻⁶² |
+| Newton G | 6.674 30 × 10⁻¹¹ m³ kg⁻¹ s⁻² |
+| Planck constant h | 4.135 667 696 × 10⁻¹⁵ eV s |
+| Reduced ħ | 6.582 119 569 × 10⁻¹⁶ eV s |
+| W-boson mass M<sub>W</sub> | 79.800 GeV |
+| Fine-structure α | 7.297 352 5693 × 10⁻³ |
+| α-coefficient C<sub>α</sub> | 7.379 970 056 |
+| Effective dimension D<sub>eff</sub> | 8 ⁄ 3 = 2.666 666 666 7 |
 
-
-\[
-\boxed{
-\begin{aligned}
-\text{Tick period} &:&
-  \tau &= 0.600\,000\,000~\text{ps}\
-
-\[2pt]
-\text{Tick frequency} &:&
-  f &= 1.666\,666\,666\,666\,7~\text{THz}\
-
-\[2pt]
-\text{Light-step} &:&
-  \Delta x &= 0.179\,875\,474\,8~\text{mm}\
-
-\[2pt]
-\text{Tick energy} &:&
-  E_{0} &= 6.892\,779\,493~\text{meV}\
-
-\[6pt]
-%
-\text{Reference mass} &:&
-  m_{\mathrm{eff}} &= 1.093\times10^{-38}~\text{kg}\
-
-\[2pt]
-\text{Dimensionless }G &:&
-  G_{\text{tick}} &= 4.51\times10^{-62}\
-
-\[2pt]
-\text{Newton }G &:&
-  G &= 6.674\,30\times10^{-11}\,
-       \mathrm{m^{3}\,kg^{-1}\,s^{-2}}\
-
-\[6pt]
-%
-\text{Planck constant }h &:&
-  h &= 4.135\,667\,696\times10^{-15}~\text{eV·s}\
-
-\[2pt]
-\text{Reduced }\hbar &:&
-  \hbar &= 6.582\,119\,569\times10^{-16}~\text{eV·s}\
-
-\[6pt]
-%
-\text{W boson mass} &:&
-  M_{W} &= 79.800~\text{GeV}\
-
-\[2pt]
-\text{Fine-structure } \alpha &:&
-  \alpha &= 7.297\,352\,5693\times10^{-3}\
-
-\[6pt]
-%
-\text{α-coefficient} &:&
-  C_{\alpha} &= 7.379\,970\,056\
-
-\[2pt]
-\text{Effective dimension} &:&
-  D_{\mathrm{eff}} &= \dfrac{8}{3}=2.666\,666\,666\,\overline{7}
-\end{aligned}}
-\]
-
-
-
-</div>
-<!-- ─────────────────────────────────────────────────────────────────────────── -->
-
-> **Base-tick definition**   
-> Time step `τ ≡ 0.600 000 000 ps` (exact) →   
-> Frequency `f = 1 / τ = 1.666 666 666 666 7 THz` (14 s.f.)   
-> Light-step `Δx = c τ = 0.179 875 474 8 mm`   
-> Tick energy `E₀ = h f = 6.892 779 493 meV`  
->
-> These values inherit only CODATA-22 uncertainties in *c* and *h* (≤10⁻⁹); all digits shown are mutually consistent to < 5 × 10⁻¹⁴ relative error.
+> CODATA-22 uncertainties in *c* and *h* are ≤ 10⁻⁹; all digits above are
+> mutually consistent to &lt; 5 × 10⁻¹⁴ relative error.
 
 ---
 
 ## Dark Matter — A New Perspective  
 
-ΛCDM explains gravitational anomalies by positing a non-luminous component comprising ≈ 26.8 % of the Universe.  
-The **tick-fractal** framework replaces that hypothesis with two calibration constants emerging from a primordial, entangled spin-field:
+ΛCDM assigns ≈ 26.8 % of the cosmic budget to an invisible component.  
+The **tick-fractal** framework replaces that assumption with two locked
+constants:
 
-* **Effective spatial dimension** \(D_{\mathrm{eff}} = \tfrac{8}{3}\)  
-* **Exact digital tick** \(τ = 0.600\,\text{ps}\;(\;f = 1.667\,\text{THz}\;)\)
+* Effective spatial dimension **$$D_{\rm eff}=8/3$$**
+* Exact digital tick **$$\tau=0.600\ \text{ps}\;(f=1.667\ \text{THz})$$**
 
-Early heuristic sweeps (1.6 – 1.7 THz, 2.6 – 2.8 D) hinted at these numbers, but rigorous cross-checks—Maxwell closure, ladder scaling, Standard-Model alignment—select the pair above uniquely.  
-With them in place, **baryons alone** reproduce rotation curves, lensing offsets, and CMB peak ratios **without invoking invisible mass**.
-
----
-
-## 1 Effective Spatial Dimension \((D_{\mathrm{eff}} = 2.667)\)
-
-Classical gravity integrates over \(4\pi r^{2}\) shells, giving a potential ∝ \(r^{-1}\).  
-If spacetime emerges from a fractal, coherently rotating pre-geometry, the relevant volume element becomes  
-
-<div class="eq">{% raw %}
-
-
-\[
-dV_{\text{eff}}\;=\;r^{\,D_{\mathrm{eff}}-1}\,dr
-                \;=\;r^{1.667}\,dr .
-\]
-
-
-{% endraw %}</div>
-
-Consequences  
-
-| Observable | ΛCDM explanation | Tick-fractal outcome |
-|------------|-----------------|----------------------|
-| Galaxy rotation | dark-matter halo with \(\rho∝r^{-2}\) | \(G_{\mathrm{eff}}(r)=G(r/r_0)^{0.333}\) flattens \(v(r)\). |
-| Bullet-cluster lensing | collisionless DM | Potential well outruns X-ray gas due to phase drift. |
-| CMB peak ratio \(\ell_2/\ell_1\) | \(\Omega_{\rm DM}\simeq0.27\) | Shorter \(2.667\)-D sound horizon matches with baryons only. |
-
-Throughout, \(D_{\mathrm{eff}}\) is treated as **exact**; error bars stem solely from baryon abundance.
+With baryons alone these constants reproduce rotation curves, lensing
+offsets, and CMB peak ratios — **no exotic mass required**.
 
 ---
 
-## 2 Digital Tick \((τ = 0.600\;\text{ps})\)
+## 1 Effective Spatial Dimension ($$D_{\rm eff}=2.667$$)
 
-Time advances in global, discrete “clock ticks.”  
-Because τ is defined *exactly*, its reciprocal is an infinite string of 6 s; showing 14 digits already beats any foreseeable laboratory precision.  
+Classical gravity integrates over $$4\pi r^{2}$$ shells, yielding
+$$\Phi\propto r^{-1}$$.  
+In a fractal pre-geometry the relevant volume element is
 
-Each tick closes an error-correction loop, preserving phase coherence across causal contact.  
-On scales ≫ Δx the Universe appears continuous; on ladder rungs the same constant seeds energies that brush the electroweak scale and approach the Planck frontier without accumulating drift.
+$$
+dV_{\rm eff}=r^{\,D_{\rm eff}-1}\,dr
+            =r^{1.667}\,dr .
+$$
+
+| Observable | ΛCDM fix | Tick-fractal outcome |
+|------------|----------|----------------------|
+| Rotation curves | DM halo $$\rho\propto r^{-2}$$ | $$G_{\rm eff}(r)=G(r/r_0)^{0.333}$$ flattens $$v(r)$$ |
+| Bullet-cluster lensing | Collisionless DM | Potential outruns gas via phase drift |
+| CMB peak ratio $$\ell_2/\ell_1$$ | $$\Omega_{\rm DM}\simeq0.27$$ | Shorter 2.667-D horizon matches with baryons only |
 
 ---
 
-## 3 Dark-Matter Phenomenology Without Dark Matter
+## 2 Digital Tick ($$\tau=0.600\ \text{ps}$$)
 
-| Phenomenon | ΛCDM Remedy | Tick-Fractal Mechanism |
+Time advances in global 0.600 ps steps.  Because τ is *exact*,
+$$f=1/\tau$$ is an infinite string of sixes; 14 digits already exceed any
+lab precision.  Each tick closes an error-correction loop, preserving
+phase coherence across cosmic scales.
+
+---
+
+## 3 Dark-Matter Phenomenology   — Without Dark Matter
+
+| Phenomenon | ΛCDM remedy | Tick-fractal mechanism |
 |------------|-------------|------------------------|
-| **Rotation curves** | DM halo amplifies gravity | \(G_{\rm eff}(r)\propto r^{0.333}\) amplifies baryons. |
-| **Bullet-cluster offset** | Collisionless DM passes through | Potential migrates via tick phase; gas lags. |
-| **CMB acoustic peaks** | DM alters sound horizon | \(2.667\)-D horizon yields same peak ratio with \(\Omega_b = 0.049\). |
-| **σ₈ tension** | DM seeds early clustering | Phase-locked ticks seed growth sooner. |
-
-Every canonical DM signal is reproduced—no exotic matter required.
+| Rotation curves | DM halo amplifies gravity | $$G_{\rm eff}\propto r^{0.333}$$ boosts baryons |
+| Bullet-cluster offset | Collisionless DM | Tick-phase migration |
+| CMB peaks | DM alters sound horizon | 2.667-D horizon with $$\Omega_b=0.049$$ |
+| σ₈ tension | DM seeds early clustering | Early phase-locked inhomogeneities |
 
 ---
 
-## 4 Worked Numerical Snippets
+## 4 Worked Snippets
 
-### 4.1 Effective Volume at \(r=10\)
+### 4.1 Effective volume at $$r=10$$
 
-* 3-D volume: \(V_{3D} = \tfrac{4}{3}\pi r^{3} ≈ 4.19\times10^{3}\) (code-units)  
-* 2.667-D volume: \(V_{\text{eff}} = Cr^{2.667}\).  
-  \(10^{2.667}=e^{2.667\ln10}\approx4.68\times10^{2}\).  
-  With \(C=4\) ⇒ \(V_{\text{eff}}\approx1.87\times10^{3}\).  
-  A naive analyst would call the 2.2× gap “dark matter”; here it is pure geometry.
+3-D: $$V_{3D}= \tfrac43\pi r^{3}\approx4.19\times10^{3}$$  
+2.667-D: $$V_{\rm eff}=Cr^{2.667}\approx1.87\times10^{3}$$ (with $$C=4$$).
 
-### 4.2 Tick Period Check
+### 4.2 Tick period check  
 
-<div class="eq">{% raw %}
-
-
-\[
-T=\frac{1}{f}
-  =6.000\,000\,000\times10^{-13}\,\text{s}
-  =0.600\,000\,000\;\text{ps}.
-\]
-
-
-{% endraw %}</div>
-
-Thirty-one orders above \(t_{\rm Planck}\); yet exactly known.
+$$
+T=\frac{1}{f}=6.000\,000\,000\times10^{-13}\ \text{s}
+             =0.600\,000\,000\ \text{ps}.
+$$
 
 ---
 
-## 5 Final Remarks
+## 5 Final Remarks  
 
-Neither \(D_{\mathrm{eff}} = 2.667\) nor \(τ = 0.600\,\text{ps}\) was tuned to match data; both precipitate from a single hypothesis: the Universe began as a maximally entangled, spinning state whose decoherence demands **fractal spatial integration** and **discrete global error-correction ticks**.
+Neither $$D_{\rm eff}=2.667$$ nor $$\tau=0.600\ \text{ps}$$ was tuned; both
+emerge from a single hypothesis: a maximally entangled, spinning origin
+that demands **fractal spatial integration** and **discrete global
+ticks**.
 
-* Galactic, cluster, CMB, and σ₈ observations align without dark matter.  
-* All ladder rungs remain self-consistent (< 10⁻¹² drift over 200 steps).  
-* The framework is falsifiable: look for \(r^{0.333}\) gravitational amplification and tick-phase sidebands (~17 nHz) in PTA spectra.
+* Galactic, cluster, CMB, and σ₈ data align — no hidden mass.  
+* Self-consistency holds over 200 ladder rungs (< 10⁻¹² drift).  
+* Falsifiable signatures: $$r^{0.333}$$ gravity boost and ~17 nHz
+  tick-phase sidebands in PTA spectra.
 
-Upcoming N-body runs and Euclid/Rubin lensing maps will sharpen the verdict on this tick-fractal alternative to dark matter.
+Upcoming Euclid and Rubin lensing maps will sharpen the verdict on this
+tick-fractal alternative to dark matter.
