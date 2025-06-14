@@ -129,7 +129,8 @@ h1, h2, h3 {
   color: #f5f5dc;
   text-align: center;
   letter-spacing: 1px;
-  margin: 0 0 1.2em;        /* gap below every heading             */
+  margin: 0 0 1.2em;        /* gap below every heading   */
+  margin-top: 0.8em;          /* optional extra gap */
 }
 
 /* --- h1 -------------------------------------------------------*/
@@ -154,7 +155,7 @@ h2, h3 {
 }
 
 h2 { font-size: 1.5em; }
-h3 { font-size: 1.0em; margin-top: 0.8em; }   /* optional extra gap */
+h3 { font-size: 1.0em;  }   /* optional extra gap */
 
 /* ===============================================================
    FOOTER
