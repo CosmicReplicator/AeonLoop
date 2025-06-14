@@ -48,9 +48,11 @@ mathjax: true
 
 A helical world-line of pitch $$\Delta x = c\tau$$ wraps $$360^\circ$$ every seven ticks:
 
-$$
+
 7\tau \;=\; \frac{2\pi R_{\rm H}}{c}
 \;\Longrightarrow\;
+
+$$
 R_{\rm H} \;=\; \frac{7c\tau}{2\pi}
 $$
 
