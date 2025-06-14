@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
 
-  <!-- SEO -->
+  <!-- ─── SEO ─────────────────────────────────────────────────────────── -->
   {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}" />
   {% endif %}
   {% if page.topics %}
-    <meta name="keywords" content="{{ page.topics | join: ', ' }}">
+    <meta name="keywords" content="{{ page.topics | join: ', ' }}" />
   {% else %}
     <meta name="keywords"
-          content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations">
+          content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations" />
   {% endif %}
 
-  <!-- MathJax 3: config FIRST, then load the script -->
+  <!-- ─── MathJax 3: config FIRST, then load the engine ──────────────── -->
   <script>
+    /* global window */
     window.MathJax = {
       tex: {
-        inlineMath:  [['\\(', '\\)'], ['$', '$']],
+        inlineMath : [['\\(', '\\)'], ['$', '$']],
         displayMath: [['\
 
 \[', '\\]
 
 '], ['$$', '$$']],
         processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
       }
     };
   </script>
 
-  <!-- Load order: polyfill → MathJax → Mermaid -->
+  <!-- ─── Load order: polyfill → MathJax → Mermaid ───────────────────── -->
   <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
-document.addEventListener('DOMContentLoaded', () => MathJax.typesetPromise());
-</script>
-  <script>
-    mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });
+    /* mermaid needs to wait until the DOM is ready */
+    document.addEventListener('DOMContentLoaded', () =>
+      mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' })
+    );
   </script>
 </head>
 
@@ -66,4 +70,5 @@ document.addEventListener('DOMContentLoaded', () => MathJax.typesetPromise());
   </div>
 </body>
 </html>
+```
 

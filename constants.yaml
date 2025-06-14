@@ -1,42 +1,41 @@
-# constants.yaml  ─ v2025-06-14 • LOCKED
-# All numeric entries are experimentally measured or exact.
-# Any future change ➜ bump version tag.
+# ────────────────────────────────────────────────────────────────
+# constants.yaml • v2025-06-14a  ─ LOCKED
 
 tick:
-  tau_ps   : 0.600000000000000        # [ps] exact definition
-  f_thz    : 1.666666666666667        # [THz] = 1/τ
-  dx_mm    : 0.179875474800000        # [mm]  = c·τ
+  tau_ps      : 0.600000000000000          # [ps] exact definition
+  f_thz       : 1.666666666666667          # [THz] = 1 / τ
+  f_BH_GHz    : 238.095238095238           # [GHz] = f_tick / 7   ← NEW
+  dx_mm       : 0.179875474800000          # [mm]  = c · τ
 
 energy:
-  E0_meV   : 6.892779493333334        # [meV] = h·f
+  E0_meV      : 6.892779493333334          # [meV] = h · f_tick
 
 mass:
-  m_eff_kg : 1.093000000000000e-38    # display only (8/9)·E0/c²
+  m_eff_kg    : 1.093000000000000e-38      # (8/9) · E0 / c²   (display only)
 
 gravity:
-  G_tick   : 4.51e-62                 # dimension-less (tick units)
-  G_SI     : 6.67430e-11              # CODATA-22
+  G_tick      : 4.510000000000000e-62      # dimension-less (tick units)
+  G_SI        : 6.67430e-11                # CODATA-22
 
 Planck:
-  h_eVs    : 4.135667696e-15          # Planck constant  h
-  hbar_eVs : 6.582119569e-16          # reduced ħ
+  h_eVs       : 4.135667696e-15            # Planck constant  h
+  hbar_eVs    : 6.582119569e-16            # reduced ħ
 
-SM:                                    # Standard-Model anchors
-  M_W_GeV  : 80.4                     # electroweak target
-  alpha_22 : 7.2973525693e-3          # fine-structure constant
+SM:                                        # Standard-Model anchors
+  M_W_GeV     : 80.4                       # electroweak target
+  alpha_22    : 7.2973525693e-3            # fine-structure constant
 
-derived:                               # values computed at build-time
-  C_alpha  : 7.379970056              # coefficient in exp[−C(D_eff−2)]
+derived:                                   # values computed at build-time
+  C_alpha     : 7.379970056                # coefficient in exp[−C(D_eff−2)]
 
 cosmology:
-  H0_km_s_Mpc : null                  # intentionally undefined
+  H0_km_s_Mpc : null                       # intentionally undefined
   # t0_Gyr is computed only when H0 is supplied
 
 meta:
   codata : 2022
   note   : "Immutable file.  Create a new version for any future edits."
-
-<!-- ─── Locked Constants (v2025-06-14) ───────────────────── -->
+# ────────────────────────────────────────────────────────────────
 
 <!-- Locked Constants  · v2025-06-14 -->
 <h2>Locked Constants <span style="font-size:0.75em">(v 2025-06-14)</span></h2>
