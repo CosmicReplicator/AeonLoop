@@ -51,11 +51,9 @@ A helical world-line of pitch $$\Delta x = c\tau$$ wraps $$360^\circ$$ every sev
 $$
 7\tau \;=\; \frac{2\pi R_{\rm H}}{c}
 $$
-
 $$
 \;\Longrightarrow\;
 $$
-
 $$
 R_{\rm H} \;=\; \frac{7c\tau}{2\pi}
 $$
@@ -65,11 +63,9 @@ With $$\tau = 0.600\,\text{ps}$$ this yields
 $$
 R_{\rm H} \;\approx\; 0.200\,\text{mm}
 $$
-
 $$
 f_{\rm BH} \;=\; \frac{c}{2\pi R_{\rm H}}
 $$
-
 $$
 f_{\rm BH} \;\approx\; 240\,\text{GHz}
 $$
