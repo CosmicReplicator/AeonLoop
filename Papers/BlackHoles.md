@@ -54,7 +54,7 @@ $$
 R_{\rm H} = \frac{7c\tau}{2\pi}
 $$
 
-With $$\tau = 0.600\,\text{ps}$$ this yields  
+With $$\tau = 0.600\,\text{ps}$$ this yields
 
 $$
 R_{\rm H}\approx0.200\,\text{mm},\qquad
