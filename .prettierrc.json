@@ -1,0 +1,18 @@
+{
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "semi": true,
+  "tabWidth": 2,
+  "htmlWhitespaceSensitivity": "ignore",
+
+  "overrides": [
+    { "files": "*.md", "options": { "proseWrap": "preserve" } },
+    { "files": "*.yml", "options": { "singleQuote": false } },
+    { "files": ["Papers/*.html"], "options": { "parser": "markdown" } },
+    {
+      "files": ["_layouts/**/*.html", "index.html"],
+      "options": { "parser": "html" }
+    }
+  ]
+}
