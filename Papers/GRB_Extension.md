@@ -87,7 +87,7 @@ Promising proof-of-concept without $$\Lambda\text{CDM}$$ ingredients.
 If the digital-acoustic module predicts a universal afterglow-trigger time  
 
 $$
-t_c \;\approx\; \frac{r_s(z)}{c_s},
+t_c \;\approx\; \frac{r_s(z)}{c_s}
 $$
 
 then the **same GRB** delivers a *second*, independent distance, driving total systematics below $$2\%$$.
