@@ -72,7 +72,7 @@ flowchart TD
 ### 3.1 Rung identification  
 
 $$
-n = \operatorname{round}\!\left[\dfrac{E_0}{7E_{\text{peak}}}\right]\qquad\text{long GRBs: } n \approx 11-12.
+n = \operatorname{round}\!\left[\dfrac{E_0}{7E_{\text{peak}}}\right] \qquad\text{long GRBs: } n \approx 11-12
 $$
 
 ### 3.2 Redshift purely from time-dilation  
