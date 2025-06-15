@@ -67,7 +67,7 @@ flowchart TD
 </div>
 {% endraw %}
 <!-- prettier-ignore-end -->
-
+---
 ### 3.1 Rung identification  
 $$ n = \operatorname{round}\!\Bigl[\dfrac{E_0}{7E_{\text{peak}}}\Bigr],\qquad
 \text{long GRBs: } n \approx 11\text{–}12. $$
