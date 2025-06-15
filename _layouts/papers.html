@@ -1,71 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
 
-    <!-- ─── SEO ─────────────────────────────────────────────────────────── -->
-    {% if page.description %}
+  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+  {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
-    {% endif %} {% if page.topics %}
-    <meta name="keywords" content="{{ page.topics | join: ', ' }}" />
-    {% else %}
-    <meta
-      name="keywords"
-      content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations"
-    />
-    {% endif %}
+  {% endif %}
+  <meta name="keywords"
+        content="{% if page.topics %}{{ page.topics | join: ', ' }}{% else %}
+                 CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+                 Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+                 Ad Hoc-Free Formulation, Discrete Rotations{% endif %}" />
 
-    <!-- ─── MathJax 3: config FIRST, then load the engine 
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath:  [['\\(', '\\)']],
-    displayMath: [['\
+  <!-- ─── MathJax 3: CONFIG FIRST, THEN ENGINE ─────────────────────────── -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath:  [['$$','$$']],
+        displayMath: [['$$','$$']],
+        processEscapes: true
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-\[', '\\]
+  <!-- ─── Polyfill (safest to keep) ────────────────────────────────────── -->
+  <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
 
-']],
-    processEscapes: true
-  }
-};
-</script>──────────────── -->
+  <!-- ─── Mermaid: local copy + dark-mode switch ───────────────────────── -->
+  <script defer src="{{ '/assets/js/mermaid.min.js' | relative_url }}"></script>
+  <script>
+    const pickTheme = () =>
+      matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
 
+    document.addEventListener('DOMContentLoaded', () => {
+      mermaid.initialize({ startOnLoad: true, theme: pickTheme(), securityLevel: 'loose' });
+      /* react live to user toggling system theme */
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change',
+        () => mermaid.initialize({ theme: pickTheme() }));
+    });
+  </script>
+</head>
 
-    <!-- ─── Load order: polyfill → MathJax → Mermaid ───────────────────── -->
-<!-- ─── Polyfill  +  MathJax (unchanged) ──────────────────────────────── -->
-<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+<body>
+  <div class="page-content">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <p class="meta">
+        By {{ page.author | default: site.author }}
+        {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+      </p>
+    </header>
 
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <main class="paper-body">
+      {%- unless page.no_toc -%}
+        {% include toc.html html=content class="page-toc" h_min=2 h_max=3 %}
+      {%- endunless -%}
 
-<!-- ─── Mermaid: one load + one init ──────────────────────────────────── -->
-<script defer src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () =>
-    mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' })
-  );
-</script>
+      {{ content }}
+    </main>
 
-  </head>
-
-  <body>
-    <div class="page-content">
-      <header>
-        <h1>{{ page.title }}</h1>
-        <p class="meta">
-          By {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{%
-          endif %} {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{%
-          endif %}
-        </p>
-      </header>
-
-      <main>{% include sections.html %} {{ content | markdownify }}</main>
-
-      <footer>{% include footer.html %}</footer>
-    </div>
-  </body>
+    <footer>{% include footer.html %}</footer>
+  </div>
+</body>
 </html>
-```
