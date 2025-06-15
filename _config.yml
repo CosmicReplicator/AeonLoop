@@ -21,3 +21,5 @@ kramdown:
           ',
         ]
       - ["$$", "$$"]
+plugins:
+  - jekyll-mermaid
