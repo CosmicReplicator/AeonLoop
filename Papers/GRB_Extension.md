@@ -72,14 +72,14 @@ flowchart TD
 ### 3.1 Rung identification  
 
 $$
-n = \operatorname{round}\!\left[\dfrac{E_0}{7E_{\text{peak}}}\right],\qquad\text{long GRBs: } n \approx 11-12.
+n = \operatorname{round}\!\left[\dfrac{E_0}{7E_{\text{peak}}}\right]\qquad\text{long GRBs: } n \approx 11-12.
 $$
 
 ### 3.2 Redshift purely from time-dilation  
 
 $$
 1+z = \dfrac{\Delta t_{\text{obs}}}{N_{\text{tick}}\tau}
-     = \dfrac{\Delta t_{\text{obs}}\,f_0}{N_{\text{tick}}}.
+     = \dfrac{\Delta t_{\text{obs}}\,f_0}{N_{\text{tick}}}
 $$
 
 ---
