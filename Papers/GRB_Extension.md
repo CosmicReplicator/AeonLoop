@@ -7,7 +7,7 @@ mathjax: true
 ## Turning GRBs into a tick–fractal yard-stick  
 *(because a $$0.600\,\text{ps}$$ clock can finally resolve their internal “machinery”)*
 
-> **Big idea** A single physical **tick** ($\tau = 0.600\,\text{ps}$) sets  
+> **Big idea** A single physical **tick** ($$\tau = 0.600\,\text{ps}$$) sets  
 > (i) a *geometry* ladder in radius and phase **and**  
 > (ii) a *dilution* ladder in energy,  
 > so each gamma-ray burst encodes its own distance with **zero** $$\Lambda\text{CDM}$$ priors.
