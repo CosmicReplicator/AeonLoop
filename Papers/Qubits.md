@@ -20,7 +20,7 @@ In the **tick-fractal framework**, superposition is a **non-resource** beyond on
 |                      | Standard Model | Tick-Fractal Model |
 |----------------------|----------------|--------------------|
 | Coherence window     | ms-scale | one tick $$0.6\;\text{ps}$$ |
-| Computational resource | Superposition $\lvert\psi\rangle = \alpha\,\lvert 0\rangle + \beta\,\lvert 1\rangle$ | Spatial entanglement in a $0.18\,\text{mm}$ envelope |
+| Computational resource | Superposition $$\lvert\psi\rangle = \alpha\,\lvert 0\rangle + \beta\,\lvert 1\rangle$$ | Spatial entanglement in a $$0.18\,\text{mm}$$ envelope |
 | Decoherence threat   | Environmental noise | Tick boundary itself |
 
 ### 2.2 Harnessing Spatial Entanglement  
