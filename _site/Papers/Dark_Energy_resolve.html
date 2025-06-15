@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dark Energy</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- ─── SEO ─────────────────────────────────────────────────────────── -->
+     
+    <meta
+      name="keywords"
+      content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations"
+    />
+    
+
+    <!-- ─── MathJax 3: config FIRST, then load the engine 
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['\\(', '\\)']],
+    displayMath: [['\
+
+\[', '\\]
+
+']],
+    processEscapes: true
+  }
+};
+</script>──────────────── -->
+
+
+    <!-- ─── Load order: polyfill → MathJax → Mermaid ───────────────────── -->
+<!-- ─── Polyfill  +  MathJax (unchanged) ──────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- ─── Mermaid: one load + one init ──────────────────────────────────── -->
+<script defer src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' })
+  );
+</script>
+
+  </head>
+
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>Dark Energy</h1>
+        <p class="meta">
+          By jonsvein Heinesen  on May 6, 2025
+        </p>
+      </header>
+
+      <main>  
+<!-- Render the main block title -->
+<h3>Introduction</h3>
+ 
+<p>Conventional quantum field theory faces significant challenges due to ultraviolet divergences and an unregulated vacuum energy density that vastly exceeds observational  limits. In this paper, we introduce a digital tick framework where time is inherently discrete. Each tick not only updates the state of the universe but also enforces strict energy quantization, thereby unifying time, space, and energy with a naturally regulated  vacuum energy.
+</p>
+
+
+<!-- Render nested subsections if they exist -->
+ 
+<!-- Render the main block title -->
+<h3>Fundamental Scales and the Digital Tick</h3>
+ 
+<p>We begin by establishing the fundamental scales: - Time tick: \(T_0 = 0.6\,\text{ps}\). - Frequency: \(f_0 = \frac{1}{T_0} \approx 1.667\,\text{THz}\). - Light-travel length per tick: \(L_0 = c \times T_0 \approx 0.18\,\text{mm}\). - Energy quantum: \(E_0 = h \times f_0 \approx 6.89\,\text{meV}\).
+These parameters form an interlocking set of scales that serve as the backbone of our unified model.
+</p>
+
+
+<!-- Render nested subsections if they exist -->
+ 
+<!-- Render the main block title -->
+<h3>Discrete Update of the Electromagnetic Potential</h3>
+ 
+<p>The electromagnetic four-potential \(A_{\mu}(t, x)\) is updated at each tick via a finite difference:
+$$ A_{\mu}(t + \Delta t, x) = A_{\mu}(t, x) + \Delta t \cdot \dot{A}_{\mu}(t, x) + O((\Delta t)^2), $$
+where the derivative is approximated as:
+$$ \dot{A}_{\mu}(t, x) \approx \frac{A_{\mu}(t + \Delta t, x) - A_{\mu}(t, x)}{\Delta t}. $$
+This discrete update is the foundation for re-formulating the dynamics of electromagnetism.
+</p>
+
+
+<!-- Render nested subsections if they exist -->
+ 
+<!-- Render the main block title -->
+<h3>Finite Difference Construction of the Field Tensor and Lagrangian</h3>
+ 
+<p>The electromagnetic field tensor is given by:
+$$ F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}. $$
+In our model, continuous derivatives are replaced by finite differences. For example:
+$$ \partial_t A_{\nu}(t, x) \approx \frac{A_{\nu}(t + \Delta t, x) - A_{\nu}(t, x)}{\Delta t}. $$
+With the discrete formulation, the classical Lagrangian density:
+$$ L = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu}, $$
+is replaced by a lattice sum over digital ticks. Applying the discrete Euler–Lagrange equations recovers Maxwell's equations in the continuum limit.
+</p>
+
+
+<!-- Render nested subsections if they exist -->
+ 
+<!-- Render the main block title -->
+<h3>Vacuum Energy Density and the Role of D_eff</h3>
+ 
+<p>A major advantage of the digital tick framework is its natural regulation of vacuum energy. Using an effective fractal spatial dimension \(D_{\text{eff}} = 2.667\), we express the vacuum energy density as:
+$$ E_{\text{vac}} = \frac{1}{2} \hbar f_0 \left(\frac{S_{D_{\text{eff}}}}{(2\pi)^{D_{\text{eff}}}}\right)  \left(\frac{2\pi f_0}{c}\right)^{D_{\text{eff}}}, $$
+where 
+$$ S_{D_{\text{eff}}} = \frac{2\pi^{(D_{\text{eff}}/2)}}{\Gamma(D_{\text{eff}}/2)}. $$
+A numerical evaluation yields a finite vacuum energy density that is consistent with the observed dark  energy density of about \(6 \times 10^{-10}\,\text{J/m}^3\).
+</p>
+
+
+<!-- Render nested subsections if they exist -->
+ 
+<!-- Render the main block title -->
+<h3>Discussion and Implications</h3>
+ 
+<p>In our model, only energy that perfectly matches the digital tick (\(6.89\,\text{meV}\)) is allowed to emerge. Any residual energy that does not match is automatically canceled by an inherent error-correction mechanism. This ensures a deterministic evolution of the universe and may provide insights into why the observed dark energy constitutes roughly 68% of the cosmic energy density. The digital tick framework not only unifies time, space, and energy but also suggests that the fundamental structure of time may be physical, with implications for phenomena such as neutrino production.
+</p>
+
+
+<!-- Render nested subsections if they exist -->
+ 
+<!-- Render the main block title -->
+<h3>Conclusion</h3>
+ 
+<p>We have presented a novel quantum field theory framework based on discrete, digital time ticks that naturally regulate the vacuum energy and recover known electromagnetic dynamics. The model’s built-in error correction, driven by a time tick of \(0.6\,\text{ps}\) and anchored by an effective dimension  \(D_{\text{eff}} = 2.667\), offers a unified description of time, space, and energy. Future work will explore  observational signatures, extension to non-Abelian fields, and the integration of gravitational dynamics.
+</p>
+
+
+<!-- Render nested subsections if they exist -->
+  
+ 
+</main>
+
+      <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+    </div>
+  </body>
+</html>
+```

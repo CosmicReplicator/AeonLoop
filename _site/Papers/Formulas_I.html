@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulas I</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- ─── SEO ─────────────────────────────────────────────────────────── -->
+     
+    <meta
+      name="keywords"
+      content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations"
+    />
+    
+
+    <!-- ─── MathJax 3: config FIRST, then load the engine 
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['\\(', '\\)']],
+    displayMath: [['\
+
+\[', '\\]
+
+']],
+    processEscapes: true
+  }
+};
+</script>──────────────── -->
+
+
+    <!-- ─── Load order: polyfill → MathJax → Mermaid ───────────────────── -->
+<!-- ─── Polyfill  +  MathJax (unchanged) ──────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- ─── Mermaid: one load + one init ──────────────────────────────────── -->
+<script defer src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' })
+  );
+</script>
+
+  </head>
+
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>Formulas I</h1>
+        <p class="meta">
+          By jonsvein Heinesen 
+        </p>
+      </header>
+
+      <main> 
+ <h2>Digital-Tick Model — Locked Constants (v 2025-06-13)</h2>
+
+<div class="eq">
+   \[ \boxed{ \begin{array}{@{}r@{\,=\,}l @{\qquad} r@{\,=\,}l@{}} \tau
+  &amp; 0.600\,000\,000\ \mathrm{ps} &amp; E_{0} &amp; 6.892\,779\,493\ \mathrm{meV} \\ f &amp;
+  1.666\,666\,666\,666\,7\ \mathrm{THz} &amp; m_{\text{eff}} &amp; 1.093\times10^{-38}\
+  \mathrm{kg} \\ \Delta x &amp; 0.179\,875\,474\,8\ \mathrm{mm} &amp; G_{\text{tick}} &amp;
+  4.51\times10^{-62} \\ h &amp; 4.135\,667\,696\times10^{-15}\ \mathrm{eV\!\cdot\!s}
+  &amp; G &amp; 6.67\times10^{-11}\ \mathrm{m^{3}kg^{-1}s^{-2}} \\ \hbar &amp;
+  6.582\,119\,569\times10^{-16}\ \mathrm{eV\!\cdot\!s} &amp; \alpha &amp;
+  7.297\,352\,5693\times10^{-3} \\ C_{\alpha} &amp; 7.379\,970\,056 &amp; D_{\text{eff}}
+  &amp; \dfrac{8}{3}=2.666\,666\,666\,\overline{7} \\ \kappa &amp; 0.447 &amp; &amp; % last cell
+  blank \end{array}} \] 
+</div>
+
+<hr />
+
+<h2>1 · Finite-Difference Operators</h2>
+
+<p><em>Discrete update of the four-potential</em></p>
+<div class="eq">
+  \[ A_{\mu}(t+\tau,x)=A_{\mu}(t,x)+\tau\,\partial_{t}A_{\mu}(t,x)+\mathcal
+  O(\tau^{2}). \]
+</div>
+
+<p><em>First- and second-order time derivatives</em></p>
+<div class="eq">
+  \[ \partial_{t}A_{\mu}\approx\frac{A_{\mu}(t+\tau)-A_{\mu}(t)}{\tau},\qquad
+  \partial_{t}^{2}A_{\mu}\approx
+  \frac{A_{\mu}(t+\tau)-2A_{\mu}(t)+A_{\mu}(t-\tau)}{\tau^{2}}. \]
+</div>
+
+<p><em>Spatial derivative</em></p>
+<div class="eq">
+  \[ \partial_{x}A_{\mu}\approx\frac{A_{\mu}(t,x+\Delta x)-A_{\mu}(t,x)}{\Delta
+  x}. \]
+</div>
+
+<hr />
+
+<h2>2 · Electromagnetic Tensor &amp; Lagrangian</h2>
+
+<div class="eq">
+  \[ F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu},\qquad \mathcal
+  L=-\tfrac14 F_{\mu\nu}F^{\mu\nu}. \]
+</div>
+
+<p class="note">
+  Discrete Euler–Lagrange steps recover Maxwell in the continuum limit as
+  \(\tau,\Delta x\to0\).
+</p>
+
+<hr />
+
+<h2>3 · Basic Derived Relations</h2>
+
+<table>
+  <tr>
+    <td><strong>Plane-wave dispersion</strong></td>
+    <td><div class="eq">\[\omega^{2}=c^{2}k^{2}.\]</div></td>
+  </tr>
+
+  <tr>
+    <td><strong>Optimal delayed-choice path</strong></td>
+    <td>\( \Delta x = 0.179\,875\,474\,8\;\mathrm{mm}\)</td>
+  </tr>
+
+  <tr>
+    <td><strong>Neutrino mass estimate</strong></td>
+    <td>
+      \(m_\nu \approx 5\;\mathrm{meV}\) (from \(E_{0}\) &amp; \(D_{\text{eff}}\))
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Gravitational red-shift</strong></td>
+    <td>matches GPS factor \(6.946\times10^{-10}\)</td>
+  </tr>
+</table>
+
+<p style="text-align: right; font-size: 0.85em">
+  ➜ Continue to Part II:&nbsp;
+  <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
+</p>
+</main>
+
+      <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+    </div>
+  </body>
+</html>
+```

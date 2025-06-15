@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GRB Ext II – An Energy-Centric Yard-Stick</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- ─── SEO ─────────────────────────────────────────────────────────── -->
+     
+    <meta
+      name="keywords"
+      content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations"
+    />
+    
+
+    <!-- ─── MathJax 3: config FIRST, then load the engine 
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['\\(', '\\)']],
+    displayMath: [['\
+
+\[', '\\]
+
+']],
+    processEscapes: true
+  }
+};
+</script>──────────────── -->
+
+
+    <!-- ─── Load order: polyfill → MathJax → Mermaid ───────────────────── -->
+<!-- ─── Polyfill  +  MathJax (unchanged) ──────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- ─── Mermaid: one load + one init ──────────────────────────────────── -->
+<script defer src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' })
+  );
+</script>
+
+  </head>
+
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>GRB Ext II – An Energy-Centric Yard-Stick</h1>
+        <p class="meta">
+          By jonsvein Heinesen 
+        </p>
+      </header>
+
+      <main> 
+ <blockquote>
+  <p><strong>tl;dr</strong><br />
+switching the anchor from <strong>geometry</strong> to the <strong>tick-fractal energy ladder</strong><br />
+(E_n = E_0 / (7n)).<br />
+Everything else (time, radius, phase) flows from that single quantised energy.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="0one-page-abstract">0 One-page abstract</h2>
+
+<ol>
+  <li>A photon that skims the seed shell accrues <strong>one tick of phase</strong> but keeps the <strong>same energy</strong>.</li>
+  <li><strong>Seven</strong> such skims close the phase, stretching the packet over (7\tau) → <strong>frequency and energy drop by (1/7)</strong>.</li>
+  <li>Gamma-ray burst micro-pulses land <em>exactly</em> on that diluted ladder:</li>
+</ol>
+
+<p>[
+      E_n \;=\; \frac{E_0}{7n},\qquad n = 1,2,3,\dots
+   ]</p>
+
+<ol>
+  <li>Counting the rung index (n) in any GRB instantly yields its distance modulus, with <strong>no</strong> (\Lambda\mathrm{CDM}) priors.</li>
+</ol>
+
+<hr />
+
+<h2 id="1baseline-tick-constants">1 Baseline tick constants</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value (SI)</th>
+      <th>Astro-friendly</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(\tau)</td>
+      <td>tick period</td>
+      <td>(6.00\times10^{-13}\,\text{s})</td>
+      <td>0.600 ps</td>
+    </tr>
+    <tr>
+      <td>(f_0 = 1/\tau)</td>
+      <td>tick frequency</td>
+      <td>(1.666\,667\times10^{12}\,\text{Hz})</td>
+      <td>1.667 THz</td>
+    </tr>
+    <tr>
+      <td>(E_0 = h f_0)</td>
+      <td>single-tick energy</td>
+      <td>(1.10\times10^{-21}\,\text{J})</td>
+      <td><strong>6.890 meV</strong></td>
+    </tr>
+    <tr>
+      <td>(r_0 = c\tau)</td>
+      <td>spatial tick</td>
+      <td>(1.7988\times10^{-4}\,\text{m})</td>
+      <td>0.1799 mm</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>(All later numbers propagate from these four.)</em></p>
+
+<hr />
+
+<h2 id="2energy-ladder-vs-geometry-ladder">2 Energy ladder vs. geometry ladder</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">(n)</th>
+      <th>Closure energy (E_n = E_0/(7n))</th>
+      <th>Centre radius (r_n = 7n\,r_0)</th>
+      <th>Gap beyond seed (\Delta r_n = (6n+1)r_0)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">seed</td>
+      <td>(E_0 = 6.890) meV</td>
+      <td>(r_0)</td>
+      <td>seed shell</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">1</td>
+      <td><strong>0.984 meV</strong></td>
+      <td>1.26 mm</td>
+      <td>0.18 mm</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">2</td>
+      <td>0.492 meV</td>
+      <td>2.52 mm</td>
+      <td>1.26 mm</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">3</td>
+      <td>0.328 meV</td>
+      <td>3.78 mm</td>
+      <td>2.34 mm</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">…</td>
+      <td>(0.984/n) meV</td>
+      <td>(7n\,r_0)</td>
+      <td>((6n+1)r_0)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Geometry grows linearly; <strong>energy dilutes as (1/n)</strong>.</p>
+
+<hr />
+
+<h2 id="3tick-factorising-a-grb-prompt-spectrum">3 Tick-factorising a GRB prompt spectrum</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%% mermaid
+flowchart TD
+    A[Photon-count light-curve] --&gt; B{Fast Fourier&lt;br&gt;tick test}
+    B --&gt;|peak at 1.667 THz| C[valid tick source]
+    C --&gt; D[locate E_peak for every micro-pulse]
+    D --&gt; E[map each E_peak → ladder rung n]
+    E --&gt; F[z from Δt] --&gt; G[H₀ / geometry]
+</code></pre></div></div>
+
+<h3 id="31rung-identification">3.1 Rung identification</h3>
+
+<p>[
+  n \;=\; \operatorname{round}!\Bigl[\frac{E_0}{7\,E_{\text{peak}}}\Bigr].
+]</p>
+
+<p>Typical long GRBs give (n \approx 11!-!12).</p>
+
+<h3 id="32redshift-purely-from-time-dilation">3.2 Redshift purely from time-dilation</h3>
+
+<p>[
+  1 + z
+  \;=\;
+  \frac{\Delta t_{\text{obs}}}{N_{\text{tick}}\,\tau}
+  \;=\;
+  \frac{\Delta t_{\text{obs}}\,f_0}{N_{\text{tick}}}.
+]</p>
+
+<p>No cosmology enters.</p>
+
+<hr />
+
+<h2 id="4worked-miniature--grb-090424">4 Worked miniature – GRB 090424</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Observable</th>
+      <th>Measured</th>
+      <th>Tick-fractal read-out</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>shortest pulse</td>
+      <td>0.47 ms</td>
+      <td>(N = 7.83\times10^{8})</td>
+    </tr>
+    <tr>
+      <td>(E_{\text{peak}})</td>
+      <td>534 keV</td>
+      <td>(n = 11)</td>
+    </tr>
+    <tr>
+      <td>(z_{\text{tick}})</td>
+      <td><strong>1.35</strong></td>
+      <td>((z_{\rm spec}=1.24))</td>
+    </tr>
+    <tr>
+      <td>(H_0) (β = 1/3)</td>
+      <td><strong>71 km s(^{-1}) Mpc(^{-1})</strong></td>
+      <td>matches SH0ES</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Everything flows directly from the ladder; nothing tuned.</p>
+
+<hr />
+
+<p>##</p>
+</main>
+
+      <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+    </div>
+  </body>
+</html>
+```

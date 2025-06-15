@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BlackHole</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- ─── SEO ─────────────────────────────────────────────────────────── -->
+     
+    <meta
+      name="keywords"
+      content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations"
+    />
+    
+
+    <!-- ─── MathJax 3: config FIRST, then load the engine 
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['\\(', '\\)']],
+    displayMath: [['\
+
+\[', '\\]
+
+']],
+    processEscapes: true
+  }
+};
+</script>──────────────── -->
+
+
+    <!-- ─── Load order: polyfill → MathJax → Mermaid ───────────────────── -->
+<!-- ─── Polyfill  +  MathJax (unchanged) ──────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- ─── Mermaid: one load + one init ──────────────────────────────────── -->
+<script defer src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' })
+  );
+</script>
+
+  </head>
+
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>BlackHole</h1>
+        <p class="meta">
+          By jonsvein Heinesen 
+        </p>
+      </header>
+
+      <main> 
+ <h1 id="tick-fractal-black-hole-primer">Tick-Fractal Black-Hole Primer</h1>
+<p><em>(why Schwarzschild is impossible, why collapse freezes into a 7-tick “battery”, and why GRBs—­not Hawking quanta—are the natural exhaust)</em></p>
+
+<blockquote>
+  <p>Curvature is entirely fixed by the lattice under-fill \(\Phi(R)\) with exponent \(D_{\!\rm eff}=8/3\).<br />
+Local coordinate <strong>unwrappings</strong>—such as the 7-tick horizon closure—are analytic devices only; they never alter the global background or introduce new tunable parameters.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="1why-a-non-rotating-black-hole-can-never-form">1 Why a <em>non-rotating</em> black hole can never form</h2>
+
+<ol>
+  <li><strong>Folding requirement</strong>
+    <ul>
+      <li>Ordinary matter lives on an \(8/3\)-dimensional lattice.</li>
+      <li>A true horizon demands the lattice compress until its <em>effective</em> fill rounds up to \(3\).</li>
+    </ul>
+  </li>
+  <li><strong>Angular-momentum lever</strong>
+    <ul>
+      <li>Only centrifugal flattening supplies the missing degrees of freedom.</li>
+      <li>Without spin, collapse stalls when the local void fraction hits<br />
+\(\Phi_{\text{stall}} = 1-\bigl(\tfrac{8}{9}\bigr)^{3/2} \;\approx\;0.30,\)<br />
+still transparent to light.</li>
+    </ul>
+  </li>
+  <li><strong>Schwarzschild fatality</strong>
+    <ul>
+      <li>The classical \(J=0\) solution assumes a smooth manifold; it ignores lattice discreteness.</li>
+      <li>In tick-fractal space no physical trajectory can shed angular momentum fast enough to cross the stall barrier.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Corollary</strong> Every astrophysical BH must be born spinning near its extremal limit.</p>
+
+<hr />
+
+<h2 id="2step-wise-collapse-picture">2 Step-wise collapse picture</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stage</th>
+      <th>Lattice state</th>
+      <th>Geometry view</th>
+      <th>Energy signature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A. Diffuse star</strong></td>
+      <td>\(\Phi\ll\Phi_{\text{stall}}\)</td>
+      <td>Nearly Euclidean</td>
+      <td>Thermal photons</td>
+    </tr>
+    <tr>
+      <td><strong>B. Spin-up flattening</strong></td>
+      <td>\(\Phi\rightarrow\Phi_{\text{stall}},\;J\uparrow\)</td>
+      <td>Disk forms</td>
+      <td>Hard X-ray excess</td>
+    </tr>
+    <tr>
+      <td><strong>C. Critical coil</strong></td>
+      <td>\(\Phi\approx\Phi_{\text{stall}}\)</td>
+      <td>Helical sheets</td>
+      <td>Rapid-variability QPOs</td>
+    </tr>
+    <tr>
+      <td><strong>D. 7-tick closure</strong></td>
+      <td>\(7\tau = 2\pi R_{\rm H}/c\)</td>
+      <td>Null surface locks</td>
+      <td>GRB-class jet</td>
+    </tr>
+    <tr>
+      <td><strong>E. Battery state</strong></td>
+      <td>Core fully entangled energy</td>
+      <td>Horizon frozen</td>
+      <td>Long-term afterglow</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="3the-7-tick-horizon-closure">3 The 7-tick horizon closure</h2>
+
+<p>A helical world-line of pitch \(\Delta x = c\tau\) wraps \(360^\circ\) every seven ticks:</p>
+
+<p>\(7\tau \;=\; \frac{2\pi R_{\rm H}}{c}\)
+\(\;\Longrightarrow\;\)
+\(R_{\rm H} \;=\; \frac{7c\tau}{2\pi}\)</p>
+
+<p>With \(\tau = 0.600\,\text{ps}\) this yields</p>
+
+<p>\(R_{\rm H} \;\approx\; 0.200\,\text{mm}\)
+\(f_{\rm BH} \;=\; \frac{c}{2\pi R_{\rm H}}\)
+\(f_{\rm BH} \;\approx\; 240\,\text{GHz}\)</p>
+
+<p>Any micro-horizon analogue (e.g.\ BEC sonic BH) should show its fundamental mode near \(240\) GHz.</p>
+
+<hr />
+
+<h2 id="4unified-battery-picture">4 Unified “battery” picture</h2>
+
+<ul>
+  <li><strong>Disk as battery</strong> – The rapidly spinning disk acts like a phase-locked loop at \(7\times1.667\) THz, storing angular momentum and regulating inflow.</li>
+  <li><strong>Core</strong> – Inside \(R_{\rm H}\) the lattice is phase-frozen; only fully entangled energy remains.</li>
+  <li><strong>Casimir friction zone</strong> – At the disk’s inner edge a Casimir-like sheath converts excess in-falling energy into collimated jets; the tick sets the maximum energy throughput per tick.</li>
+  <li><strong>GRB exhaust</strong> – Overshoot energy ejects as prompt \(\gamma\)-ray bursts rather than Hawking quanta; evaporation is macroscopic, not quantum-thermal.</li>
+</ul>
+
+<p>Thus the bright ring is where all dynamical action lives; the dark core is a stable, featureless anchor. No exotic “firewalls,” no information paradox—just lattice-regulated bookkeeping.</p>
+
+<hr />
+
+<h2 id="5observable-predictions">5 Observable predictions</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenomenon</th>
+      <th>Tick-fractal prediction</th>
+      <th>How to test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fundamental horizon mode</td>
+      <td>\(f_{\rm BH}\approx240\) GHz</td>
+      <td>Lab sonic horizons, Event Horizon Telescope closure phases</td>
+    </tr>
+    <tr>
+      <td>Jet power limit</td>
+      <td>\(\dot E_{\max} = \dfrac{h}{\tau^2}\)</td>
+      <td>Compare GRB peak luminosities</td>
+    </tr>
+    <tr>
+      <td>Spin distribution</td>
+      <td>\(a_\ast \gtrsim 0.9\) for all stellar BHs</td>
+      <td>X-ray reflection spectroscopy</td>
+    </tr>
+    <tr>
+      <td>No low-spin mergers</td>
+      <td>LIGO/Virgo BH binaries all high-\(a_\ast\)</td>
+      <td>Population stats in O4/O5 runs</td>
+    </tr>
+    <tr>
+      <td>Vacuum heating</td>
+      <td>Zero Hawking signature; instead Casimir-mediated IR excess</td>
+      <td>JWST mid-IR imaging of AGN cores</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Any single falsification topples the model—clean and decisive.</em></p>
+
+<hr />
+
+<h2 id="6take-aways">6 Take-aways</h2>
+
+<ul>
+  <li><strong>Schwarzschild ghosts.</strong> A non-spinning BH cannot crystallise in an \(8/3\)-lattice universe.</li>
+  <li><strong>Seven-tick lock.</strong> Spin drives the lattice into a 7-tick phase-closure, freezing the horizon.</li>
+  <li><strong>Battery, not furnace.</strong> Energy is managed at the disk; the core is inert, fully entangled energy.</li>
+  <li><strong>GRBs over Hawking.</strong> Excess energy vents explosively, explaining prompt GRBs without exotic quantum leakage.</li>
+</ul>
+
+<hr />
+
+<p><em>Sandbox status: this page is <strong>independent</strong> of the four frozen documents; no canonical content changed.</em></p>
+
+<p>$$</p>
+</main>
+
+      <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+    </div>
+  </body>
+</html>
+```

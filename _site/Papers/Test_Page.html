@@ -4,20 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
+    <title>Test Page</title>
+    <link rel="stylesheet" href="/css/styles.css" />
 
     <!-- ─── SEO ─────────────────────────────────────────────────────────── -->
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% endif %} {% if page.topics %}
-    <meta name="keywords" content="{{ page.topics | join: ', ' }}" />
-    {% else %}
+     
     <meta
       name="keywords"
       content="CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry, Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions, Ad Hoc-Free Formulation, Discrete Rotations"
     />
-    {% endif %}
+    
 
     <!-- ─── MathJax 3: config FIRST, then load the engine 
 <script>
@@ -54,17 +50,34 @@ window.MathJax = {
   <body>
     <div class="page-content">
       <header>
-        <h1>{{ page.title }}</h1>
+        <h1>Test Page</h1>
         <p class="meta">
-          By {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{%
-          endif %} {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{%
-          endif %}
+          By jonsvein Heinesen 
         </p>
       </header>
 
-      <main>{% include sections.html %} {{ content | markdownify }}</main>
+      <main> 
+ <div class="mermaid">
+    graph TB
+        A[Energy Density] --&gt; B[Effective 2.667D Space]
+        B --&gt; C["Discrete Ticks (1.667 THz)"]
+        C --&gt; D[Error Correction]
+        D --&gt; E[Unified Mass Calculation]
+        E --&gt; F[Observable Effects]
+  </div>
+<p>&lt;/body&gt;
+&lt;/html&gt;</p>
+</main>
 
-      <footer>{% include footer.html %}</footer>
+      <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
     </div>
   </body>
 </html>

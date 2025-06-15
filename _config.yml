@@ -21,5 +21,11 @@ kramdown:
           ',
         ]
       - ["$$", "$$"]
+
 plugins:
   - jekyll-mermaid
+mermaid:                    # ← NEW
+  src: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  config:
+    startOnLoad: true
+    securityLevel: loose   # same defaults the gem would have picked

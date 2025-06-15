@@ -1,5 +1,25 @@
 {
+  // ---- Global defaults ----
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "prettier.configPath": ".prettierrc"
+  "prettier.configPath": ".prettierrc",
+
+  // ---- Markdown-specific overrides ----
+  "[markdown]": {
+    // turn Prettier OFF for *.md
+    "editor.defaultFormatter": null,          // no formatter
+    "editor.formatOnSave": false,
+
+    // stop “helpful” punctuation
+    "editor.quickSuggestions": false,
+    "editor.autoClosingQuotes": "never",
+    "editor.autoIndent": "none"
+  },
+
+  // ---- Visualise hidden characters everywhere ----
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true
 }
+
+
