@@ -2,49 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
 
   <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
   {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
+    <meta name="description" content="{{ page.description }}">
   {% endif %}
-  <meta name="keywords"
-        content="{% if page.topics %}{{ page.topics | join: ', ' }}{% else %}
-                 CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
-                 Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
-                 Ad Hoc-Free Formulation, Discrete Rotations{% endif %}" />
+  <meta name="keywords" content="
+    {% if page.topics %}
+      {{ page.topics | join: ', ' }}
+    {% else %}
+      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+      Ad Hoc-Free Formulation, Discrete Rotations
+    {% endif %}
+  ">
 
-  <!-- ─── Polyfill (safest to keep) ────────────────────────────────────── -->
+  <!-- ─── Polyfill FIRST (in case MathJax needs Promise/URL etc.) ───────── -->
   <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
-  
-  <!-- ─── MathJax 3: CONFIG FIRST, THEN ENGINE ─────────────────────────── -->
-<!-- MathJax 3 — recognise ONLY double-dollar delimiters, inline & display -->
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath:  [['$$','$$']],   // $$E=mc^2$$
-      displayMath: [['$$','$$']],   // $$ E=mc^2 $$
-      processEscapes: true
-    }
-  };
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+  <!-- ─── MathJax 3: config then engine (double-dollar everywhere) ─────── -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath:  [['$$','$$']],
+        displayMath: [['$$','$$']],
+        processEscapes: true
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-  <!-- ─── Mermaid: local copy + dark-mode switch ───────────────────────── -->
+  <!-- ─── Mermaid: local copy + one-shot theme pick ─────────────────────── -->
   <script defer src="{{ '/assets/js/mermaid.min.js' | relative_url }}"></script>
   <script>
-    const pickTheme = () =>
-      matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
-
     document.addEventListener('DOMContentLoaded', () => {
-      mermaid.initialize({ startOnLoad: true, theme: pickTheme(), securityLevel: 'loose' });
-      /* react live to user toggling system theme */
-      matchMedia('(prefers-color-scheme: dark)').addEventListener('change',
-        () => mermaid.initialize({ theme: pickTheme() }));
+      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+      /* Live recolor by CSS; re-initialising Mermaid does nothing useful */
     });
   </script>
 </head>
@@ -55,7 +53,7 @@
       <h1>{{ page.title }}</h1>
       <p class="meta">
         By {{ page.author | default: site.author }}
-        {% if page.date %} on {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+        {% if page.date %} on {{ page.date | date: '%B %-d, %Y' }}{% endif %}
       </p>
     </header>
 
@@ -71,3 +69,4 @@
   </div>
 </body>
 </html>
+
