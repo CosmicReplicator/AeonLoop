@@ -67,7 +67,6 @@ flowchart TD
 </div>
 {% endraw %}
 <!-- prettier-ignore-end -->
----
 
 ### 3.1 Rung identification  
 $$ n = \operatorname{round}\!\Bigl[\dfrac{E_0}{7E_{\text{peak}}}\Bigr],\qquad
@@ -77,8 +76,6 @@ $$ n = \operatorname{round}\!\Bigl[\dfrac{E_0}{7E_{\text{peak}}}\Bigr],\qquad
 $$ 1+z = \dfrac{\Delta t_{\text{obs}}}{N_{\text{tick}}\tau}
         = \dfrac{\Delta t_{\text{obs}}\,f_0}{N_{\text{tick}}}. $$
 
-
----
 
 ## 4 Three independent GRB rulers  
 
