@@ -17,6 +17,9 @@
                  Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
                  Ad Hoc-Free Formulation, Discrete Rotations{% endif %}" />
 
+  <!-- ─── Polyfill (safest to keep) ────────────────────────────────────── -->
+  <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+  
   <!-- ─── MathJax 3: CONFIG FIRST, THEN ENGINE ─────────────────────────── -->
 <!-- MathJax 3 — recognise ONLY double-dollar delimiters, inline & display -->
 <script>
@@ -30,9 +33,6 @@
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-
-  <!-- ─── Polyfill (safest to keep) ────────────────────────────────────── -->
-  <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
 
   <!-- ─── Mermaid: local copy + dark-mode switch ───────────────────────── -->
   <script defer src="{{ '/assets/js/mermaid.min.js' | relative_url }}"></script>
