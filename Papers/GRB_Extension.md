@@ -56,6 +56,7 @@ Geometry grows linearly; **energy dilutes as $$1/n$$**.
 ## 3 Pipeline (*no free parameters*)  
 
 <!-- prettier-ignore-start -->
+
 {% raw %}
 <div class="mermaid" markdown="0">
 flowchart TD
@@ -66,8 +67,11 @@ flowchart TD
     E --> F[z from Δt] --> G[H₀ / geometry]
 </div>
 {% endraw %}
+
 <!-- prettier-ignore-end -->
+
 ---
+
 ### 3.1 Rung identification  
 $$ n = \operatorname{round}\!\Bigl[\dfrac{E_0}{7E_{\text{peak}}}\Bigr],\qquad
 \text{long GRBs: } n \approx 11\text{–}12. $$
