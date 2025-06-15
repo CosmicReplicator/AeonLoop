@@ -311,7 +311,6 @@ title: 'Index'
       <a class="button" href="GRB_Extension.html" target="_blank">
         GRB Extension
       </a>
-      <a class="button" href="GRB_Ext_II.html" target="_blank">GRB Ext II</a>
       <a class="button" href="geometry_and_energy.html" target="_blank">
         geometry and energy
       </a>
