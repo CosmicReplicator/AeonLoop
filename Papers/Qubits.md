@@ -6,7 +6,7 @@ mathjax: true
 
 ## 1 Introduction — Breaking Free from Superposition  
 
-Standard quantum computing rests on the idea that a qubit remains in **superposition**—a mixture of $$|0\rangle$$ and $$|1\rangle$$—until measured. Interference between those uncollapsed states powers algorithms such as Grover’s search and Shor’s factoring.  
+Standard quantum computing rests on the idea that a qubit remains in **superposition**—a mixture of |$$0\rangle$$ and |$$1\rangle$$—until measured. Interference between those uncollapsed states powers algorithms such as Grover’s search and Shor’s factoring.  
 
 In the **tick-fractal framework**, superposition is a **non-resource** beyond one tick, $$\tau = 0.600\;\text{ps}$$. No physical measurement can interact with an intermediate-tick state, so chasing long coherence times is misplaced. Quantum advantage instead arises from **spatial entanglement within the $$0.18\;\text{mm}$$ tick envelope** rather than temporal superposition.
 
