@@ -2,7 +2,7 @@
 layout: papers
 title: 'Formulas II'
 ---
-<!-- prettier-ignore-start -->
+
 {% raw %}
 <div class="mermaid" markdown="0">
 flowchart TD
@@ -17,7 +17,7 @@ flowchart TD
     E -.->|"Q = 409.8"| G
 </div>
 {% endraw %}
-<!-- prettier-ignore-end -->
+
 
 <h2>4 · Cosmological-Constant Sketch</h2>
 
