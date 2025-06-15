@@ -18,32 +18,16 @@
                  Ad Hoc-Free Formulation, Discrete Rotations{% endif %}" />
 
   <!-- ─── MathJax 3: CONFIG FIRST, THEN ENGINE ─────────────────────────── -->
+<!-- MathJax 3 — recognise ONLY double-dollar delimiters, inline & display -->
 <script>
   window.MathJax = {
     tex: {
-      /* recognise every flavour you’re likely to use */
-      inlineMath:  [
-        ['$',  '$'],      // $E=mc^2$
-        ['\\(','\\)'],    // \(E=mc^2\)
-        ['$$','$$']       // $$E=mc^2$$  ← optional inline
-      ],
-      displayMath: [
-        ['\
-
-\[','\\]
-
-'],    // 
-
-\[ E=mc^2 \]
-
-
-        ['$$','$$']       // $$ E=mc^2 $$
-      ],
+      inlineMath:  [['$$','$$']],   // $$E=mc^2$$
+      displayMath: [['$$','$$']],   // $$ E=mc^2 $$
       processEscapes: true
     }
   };
 </script>
-<!-- keep polyfill if you like, then the engine -->
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
