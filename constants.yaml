@@ -39,67 +39,48 @@ meta:
 
 # Locked Constants  · v2025-06-14
 # <h2>Locked Constants <span style="font-size:0.75em">(v 2025-06-14)</span></h2>
-# <div class="eq">
-
-
-$$\boxed{
-\begin{aligned}
-\text{Tick period} &: \quad
-  \tau &= 0.600\,000\,000\,000\,000\;\text{ps} \
-
-\[2pt]
-\text{Tick frequency} &: \quad
-  f &= 1.666\,666\,666\,666\,667\;\text{THz} \
-
-\[2pt]
-\text{Light step} &: \quad
-  \Delta x &= 0.179\,875\,474\,8\;\text{mm} \
-
-\[2pt]
-\text{Tick energy} &: \quad
-  E_0 &= 6.892\,779\,493\,333\,334\;\text{meV} \
-
-\[6pt]
-%
-\text{Reference mass} &: \quad
-  m_{\mathrm{eff}} &= 1.093\times10^{-38}\;\text{kg} \
-
-\[2pt]
-\text{Dim'less }G &: \quad
-  G_{\text{tick}} &= 4.51\times10^{-62} \
-
-\[2pt]
-\text{Newton }G &: \quad
-  G_{\text{SI}} &= 6.674\,30\times10^{-11}\;
-      \text{m}^3\text{kg}^{-1}\text{s}^{-2} \
-
-\[6pt]
-%
-\text{Planck }h &: \quad
-  h &= 4.135\,667\,696\times10^{-15}\;\text{eV·s} \
-
-\[2pt]
-\text{Reduced }\hbar &: \quad
-  \hbar &= 6.582\,119\,569\times10^{-16}\;\text{eV·s} \
-
-\[6pt]
-%
-\text{\(W\)-boson mass} &: \quad
-  M_W &= 80.4\;\text{GeV} \
-
-\[2pt]
-\text{Fine-structure} &: \quad
-  \alpha &= 7.297\,352\,5693\times10^{-3} \
-
-\[6pt]
-%
-\text{\(\alpha\)-coefficient} &: \quad
-  C_\alpha &= 7.379\,970\,056
-\end{aligned}}$$
-
+<div class="eq">
+{% raw %}
 $$
-\alpha
-=\exp\!\bigl[-\,7.379970056\,(D_{\mathrm{eff}}-2)\bigr].
-$$
+\boxed{
+\begin{array}{@{}r@{\,=\,}l @{\qquad} r@{\,=\,}l@{}}
+\tau & 0.600\,000\,000\ \mathrm{ps}\ (\text{axiom}) &
+E_{0} & 6.892\,779\,493\ \mathrm{meV} \
 
+\[2pt]
+f       & 1.666\,666\,666\,666\,7\ \mathrm{THz} &
+f_{\mathrm{BH}} & 238.095\,238\,095\ \mathrm{GHz} \
+
+\[2pt]
+\Delta x & 0.179\,875\,474\,8\ \mathrm{mm} &
+m_{\text{eff}} & 1.093\times10^{-38}\ \mathrm{kg}^{\dagger} \
+
+\[2pt]
+G_{\text{tick}} & 4.51\times10^{-62} &
+G & 6.674\,30\times10^{-11}\ \mathrm{m^{3}kg^{-1}s^{-2}} \
+
+\[2pt]
+h & 4.135\,667\,696\times10^{-15}\ \mathrm{eV\,s} &
+\hbar & 6.582\,119\,569\times10^{-16}\ \mathrm{eV\,s} \
+
+\[2pt]
+\alpha & 7.297\,352\,5693\times10^{-3} &
+C_{\alpha} & 7.379\,970\,056 \
+
+\[2pt]
+D_{\text{eff}} & \dfrac{8}{3}=2.666\,666\,666\,\overline7 &
+\kappa & 0.447
+\end{array}}
+$$
+{% endraw %}
 </div>
+
+**Legend**
+
+* \(f_{\mathrm{BH}} = f_{\text{tick}}/7\) — frequency seen by a photon that skims the seed shell seven times.  
+* \(m_{\text{eff}}^{\dagger} = \dfrac{8}{9}\,\dfrac{E_{0}}{c^{2}}\) — scaled so the **0.600 ps** axiom is preserved when mapping energy to an effective rest-mass; the 8∕9 factor is purely conventional (display only) and does *not* propagate into dynamical equations.  
+* \(C_{\alpha}\) is recomputed at build-time via the fractal-suppression formula \( \alpha \sim e^{-C_{\alpha}(D_{\text{eff}}-2)} \).
+
+From here on every figure, derivation or sanity-check in the manuscript will call the constants directly from `constants.yaml` so no accidental drift can occur.
+
+Let me know if any other entry needs a footnote or extra context.

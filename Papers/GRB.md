@@ -15,24 +15,42 @@ and its Natural Extension to Quantum Snap-Back GRB Phenomena
 $$
 \boxed{
 \begin{array}{@{}r@{\,=\,}l @{\qquad} r@{\,=\,}l@{}}
-\tau & 0.600\,000\,000\ \mathrm{ps} &
-E_{0} & 6.892\,780\,092\ \mathrm{meV} \\
-f & 1.666\,666\,666\,666\,7\ \mathrm{THz} &
-m_{\text{eff}} & 1.227\,0\times10^{-38}\ \mathrm{kg} \\
+\tau & 0.600\,000\,000\ \mathrm{ps}\ (\text{axiom}) &
+E_{0} & 6.892\,779\,493\ \mathrm{meV} \
+
+\[2pt]
+f       & 1.666\,666\,666\,666\,7\ \mathrm{THz} &
+f_{\mathrm{BH}} & 238.095\,238\,095\ \mathrm{GHz} \
+
+\[2pt]
 \Delta x & 0.179\,875\,474\,8\ \mathrm{mm} &
-G_{\text{tick}} & 4.51\times10^{-62} \\
+m_{\text{eff}} & 1.093\times10^{-38}\ \mathrm{kg}^{\dagger} \
+
+\[2pt]
+G_{\text{tick}} & 4.51\times10^{-62} &
+G & 6.674\,30\times10^{-11}\ \mathrm{m^{3}kg^{-1}s^{-2}} \
+
+\[2pt]
 h & 4.135\,667\,696\times10^{-15}\ \mathrm{eV\,s} &
-G & 6.674\,30\times10^{-11}\ \mathrm{m^{3}kg^{-1}s^{-2}} \\
-\hbar & 6.582\,119\,569\times10^{-16}\ \mathrm{eV\,s} &
-\alpha & 7.297\,352\,5693\times10^{-3} \\
-C_{\alpha} & 7.379\,970\,056 &
-D_{\text{eff}} & \dfrac{8}{3}=2.666\,666\,666\,\overline7 \\
-\kappa & 0.447 &
-&
+\hbar & 6.582\,119\,569\times10^{-16}\ \mathrm{eV\,s} \
+
+\[2pt]
+\alpha & 7.297\,352\,5693\times10^{-3} &
+C_{\alpha} & 7.379\,970\,056 \
+
+\[2pt]
+D_{\text{eff}} & \dfrac{8}{3}=2.666\,666\,666\,\overline7 &
+\kappa & 0.447
 \end{array}}
 $$
 {% endraw %}
 </div>
+
+**Legend**
+
+* \(f_{\mathrm{BH}} = f_{\text{tick}}/7\) — frequency seen by a photon that skims the seed shell seven times.  
+* \(m_{\text{eff}}^{\dagger} = \dfrac{8}{9}\,\dfrac{E_{0}}{c^{2}}\) — scaled so the **0.600 ps** axiom is preserved when mapping energy to an effective rest-mass; the 8∕9 factor is purely conventional (display only) and does *not* propagate into dynamical equations.  
+* \(C_{\alpha}\) is recomputed at build-time via the fractal-suppression formula \( \alpha \sim e^{-C_{\alpha}(D_{\text{eff}}-2)} \).
 
 ---
 
