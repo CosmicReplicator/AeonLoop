@@ -1,6 +1,8 @@
 ---
 layout: papers
 title: "Formulas III"
+series: formulas      # common tag for every formula paper
+order: 3              # 1, 2, 3 … in reading order
 mathjax: true
 ---
 

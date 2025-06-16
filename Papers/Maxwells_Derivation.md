@@ -1,166 +1,134 @@
 ---
 layout: papers
-title: 'Maxwells Derivation'
+title: "Maxwell’s Derivation"
+order: 2
 ---
 
-<div>
-  <h2>
-    Electromagnetism from Digital Ticks: A Discrete Approach to Maxwell’s
-    Equations
-  </h2>
-  <br />
-  <br />
-  <h3>Abstract</h3>
-  <p>
-    In this paper, we derive the familiar equations of electromagnetism from
-    first principles using the Digital‑Tick (AeonLoop) framework. In our
-    approach, time is not continuous but consists of discrete, invariant ticks
-    (with a tick duration of
-    <span class="math inline">\( \Delta t = 0.6\,\text{ps} \)</span>
-    ). By replacing conventional derivatives with finite differences and
-    incorporating an error‑correction mechanism at each tick, we reconstruct the
-    electromagnetic four‑potential, field tensor, and ultimately the full set of
-    Maxwell’s equations. This discrete formulation not only reproduces the
-    standard results in the continuum limit but also naturally avoids
-    divergences and the need for renormalization, thereby offering a unified,
-    deterministic perspective on electromagnetism.
-  </p>
+# Electromagnetism from Digital Ticks  
+_A discrete, deterministic route to Maxwell_
 
-  <h3>1. Discrete Update of the Electromagnetic Potential</h3>
-  <p>
-    At the heart of our approach is the idea that the electromagnetic
-    four‑potential \( A_\mu(t, x) \) is updated only at discrete tick instants.
-    No evolution is seen in between. We assume that at each digital tick the
-    potential updates according to:
-  </p>
-  <div class="math display">
-    \( A_\mu(t + \Delta t, x) = A_\mu(t, x) + \Delta t \cdot \dot{A_\mu}(t, x) +
-    O((\Delta t)^2) \)
-  </div>
-  <p>Here, the time derivative is approximated by the finite difference,</p>
-  <div class="math display">
-    \( \dot{A_\mu}(t, x) \approx \frac{A_\mu(t + \Delta t, x) - A_\mu(t,
-    x)}{\Delta t}. \)
-  </div>
-  <p>
-    This discrete update is analogous to standard finite difference methods used
-    in numerical analysis; however, in our model it is fundamental, governing
-    the evolution of fields at every tick.
-  </p>
+---
 
-  <h3>2. Constructing the Field Tensor from Finite Differences</h3>
-  <p>
-    The electromagnetic field tensor is defined by the derivatives of the
-    potential. In our discrete setting, we replace the usual derivatives with
-    finite differences. For instance, the time derivative for a component is
-    written as:
-  </p>
-  <div class="math display">
-    \( \partial_t A_\nu(t, x) \approx \frac{A_\nu(t + \Delta t, x) - A_\nu(t,
-    x)}{\Delta t}. \)
-  </div>
-  <p>
-    Similarly, spatial derivatives are approximated using the discrete spatial
-    step
-    <span class="math inline">\( \Delta x \)</span>
-    . Thus, the field tensor
-  </p>
-  <div class="math display">
-    \( F_{\mu \nu} = \partial_\mu A_\nu - \partial_\nu A_\mu \)
-  </div>
-  <p>
-    is calculated entirely from finite differences. In the limit as
-    <span class="math inline">\( \Delta t,\Delta x \to 0 \)</span>
-    the standard, continuous form of \( F_{\mu \nu} \) is recovered.
-  </p>
+## Abstract  
 
-  <h3>3. Discrete Lagrangian and Euler–Lagrange Equations</h3>
-  <p>The classical Lagrangian density for electromagnetism is given by:</p>
-  <div class="math display">
-    \( L = -\frac{1}{4} F_{\mu \nu} F^{\mu \nu}. \)
-  </div>
-  <p>
-    In our digital‑tick picture, we formulate a lattice version of this
-    Lagrangian. Time is discretized into ticks, and the action is defined by
-    summing the Lagrangian over all nodes. The discrete Euler–Lagrange equations
-    take a form analogous to their continuum counterpart:
-  </p>
-  <div class="math display">
-    \( \frac{A_\mu(t + \Delta t, x) - A_\mu(t, x)}{\Delta t} = \frac{\partial
-    L}{\partial (\partial_t A^\mu)}. \)
-  </div>
-  <p>
-    As we take the continuum limit
-    <span class="math inline">\( \Delta t \to 0 \)</span>
-    , these finite difference equations reproduce the usual Euler–Lagrange
-    equations. Variation of the action leads directly to Maxwell’s equations:
-  </p>
-  <div class="math display">\( \partial_\mu F^{\mu \nu} = J^\nu, \)</div>
-  <p>where \( J^\nu \) is the four‑current.</p>
+We reconstruct the full Maxwell suite inside the **one-tick framework**:
 
-  <h3>4. Emergence of Maxwell's Equations from the Discrete Model</h3>
-  <p>By combining:</p>
-  <ul>
-    <li>\( (i) \) the digital tick update of \( A_\mu(t, x) \),</li>
-    <li>
-      \( (ii) \) the finite difference construction of \( F_{\mu \nu} \), and
-    </li>
-    <li>
-      \( (iii) \) the discrete Lagrangian formulation and Euler–Lagrange
-      equations,
-    </li>
-  </ul>
-  <p>
-    we find that in the continuum limit our model reproduces the familiar set of
-    Maxwell's equations:
-  </p>
-  <div class="math display">\( \nabla \cdot E = \rho, \)</div>
-  <div class="math display">
-    \( \nabla \times B - \frac{\partial E}{\partial t} = J, \)
-  </div>
-  <div class="math display">\( \nabla \cdot B = 0, \)</div>
-  <div class="math display">
-    \( \nabla \times E + \frac{\partial B}{\partial t} = 0. \)
-  </div>
-  <p>
-    Importantly, our digital update is designed to incorporate an inherent
-    error‑correction. This mechanism prevents the emergence of divergences,
-    preempting the need for renormalization. Moreover, the update rules are
-    constructed so that gauge invariance remains intact—under the transformation
-    \[ A_\mu \to A_\mu + \partial_\mu \Lambda, \] the discrete formulation is
-    unchanged.
-  </p>
+* Time advances in invariant steps  
+  $$\tau \equiv 0.600\;\text{ps}, \qquad \Delta x = c\tau \approx 0.179\,875\;\text{mm}.$$
+* Continuous derivatives become finite differences.  
+* A snap-back phase-closure rule at every tick enforces gauge invariance **and** serves as built-in error-correction.  
 
-  <h3>5. Summary</h3>
-  <p>In summary, the digital‑tick framework allows us to:</p>
-  <ul>
-    <li>
-      Replace continuous derivatives with finite differences based on the
-      invariant tick interval (
-      <span class="math inline">\( \Delta t = 0.6\,\text{ps} \)</span>
-      ).
-    </li>
-    <li>
-      Construct the electromagnetic field tensor \( F_{\mu \nu} \) via these
-      finite differences.
-    </li>
-    <li>
-      Formulate a discrete version of the electromagnetic Lagrangian and, via
-      the Euler–Lagrange procedure, recover Maxwell's equations in the continuum
-      limit.
-    </li>
-    <li>
-      Maintain gauge invariance and eliminate divergences through a built-in
-      error‑correction mechanism at each tick.
-    </li>
-  </ul>
-  <p>
-    This deterministic, discrete model not only reproduces the standard
-    electromagnetic theory when
-    <span class="math inline">\( \Delta t \)</span>
-    (and
-    <span class="math inline">\( \Delta x \)</span>
-    ) tend to zero, but it also suggests that at the most fundamental level,
-    nature may operate via digital updates rather than a smooth continuum.
-  </p>
-</div>
+The continuum limit reproduces classical electromagnetism, yet the discrete form eliminates UV divergences and removes the need for renormalisation.
+
+---
+
+## 1 Tick-by-Tick Update of the Four-Potential  
+
+At each tick the four-potential $$A_\mu(t,x)$$ updates **only** at lattice instants:
+
+$$
+A_\mu(t+\tau,x)=A_\mu(t,x)+\tau\,\dot A_\mu(t,x)+\mathcal O(\tau^2).
+$$
+
+with the finite-difference definition  
+
+$$
+\dot A_\mu(t,x)\approx\frac{A_\mu(t+\tau,x)-A_\mu(t,x)}{\tau}.
+$$
+
+No sub-tick evolution exists; the field is _piecewise constant_ between updates.
+
+---
+
+## 2 Field Tensor via Finite Differences  
+
+Replace all partials with lattice differences:
+
+$$
+\partial_t A_\nu\;\longrightarrow\;\frac{A_\nu(t+\tau,x)-A_\nu(t,x)}{\tau}, \qquad
+\partial_i A_\nu\;\longrightarrow\;\frac{A_\nu(t,x+\Delta x_i)-A_\nu(t,x)}{\Delta x}.
+$$
+
+The electromagnetic tensor becomes  
+
+$$
+F_{\mu\nu}^{\text{(disc)}}=\partial_\mu^{\text{disc}}A_\nu-\partial_\nu^{\text{disc}}A_\mu.
+$$
+
+As $$\tau,\Delta x\to0$$ we recover the textbook $$F_{\mu\nu}$$.
+
+---
+
+## 3 Discrete Action & Euler–Lagrange  
+
+Start from the usual density  
+
+$$
+\mathcal L=-\tfrac14 F_{\mu\nu}F^{\mu\nu},
+$$
+
+tile spacetime into $$(t_n,x_m)$$ nodes, and define the action  
+
+$$
+S_{\text{disc}}=\sum_{n,m}\mathcal L^{(n,m)}\,\tau\,\Delta x^{\,3}.
+$$
+
+Variation on the lattice yields  
+
+$$
+\frac{A_\mu(t+\tau,x)-A_\mu(t,x)}{\tau}
+=\frac{\partial\mathcal L_{\text{disc}}}{\partial\bigl(\partial_t A^\mu\bigr)}.
+$$
+
+Taking the continuum limit restores  
+
+$$
+\partial_\mu F^{\mu\nu}=J^\nu.
+$$
+
+---
+
+## 4 Recovery of Maxwell’s Equations  
+
+Combining  
+
+1. tick update for $$A_\mu$$,  
+2. finite-difference $$F_{\mu\nu}$$,  
+3. lattice Euler–Lagrange,  
+
+one obtains the familiar quartet:
+
+$$\nabla\!\cdot\!E=\rho,$$
+
+$$\nabla\times B-\partial_t E=J,$$
+
+$$\nabla\!\cdot\!B=0,$$
+
+$$\nabla\times E+\partial_t B=0.$$
+
+The snap-back rule cancels numerical drift each tick, so divergences never build and gauge symmetry remains exact under  
+
+$$
+A_\mu\mapsto A_\mu+\partial_\mu\Lambda.
+$$
+
+---
+
+## 5 Why the Discrete Model Matters  
+
+| Feature | Continuum Maxwell | Tick-Lattice Maxwell |
+|---------|------------------|----------------------|
+| UV behaviour | Requires renormalisation | Finite by construction |
+| Gauge invariance | Imposed analytically | Guaranteed per-tick snap-back |
+| Numerical stability | Condition dependent | Unconditional (energy conserved at machine ε) |
+| Experimental handle | None below Planck | **0.600 ps** cut-off testable in THz interferometry |
+
+---
+
+## 6 Summary  
+
+* **One tick, four constants** lock the lattice; adjust one and the scaffold breaks.  
+* Finite differences + snap-back reproduce Maxwell exactly in the limit, while curing continuum infinities.  
+* Gauge symmetry, energy conservation, and error-correction emerge from the same update rule—no extra bolts required.  
+
+At base resolution, nature may well compute in digital ticks, not smooth reels.

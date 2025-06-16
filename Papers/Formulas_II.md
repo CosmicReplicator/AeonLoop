@@ -1,6 +1,8 @@
 ---
 layout: papers
 title: 'Formulas II'
+series: formulas      # common tag for every formula paper
+order: 2              # 1, 2 ,3 … in reading order
 ---
 
 ---
