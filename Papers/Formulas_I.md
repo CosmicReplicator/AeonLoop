@@ -9,37 +9,36 @@ mathjax: true
 ## Digital-Tick Model — Locked Constants (v 2025-06-13)
 
 $$
-\boxed{
+\boxed{%
 \begin{array}{@{} r @{\,=\,} l @{\qquad} r @{\,=\,} l @{}}
-  \tau      & 0.600\,000\,000\;\mathrm{ps} &
-  E_{0}     & 6.892\,779\,493\;\mathrm{meV} \
+  \tau         & 0.600\,000\,000\;\mathrm{ps} &
+  E_{0}        & 6.892\,779\,493\;\mathrm{meV} \
 
 \[2pt]
-  f         & 1.666\,666\,666\,666\,7\;\mathrm{THz} &
+  f            & 1.666\,666\,666\,666\,7\;\mathrm{THz} &
   m_{\text{eff}} & 1.093\times10^{-38}\;\mathrm{kg} \
 
 \[2pt]
-  \Delta x  & 0.179\,875\,474\,8\;\mathrm{mm} &
+  \Delta x     & 0.179\,875\,474\,8\;\mathrm{mm} &
   G_{\text{tick}} & 4.51\times10^{-62} \
 
 \[2pt]
-  h         & 4.135\,667\,696\times10^{-15}\;\mathrm{eV\!\cdot\!s} &
-  G         & 6.67\times10^{-11}\;\mathrm{m^{3}kg^{-1}s^{-2}} \
+  h            & 4.135\,667\,696\times10^{-15}\;\mathrm{eV\!\cdot\!s} &
+  G            & 6.67\times10^{-11}\;\mathrm{m^{3}kg^{-1}s^{-2}} \
 
 \[2pt]
-  \hbar     & 6.582\,119\,569\times10^{-16}\;\mathrm{eV\!\cdot\!s} &
-  \alpha    & 7.297\,352\,5693\times10^{-3} \
+  \hbar        & 6.582\,119\,569\times10^{-16}\;\mathrm{eV\!\cdot\!s} &
+  \alpha       & 7.297\,352\,5693\times10^{-3} \
 
 \[2pt]
-  C_{\alpha}& 7.379\,970\,056 &
-  D_{\text{eff}} & \dfrac{8}{3}=2.666\,666\,666\,\overline{7} \
+  C_{\alpha}   & 7.379\,970\,056 &
+  D_{\text{eff}} & \dfrac{8}{3}=2.666\,666\,666\,\overline7 \
 
 \[2pt]
-  \kappa    & 0.447 & &
+  \kappa       & 0.447 & &
 \end{array}}
 $$
 
----
 
 ## 1 · Finite-Difference Operators
 

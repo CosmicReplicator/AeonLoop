@@ -1,0 +1,53 @@
+{% comment %}
+Renders the boxed equation + legend for any constants file.
+Usage: {% include locked-constants.html version="v2025-06-14a" %}
+{% endcomment %}
+
+{% assign C = site.data.constants[include.version] %}
+
+<h2 id="constants">Locked Constants <small>({{ include.version }})</small></h2>
+
+<div class="eq">
+{% raw %}
+$$
+\boxed{
+\begin{array}{r@{\,=\,}l @{\qquad} r@{\,=\,}l}
+\tau           & {{ C.tick.tau_ps     | number: 15 }}\;\text{ps} &
+E_{0}          & {{ C.energy.E0_meV   | number: 12 }}\;\text{meV} \
+
+\[2pt]
+f              & {{ C.tick.f_thz      | number: 13 }}\;\text{THz} &
+f_{\text{BH}}  & {{ C.tick.f_BH_GHz   | number: 12 }}\;\text{GHz} \
+
+\[2pt]
+\Delta x       & {{ C.tick.dx_mm      | number: 10 }}\;\text{mm} &
+m_{\text{eff}} & {{ C.mass.m_eff_kg   | sci     : 3 }}\;\text{kg} \
+
+\[2pt]
+G_{\text{tick}}& {{ C.gravity.G_tick  | sci     : 2 }}            &
+G              & {{ C.gravity.G_SI    | sci     : 2 }}\;\text{SI} \
+
+\[2pt]
+h              & {{ C.Planck.h_eVs    | sci     : 3 }}\;\text{eV·s} &
+\hbar          & {{ C.Planck.hbar_eVs | sci     : 3 }}\;\text{eV·s} \
+
+\[2pt]
+\alpha         & {{ C.SM.alpha_22     | sci     : 4 }}            &
+C_{\alpha}     & {{ C.derived.C_alpha | number  : 9 }}            \
+
+\[2pt]
+D_{\text{eff}} & \dfrac{8}{3} &
+\kappa         & 0.447
+\end{array}}
+$$
+{% endraw %}
+</div>
+
+<details>
+<summary><b>Legend</b></summary>
+
+* \(f_{\mathrm{BH}} = f_{\text{tick}}/7\) — photon frequency after seven-skim loop.  
+* \(m_{\text{eff}}\) includes the conventional \(8/9\) factor (display-only).  
+* \(C_{\alpha}\) is rebuilt at each site compile from the fractal-suppression rule.
+
+</details>
