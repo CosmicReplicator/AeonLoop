@@ -89,10 +89,10 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
-/* ── Mermaid edge contrast booster ─────────────────────────────── */
+/* ─── Mermaid dark-theme contrast tune ─────────────────────────── */
 :root {
-  --mmd-fill:   #00c8ff;  /* node background  */
-  --mmd-stroke: #7fe9ff;  /* edges & borders  */
+  --mmd-fill:   #00c8ff;   /* keep your cyan boxes (or change later) */
+  --mmd-stroke: #f8e9c1;   /* new cream edge + border colour         */
 }
 
 /* nodes */
@@ -106,16 +106,15 @@ body {
 .mermaid svg .marker path {
   stroke: var(--mmd-stroke) !important;
   fill:   var(--mmd-stroke) !important;
-  stroke-width: 2.5px !important;
-  stroke-linecap: round !important;
+  stroke-width: 2.5px !important;   /* thicker for clarity */
+  stroke-linecap: round !important; /* softer arrowheads   */
 }
 
-/* subtle neon glow in dark mode */
+/* optional glow in dark mode */
 @media (prefers-color-scheme: dark) {
   .mermaid svg .edgePath path {
     filter: drop-shadow(0 0 2px var(--mmd-stroke));
   }
-}
 
 /* ===============================================================
    NAVIGATION
