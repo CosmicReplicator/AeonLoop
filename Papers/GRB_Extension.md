@@ -17,7 +17,7 @@ mathjax: true
 ### 0 One-page abstract  
 
 1. A photon that skims the seed shell accrues **one tick of phase** yet keeps the **same energy**.  
-2. After **seven** skims the packet stretches over $$7\tau$$; its frequency and energy drop by $$1/7$$.  
+2. After **seven** skims the packet stretches over $$7\tau$$; its frequency and energy drop by $1/7$.  
 3. GRB micro-pulses land *exactly* on that diluted ladder  
 
    $$E_n = \dfrac{E_0}{7n}, \qquad n = 1,2,3,\dots$$  
