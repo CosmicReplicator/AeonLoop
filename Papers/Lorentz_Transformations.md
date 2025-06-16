@@ -8,7 +8,7 @@ nav_order: 2
 
 > **Guiding idea** — Time never dilates; only rulers stretch.  
 > With an immutable tick $$\tau$$ and an invariant light-speed $$c$$, every relativistic
-> effect is a geometric reshaping of space.
+> effect, is a geometric reshaping of space.
 
 ---
 
