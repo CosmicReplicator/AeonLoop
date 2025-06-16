@@ -308,6 +308,9 @@ title: 'Index'
       <a class="button" href="The_Alpha_Scaling_Factor.html" target="_blank">
         The Alpha Scaling Factor
       </a>
+	        <a class="button" href="GRB.html" target="_blank">
+        GRB
+      </a>
       <a class="button" href="GRB_Extension.html" target="_blank">
         GRB Extension
       </a>
