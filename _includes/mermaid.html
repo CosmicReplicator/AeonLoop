@@ -1,50 +1,16 @@
 <!-- Mermaid engine -->
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
 
-<!-- Your one-time initialiser
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    mermaid.initialize({
-      startOnLoad: true,
-      securityLevel: 'loose',
-      theme: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default',
-      themeVariables: {
-        fontFamily:  'Roboto Mono, monospace',
-        primaryColor:'#4fa',
-        lineColor:   '#4fa',
-        noteBkgColor:'#1e1e1e',
-        noteTextColor:'#e8e8e8'
-      }
-    });
-  });
-</script> -->
-
+<!-- One-time initialiser -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   mermaid.initialize({
     startOnLoad   : true,
     securityLevel : 'loose',
-    theme         : 'dark',
+    theme         : 'base',           // no built-in colours; CSS rules win
     themeVariables: {
-      /* ── node look ─────────────────────────────── */
-      primaryColor       : '#00c8ff',   // cyan box fill
-      primaryBorderColor : '#00c8ff',
-      primaryTextColor   : '#000000',   // black text in boxes
-
-      /* ── connector look ───────────────────────── */
-      lineColor          : '#FFE0B2',   // cream stroke
-      tertiaryColor      : '#FFE0B2',   // cream arrow-head fill
-
-      /* ── edge-label text ──────────────────────── */
-      secondaryTextColor : '#000000',   // black text in the little labels
-
-      fontFamily         : 'Roboto Mono, monospace'
+      background  : '#ffffff'         // keeps the SVG white even in dark mode
     }
   });
 });
 </script>
-
-<!-- one-liner fallback: makes sure arrow-heads respect the cream colour -->
-<style>
-.mermaid svg .marker path{stroke:#FFE0B2!important;fill:#FFE0B2!important;}
-</style>
