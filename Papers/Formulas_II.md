@@ -18,7 +18,7 @@ flowchart TD
 </div>
 {% endraw %}
 
-
+---
 
 <h2>4 · Cosmological-Constant Sketch</h2>
 
