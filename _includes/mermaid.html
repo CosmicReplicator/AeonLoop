@@ -22,17 +22,28 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   mermaid.initialize({
-    startOnLoad: true,
-    securityLevel: 'loose',
-    theme: 'dark',                       /* forces dark even in light OS */
+    startOnLoad   : true,
+    securityLevel : 'loose',
+    theme         : 'dark',              // keeps labels white if you don't override them
     themeVariables: {
-      primaryColor:   '#00c8ff',
-      lineColor:      '#67e8f9',
-      secondaryColor: '#ffb74d',
-      noteBkgColor:   '#424242',
-      noteTextColor:  '#e8e8e8',
-      fontFamily:     'Roboto Mono, monospace'
+      /* node appearance ---------------------------------------- */
+      primaryColor       : '#00c8ff',    // cyan fill
+      primaryBorderColor : '#00c8ff',
+      primaryTextColor   : '#000000',    // black text INSIDE boxes
+
+      /* connector appearance ----------------------------------- */
+      lineColor          : '#FFE0B2',    // cream stroke for every edge
+      tertiaryColor      : '#FFE0B2',    // cream arrow-head fill (Mermaid ≥10)
+
+      /* optional: edge label text; comment out if you like white */
+      secondaryTextColor : '#000000',
+
+      /* notes / misc ------------------------------------------- */
+      noteBkgColor       : '#424242',
+      noteTextColor      : '#e8e8e8',
+      fontFamily         : 'Roboto Mono, monospace'
     }
   });
 });
 </script>
+
