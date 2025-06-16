@@ -1,0 +1,17 @@
+/* ─── MERMAID – make connectors visible on dark-grey bg ────────── */
+/* 1) the actual line segment between boxes */
+.mermaid svg .edgePath .path {
+  stroke: #FFE0B2 !important;      /* ← bright cream you can see   */
+  stroke-width: 2.5px !important;  /*   a touch thicker            */
+}
+
+/* 2) the little arrow-head triangles 
+.mermaid svg marker path {
+  stroke: #FFE0B2 !important;
+  fill:   #FFE0B2 !important;
+  stroke-width: 2.5px !important;
+}
+/* ──────────────────────────────────────────────────────────────── */
+
+
+
