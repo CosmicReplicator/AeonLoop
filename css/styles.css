@@ -89,17 +89,20 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
-/* ── Mermaid: make ONLY the connectors visible ────────────────── */
-.mermaid svg .edgePath .path {      /* ← actual line segment      */
-  stroke: #FFE0B2 !important;       /* cream                      */
-  stroke-width: 2.5px !important;   /* slightly thicker           */
+/* ─── MERMAID – make connectors visible on dark-grey bg ────────── */
+/* 1) the actual line segment between boxes */
+.mermaid svg .edgePath .path {
+  stroke: #FFE0B2 !important;      /* ← bright cream you can see   */
+  stroke-width: 2.5px !important;  /*   a touch thicker            */
 }
 
-.mermaid svg .marker path {         /* ← arrow-head triangle      */
+/* 2) the little arrow-head triangles */
+.mermaid svg marker path {
   stroke: #FFE0B2 !important;
   fill:   #FFE0B2 !important;
   stroke-width: 2.5px !important;
 }
+/* ──────────────────────────────────────────────────────────────── */
 
 
 
