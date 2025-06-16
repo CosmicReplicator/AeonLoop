@@ -89,15 +89,16 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
-/* === Make only the connector lines & arrow-heads cream ========== */
-.mermaid svg .edgePath .path {          /* the line itself          */
-  stroke: #FFE0B2 !important;           /* bright cream             */
-  stroke-width: 2.5px !important;       /* a little thicker         */
+/* ── Mermaid: make ONLY the connectors visible ────────────────── */
+.mermaid svg .edgePath .path {      /* ← actual line segment      */
+  stroke: #FFE0B2 !important;       /* cream                      */
+  stroke-width: 2.5px !important;   /* slightly thicker           */
 }
 
-.mermaid svg .marker path {             /* arrow-head glyph         */
+.mermaid svg .marker path {         /* ← arrow-head triangle      */
   stroke: #FFE0B2 !important;
   fill:   #FFE0B2 !important;
+  stroke-width: 2.5px !important;
 }
 
 
