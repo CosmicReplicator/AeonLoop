@@ -2,7 +2,7 @@
 layout: papers
 title: 'Formulas II'
 ---
-
+{% raw %}
 <div class="mermaid" markdown="0">
 flowchart TD
   A["τ = 0.600 ps"] -- "1 / τ" --> B
@@ -15,7 +15,7 @@ flowchart TD
   F --| β = 1 / 3 --> H
   E  -. "Q = 409.8" .-> G
   </div>
-  {% raw %}
+  
   {% endraw %}
 ---
 
