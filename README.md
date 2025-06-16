@@ -1,38 +1,68 @@
-# AeonLoop
+---
+layout: papers
+title: "AeonLoop"
+nav_order: 1
+---
 
-**Cosmic and Quantum Theory**
+# **AeonLoop**
 
-I'm still working on this page to ease navigation, so please bear with me. I'm currently uploading the written context. For the best reading experience, please view on a larger screen (like a laptop or PC).
+*A playground where a 0.600 ps lattice-clock tries to retell the whole story of
+cosmology and quantum theory.*
 
-## Core Topics
-
-- **CosmicReplicator**
-- **Fractional Calculus in Physics**
-- **Emergent Constants**
-- **Planck-Scale Discreteness**
-- **Rotational Combinatorics**
-- **Rotational Symmetry**
-- **Combinatorial Geometry**
-- **Hidden Physics**
-
-## Additional Keywords for Discovery
-
-- **Digital Tick**
-- **2.667D**
-- **1.667THz**
-- **Discrete Spacetime**
-- **Quantum Geometry**
-- **Digital Clockwork**
-- **Time Quantization**
-- **Ad Hoc-Free Formulation**
-- **Fractional Dimensions**
-
-## About This Project
-
-This project explores the intersections of cosmic and quantum theories through a discrete, digital-tick framework. The work investigates how emergent constants and geometric discretization may provide a new perspective on spacetime. With terms like **2.667D** and **1.667THz**, we hint at novel approaches aimed at reconciling traditional physics with emerging digital formulations.
-
-_More written context and details will be uploaded soon as the documentation evolves._
+> **Claim.—** *The GR metric is nothing but a field of tick counters; curvature
+> is a map of missing ticks.*  
+> <small>&mdash; working motto</small>
 
 ---
 
-Feel free to modify or add more keywords as needed. This README should help both visitors and search engines uncover the unique concepts behind AeonLoop.
+## Why another framework?
+
+1. **Discrete first, continuous second**  
+   We start with a rigid tick $$\tau = 0.600\;\text{ps}$$ and show how smooth
+   spacetime emerges as an average.  No continuum is assumed at the outset.
+
+2. **Two axioms, dozens of pay-offs**  
+   With only $$\tau$$ and an effective dimension
+   $$D_{\mathrm{eff}} = \tfrac83$$ we reproduce  
+   – fundamental constants,  
+   – the strong/weak ladder (195 MeV → 80 GeV),  
+   – a tiny $$\Lambda$$,  
+   – and the solar-wind turbulence slope −1.667.  
+
+3. **Ad-hoc free**  
+   All parameters are computed from the tick lattice or pulled directly from
+   experiment—never tuned.
+
+---
+
+## Core Topics
+
+| Module | One-liner |
+|--------|-----------|
+| **CosmicReplicator** | Deterministic Friedmann update at one tick per step |
+| **Fractional Calculus in Physics** | $$D_{\mathrm{eff}} = 8/3$$ shows up in every integral |
+| **Emergent Constants** | $$h,\;G,\;\alpha$$ as lattice outputs |
+| **Planck-Scale Discreteness** | Built-in UV cut-off, no renormalisation counter-terms |
+| **Rotational Combinatorics** | Seven-tick closure ⇒ lepton mass ladder |
+| **Hidden Physics** | Muon $$g-2$$, B-anomalies, chirality imbalance |
+
+---
+
+## Quick-reference keywords
+
+`Digital Tick` · `2.667D` · `1.667 THz` · `Discrete Spacetime`  
+`Quantum Geometry` · `Digital Clockwork` · `Time Quantisation`  
+`Ad-Hoc-Free Formulation` · `Fractional Dimensions`
+
+---
+
+## Repo tour
+
+```text
+Papers/             → polished write-ups (PDF + Markdown)
+Ladder/             → energy-ladder derivations
+Calculator/         → tiny CLI to query constants at any rung
+scripts/            → one-off data pulls (Swift, Fermi, DESI…)
+tests/              → CI sanity (MathJax, broken links, CSS size)
+constants.yaml      → 🔒 v2025-06-14a – the only source of numbers
+

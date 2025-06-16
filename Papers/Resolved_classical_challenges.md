@@ -71,6 +71,26 @@ After $$\tau$$ and $$D_{\mathrm{eff}}$$ every other “constant” is output, no
 ### 14 Cosmic matter budget without dark sectors  
 The $$8/3$$ volume factor plus the $$0.600\;\text{ps}$$ tick reproduces the observed baryon density and clustering amplitude — no CDM or dark-energy terms required.
 
+### A. Tick-Counter View of GR (worked example)
+
+Take Schwarzschild  
+$$\mathrm d\tau^2 = \bigl(1-2GM/rc^2\bigr)\,\mathrm dt^2 - \ldots$$
+
+Interpret  
+$$\sqrt{g_{tt}} = N_{\rm tick}(r)/N_{\rm tick}(\infty).$$
+
+1. **Gravitational red-shift**  
+   $$\frac{\nu_\infty}{\nu_r} = \frac{N_{\rm tick}(\infty)}{N_{\rm tick}(r)}.$$
+
+2. **Shapiro delay**  
+   Missing ticks along the light path add extra coordinate time  
+   $$\Delta t = \sum (\text{skipped ticks})\;\tau.$$
+
+3. **Light bending**  
+   Photons graze toward regions with higher tick density—geodesic = tick-max path.
+
+Everything GR predicts falls out of integer arithmetic on the lattice.
+
 ---
 
 ### Next steps  
