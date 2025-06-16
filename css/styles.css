@@ -89,29 +89,27 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
-/* ─── Mermaid edge contrast booster ───────────────────────────── */
-:root {
-  /* You may drop these two vars entirely if you don't need them
-     anywhere else.  They do NOT affect node fills now.          */
-  --mmd-stroke: #f8e9c1;      /* light-cream edge colour */
+/* ── brighten ONLY the connector lines & arrow-heads ──────────── */
+
+/* 1) the edge segment itself */
+.mermaid svg .edgePath .path {          /* <-- note the extra .path */
+  stroke: #f8e9c1 !important;           /* cream line colour        */
+  stroke-width: 2.5px !important;       /* a hair thicker           */
 }
 
-/* edges + arrow-heads only (nodes untouched) */
-.mermaid svg .edgePath path,
+/* 2) the arrow-head symbol */
 .mermaid svg .marker path {
-  stroke: var(--mmd-stroke) !important;
-  fill:   var(--mmd-stroke) !important;   /* arrow-head */
-  stroke-width: 2.5px !important;         /* thicker line */
-  stroke-linecap: round !important;       /* softer tips  */
+  stroke: #f8e9c1 !important;
+  fill:   #f8e9c1 !important;
+  stroke-width: 2.5px !important;
 }
 
-/* optional faint glow, dark mode only */
+/* 3) optional soft glow so it “floats” on dark grey */
 @media (prefers-color-scheme: dark) {
-  .mermaid svg .edgePath path {
-    filter: drop-shadow(0 0 2px var(--mmd-stroke));
+  .mermaid svg .edgePath .path {
+    filter: drop-shadow(0 0 2px #f8e9c1);
   }
 }
-/* ─────────────────────────────────────────────────────────────── */
 
 
 /* ===============================================================
