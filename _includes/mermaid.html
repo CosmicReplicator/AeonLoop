@@ -24,26 +24,27 @@ document.addEventListener('DOMContentLoaded', () => {
   mermaid.initialize({
     startOnLoad   : true,
     securityLevel : 'loose',
-    theme         : 'dark',              // keeps labels white if you don't override them
+    theme         : 'dark',
     themeVariables: {
-      /* node appearance ---------------------------------------- */
-      primaryColor       : '#00c8ff',    // cyan fill
+      /* ── node look ─────────────────────────────── */
+      primaryColor       : '#00c8ff',   // cyan box fill
       primaryBorderColor : '#00c8ff',
-      primaryTextColor   : '#000000',    // black text INSIDE boxes
+      primaryTextColor   : '#000000',   // black text in boxes
 
-      /* connector appearance ----------------------------------- */
-      lineColor          : '#FFE0B2',    // cream stroke for every edge
-      tertiaryColor      : '#FFE0B2',    // cream arrow-head fill (Mermaid ≥10)
+      /* ── connector look ───────────────────────── */
+      lineColor          : '#FFE0B2',   // cream stroke
+      tertiaryColor      : '#FFE0B2',   // cream arrow-head fill
 
-      /* optional: edge label text; comment out if you like white */
-      secondaryTextColor : '#000000',
+      /* ── edge-label text ──────────────────────── */
+      secondaryTextColor : '#000000',   // black text in the little labels
 
-      /* notes / misc ------------------------------------------- */
-      noteBkgColor       : '#424242',
-      noteTextColor      : '#e8e8e8',
       fontFamily         : 'Roboto Mono, monospace'
     }
   });
 });
 </script>
 
+<!-- one-liner fallback: makes sure arrow-heads respect the cream colour -->
+<style>
+.mermaid svg .marker path{stroke:#FFE0B2!important;fill:#FFE0B2!important;}
+</style>
