@@ -16,7 +16,7 @@ flowchart TD
   G --| β = 1 / 3 --> H["a(t) ∼ t^{3/4}"]
   F --| β = 1 / 3 --> H
   E  -. "Q = 409.8" .-> G
-  </div>{% raw %}
+  </div>
   {% endraw %}
 ---
 
