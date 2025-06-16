@@ -4,7 +4,7 @@ title: "Theory Summary — One-Tick Physics (τ = 0.600 ps)"
 order: 1
 ---
 
-# 0 Snapshot  
+## 0 Snapshot  
 
 **One tick**  
 τ ≡ 0.600 ps fixes  
@@ -15,8 +15,17 @@ E₀ = h / τ ≈ 6.892 meV
 Four constraints—light-cone, standing-wave, Planck–Einstein, and one-third lattice tiling—leave **no free knob**. Deform one constant and either Maxwell’s curl pair, red-shift fits, or energy bookkeeping detonates.
 
 ---
+## 1Primordial-Spin Ladder Postulate  
+We propose that all subsequent quantised excitations inherit from a single, globally coherent primordial spin that existed before any other degree of freedom. Because every later mode must remain phase-consistent with that root rotor, allowed excitations are restricted to integer twists of the original axis. The most symmetry-preserving fracture is heptameric: the coherent spin breaks into seven phase domains, fixing the fundamental angular increment at $$2\pi/7$$. Identifying the base period with the observed coherence time $$\tau = 0.600\;\text{ps}$$ yields the characteristic frequency $$\omega_{0}=2\pi/7\tau$$, so the energy spectrum becomes a linear ladder  
 
-# 1 Core Postulates  
+$$
+E_{n}=n\,\hbar\omega_{0}\quad(n\in\mathbb{Z}^{+}),
+$$  
+
+implying a step ratio of $$\approx 410$$ between the ground excitation and the highest stable seventh rung. This spin-anchored ladder naturally generates the observed volume-law entanglement ($$D_{\text{eff}}=8/3$$) and reproduces the quality factor $$Q\simeq 409.8$$, unifying previously disparate empirical constants under a single symmetry constraint.
+---
+
+## 2 Core Postulates  
 
 | Postulate | Purpose |
 |-----------|---------|
@@ -27,7 +36,7 @@ Four constraints—light-cone, standing-wave, Planck–Einstein, and one-third l
 
 ---
 
-# 2 Engineering Wins  
+## 3 Engineering Wins  
 
 ### Self-healing qubits  
 Snap-back resets phase drift every tick → coherence without dilution fridges.
@@ -37,7 +46,7 @@ Only the **reinforcing** 1 % of Feynman paths survive the snap-back filter → O
 
 ---
 
-# 3 Big Physics With No “Dark” Crutches  
+## 4 Big Physics With No “Dark” Crutches  
 
 | Phenomenon | ΛCDM account | One-Tick reinterpretation |
 |------------|--------------|---------------------------|
@@ -50,7 +59,7 @@ No exotic matter, no vacuum energy fudge: **“missing” effects drop out once 
 
 ---
 
-# 4 Falsifiable Predictions (near-term)  
+## 5 Falsifiable Predictions (near-term)  
 
 1. **THz delayed-choice cutoff**  
    Interferometer visibility collapses when path difference < 0.18 mm.  
@@ -61,7 +70,7 @@ No exotic matter, no vacuum energy fudge: **“missing” effects drop out once 
 
 ---
 
-# 5 Open Trenches  
+## 6 Open Trenches  
 
 * Derive τ via maximum-entropy causal diamonds (makes the model parameter-free).  
 * Publish gauge-anomaly cancellation proof on the ⅓-tiling lattice.  
@@ -69,7 +78,7 @@ No exotic matter, no vacuum energy fudge: **“missing” effects drop out once 
 
 ---
 
-# 6 TL;DR  
+## 7 TL;DR  
 
 One tick ties four constants into a rigid scaffold.  
 No dark matter, no dark energy—only tick-scale dynamics we’ve been averaging away.  
