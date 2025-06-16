@@ -89,24 +89,17 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
-/* === Bright-cream connectors on dark background ================= */
-.mermaid svg .edgePath .path {          /* ← actual line segment  */
-  stroke: #FFE0B2 !important;
-  stroke-width: 2.5px !important;
+/* === Make only the connector lines & arrow-heads cream ========== */
+.mermaid svg .edgePath .path {          /* the line itself          */
+  stroke: #FFE0B2 !important;           /* bright cream             */
+  stroke-width: 2.5px !important;       /* a little thicker         */
 }
 
-.mermaid svg .marker path {             /* ← arrow-head symbol    */
+.mermaid svg .marker path {             /* arrow-head glyph         */
   stroke: #FFE0B2 !important;
   fill:   #FFE0B2 !important;
-  stroke-width: 2.5px !important;
 }
 
-/* optional subtle glow in dark mode */
-@media (prefers-color-scheme: dark) {
-  .mermaid svg .edgePath .path {
-    filter: drop-shadow(0 0 2px #FFE0B2);
-  }
-}
 
 
 /* ===============================================================
