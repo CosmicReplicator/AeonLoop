@@ -21,10 +21,10 @@
     {% endif %}
   ">
 
-  <!-- ─── Polyfill FIRST (in case MathJax needs Promise/URL etc.) ───────── -->
+  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
   <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
 
-  <!-- ─── MathJax 3: config then engine (double-dollar everywhere) ─────── -->
+  <!-- ─── MathJax (double-dollar everywhere) ──────────────────────────── -->
   <script>
     window.MathJax = {
       tex: {
@@ -34,17 +34,15 @@
       }
     };
   </script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+  <!-- fixed ↓↓↓ -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
 
-
-
-  <!-- ─── Mermaid: local copy + one-shot theme pick ─────────────────────── -->
+  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
   <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
       mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
-      /* Live recolor by CSS; re-initialising Mermaid does nothing useful */
     });
   </script>
 </head>
@@ -71,4 +69,5 @@
   </div>
 </body>
 </html>
+
 
