@@ -1,7 +1,7 @@
 <!-- Mermaid engine -->
 <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
 
-<!-- Your one-time initialiser -->
+<!-- Your one-time initialiser
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     mermaid.initialize({
@@ -17,5 +17,22 @@
       }
     });
   });
-</script>
+</script> -->
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  mermaid.initialize({
+    startOnLoad: true,
+    securityLevel: 'loose',
+    theme: 'dark',                       /* forces dark even in light OS */
+    themeVariables: {
+      primaryColor:   '#00c8ff',
+      lineColor:      '#67e8f9',
+      secondaryColor: '#ffb74d',
+      noteBkgColor:   '#424242',
+      noteTextColor:  '#e8e8e8',
+      fontFamily:     'Roboto Mono, monospace'
+    }
+  });
+});
+</script>
