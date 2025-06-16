@@ -26,14 +26,19 @@
 
   <!-- ─── MathJax (double-dollar everywhere) ──────────────────────────── -->
 <script>
-  window.MathJax = {
-    tex: {
-      inlineMath:  [['$$','$$']],
-      displayMath: [['$$','$$']],
-      processEscapes: true
-    }
-  };
+window.MathJax = {
+  tex: {
+    inlineMath : [ ['$$','$$'], ['$', '$'], ['\\(','\\)'] ],
+    displayMath: [ ['$$','$$'], ['\
+
+\[','\\]
+
+'] ],
+    processEscapes: true
+  }
+};
 </script>
+
 
 <!-- ↓↓↓ replace your current MathJax tag with this one ↓↓↓ -->
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
