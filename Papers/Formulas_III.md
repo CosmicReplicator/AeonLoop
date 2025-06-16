@@ -4,7 +4,7 @@ title: "Formulas III"
 mathjax: true
 ---
 
-## 7 · Emergent Gravitational & Strong-Force Terms
+## 8 · Emergent Gravitational & Strong-Force Terms
 
 **(a) Gravitational coupling in tick units**
 
@@ -35,7 +35,7 @@ elongating the flux tube by one spatial step $$\Delta x$$.
 
 ---
 
-## 8 · Vacuum Energy & Cosmological Constant
+## 9 · Vacuum Energy & Cosmological Constant
 
 **(a) Time-tick formulation**
 
@@ -60,7 +60,7 @@ implying $$\Lambda\approx10^{-52}\,\text{m}^{-2}$$.
 
 ---
 
-## 9 · Discrete Friedmann Chain
+## 10 · Discrete Friedmann Chain
 
 **(a) Finite-difference Hubble step**
 
@@ -87,7 +87,7 @@ late-time expansion history without locking in a specific cosmic-age value.)*
 
 ---
 
-## 10 · Tick-Induced Red-Shift
+## 11 · Tick-Induced Red-Shift
 
 Standard relation  
 $$1+z = \dfrac{a(t_{0})}{a(t_{\text{emit}})}$$  
