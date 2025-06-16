@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: papers
 title:  "Lorentz Transformations"
 nav_order: 2
 ---
