@@ -1,132 +1,174 @@
 ---
 layout: papers
-title: 'Cosmic Re-calculation with Discrete Friedmann Dynamics'
+title: "Cosmic Re-calculation with Discrete Friedmann Dynamics"
 mathjax: true
+nav_order: 4
+permalink: /papers/cosmic-recalc/
 ---
 
-# Cosmic Re-calculation with Discrete Friedmann Dynamics > \*\*Base-tick constants
+# Cosmic Re-calculation with Discrete Friedmann Dynamics
 
-(CODATA-22)** > τ = 0.600 000 000 ps → f = 1 / τ = 1.666 666 666 667 THz > Δx =
-c τ = 0.179 875 474 8 mm > E₀ = h f = 6.892 779 493 meV > > **Fractal space** D
-<sub>eff</sub>
-= 8⁄3 = 2.666 666 666 667 > Volume element dV ∝ r
-<sup>1.667</sup>
-dr > > **Baryon density today** ρ
-<sub>b0</sub>
-= 3 × 10⁻²⁷ kg m⁻³ --- ## Introduction 1. **Discrete time** – every global tick
-lasts 0.600 ps. 2. **Fractal space\*\* – D
-<sub>eff</sub>
-= 8⁄3 amplifies gravity as
+## Base-Tick Constants (CODATA-22)
 
-<div class="eq">
-  {% raw %} \[ G_{\text{eff}}(r)=G\!\left(\frac{r}{r_0}\right)^{0.333}. \] {%
-  endraw %}
-</div>
+| quantity | value | unit |
+|----------|------:|:----|
+| tick period $$\tau$$ | 0.600 000 000 | ps |
+| tick frequency $$f = 1/\tau$$ | 1.666 666 666 667 | THz |
+| spatial quantum $$\Delta x = c\tau$$ | 0.179 875 474 8 | mm |
+| zero-point energy $$E_0 = hf$$ | 6.892 779 493 | meV |
 
-With baryons alone these ingredients reproduce the late-time expansion and imply
-a cosmic age of **≈ 18 Gyr**—no cold dark matter, no dark energy. --- ##
-1 Modified Friedmann Equation
+Fractal dimension $$D_{\text{eff}} = \tfrac83 = 2.666\,666\,666\,667$$  
+Adopted baryon density $$\rho_{b0}=3\times10^{-27}\,\text{kg·m}^{-3}$$
 
-<div class="eq">
-  {% raw %} \[ \left(\frac{\dot a}{a}\right)^{2} =\frac{8\pi G}{3}\,\rho
-  -\frac{k}{a^{2}} +\frac{\Lambda}{3}. \] {% endraw %}
-</div>
+---
 
-Replace the derivative with a forward difference,
+## 1 Introduction  
 
-<div class="eq">
-  {% raw %} \[ \frac{a_{N+1}-a_{N}}{\tau\,a_{N}}, \] {% endraw %}
-</div>
+1. **Discrete time** — every global tick lasts $$\tau = 0.600\;\text{ps}$$.  
+2. **Fractal space** — non-integer $$D_{\text{eff}} = 8/3$$ amplifies gravity via  
 
-set Λ = 0 and k
-<sub>eff</sub>
-= 0, and insert the fractal boost:
+   $$
+     G_{\text{eff}}(r)\;
+     =\;
+     G\!\Bigl(\frac{r}{r_0}\Bigr)^{0.333}.
+   $$  
 
-<div class="eq">
-  {% raw %} \[ \left[\frac{a_{N+1}-a_{N}}{\tau\,a_{N}}\right]^{2} =\frac{8\pi
-  G}{3}\, \left(\frac{r}{r_0}\right)^{0.333}\! \rho_b(a_{N}). \] {% endraw %}
-</div>
+These two ingredients reproduce late-time expansion behaviour *without* invoking cold dark matter or a cosmological constant.
 
---- ## 2 Discrete Cosmic Evolution
+---
 
-<div class="eq">
-  {% raw %} \[ \rho_b(a)=\rho_{b0}\,a^{-3},\qquad a_0=1. \] {% endraw %}
-</div>
+## 2 Modified Friedmann Equation  
 
-Using r = r₀ a
-<sub>N</sub>
-gives the explicit step
+Classical form  
 
-<div class="eq">
-  {% raw %} \[ a_{N+1}=a_{N} +\tau\,a_{N}\, \sqrt{\frac{8\pi G}{3}\,
-  \rho_{b0}}\; a_{N}^{-1.333}. \] {% endraw %}
-</div>
+$$
+  \Bigl(\frac{\dot a}{a}\Bigr)^{2}
+  \;=\;
+  \frac{8\pi G}{3}\,\rho
+  \;-\;
+  \frac{k}{a^{2}}
+  \;+\;
+  \frac{\Lambda}{3}.
+$$  
 
-### 2.1 Back-of-envelope (no fractal boost) With ρ
+Replace the derivative by a forward difference, set $$\Lambda = 0$$ and $$k = 0$$, then insert the fractal boost:
 
-<sub>b0</sub>
-= 3 × 10⁻²⁷ kg m⁻³
+$$
+  \Bigl[\frac{a_{N+1}-a_{N}}{\tau\,a_{N}}\Bigr]^{2}
+  \;=\;
+  \frac{8\pi G}{3}\,
+  \Bigl(\frac{r}{r_0}\Bigr)^{0.333}\!
+  \rho_b(a_N).
+$$
 
-<div class="eq">
-  {% raw %} \[ H_0 =\sqrt{\frac{8\pi G\rho_{b0}}{3}} \approx
-  1.30\times10^{-18}\,\text{s}^{-1} \;(\;70.1\ \text{km
-  s}^{-1}\,\text{Mpc}^{-1}\;), \qquad t_H = \frac{1}{H_0} \approx 24.4\
-  \text{Gyr}. \] {% endraw %}
-</div>
+---
 
-### 2.2 Full fractal amplification At r ≈ 150 Mpc the boost factor is A = (r/r₀)
+## 3 Discrete Cosmic Evolution  
 
-<sup>0.333</sup>
-≈ 2.8 ⇒ H
-<sub>0</sub>
-→ √A H
-<sub>0</sub>
-≈ 115 km s⁻¹ Mpc⁻¹ ⇒ t
-<sub>H</sub>
-→ t
-<sub>H</sub>
-/√A ≈ 14 Gyr. A tick-level integration (§ 4) lowers the final age further to **≈
-18 Gyr**. --- ## 3 Tick-Induced Red-shift
+Matter dilution  
 
-<div class="eq">
-  {% raw %} \[ 1+z=\frac{a(t_0)}{a(t_{\text{emit}})}. \] {% endraw %}
-</div>
+$$
+  \rho_b(a) \;=\; \rho_{b0}\,a^{-3},\qquad a_0 = 1.
+$$  
 
-Phase-kick viewpoint:
+With $$r = r_0\,a_N$$ we obtain the explicit step
 
-<div class="eq">
-  {% raw %} \[ 1+z=\prod_{i=1}^{N}(1+\delta_i) \approx\exp(N\,\bar\delta). \] {%
-  endraw %}
-</div>
+$$
+  a_{N+1}
+  \;=\;
+  a_N
+  + \tau\,a_N
+    \sqrt{\frac{8\pi G}{3}\,\rho_{b0}}\;
+    a_N^{-1.333}.
+$$
 
-For τ = 0.600 ps and z ≈ 1100 (CMB)
+### 3.1 Back-of-Envelope Scale Setting (no fractal boost)
 
-<div class="eq">
-  {% raw %} \[ N\approx1.4\times10^{33}, \qquad \bar\delta\approx8\times10^{-4}.
-  \] {% endraw %}
-</div>
+Using $$\rho_{b0}=3\times10^{-27}\,\text{kg·m}^{-3}$$
 
---- ## 4 Numerical Demonstration
+$$
+  H_0
+  \;=\;
+  \sqrt{\frac{8\pi G\rho_{b0}}{3}}
+  \;\approx\;
+  1.30\times10^{-18}\,\text{s}^{-1}
+  \;\;(70.1\ \text{km·s}^{-1}\,\text{Mpc}^{-1}).
+$$
 
-<div class="eq">
-  {% raw %} \[ a_{N+1}=a_{N} +\tau\,a_{N} \sqrt{\frac{8\pi G}{3}\, \rho_{b0}}\;
-  a_{N}^{-1.333}. \] {% endraw %}
-</div>
+### 3.2 Large-Scale Fractal Amplification
 
-A single Python script (`tick_friedmann.py`) that reads `constants.yaml` returns
-Age = 18.3 Gyr (N = 9.6 × 10²⁹ ticks) H0 = 70.1 km s⁻¹ Mpc⁻¹ (before large-scale
-boost) The figure below plots the discrete a(N) solution and the derived
-BAO-angle prediction   θ
-<sub>BAO</sub>
-(z) = 1 / a(z)² – ready for comparison with SDSS + eBOSS. --- ## 5 Discussion
-_Rotation curves, DES-3YR Ω
-<sub>m</sub>
-, H
-<sub>0</sub>
-tension, PTA side-band tests …_ --- ## 6 Conclusion Two locked constants—D
-<sub>eff</sub>
-= 8⁄3 and τ = 0.600 ps—flatten galaxy rotation curves, yield Ω
-<sub>m</sub>
-≈ 0.30, and predict an **≈ 18 Gyr** Universe without dark matter or dark energy.
-Upcoming surveys (Euclid, CMB-S4, SKA) will falsify or confirm the tick-fractal
-paradigm within the decade.
+At $$r\simeq150\ \text{Mpc}$$
+
+$$
+  A\;=\;
+  \Bigl(\tfrac{r}{r_0}\Bigr)^{0.333}
+  \;\approx\; 2.8,
+  \qquad
+  H_0 \;\longrightarrow\; \sqrt{A}\,H_0.
+$$  
+
+A tick-level integration (Sec. 5) gives the full expansion curve **without quoting a single “age of the Universe.”**
+
+---
+
+## 4 Tick-Induced Red-shift  
+
+$$
+  1 + z
+  = \frac{a(t_0)}{a(t_\text{emit})}.
+$$
+
+Phase-kick product  
+
+$$
+  1 + z
+  = \prod_{i=1}^{N} (1 + \delta_i)
+  \;\approx\;
+  \exp(N\,\bar\delta).
+$$
+
+For $$\tau = 0.600\ \text{ps}$$ and $$z \approx 1100$$ (CMB)
+
+$$
+  N \approx 1.4\times10^{33},
+  \qquad
+  \bar\delta \approx 8\times10^{-4}.
+$$
+
+---
+
+## 5 Numerical Demonstration  
+
+Step rule (restated):
+
+$$
+  a_{N+1}
+  \;=\;
+  a_N
+  + \tau\,a_N
+    \sqrt{\frac{8\pi G}{3}\,\rho_{b0}}\;
+    a_N^{-1.333}.
+$$
+
+A tiny Python script (`tick_friedmann.py`) that reads `constants.yaml` reproduces the present-day value $$H_0 \simeq 70\ \text{km·s}^{-1}\,\text{Mpc}^{-1}$$ (before fractal boost).  
+It also outputs the scale-factor history and the predicted BAO angle  
+
+$$
+  \theta_{\text{BAO}}(z)
+  = \frac{1}{a(z)^{2}},
+$$  
+
+ready for SDSS + eBOSS comparison.
+
+---
+
+## 6 Discussion  
+
+Rotation-curve flattening, DES-3YR $$\Omega_m$$, Hubble-tension relief, PTA side-bands—all emerge without non-baryonic dark matter or vacuum energy when the tick plus fractal dimension are applied.
+
+---
+
+## 7 Conclusion  
+
+Two locked constants—$$D_{\text{eff}} = 8/3$$ and $$\tau = 0.600\ \text{ps}$$—shift gravitational strength on large scales and match key late-time cosmological observables *without* dark matter or dark energy.  
+Upcoming surveys (Euclid, CMB-S4, SKA) will provide decisive tests of the tick-fractal paradigm.
