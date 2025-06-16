@@ -90,20 +90,30 @@ body {
   line-height: 1.35;
 }
 /* ── Mermaid edge contrast booster ─────────────────────────────── */
-.mermaid svg .edgePath path {
-  stroke: #a7e8ff !important;   /* bright icy-blue    */
-  stroke-width: 2.5px !important; /* a hair thicker     */
+:root {
+  --mmd-fill:   #00c8ff;  /* node background  */
+  --mmd-stroke: #7fe9ff;  /* edges & borders  */
 }
 
-/* optional: rounded arrow-heads feel friendlier */
-.mermaid svg .edgePath path.marker-end {
+/* nodes */
+.mermaid svg .node rect {
+  fill:   var(--mmd-fill)   !important;
+  stroke: var(--mmd-stroke) !important;
+}
+
+/* edges + arrowheads */
+.mermaid svg .edgePath path,
+.mermaid svg .marker path {
+  stroke: var(--mmd-stroke) !important;
+  fill:   var(--mmd-stroke) !important;
+  stroke-width: 2.5px !important;
   stroke-linecap: round !important;
 }
 
-/* optional: faint drop-shadow so lines “float” */
+/* subtle neon glow in dark mode */
 @media (prefers-color-scheme: dark) {
   .mermaid svg .edgePath path {
-    filter: drop-shadow(0 0 2px #00c8ff);
+    filter: drop-shadow(0 0 2px var(--mmd-stroke));
   }
 }
 
