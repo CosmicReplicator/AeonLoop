@@ -93,35 +93,9 @@ body {
    Drop this near the bottom of your main stylesheet so it overrides Mermaid’s
    own theme rules.  Works for both light and dark page themes.                */
 
-/* 0) Wrap every diagram in a clean white card                                */
+/* One-liner fix: every Mermaid diagram sits on a white card */
 .mermaid {
-  background: #ffffff;          /* solid white backdrop                     */
-  padding: 1rem;                /* breathing room around the SVG            */
-  border-radius: 6px;           /* subtle card corners                      */
-  overflow-x: auto;             /* horizontal scroll if a graph is wide     */
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));  /* soft shadow           */
-}
-
-/* 1) Force the SVG itself to inherit the white card (some themes tint it)    */
-.mermaid svg {
-  background: #ffffff !important;
-  isolation: isolate;           /* avoids mix-blend quirks in some browsers */
-}
-
-/* 2) Make connectors pop on dark themes (cream-yellow lines & arrowheads)    */
-@media (prefers-color-scheme: dark) {
-  .mermaid svg .edgePath path,
-  .mermaid svg marker path {
-    stroke: #ffe0b2 !important;   /* bright cream line                       */
-    fill:   #ffe0b2 !important;   /* bright cream arrowhead                  */
-    stroke-width: 2.5px !important;
-  }
-}
-
-/* 3) Optional: keep the connectors a touch thicker even in light mode        */
-.mermaid svg .edgePath path,
-.mermaid svg marker path {
-  stroke-width: 2.5px !important;
+  background: #ffffff;
 }
 
 
