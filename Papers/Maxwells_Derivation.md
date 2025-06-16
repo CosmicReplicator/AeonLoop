@@ -40,13 +40,16 @@ The discrete theory reproduces classical electromagnetism in the continuum limit
 ## 1 Tick-Lattice Foundations  
 
 ### 1.1 Causal diamond  
-
+{% raw %}
+<div class="mermaid" markdown="0">
 ```mermaid
 timeline
     title One-tick causal diamond (Δx = cτ)
     0 : Emit
     1 : Light-cone apex
     2 : Absorb
+	  </div>
+  {% endraw %}
 ```
 No event influences another in less than one tick; all update rules respect this causal diamond.
 
