@@ -89,6 +89,23 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
+/* ── Mermaid edge contrast booster ─────────────────────────────── */
+.mermaid svg .edgePath path {
+  stroke: #a7e8ff !important;   /* bright icy-blue    */
+  stroke-width: 2.5px !important; /* a hair thicker     */
+}
+
+/* optional: rounded arrow-heads feel friendlier */
+.mermaid svg .edgePath path.marker-end {
+  stroke-linecap: round !important;
+}
+
+/* optional: faint drop-shadow so lines “float” */
+@media (prefers-color-scheme: dark) {
+  .mermaid svg .edgePath path {
+    filter: drop-shadow(0 0 2px #00c8ff);
+  }
+}
 
 /* ===============================================================
    NAVIGATION
