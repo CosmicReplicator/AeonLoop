@@ -1,0 +1,21 @@
+<!-- Mermaid engine -->
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+<!-- Your one-time initialiser -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    mermaid.initialize({
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default',
+      themeVariables: {
+        fontFamily:  'Roboto Mono, monospace',
+        primaryColor:'#4fa',
+        lineColor:   '#4fa',
+        noteBkgColor:'#1e1e1e',
+        noteTextColor:'#e8e8e8'
+      }
+    });
+  });
+</script>
+
