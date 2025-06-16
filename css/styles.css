@@ -89,19 +89,42 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
-/* ─── MERMAID – make connectors visible on dark-grey bg ────────── */
-/* 1) the actual line segment between boxes */
-.mermaid svg .edgePath .path {
-  stroke: #FFE0B2 !important;      /* ← bright cream you can see   */
-  stroke-width: 2.5px !important;  /*   a touch thicker            */
+/* ─────────────── MERMAID “WHITE-CARD” + HIGH-CONTRAST CONNECTORS ──────────────
+   Drop this near the bottom of your main stylesheet so it overrides Mermaid’s
+   own theme rules.  Works for both light and dark page themes.                */
+
+/* 0) Wrap every diagram in a clean white card                                */
+.mermaid {
+  background: #ffffff;          /* solid white backdrop                     */
+  padding: 1rem;                /* breathing room around the SVG            */
+  border-radius: 6px;           /* subtle card corners                      */
+  overflow-x: auto;             /* horizontal scroll if a graph is wide     */
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));  /* soft shadow           */
 }
 
-/* 2) the little arrow-head triangles */
+/* 1) Force the SVG itself to inherit the white card (some themes tint it)    */
+.mermaid svg {
+  background: #ffffff !important;
+  isolation: isolate;           /* avoids mix-blend quirks in some browsers */
+}
+
+/* 2) Make connectors pop on dark themes (cream-yellow lines & arrowheads)    */
+@media (prefers-color-scheme: dark) {
+  .mermaid svg .edgePath path,
+  .mermaid svg marker path {
+    stroke: #ffe0b2 !important;   /* bright cream line                       */
+    fill:   #ffe0b2 !important;   /* bright cream arrowhead                  */
+    stroke-width: 2.5px !important;
+  }
+}
+
+/* 3) Optional: keep the connectors a touch thicker even in light mode        */
+.mermaid svg .edgePath path,
 .mermaid svg marker path {
-  stroke: #FFE0B2 !important;
-  fill:   #FFE0B2 !important;
   stroke-width: 2.5px !important;
 }
+
+
 /* ──────────────────────────────────────────────────────────────── */
 
 
