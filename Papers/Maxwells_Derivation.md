@@ -27,13 +27,13 @@ The discrete theory reproduces classical electromagnetism in the continuum limit
 
 | Symbol | Meaning |
 |--------|---------|
-| $\tau$        | Tick duration (0.600 ps)         |
-| $\Delta x$    | Tick length ($c\tau$)            |
-| $A_\mu$       | Four-potential                   |
-| $F_{\mu\nu}$  | Electromagnetic tensor           |
-| $E,\,B$       | Electric & magnetic fields       |
-| $\mathcal L$  | Lagrangian density               |
-| $\Lambda$     | Gauge parameter                  |
+| $$\tau$$        | Tick duration (0.600 ps)         |
+| $$\Delta x$$    | Tick length ($c\tau$)            |
+| $$A_\mu$$       | Four-potential                   |
+| $$F_{\mu\nu}$$  | Electromagnetic tensor           |
+| $$E,\,B$$       | Electric & magnetic fields       |
+| $$\mathcal L$  | Lagrangian density               |
+| $$\Lambda$$     | Gauge parameter                  |
 
 ---
 
@@ -51,7 +51,7 @@ timeline
 No event influences another in less than one tick; all update rules respect this causal diamond.
 
 ### 1.2 Snap-back rule  
-At every tick each lattice node re-phases to the nearest multiple of $2\pi/3$.  
+At every tick each lattice node re-phases to the nearest multiple of $$2\pi/3$$.  
 The rule cancels numerical drift and locks gauge cycles.
 
 ---
@@ -122,7 +122,7 @@ $$
    =\frac{\partial\mathcal L}{\partial(\partial_t A^\mu)} .
 $$  
 
-Taking $\tau,\Delta x\!\to\!0$ with $\Delta x/\tau=c$ fixed restores  
+Taking $$\tau,\Delta x\!\to\!0$ with $\Delta x/\tau=c$$ fixed restores  
 
 $$
 \partial_\mu F^{\mu\nu}=J^\nu .
@@ -138,7 +138,7 @@ $$
 A_\mu \;\mapsto\; A_\mu + \partial_\mu^{\text{disc}}\Lambda,
 $$
 
-each plaquette sum of $F_{\mu\nu}^{\text{disc}}$ is unchanged; hence $\mathcal L$ and $S_{\text{disc}}$ remain gauge-invariant **exactly**, tick-by-tick. □  
+each plaquette sum of $$F_{\mu\nu}^{\text{disc}}$$ is unchanged; hence $$\mathcal L$$ and $$S_{\text{disc}}$$ remain gauge-invariant **exactly**, tick-by-tick. □  
 
 ---
 
@@ -153,7 +153,7 @@ $$
 
 ### 6.2 1-D benchmark  
 
-A Gaussian pulse propagated $10^{4}$ ticks conserves energy to  
+A Gaussian pulse propagated $$10^{4}$$ ticks conserves energy to  
 
 $$
 \bigl|\Delta W/W_0\bigr| \;<\; 10^{-8}.
