@@ -89,22 +89,19 @@ body {
   font-size: 0.9rem; /* optional tweak */
   line-height: 1.35;
 }
-/* ── brighten ONLY the connector lines & arrow-heads ──────────── */
-
-/* 1) the edge segment itself */
-.mermaid svg .edgePath .path {          /* <-- note the extra .path */
-  stroke: #f8e9c1 !important;           /* cream line colour        */
-  stroke-width: 2.5px !important;       /* a hair thicker           */
-}
-
-/* 2) the arrow-head symbol */
-.mermaid svg .marker path {
-  stroke: #f8e9c1 !important;
-  fill:   #f8e9c1 !important;
+/* === Bright-cream connectors on dark background ================= */
+.mermaid svg .edgePath .path {          /* ← actual line segment  */
+  stroke: #FFE0B2 !important;
   stroke-width: 2.5px !important;
 }
 
-/* 3) optional soft glow so it “floats” on dark grey */
+.mermaid svg .marker path {             /* ← arrow-head symbol    */
+  stroke: #FFE0B2 !important;
+  fill:   #FFE0B2 !important;
+  stroke-width: 2.5px !important;
+}
+
+/* optional subtle glow in dark mode */
 @media (prefers-color-scheme: dark) {
   .mermaid svg .edgePath .path {
     filter: drop-shadow(0 0 2px #FFE0B2);
