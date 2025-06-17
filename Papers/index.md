@@ -72,15 +72,8 @@ title: 'Index'
     <h3>IV. Cosmology, Gravity &amp; Dark Matter</h3>
     <div class="button-container">
 
-      <a
-        class="button"
-        href="Cosmic_Recalculation_with_Modified_Friedmann_Equations"
-        target="_blank">Recalculation Friedmann Equations</a>
       <a class="button" href="Dark_Matter.html" target="_blank">
         Dark Matter
-      </a>
-      <a class="button" href="the_Source_of_Gravity.html" target="_blank">
-        Source of Gravity
       </a>
       <a class="button" href="GRB.html" target="_blank">GRB</a>
       <a class="button" href="BlackHoles.html" target="_blank">BlackHoles</a>
