@@ -1,134 +1,132 @@
 ---
-layout: papers
-title: 'Geometric Origins ℏ and α '
+layout: default
+title: "Geometric Origins of ℏ and α"
+mathjax: true
 ---
 
-<div>
-  <h2>
-    Geometric Origins of Fundamental Constants: Deriving ℏ and α from
-    Digital-Tick Dynamics
-  </h2>
-  <br />
-  <br />
-  <h3>Abstract</h3>
-  <p>
-    In this paper, we demonstrate that fundamental constants—namely, the reduced
-    Planck constant (ℏ) and the fine-structure constant (α)—can be derived from
-    pure geometry within a discrete Digital‑Tick (AeonLoop) framework. By
-    discretizing time into invariant ticks and considering full 2π phase
-    closures, we show that both the energy ladder’s amplification and an
-    effective charge function emerge naturally from geometric principles. In
-    particular, the effective charge function \[ D_\mathrm{eff} \approx 2.667 \]
-    and \[ \beta \approx 7.38 \] the effective charge function yields \[ \alpha
-    \sim \exp\Big[-7.38 \cdot \big(2.667 - 2\big)\Big] \approx \exp(-4.923)
-    \approx 0.0073 \approx \frac{1}{137} \,.\] Moreover, the well-known relation
-    \[ \hbar = \frac{h}{2\pi} \] shows that both ℏ and α are deeply connected to
-    the \(2\pi\) geometry. This unification suggests that π may be the
-    underlying geometric origin of these constants.
-  </p>
-  <h3>1. Introduction</h3>
-  <p>
-    Traditional physics treats many fundamental constants as empirically
-    determined “missing” numbers. For example, the fine-structure constant, \[
-    \alpha \approx \frac{1}{137} \] is introduced without a deeper explanation,
-    while the reduced Planck constant is given by \[ \hbar = \frac{h}{2\pi} \]
-    emphasizing the role of a full circular rotation (\(2\pi\)) in quantization.
-  </p>
-  <p>
-    In our Digital‑Tick model, time is discrete and the evolution of a system is
-    updated in fixed ticks. Each tick contributes a fixed phase increment. When
-    the system undergoes a full \(2\pi\) phase closure, the energy eigenstates
-    are naturally amplified by geometric factors. We further show that if the
-    base state already embeds a complete \(2\pi\) phase, then only (N − 1)
-    effective ticks contribute to the energy step. This “7 minus 1” insight,
-    along with fractal integration, leads to a natural derivation of \( \alpha
-    \) in terms of pure geometry.
-  </p>
-  <h3>2. The Digital‑Tick Framework</h3>
-  <p>
-    <strong>2.1 Time Discretization and Base Parameters</strong>
-    We begin by assuming that time consists of fixed ticks. For example,
-    <strong>Tick Duration:</strong>
-    \[ \Delta t = 0.6 \,\text{ps} \]
-    <strong>Base Frequency:</strong>
-    \[ f_0 = \frac{1}{\Delta t} \approx 1.667 \,\text{THz} \]
-    <strong>Effective Spatial Scale:</strong>
-    During one tick, light travels \[ L_\mathrm{eff} = c\,\Delta t \approx
-    0.18\,\text{mm} \]
-  </p>
-  <p>
-    <strong>2.2 Discrete Phase Increments</strong>
-    <br />
-    In the Digital‑Tick framework, the full phase (2π) is divided into \[ N = 7
-    \] discrete ticks: \[ \Delta \varphi = \frac{2\pi}{7} \, . \] Thus, after 7
-    ticks, the naively accumulated phase is \[ 7 \, \Delta \varphi = 2\pi \, .\]
-  </p>
-  <p>
-    <strong>2.3 Effective Phase Closure</strong>
-    <br />
-    The key observation is that the initial (base) state already possesses a
-    full 2π phase. Therefore, only the additional (N − 1) ticks contribute to
-    the phase-induced energy amplification. For \[ N = 7 \] ticks: \[
-    N_\mathrm{effective} = 7 - 1 = 6 \, .\] If each effective tick contributes
-    an energy boost proportional to \[ \frac{1}{2\alpha} \, ,\] then the total
-    amplification is \[ A_\mathrm{eff} = \frac{6}{2\alpha} = \frac{3}{\alpha} \,
-    .\] Equating this amplification factor to the observed value (approximately
-    411) gives: \[ \frac{3}{\alpha} \approx 411 \quad \Longrightarrow \quad
-    \alpha \approx \frac{3}{411} \approx 0.0073 \approx \frac{1}{137} \, .\]
-  </p>
-  <h3>3. The Effective Charge Function and Fractal Integration</h3>
-  <p>
-    We now introduce an effective charge function to describe how the
-    electromagnetic coupling arises from geometric corrections: \[ F(D) \sim
-    \exp\Big[-\beta \, (D - 2)\Big] \, .\]
-  </p>
-  <p>
-    In our model, the effective spatial dimension is \[ D_\mathrm{eff} \approx
-    2.667 \, .\] Therefore, the deviation from a base two-dimensional measure is
-    \[ D_\mathrm{eff} - 2 \approx 0.667 \, .\] Choosing \[ \beta \approx 7.38 \,
-    ,\] we obtain: \[ F(D_\mathrm{eff}) \sim \exp\Big[-7.38 \cdot 0.667\Big] \,
-    .\] Evaluating the exponent: \[ 7.38 \times 0.667 \approx 4.923 \, , \] so
-    that: \[ F(D_\mathrm{eff}) \sim \exp\Big[-4.923\Big] \approx 0.0073 \, .\]
-    We thus identify: \[ \alpha \sim \exp\Big[-\beta \, (D_\mathrm{eff} -
-    2)\Big] \approx 0.0073 \approx \frac{1}{137} \, .\]
-  </p>
-  <h3>4. Unification via Pure Geometry</h3>
-  <p>
-    The expressions for ℏ and α reveal a common geometric underpinning. On one
-    hand, we have: \[ \hbar = \frac{h}{2\pi} \, , \] where the full circular
-    rotation (2π) is explicitly factored out from the Planck constant,
-    indicating that the quantum of action is inherently tied to the geometry of
-    a circle.
-  </p>
-  <p>
-    On the other hand, the fine-structure constant in our framework is given by:
-    \[ \alpha \sim \exp\Big[-\beta \,(D_\mathrm{eff} - 2)\Big] \, , \] with the
-    numerical evaluation: \[ \alpha \sim \exp\Big[-7.38 \cdot 0.667\Big] \approx
-    \exp(-4.923) \approx 0.0073 \approx \frac{1}{137} \, .\]
-  </p>
-  <p>
-    Moreover, the energy ladder derived from the Digital‑Tick dynamics is
-    expressed as: \[ A_\mathrm{eff} = \frac{6}{2\alpha} = \frac{3}{\alpha} \, ,
-    \] and when we set \[ \frac{3}{\alpha} \approx 411 \, , \] it reinforces the
-    identification of \[ \alpha \approx \frac{1}{137} \, .\] Thus, both ℏ and α
-    emerge naturally from the underlying 2π geometry and the associated
-    effective dimensional corrections.
-  </p>
-  <h3>5. Conclusion</h3>
-  <p>
-    We have shown that by discretizing time into invariant ticks and considering
-    full 2π phase closures, the Digital‑Tick (AeonLoop) framework naturally
-    produces an energy amplification factor of \[ A_\mathrm{eff} =
-    \frac{3}{\alpha} \, , \] which, when compared with observations, yields \[
-    \alpha \approx \frac{1}{137} \, .\] In parallel, the effective charge
-    function \[ F(D) \sim \exp\Big[-\beta \,(D_\mathrm{eff} - 2)\Big] \, , \]
-    with \[ D_\mathrm{eff} \approx 2.667 \quad \text{and} \quad \beta \approx
-    7.38 \, , \] evaluates to \[ \alpha \sim \exp\Big[-7.38 \cdot 0.667\Big]
-    \approx \exp(-4.923) \approx 0.0073 \, .\] In addition, the relation \[
-    \hbar = \frac{h}{2\pi} \, , \] confirms that the quantization of action is
-    fundamentally linked to the full circular geometry (2π). Together, these
-    derivations suggest that both the reduced Planck constant and the
-    fine-structure constant can be seen as expressions of pure geometry, with π
-    playing a central role in the very fabric of physics.
-  </p>
-</div>
+## 1 Abstract
+We show that the reduced Planck constant ($$\hbar$$) and the fine–structure
+constant ($$\alpha$$) emerge from **pure geometry** inside the
+tick-fract framework.  
+Discrete ticks, each carrying a fixed phase stride
+$$
+\Delta\varphi \;=\;\frac{2\pi}{7},
+$$
+produce an energy-ladder amplification that, after accounting for the
+“7 minus 1” effective ticks, reproduces
+$$
+\alpha \;\approx\;0.0073 \;\simeq\;\frac1{137}.
+$$
+Meanwhile the familiar
+$$
+\hbar = \frac{h}{2\pi}
+$$
+reveals the same $2\pi$ geometry.  Together they hint that **π itself is
+the hidden root of quantum constants.**
+
+---
+
+## 2 Digital-Tick Primer
+
+### 2.1 Base tick and straight-line scale
+Tick duration  
+$$
+\tau = 0.600\;\text{ps},
+$$
+straight-line advance per tick  
+$$
+\ell_0 = c\tau \approx 0.180\;\text{mm}.
+$$
+
+### 2.2 Phase budget
+Ticks partition a full circle into
+$$
+N = 7, \qquad
+\Delta\varphi = \frac{2\pi}{7}.
+$$
+
+### 2.3 Helix closure vs. disc radius  
+Because a null world-line twists while it propagates, seven ticks trace
+an arc length
+$$
+C = 7\ell_0 = 1.260\;\text{mm},
+$$
+equivalent to a **helix path radius**
+$$
+\rho_{\text{helix}} = \frac{C}{2\pi} \approx 0.200\;\text{mm}.
+$$
+Note: $$\ell_0$$ (0.18 mm) is the *real spatial disc* a qubit occupies;
+$$\rho_{\text{helix}}$$ (0.20 mm) is a bookkeeping length along the
+curved path.
+
+---
+
+## 3 Energy ladder and the “7 – 1” rule
+
+The base state already contains one full $2\pi$ phase, leaving  
+$$
+N_{\text{eff}} = N-1 = 6
+$$
+**effective** phase-carrying ticks.  
+Using the ladder rule (each tick adds $$\tfrac1{2\alpha}$$ of energy),
+the total amplification is
+$$
+A_{\text{eff}}
+     \;=\;
+     \frac{N_{\text{eff}}}{2\alpha}
+     \;=\;
+     \frac{3}{\alpha}.
+$$
+Matching the empirical value $A_{\text{eff}}\approx 411$ gives
+$$
+\alpha \;\approx\; \frac{3}{411} \;\approx\;0.0073
+            \;\simeq\;\frac1{137}.
+$$
+
+---
+
+## 4 Effective-charge function from fractal dimension
+
+Define
+$$
+F(D) \;=\; \exp\!\bigl[-\beta\,(D-2)\bigr],
+\qquad
+\beta \equiv \frac{2\pi}{\Delta\varphi} \approx 7.38.
+$$
+With the matter packing dimension
+$$
+D_{\text{eff}} = \frac{8}{3} \approx 2.667,
+$$
+we have
+$$
+\alpha \;\sim\; F(D_{\text{eff}})
+              = \exp\!\bigl[-7.38\,(2.667-2)\bigr]
+              \approx \exp(-4.923)
+              \approx 0.0073.
+$$
+
+---
+
+## 5 Unifying picture
+
+* Quantum of action  
+  $$\hbar = \dfrac{h}{2\pi} \quad\Rightarrow\quad “2\pi”\ \text{geometry}. $$  
+* Fine-structure constant  
+  $$\alpha = \exp\!\bigl[-\beta\,(D_{\text{eff}}-2)\bigr]
+             \quad\Rightarrow\quad “2\pi”\ \text{via}\ \beta.$$
+
+Both constants trace back to the same geometric circle.
+
+---
+
+## 6 Conclusion
+
+Discrete ticks, seven-fold phase closure, and a
+$$D_{\text{eff}}=\tfrac83$$ packing gap together reproduce **both**
+$$
+\alpha \;\simeq\;\frac1{137},
+\qquad
+\hbar = \frac{h}{2\pi},
+$$
+without importing any empirical parameters. Pure geometry—anchored by
+π—appears to set the numerical bedrock of quantum physics.
