@@ -291,22 +291,16 @@ title: 'Index'
       <a
         class="button"
         href="Digital_Acoustic_Oscillations.html"
-        target="_blank"
-      >
+        target="_blank">
         Digital Acoustic Oscillations
       </a>
-      <a
-        class="button"
+      <a class="button"
         href="The_Magical_Code_of_the_Universe.html"
-        target="_blank"
-      >
+        target="_blank">
         Magical Code of the Universe
       </a>
       <a class="button" href="simulation_output.html" target="_blank">
         Simulation Output
-      </a>
-      <a class="button" href="The_Alpha_Scaling_Factor.html" target="_blank">
-        The Alpha Scaling Factor
       </a>
 	        <a class="button" href="GRB.html" target="_blank">
         GRB
@@ -320,10 +314,12 @@ title: 'Index'
       <a class="button" href="geometric_underfill.html" target="_blank">
         geometric underfill
       </a>
-      <a class="button" href="linchpin.html" target="_blank">linchpin</a>
-      <a class="button" href="Qubits.html" target="_blank">Qubits</a>
-      <a class="button" href="Geometry_and_Energy_Ladders.html" target="_blank">Geometry and Energy Ladders</a>
-	  
+      <a class="button" href="linchpin.html" target="_blank">
+	  linchpin</a>
+      <a class="button" href="Qubits.html" target="_blank">
+	  Qubits</a>
+      <a class="button" href="Geometry_and_Energy_Ladders.html" target="_blank">
+	  Geometry and Energy Ladders</a>
     </div>
   </section>
 </div>
