@@ -48,27 +48,15 @@ title: 'Index'
         Quantum Uncertainty</a>
       <a class="button" href="Lorentz_Transformations.html" target="_blank">
         Lorentz Transformations</a>
-      <a class="button" href="Philosophical_model.html" target="_blank">
-        Philosophy
-      </a>
       <a class="button" href="Reality_&_Time.html" target="_blank">
         Reality &amp; Time
-      </a>
-      <a class="button" href="model_explanation.html" target="_blank">
-        Model Explanation
       </a>
       <a class="button" href="theory_summary.html" target="_blank">
         Theory Summary
       </a>
-      <a class="button" href="new_calculus_explained.html" target="_blank">
-        New Calculus
-      </a>
       <a class="button" href="Plancks.html" target="_blank">Plancks</a>
       <a class="button" href="Maxwells_Derivation.html" target="_blank">
         Maxwell's Derivation
-      </a>
-      <a class="button" href="Nature_Heartbeat_Theory.html" target="_blank">
-        Nature Heartbeat
       </a>
       <a class="button" href="UnifiedProcess.html" target="_blank">
         Unified Process
@@ -107,16 +95,10 @@ title: 'Index'
       <a class="button" href="Recalibrated_Cosmology.html" target="_blank">
         Recalibrate Cosmos
       </a>
-      <a class="button" href="Friedmann_Equations.html" target="_blank">
-        Friedmann Equations
-      </a>
       <a
         class="button"
         href="Cosmic_Recalculation_with_Modified_Friedmann_Equations"
         target="_blank">Recalculation Friedmann Equations</a>
-      <a class="button" href="QFT_Universe_Explanation.html" target="_blank">
-        QFT Universe
-      </a>
       <a class="button" href="Dark_Matter_with_Numbers.html" target="_blank">
         Dark Matter with Numbers
       </a>
