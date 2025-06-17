@@ -12,15 +12,8 @@ title: 'Index'
     <li><a href="#section2">II. Digital Tick Model &amp; Quantization</a></li>
     <li><a href="#section3">III. Temporal &amp; Energy Dynamics</a></li>
     <li><a href="#section4">IV. Cosmology, Gravity &amp; Dark Matter</a></li>
-    <li><a href="#section5">V. Particle &amp; Neutrino Physics</a></li>
-    <li>
-      <a href="#section6">
-        VI. Additional Models, Pitfalls &amp; Error Corrections
-      </a>
-    </li>
-    <li>
-      <a href="#section7">VII. Miscellaneous &amp; Overarching Concepts</a>
-    </li>
+    <li><a href="#section6">V. Additional Models, Pitfalls &amp; Error Corrections</a></li>
+    <li><a href="#section7">VI. Miscellaneous &amp; Overarching Concepts</a></li>
   </ul>
 </nav>
 
@@ -51,9 +44,6 @@ title: 'Index'
       </a>
       <a class="button" href="Maxwells_Derivation.html" target="_blank">
         Maxwell's Derivation
-      </a>
-      <a class="button" href="UnifiedProcess.html" target="_blank">
-        Unified Process
       </a>
     </div>
   </section>
@@ -86,8 +76,8 @@ title: 'Index'
         class="button"
         href="Cosmic_Recalculation_with_Modified_Friedmann_Equations"
         target="_blank">Recalculation Friedmann Equations</a>
-      <a class="button" href="Dark_Matter_with_Numbers.html" target="_blank">
-        Dark Matter with Numbers
+      <a class="button" href="Dark_Matter.html" target="_blank">
+        Dark Matter
       </a>
       <a class="button" href="the_Source_of_Gravity.html" target="_blank">
         Source of Gravity
@@ -98,7 +88,7 @@ title: 'Index'
   </section>
 
   <section id="section5">
-    <h3>VI. Additional Models, Pitfalls &amp; Error Corrections</h3>
+    <h3>V. Additional Models, Pitfalls &amp; Error Corrections</h3>
     <div class="button-container">
 
       <a class="button" href="TriplePoint.html" target="_blank">TriplePoint</a>
@@ -106,15 +96,12 @@ title: 'Index'
   </section>
 
   <section id="section6">
-    <h3>VII. Miscellaneous &amp; Overarching Concepts</h3>
+    <h3>VI. Miscellaneous &amp; Overarching Concepts</h3>
     <div class="button-container">
       <a class="button"
         href="Digital_Acoustic_Oscillations.html"
         target="_blank">
         Digital Acoustic Oscillations
-      </a>
-      <a class="button" href="simulation_output.html" target="_blank">
-        Simulation Output
       </a>
 	        <a class="button" href="GRB.html" target="_blank">
         GRB</a>
