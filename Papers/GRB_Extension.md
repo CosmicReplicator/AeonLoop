@@ -102,7 +102,8 @@ Any two rulers ⇒ solve $$(z,D_L)$$ ⇒ **$$H_0$$**.
 | $$\Delta t_{\min,\text{obs}}$$ | 0.47 ms | $$N = 7.83\times10^{8}$$ |
 | $$E_{\text{peak}}$$ | 534 keV | $$n = 11$$ |
 | $$z_{\text{tick}}$$ | **1.35** | ($$z_{\text{spec}}=1.24$$) |
-| $$H_0\ (\beta=\tfrac13)$$ | **71 km s^{-1}\,\text{Mpc}^{-1}$$ | matches SH0ES |
+| $$H_0\;(\beta=\tfrac13)$$ | **$$71\ \text{km}\,\text{s}^{-1}\,\text{Mpc}^{-1}$$** | matches SH0ES |
+
 
 ---
 
