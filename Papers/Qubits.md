@@ -1,73 +1,167 @@
 ---
-layout: papers
-title: "Qubits"
+layout: default
+title: "Qubits (Tick-Fractal Model)"
 mathjax: true
 ---
 
-## 1 Introduction — Breaking Free from Superposition  
+## 1 Introduction — Beyond Superposition  
 
-Standard quantum computing rests on the idea that a qubit remains in **superposition**—a mixture of $$|0\rangle$$ and $$|1\rangle$$ —until measured. 
-Interference between those uncollapsed states powers algorithms such as Grover’s search and Shor’s factoring.  
+Standard quantum computing leans on **temporal superposition**
 
-In the **tick-fractal framework**, superposition is a **non-resource** beyond one tick, $$\tau = 0.600\;\text{ps}$$. No physical measurement can interact with an intermediate-tick state, so chasing long coherence times is misplaced. Quantum advantage instead arises from **spatial entanglement within the $$0.18\;\text{mm}$$ tick envelope** rather than temporal superposition.
+$$
+\lvert\psi\rangle = \alpha\,\lvert 0\rangle + \beta\,\lvert 1\rangle ,
+$$
 
----
+kept coherent for milliseconds.  
+In the **tick-fract​al universe** superposition evaporates as a usable
+resource after **one tick**
 
-## 2 Tick-Limited Qubits — A New Paradigm  
+$$
+\tau = 0.600\;\text{ps}.
+$$
 
-### 2.1 The Conventional Picture  
-
-|                      | Standard Model | Tick-Fractal Model |
-|----------------------|----------------|--------------------|
-| Coherence window     | ms-scale | one tick $$0.6\;\text{ps}$$ |
-| Computational resource | Superposition $$\lvert\psi\rangle = \alpha\,\lvert 0\rangle + \beta\,\lvert 1\rangle$$ | Spatial entanglement in a $$0.18\,\text{mm}$$ envelope |
-| Decoherence threat   | Environmental noise | Tick boundary itself |
-
-### 2.2 Harnessing Spatial Entanglement  
-
-* **Macro-qubit register** – Many physical qubits entangled across $$dx_{\text{tick}} = 0.1798754748\;\text{mm}$$ behave as a single logical qubit.  
-* **Collective operations** – Gates act on the whole register in one tick, exploiting spatial synchrony instead of time-domain interference.  
-* **Quantum speed-up** – Emerges from simultaneous, register-wide correlations.
+Any probe spanning more than a tick meets a *collapsed* state, so long
+\(T_2\) engineering is off-target.  Computational power resides in
+**spatial entanglement** confined to a microscopic “tick envelope.”
 
 ---
 
-## 3 Implications for Quantum Hardware  
+## 2 Helix-Lock Lemma — the Tick Envelope  
 
-### 3.1 Redesigned Gates  
+A null world-line advances a straight pitch  
 
-* Standard gates (Hadamard, Pauli-X, CNOT) must be re-expressed as **spatial-synchronization primitives** executed within $$\tau$$.  
-* Coupling is mediated by tick-scale entanglement, not by phase evolution over microseconds.
+$$
+\ell_0 = c\,\tau = 0.180\;\text{mm}
+$$
 
-### 3.2 Error Correction Without Long Coherence  
+while twisting by  
 
-* Error syndromes are gathered **inside** the tick; no multi-tick tracking of phase required.  
-* Quantum memory stores **spatial correlations**, not fragile temporal phases.
+$$
+\frac{2\pi}{7}
+$$  
+
+per tick.  
+After **seven** ticks it closes on itself, tracing a circle of
+circumference  
+
+$$
+C = 7\,\ell_0 = 1.260\;\text{mm},
+$$
+
+and therefore the universal lock radius  
+
+$$
+\rho_{\text{lock}} = \frac{C}{2\pi} \approx 0.200\;\text{mm}. \tag{1}
+$$
+
+The extra  
+
+$$
+0.02\;\text{mm}
+$$  
+
+over $$\ell_0$$ embodies the residual phase  
+
+$$
+0.381\;\text{rad}
+$$  
+
+per tick that upgrades matter packing from $$\tfrac83$$ to $$\tfrac93$$.
 
 ---
 
-## 4 Theoretical Foundations & Testable Predictions  
+<div class="note" markdown="1">
 
-### 4.1 Scaling Laws  
+### True 3-D vs. Simulated 3-D  
 
-| Feature | Standard QC | Tick-Fractal QC |
-|---------|-------------|-----------------|
-| Qubit scaling law | $$\mathcal O(2^n)$$ state space via superposition | $$\mathcal O(n)$$ macro-qubits via spatial tiling |
-| Limiting factor | $$T_2$$ coherence time | Tick envelope size $$0.18\;\text{mm}$$ |
+| System | Lattice action | Seven-tick closure radius |
+|--------|----------------|---------------------------|
+| **Spinning BH core** | Matter **really** completes the missing $$\tfrac19$$ of 3-D packing; no residual phase needed. | $$\ell_0 = 0.180\;\text{mm}$$ |
+| **Tick-fract​al qubit** | Cannot compress physically, so it **simulates** the last $$\tfrac19$$ via an extra $$0.381$$ rad twist each tick. | $$\rho_{\text{lock}} \approx 0.200\;\text{mm}$$ |
 
-### 4.2 Experiments  
+*The additional $$0.02\;\text{mm}$$ is the spatial budget that stands in
+for the density the qubit can never physically supply.*
 
-1. **Probe entanglement over $$0.18\;\text{mm}$$** with superconducting qubits or trapped ions.  
-2. **Measure synchrony collapse** beyond one tick—does the macro-qubit lose usable correlations?  
-3. **Attempt interference-style algorithms** (e.g. small Grover search) and verify performance drops when exceeding $$\tau$$.
+</div>
 
 ---
 
-## 5 Conclusion — Quantum Computing Without Superposition  
+## 3 Tick-Limited Qubits  
 
-* Superposition evaporates as a resource beyond $$0.600\;\text{ps}$$.  
-* Computational power comes from **tick-coherent spatial entanglement**.  
-* Gate design, error correction, and algorithm theory must pivot to this new resource.  
-* If validated, tick-fractal QC overturns the superposition-centric paradigm.
+### 3.1 Resource Table  
+
+|                      | Conventional QC | Tick-Fract​al QC |
+|----------------------|-----------------|-----------------|
+| Coherence window     | ms-scale        | single tick $$\tau$$ |
+| Quantum resource     | Temporal superposition | **Spatial entanglement on disc radius $$\rho_{\text{lock}}$$** |
+| Decoherence hazard   | Environment     | Tick boundary |
+
+### 3.2 Macro-Qubit Register  
+
+* **Register size** — Any set of physical qubits whose wave-functions
+  fit inside the **0.20 mm disc** behaves as one logical qubit.  
+* **Collective gates** — Operate on the entire disc within one tick;
+  logic lives in spatial patterns, not time evolution.
+
+### 3.3 Topologically Protected Logical States  
+
+Define  
+
+$$
+\lvert 0\rangle : \text{clockwise 7-tick helix},
+\qquad
+\lvert 1\rangle : \text{counter-clockwise helix}.
+$$
+
+Flipping demands at least $$3.5$$ ticks → sub-tick noise cannot trigger
+logical errors.
+
+---
+
+## 4 Hardware Consequences  
+
+### 4.1 Gate Redesign  
+
+* **Hadamard** → quarter-helix pulse ( $$1.75$$ ticks ).  
+* **Pauli-X** → half-helix ( $$3.5$$ ticks ).  
+* **CNOT** → overlapping helix pairs inside the same 0.20 mm disc.
+
+### 4.2 Error Correction without Long $$T_2$$  
+
+* Syndromes captured **inside one tick** — no phase tracking across
+  ticks.  
+* Memory stores *spatial* correlations, immune to slow drift.
+
+---
+
+## 5 Foundations & Predictions  
+
+### 5.1 Scaling Laws  
+
+| Feature | Conventional QC | Tick-Fract​al QC |
+|---------|-----------------|-----------------|
+| Logical-state scaling | $$\mathcal O(2^n)$$ via superposition | $$\mathcal O(n)$$ macro-qubits via disc tiling |
+| Limiting factor       | $$T_2$$ coherence | Helix-lock radius $$\rho_{\text{lock}}$$ |
+
+### 5.2 Experimental Tests  
+
+1. **Entanglement on 0.20 mm disc** — Build a superconducting or
+   photonic ring of diameter $$2\rho_{\text{lock}}\approx0.40\;\text{mm}$$
+   and violate Bell inequalities within one tick.  
+2. **Synchrony collapse $$>\tau$$** — Test whether correlations vanish
+   once operations span more than one tick.  
+3. **Algorithm probe** — Run a 2-qubit Grover search; speed-up should
+   plateau if gate sequence exceeds $$\tau$$.
+
+---
+
+## 6 Conclusion — Quantum Computing without Long Superposition  
+
+* Superposition stops being a resource beyond **0.600 ps**.  
+* The **0.200 mm helix-lock disc** supplies a protected, topological
+  playground.  
+* Quantum hardware must pivot from coherence-time engineering to
+  **sub-tick spatial orchestration**.
 
 ---
 
@@ -75,9 +169,9 @@ In the **tick-fractal framework**, superposition is a **non-resource** beyond on
 
 | Task | Owner | ETA |
 |------|-------|-----|
-| Formulate spatial-gate algebra | you | 1 week |
-| Design $$0.18\;\text{mm}$$ entanglement test | lab partner | 2 weeks |
-| Draft tick-qubit theory paper | both | 1 month |
+| Formalise helix-gate algebra | you | 1 week |
+| Build 0.40 mm ring prototype | lab partner | 2 weeks |
+| Submit tick-qubit theory preprint | both | 1 month |
 
-*Tick-fractal quantum logic now stands as a falsifiable blueprint. Time to build and break it.*
-
+*Tick-fract​al quantum logic now stands as a falsifiable blueprint.  
+Time to build— and, if nature objects, to break —it.*
