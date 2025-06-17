@@ -63,7 +63,7 @@ curved path.
 
 ## 3 Energy ladder and the “7 – 1” rule
 
-The base state already contains one full $2\pi$ phase, leaving  
+The base state already contains one full $$2\pi$$ phase, leaving  
 $$
 N_{\text{eff}} = N-1 = 6
 $$
@@ -77,7 +77,7 @@ A_{\text{eff}}
      \;=\;
      \frac{3}{\alpha}.
 $$
-Matching the empirical value $A_{\text{eff}}\approx 411$ gives
+Matching the empirical value $$A_{\text{eff}}\approx 411$$ gives
 $$
 \alpha \;\approx\; \frac{3}{411} \;\approx\;0.0073
             \;\simeq\;\frac1{137}.
