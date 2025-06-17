@@ -285,9 +285,6 @@ title: 'Index'
       <a class="button" href="Delayed-Choice.html" target="_blank">
         Delayed Choice
       </a>
-      <a class="button" href="Geometric_Origins.html" target="_blank">
-        Geometric Origins
-      </a>
       <a
         class="button"
         href="Digital_Acoustic_Oscillations.html"

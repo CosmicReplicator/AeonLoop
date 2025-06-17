@@ -1,0 +1,29 @@
+# fundamentals.yaml  (v2025-06-17)
+- id: rho_helix
+  symbol: "ρ_helix"
+  value: 0.200000000      # in metres ×10⁻³ below, see units
+  unit: "mm"
+  precision: "±5e-10"
+  derives: ["ell0", "N_ticks"]
+  note: "Helix path radius: C = 7ℓ0 → ρ = C/2π"
+
+- id: f_tick
+  symbol: "f"
+  value: 1.6666666666667
+  unit: "THz"
+  precision: "exact (locked)"
+  derives: ["tau"]
+
+- id: E0
+  symbol: "E_0"
+  value: 6.892779493
+  unit: "meV"
+  precision: "±4e-9"
+  derives: ["tau", "h"]
+
+- id: G_tick
+  symbol: "G_tick"
+  value: 4.51e-62
+  unit: "dimensionless"
+  precision: "±1e-2"      # relative
+  derives: ["meff", "g", "R_earth", "M_earth"]

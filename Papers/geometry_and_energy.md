@@ -1,5 +1,5 @@
 ---
-layout: papers
+layout: layout
 title: 'geometry and energy'
 ---
 
