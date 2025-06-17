@@ -93,9 +93,9 @@ title: 'Index'
     </div>
   </section>
 
-  <section id="section3">
+  <section id="section3"> 
     <h3>III. Temporal &amp; Energy Dynamics</h3>
-
+<div class="button-container">
       <a class="button" href="Calibration.html" target="_blank">Calibration</a>
     </div>
   </section>
@@ -103,8 +103,7 @@ title: 'Index'
   <section id="section4">
     <h3>IV. Cosmology, Gravity &amp; Dark Matter</h3>
     <div class="button-container">
-        Cosmic Void Low Pressure
-      </a>
+
       <a class="button" href="Recalibrated_Cosmology.html" target="_blank">
         Recalibrate Cosmos
       </a>
