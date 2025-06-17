@@ -67,9 +67,6 @@ title: 'Index'
       <a class="button" href="Maxwells_Derivation.html" target="_blank">
         Maxwell's Derivation
       </a>
-      <a class="button" href="micro_to_macro.html" target="_blank">
-        Micro to Macro
-      </a>
       <a class="button" href="Nature_Heartbeat_Theory.html" target="_blank">
         Nature Heartbeat
       </a>
@@ -99,8 +96,7 @@ title: 'Index'
   <section id="section3">
     <h3>III. Temporal &amp; Energy Dynamics</h3>
 
-      <a class="button" href="Calibration.html" target="_blank">
-        Calibration</a>
+      <a class="button" href="Calibration.html" target="_blank">Calibration</a>
     </div>
   </section>
 
@@ -125,12 +121,6 @@ title: 'Index'
       <a class="button" href="Dark_Matter_with_Numbers.html" target="_blank">
         Dark Matter with Numbers
       </a>
-      <a class="button" href="Gravity_Explanation.html" target="_blank">
-        Gravity DK
-      </a>
-      <a class="button" href="Gravity_Explanation_EN.html" target="_blank">
-        Gravity EN
-      </a>
       <a class="button" href="the_Source_of_Gravity.html" target="_blank">
         Source of Gravity
       </a>
@@ -140,21 +130,6 @@ title: 'Index'
   </section>
 
   <section id="section5">
-    <h3>V. Particle &amp; Neutrino Physics</h3>
-    <div class="button-container">
-      <a class="button" href="Neutrino_as_a_Time Keeper.html" target="_blank">
-        Neutrino as a Time Keeper
-      </a>
-      <a
-        class="button"
-        href="Neutrino_Mass_Calculation_Explanation.html"
-        target="_blank">
-        Neutrino Mass Calculation
-      </a>
-    </div>
-  </section>
-
-  <section id="section6">
     <h3>VI. Additional Models, Pitfalls &amp; Error Corrections</h3>
     <div class="button-container">
 
@@ -162,7 +137,7 @@ title: 'Index'
     </div>
   </section>
 
-  <section id="section7">
+  <section id="section6">
     <h3>VII. Miscellaneous &amp; Overarching Concepts</h3>
     <div class="button-container">
       <a class="button"
