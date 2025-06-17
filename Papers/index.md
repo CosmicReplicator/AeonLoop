@@ -142,12 +142,10 @@ title: 'Index'
         Effective Dimension
       </a>
       <a class="button" href="extended_model_output.html" target="_blank">
-        Extended Model
-      </a>
+        Extended Model</a>
       <a class="button" href="Mindblowing.html" target="_blank">Mindblowing</a>
-      <a class="button" href="model_output.html" target="_blank">
-        Model Output
-      </a>
+      <a class="button" href="Calibration.html" target="_blank">
+        Calibration</a>
     </div>
   </section>
 
@@ -274,7 +272,6 @@ title: 'Index'
       </a>
 	        <a class="button" href="GRB.html" target="_blank">
         GRB</a>
-      </a>
       <a class="button" href="geometry_and_energy.html" target="_blank">
         geometry and energy
       </a>
