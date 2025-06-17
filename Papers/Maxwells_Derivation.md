@@ -145,7 +145,7 @@ $$
    \frac{\partial\mathcal L}{\partial(\partial_t A^\mu)} .
 $$  
 
-Taking $$\tau,\Delta x\!\to\!0$$ with $\Delta x/\tau=c$ fixed restores  
+Taking $$\tau,\Delta x\!\to\!0$$ with $$\Delta x/\tau=c$$ fixed restores  
 
 $$
 \partial_\mu F^{\mu\nu}=J^\nu .
@@ -203,7 +203,7 @@ $$
 
 Interferometer visibility must collapse when path difference  
 $$\Delta L < \Delta x$$  
-($0.18\;\text{mm}$) at $1.667\;\text{THz}$—an accessible THz delayed-choice test.
+($$0.18\;\text{mm}$$) at $$1.667\;\text{THz}$$—an accessible THz delayed-choice test.
 
 ---
 
