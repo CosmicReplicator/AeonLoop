@@ -34,38 +34,24 @@ title: 'Index'
       <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
       <a class="button" href="Formulas_III.html" target="_blank">Formula III</a>
       <a class="button" href="Fundamental_Scales.html" target="_blank">
-        Fundamental Scales
-      </a>
+        Fundamental Scales</a>
       <a class="button" href="Chirality.html" target="_blank">Chirality</a>
       <a class="button" href="Finite_Light_Speed.html" target="_blank">
-        Finite Light Speed
-      </a>
-      <a
-        class="button"
+        Finite Light Speed</a>
+      <a class="button"
         href="Resolved_classical_challenges.html"
-        target="_blank"
-      >
-        Resolved Classical Challenges
-      </a>
-      <a
-        class="button"
+        target="_blank">
+        Resolved Classical Challenges</a>
+      <a class="button"
         href="Fine_Structure_Constant_and_Proton_Radius.html"
-        target="_blank"
-      >
-        Fine Structure Constant &amp; Proton Radius
-      </a>
+        target="_blank">
+        Fine Structure Constant &amp; Proton Radius</a>
       <a class="button" href="The_Strong_Force.html" target="_blank">
-        The Strong Force
-      </a>
-      <a class="button" href="Critique_of_Modern_Physics.html" target="_blank">
-        Critique of Modern Physics
-      </a>
+        The Strong Force</a>
       <a class="button" href="Quantum_Uncertainty.html" target="_blank">
-        Quantum Uncertainty
-      </a>
+        Quantum Uncertainty</a>
       <a class="button" href="Lorentz_Transformations.html" target="_blank">
-        Lorentz Transformations
-      </a>
+        Lorentz Transformations</a>
       <a class="button" href="Philosophical_model.html" target="_blank">
         Philosophy
       </a>
@@ -107,18 +93,12 @@ title: 'Index'
         A Cascade of Resonant Steps
       </a>
       <a class="button" href="Derivation_of_G.html" target="_blank">
-        Derivation of G
-      </a>
+        Derivation of G</a>
       <a class="button" href="AeonLoop_Graviton.html" target="_blank">
-        Graviton
-      </a>
-      <a
-        class="button"
+        Graviton</a>
+      <a class="button"
         href="AeonLoop_Magnetic_Field_Comparison.html"
-        target="_blank"
-      >
-        Magnetic Field Comparison
-      </a>
+        target="_blank">Magnetic Field Comparison</a>
       <a class="button" href="Digital_Molecule.html" target="_blank">
         Digital Molecule
       </a>
@@ -258,12 +238,6 @@ title: 'Index'
   <section id="section6">
     <h3>VI. Additional Models, Pitfalls &amp; Error Corrections</h3>
     <div class="button-container">
-      <a class="button" href="classic_pitfalls.html" target="_blank">
-        Classic Pitfalls
-      </a>
-      <a class="button" href="classic_pitfalls2.html" target="_blank">
-        Classic Pitfalls 2
-      </a>
       <a
         class="button"
         href="Fractal_Error_Correction_Model.html"
