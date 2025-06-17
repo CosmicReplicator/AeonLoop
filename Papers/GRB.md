@@ -1,5 +1,5 @@
 ---
-layout: papers
+layout: default
 title: 'GRB'
 mathjax: true
 ---
@@ -129,13 +129,8 @@ Early ticks show large jumps; late ticks crawl, giving a concave-down $$a(t)$$.
 
 ---
 
-## 3 Age-Free Framework (placeholder)
-The present draft does not attempt to integrate $$a(t)$$ to obtain a cosmic age.  
-Predictions are therefore expressed purely in dimensionless ratios or in terms of the tick lattice itself; no absolute age is required for falsification tests.
 
----
-
-## 4 Fixed 3-D Evolution of Matter
+## 3 Fixed 3-D Evolution of Matter
 Density patterns stretch self-similarly every tick; filaments persist and void statistics follow  
 {% raw %}
 $$
@@ -145,7 +140,7 @@ $$
 
 ---
 
-## 5 Observable Cosmological Signatures
+## 4 Observable Cosmological Signatures
 • Galaxy-correlation slope: $$-1.667$$ (straight power-law).  
 • BAO comoving scale: $$140\ \text{Mpc}$$.  
 • CMB peak ratio: $$\ell_{2}/\ell_{1}=0.577$$.  
@@ -155,12 +150,12 @@ Any single $$>3\sigma$$ disagreement falsifies the model.
 
 ---
 
-## 6 Quantum Snap-Back Mechanism for GRB Pulses
+## 5 Quantum Snap-Back Mechanism for GRB Pulses
 A **snap-back** is a local contraction of the lattice triggered when a relativistic shell overtakes a slower one. Dissipation obeys the scaling law above.
 
 ---
 
-## 7 Pulse Dynamics & Spectral Evolution
+## 6 Pulse Dynamics & Spectral Evolution
 Peak energy scales with post-shock density $$\rho$$ and dissipated energy per mass $$\varepsilon$$:  
 {% raw %}
 $$
@@ -174,7 +169,7 @@ With jitter-radiation micro-fields $$(x,y)\!\approx\!(1/3,1)$$, $$\delta\!\appro
 
 ---
 
-## 8 Joint Observational Predictions
+## 7 Joint Observational Predictions
 – GRB pulses evolve from hard/symmetric to soft/FRED-like with redshift.  
 – Spectral-decay index remains $$1\!-\!1.5$$.  
 – Deterministic BAO offset sets the GRB rate–redshift relation (≈10 % shift from ΛCDM).  
@@ -182,14 +177,14 @@ With jitter-radiation micro-fields $$(x,y)\!\approx\!(1/3,1)$$, $$\delta\!\appro
 
 ---
 
-## 9 Numerical Prototype Modules
+## 8 Numerical Prototype Modules
 • `tools/fractal_struct.py` — builds $$D_{\text{eff}} = 8/3$$ particle sets.  
 • `tools/friedmann_tick.py` — tick-level integrator (age-free).  
 • `tools/grb_snapback.py` — integrates $$\dot{E}(t)$$ & $$E_{\text p}(t)$$ for planar/spherical shells.
 
 ---
 
-## 10 Falsifiability Road-map
+## 9 Falsifiability Road-map
 1. **DESI / Euclid** — measure galaxy-slope on 5–70 Mpc.  
 2. **SKA** — look for ≥30 % spin-alignment beyond 10 Mpc.  
 3. **IPTA / CHIME** — search nano-Hz tick harmonic comb.  
@@ -199,7 +194,7 @@ Any failure at $$>3\sigma$$ confidence rejects the framework.
 
 ---
 
-## 11 Discussion & Outlook
+## 10 Discussion & Outlook
 Tick–fractal cosmology removes six ΛCDM densities and supplies a deterministic platform for high-energy snap-backs—while deliberately remaining agnostic on the Universe’s absolute age.  
 
 Next steps:  
