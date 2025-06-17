@@ -33,11 +33,7 @@ title: 'Index'
       <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
       <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
       <a class="button" href="Formulas_III.html" target="_blank">Formula III</a>
-      <a class="button" href="Fundamental_Scales.html" target="_blank">
-        Fundamental Scales</a>
       <a class="button" href="Chiral_Closure_Lemma.html" target="_blank">Chiral Closure Lemma</a>
-      <a class="button" href="Finite_Light_Speed.html" target="_blank">
-        Finite Light Speed</a>
       <a class="button"
         href="Resolved_classical_challenges.html"
         target="_blank">
@@ -103,10 +99,6 @@ title: 'Index'
   <section id="section3">
     <h3>III. Temporal &amp; Energy Dynamics</h3>
 
-      <a class="button" href="Eff_Dim_Expl.html" target="_blank">
-        Effective Dimension
-      </a>
-      <a class="button" href="Mindblowing.html" target="_blank">Mindblowing</a>
       <a class="button" href="Calibration.html" target="_blank">
         Calibration</a>
     </div>
@@ -165,16 +157,7 @@ title: 'Index'
   <section id="section6">
     <h3>VI. Additional Models, Pitfalls &amp; Error Corrections</h3>
     <div class="button-container">
-      <a
-        class="button"
-        href="Fractal_Error_Correction_Model.html"
-        target="_blank"
-      >
-        Fractal Error Correction
-      </a>
-      <a class="button" href="ghost_resolution.html" target="_blank">
-        Ghost Resolution
-      </a>
+
       <a class="button" href="TriplePoint.html" target="_blank">TriplePoint</a>
     </div>
   </section>
