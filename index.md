@@ -25,7 +25,7 @@ title: 'AeonLoop'
 
     <!-- Button to access your Papers -->
     <section>
-      <a href="Papers/" class="button">View My Papers</a>
+      <a href="papers/" class="button">View My Papers</a>
     </section>
     <!-- Button to access the Calculator -->
     <section>
