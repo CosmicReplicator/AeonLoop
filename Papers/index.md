@@ -44,17 +44,11 @@ title: 'Index'
         Fine Structure Constant &amp; Proton Radius</a>
       <a class="button" href="The_Strong_Force.html" target="_blank">
         The Strong Force</a>
-      <a class="button" href="Quantum_Uncertainty.html" target="_blank">
-        Quantum Uncertainty</a>
       <a class="button" href="Lorentz_Transformations.html" target="_blank">
         Lorentz Transformations</a>
-      <a class="button" href="Reality_&_Time.html" target="_blank">
-        Reality &amp; Time
-      </a>
       <a class="button" href="theory_summary.html" target="_blank">
         Theory Summary
       </a>
-      <a class="button" href="Plancks.html" target="_blank">Plancks</a>
       <a class="button" href="Maxwells_Derivation.html" target="_blank">
         Maxwell's Derivation
       </a>
@@ -73,11 +67,7 @@ title: 'Index'
       <a class="button" href="Derivation_of_G.html" target="_blank">
         Derivation of G</a>
       <a class="button" href="Digital_Molecule.html" target="_blank">
-        Digital Molecule
-      </a>
-      <a class="button" href="Force_Unification.html" target="_blank">
-        Force Unification
-      </a>
+        Digital Molecule</a>
     </div>
   </section>
 
@@ -92,9 +82,6 @@ title: 'Index'
     <h3>IV. Cosmology, Gravity &amp; Dark Matter</h3>
     <div class="button-container">
 
-      <a class="button" href="Recalibrated_Cosmology.html" target="_blank">
-        Recalibrate Cosmos
-      </a>
       <a
         class="button"
         href="Cosmic_Recalculation_with_Modified_Friedmann_Equations"
@@ -125,11 +112,6 @@ title: 'Index'
         href="Digital_Acoustic_Oscillations.html"
         target="_blank">
         Digital Acoustic Oscillations
-      </a>
-      <a class="button"
-        href="The_Magical_Code_of_the_Universe.html"
-        target="_blank">
-        Magical Code of the Universe
       </a>
       <a class="button" href="simulation_output.html" target="_blank">
         Simulation Output
