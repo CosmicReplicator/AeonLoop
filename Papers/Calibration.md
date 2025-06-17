@@ -89,9 +89,9 @@ $$
 
 | Check | Target | ETA |
 |-------|--------|-----|
-| Monte-Carlo diffusion exponent on 1000-node lattice | slope $$\(=\;2/3\)$$ | 2025-07-05 |
+| Monte-Carlo diffusion exponent on 1000-node lattice | slope $$=\;2/3$$ | 2025-07-05 |
 | Re-derive \(\delta_{\text{exp}}\) from tick-fractal FRW fit | analytic | 2025-07-12 |
-| Short note “Big-Ring & 10 % Slow-down ⇝ $$\(D_{\mathrm{eff}}\)$$” | after above | arXiv |
+| Short note “Big-Ring & 10 % Slow-down ⇝ $$D_{\mathrm{eff}}$$” | after above | arXiv |
 
 ---
 
