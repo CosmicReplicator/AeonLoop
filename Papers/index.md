@@ -322,6 +322,8 @@ title: 'Index'
       </a>
       <a class="button" href="linchpin.html" target="_blank">linchpin</a>
       <a class="button" href="Qubits.html" target="_blank">Qubits</a>
+      <a class="button" href="Geometry_and_Energy_Ladders.html" target="_blank">Geometry and Energy Ladders</a>
+	  
     </div>
   </section>
 </div>
