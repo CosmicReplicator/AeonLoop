@@ -86,19 +86,11 @@ title: 'Index'
   <section id="section2">
     <h3>II. Digital Tick Model &amp; Quantization</h3>
     <div class="button-container">
-      <a class="button" href="AeonLoop_Lagrangian.html" target="_blank">
-        Lagrangian
-      </a>
       <a class="button" href="A_Cascade_of_Resonant_Steps.html" target="_blank">
         A Cascade of Resonant Steps
       </a>
       <a class="button" href="Derivation_of_G.html" target="_blank">
         Derivation of G</a>
-      <a class="button" href="AeonLoop_Graviton.html" target="_blank">
-        Graviton</a>
-      <a class="button"
-        href="AeonLoop_Magnetic_Field_Comparison.html"
-        target="_blank">Magnetic Field Comparison</a>
       <a class="button" href="Digital_Molecule.html" target="_blank">
         Digital Molecule
       </a>
@@ -110,39 +102,10 @@ title: 'Index'
 
   <section id="section3">
     <h3>III. Temporal &amp; Energy Dynamics</h3>
-    <div class="button-container">
-      <a
-        class="button"
-        href="Derivation_1_667_THz_Explanation.html"
-        target="_blank"
-      >
-        1.667 THz Derivation
-      </a>
-      <a
-        class="button"
-        href="dilation_classical_formulas_explained.html"
-        target="_blank"
-      >
-        Dilation Classical Formulas
-      </a>
-      <a class="button" href="dilation_explained.html" target="_blank">
-        Dilation
-      </a>
-      <a
-        class="button"
-        href="the_Illusion_of_Time_Dilation.html"
-        target="_blank"
-      >
-        Time Dilation
-      </a>
-      <a class="button" href="dilation_explainedDK.html" target="_blank">
-        Dilation DK
-      </a>
+
       <a class="button" href="Eff_Dim_Expl.html" target="_blank">
         Effective Dimension
       </a>
-      <a class="button" href="extended_model_output.html" target="_blank">
-        Extended Model</a>
       <a class="button" href="Mindblowing.html" target="_blank">Mindblowing</a>
       <a class="button" href="Calibration.html" target="_blank">
         Calibration</a>
@@ -152,14 +115,6 @@ title: 'Index'
   <section id="section4">
     <h3>IV. Cosmology, Gravity &amp; Dark Matter</h3>
     <div class="button-container">
-      <a class="button" href="Cosmic_Void_Explanation.html" target="_blank">
-        Cosmic Void
-      </a>
-      <a
-        class="button"
-        href="Cosmic_Void_Low_Pressure_Explanation.html"
-        target="_blank"
-      >
         Cosmic Void Low Pressure
       </a>
       <a class="button" href="Recalibrated_Cosmology.html" target="_blank">
@@ -171,10 +126,7 @@ title: 'Index'
       <a
         class="button"
         href="Cosmic_Recalculation_with_Modified_Friedmann_Equations"
-        target="_blank"
-      >
-        Recalculation Friedmann Equations
-      </a>
+        target="_blank">Recalculation Friedmann Equations</a>
       <a class="button" href="QFT_Universe_Explanation.html" target="_blank">
         QFT Universe
       </a>
@@ -190,26 +142,7 @@ title: 'Index'
       <a class="button" href="the_Source_of_Gravity.html" target="_blank">
         Source of Gravity
       </a>
-      <a class="button" href="Energy_Calculations.html" target="_blank">
-        Energy Calculations
-      </a>
-      <a class="button" href="Dark_Energy_resolve.html" target="_blank">
-        Dark Energy Resolve
-      </a>
       <a class="button" href="GRB.html" target="_blank">GRB</a>
-      <a class="button" href="Energy_Blackholes.html" target="_blank">
-        Energy Blackholes
-      </a>
-      <a class="button" href="bh_collision_explained.html" target="_blank">
-        BH Collision
-      </a>
-      <a
-        class="button"
-        href="bh_light_and_collision_explained.html"
-        target="_blank"
-      >
-        BH Light &amp; Collision
-      </a>
       <a class="button" href="BlackHoles.html" target="_blank">BlackHoles</a>
     </div>
   </section>
@@ -223,12 +156,8 @@ title: 'Index'
       <a
         class="button"
         href="Neutrino_Mass_Calculation_Explanation.html"
-        target="_blank"
-      >
+        target="_blank">
         Neutrino Mass Calculation
-      </a>
-      <a class="button" href="AeonLoop_Neutrino.html" target="_blank">
-        Neutrino
       </a>
     </div>
   </section>
@@ -253,11 +182,7 @@ title: 'Index'
   <section id="section7">
     <h3>VII. Miscellaneous &amp; Overarching Concepts</h3>
     <div class="button-container">
-      <a class="button" href="Delayed-Choice.html" target="_blank">
-        Delayed Choice
-      </a>
-      <a
-        class="button"
+      <a class="button"
         href="Digital_Acoustic_Oscillations.html"
         target="_blank">
         Digital Acoustic Oscillations
