@@ -39,23 +39,17 @@ $$
 **Legend**
 
 
-$$
-\begin{aligned}
-&f_{\mathrm{BH}} = \frac{f_{\text{tick}}}{7}
-\quad &&\text{frequency seen by a photon that skims the seed shell seven times} \
+* $$f_{\mathrm{BH}} = \dfrac{f_{\text{tick}}}{7}$$  
+  frequency seen by a photon that skims the seed shell seven times.
 
-\[6pt]
+* $$m_{\text{eff}}^{\dagger} = \dfrac{8}{9}\,\dfrac{E_{0}}{c^{2}}$$  
+  scaled so the **0.600 ps** axiom is preserved when mapping energy to an
+  effective rest-mass; the 8⁄9 factor is purely conventional (display only)
+  and does *not* propagate into dynamical equations.
 
-&m_{\text{eff}}^{\dagger} = \frac{8}{9}\,\frac{E_{0}}{c^{2}}
-\quad &&\text{scaled so the }0.600\text{ ps axiom is preserved when mapping energy to an effective rest mass;} \\
-&&&\text{the }8/9\text{ factor is purely conventional (display only) and does not propagate into dynamics.} \
+* $$\alpha \sim e^{-\,C_{\alpha}\,\bigl(D_{\text{eff}}-2\bigr)}$$  
+  $$C_{\alpha}$$ is recomputed at build-time via this fractal-suppression formula.
 
-\[6pt]
-
-&C_{\alpha}\ \text{is recomputed at build-time via the fractal-suppression formula} \\
-&\qquad\alpha \sim e^{-C_{\alpha}\bigl(D_{\text{eff}}-2\bigr)}.
-\end{aligned}
-$$
 
 ---
 
