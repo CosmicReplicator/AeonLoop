@@ -1,68 +1,63 @@
 ---
-layout: papers
-title: "AeonLoop"
+layout: default
+title: "README"
 nav_order: 1
+mathjax: true
 ---
 
 # **AeonLoop**
 
-*A playground where a 0.600 ps lattice-clock tries to retell the whole story of
-cosmology and quantum theory.*
+*A playground where a single digital tick ( $$\tau = 0.600\;\text{ps}$$ ) tries to retell the whole saga of cosmology and quantum theory.*
 
-> **Claim.—** *The GR metric is nothing but a field of tick counters; curvature
-> is a map of missing ticks.*  
-> <small>&mdash; working motto</small>
+> **Working motto**  
+> “The GR metric is nothing but a field of tick counters; curvature is a map of missing ticks.”
 
 ---
 
-## Why another framework?
+## Why bother with another framework?
 
 1. **Discrete first, continuous second**  
-   We start with a rigid tick $$\tau = 0.600\;\text{ps}$$ and show how smooth
-   spacetime emerges as an average.  No continuum is assumed at the outset.
+   We fix one rigid tick $$\tau = 0.600\;\text{ps}$$ and *derive* smooth spacetime as a coarse-grained average. No continuum is assumed up front.
 
 2. **Two axioms, dozens of pay-offs**  
-   With only $$\tau$$ and an effective dimension
+   From just $$\tau$$ and an effective dimension  
    $$D_{\mathrm{eff}} = \tfrac83$$ we reproduce  
-   – fundamental constants,  
-   – the strong/weak ladder (195 MeV → 80 GeV),  
-   – a tiny $$\Lambda$$,  
-   – and the solar-wind turbulence slope −1.667.  
+   * the strong/weak ladder $$195\;\text{MeV}\to80\;\text{GeV}$$,  
+   * Newton’s $$G$$ and the tiny cosmic $$\Lambda$$,  
+   * the solar-wind turbulence slope $$-1.667$$,  
+   * and several SM anomalies—*without* new free parameters.
 
 3. **Ad-hoc free**  
-   All parameters are computed from the tick lattice or pulled directly from
-   experiment—never tuned.
+   Every number is either a lattice consequence or taken straight from experiment. No hand-tuned knobs.
 
 ---
 
-## Core Topics
+## Core Modules (work in progress)
 
 | Module | One-liner |
 |--------|-----------|
-| **CosmicReplicator** | Deterministic Friedmann update at one tick per step |
-| **Fractional Calculus in Physics** | $$D_{\mathrm{eff}} = 8/3$$ shows up in every integral |
-| **Emergent Constants** | $$h,\;G,\;\alpha$$ as lattice outputs |
-| **Planck-Scale Discreteness** | Built-in UV cut-off, no renormalisation counter-terms |
+| **CosmicReplicator** | Deterministic Friedmann update, one tick per step |
+| **FracCalc** | All integrals acquire the $$D_{\mathrm{eff}}=\tfrac83$$ exponent |
+| **Emergent $$h,G,\alpha$$** | Fundamental constants as lattice outputs |
+| **Planck-Scale Discreteness** | Built-in UV cut-off; renormalisation disappears |
 | **Rotational Combinatorics** | Seven-tick closure ⇒ lepton mass ladder |
-| **Hidden Physics** | Muon $$g-2$$, B-anomalies, chirality imbalance |
+| **Hidden Physics** | Muon $$g\!-\!2$$ & B-anomalies via chirality imbalance |
 
 ---
 
-## Quick-reference keywords
+## Cheat-sheet keywords
 
-`Digital Tick` · `2.667D` · `1.667 THz` · `Discrete Spacetime`  
-`Quantum Geometry` · `Digital Clockwork` · `Time Quantisation`  
-`Ad-Hoc-Free Formulation` · `Fractional Dimensions`
+`Digital Tick` • `2.667D geometry` • `1.667 THz clock`  
+`Discrete Spacetime` • `Quantum Geometry` • `Ad-hoc-free`
 
 ---
 
 ## Repo tour
 
 ```text
-Papers/             → polished write-ups (PDF + Markdown)
-Ladder/             → energy-ladder derivations
-Calculator/         → tiny CLI to query constants at any rung
-scripts/            → one-off data pulls (Swift, Fermi, DESI…)
-tests/              → CI sanity (MathJax, broken links, CSS size)
-constants.yaml      → 🔒 v2025-06-14a – the only source of numbers
-
+papers/            polished write-ups  (PDF + MD)
+ladder/            energy-ladder derivations
+calculator/        CLI: query any derived constant
+scripts/           one-off data pulls (Swift, Fermi, DESI…)
+tests/             CI sanity (MathJax, links, CSS size)
+yaml/constants.yaml   ← 🔒 v2025-06-14 — single source of numbers

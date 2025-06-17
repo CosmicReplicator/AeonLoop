@@ -122,7 +122,6 @@ title: 'Index'
       <a class="button" href="Digital_Molecule.html" target="_blank">
         Digital Molecule
       </a>
-      <a class="button" href="Digital_QFT.html" target="_blank">Digital QFT</a>
       <a class="button" href="Force_Unification.html" target="_blank">
         Force Unification
       </a>
