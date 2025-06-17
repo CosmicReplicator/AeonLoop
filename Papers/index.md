@@ -35,7 +35,7 @@ title: 'Index'
       <a class="button" href="Formulas_III.html" target="_blank">Formula III</a>
       <a class="button" href="Fundamental_Scales.html" target="_blank">
         Fundamental Scales</a>
-      <a class="button" href="Chirality.html" target="_blank">Chirality</a>
+      <a class="button" href="Chiral_Closure_Lemma.html" target="_blank">Chiral Closure Lemma</a>
       <a class="button" href="Finite_Light_Speed.html" target="_blank">
         Finite Light Speed</a>
       <a class="button"
