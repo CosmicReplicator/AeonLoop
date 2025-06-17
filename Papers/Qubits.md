@@ -69,6 +69,23 @@ $$
 per tick that upgrades matter packing from $$\tfrac83$$ to $$\tfrac93$$.
 
 ---
+<div class="note" markdown="1">
+
+### The Two Lengths You Must Never Confuse  
+
+| Symbol | What it measures | Numeric value | Used for |
+|--------|------------------|--------------:|----------|
+| $$\ell_0$$ | **Straight-line** advance of a null world-line in one tick (no twist) | $$0.180\;\text{mm}$$ | The *actual spatial disc* that can be occupied within one tick.  All qubit hardware must fit inside this radius. |
+| $$\rho_{\text{helix}}$$ | **Arc-length** a null world-line must travel to add the extra residual phase $$0.381\;\text{rad}$$ per tick and close after seven ticks | $$0.200\;\text{mm}$$ (from $$C = 7\ell_0 = 1.26\;\text{mm}$$) | A bookkeeping length that belongs to the *path*, not to the disc.  It guarantees the phase-knot closes; it does **not** enlarge the spatial envelope. |
+
+**Key takeaway** –  
+Hardware lives in a real-space circle of radius $$0.18\;\text{mm}$$.  
+The larger $$0.20\;\text{mm}$$ appears only when you unroll the helix
+onto its curved path; it never demands more physical acreage on the chip.
+
+</div>
+
+---
 
 <div class="note" markdown="1">
 
