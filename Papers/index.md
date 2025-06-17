@@ -299,8 +299,7 @@ title: 'Index'
         Simulation Output
       </a>
 	        <a class="button" href="GRB.html" target="_blank">
-        GRB
-      </a>
+        GRB</a>
       </a>
       <a class="button" href="geometry_and_energy.html" target="_blank">
         geometry and energy
@@ -316,6 +315,8 @@ title: 'Index'
 	  Geometry and Energy Ladders</a>
       <a class="button" href="Frontier.html" target="_blank">
 	  Frontier</a>
+      <a class="button" href="theproject.html" target="_blank">
+	  theproject</a>
     </div>
   </section>
 </div>
