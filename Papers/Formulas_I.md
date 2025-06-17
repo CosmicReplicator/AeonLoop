@@ -62,16 +62,49 @@ $$
 
 ---
 
-## 2 · Electromagnetic Tensor & Lagrangian
+## 2 · Electromagnetic Tensor & Lattice Lagrangian  
 
+Discrete-difference tensor  
 $$
-F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu},
+F^{\text{disc}}_{\mu\nu}
+   = \Delta_\mu A_\nu - \Delta_\nu A_\mu ,
+$$
+
+with the forward operators  
+$$
+\Delta_0 A_\nu
+     = \frac{A_\nu(t+\tau,x)-A_\nu(t,x)}{\tau},
 \qquad
-\mathcal L = -\tfrac14\,F_{\mu\nu}F^{\mu\nu}.
+\Delta_i A_\nu
+     = \frac{A_\nu(t,x+\ell_0\,\hat e_i)-A_\nu(t,x)}{\ell_0},
 $$
+where  
+$$
+\tau = 0.600\;\text{ps}, \qquad
+\ell_0 = c\,\tau \approx 0.180\;\text{mm}.
+$$  
 
-Discrete Euler–Lagrange steps recover Maxwell in the continuum limit as
-$$\tau, \Delta x \to 0$$.
+Discrete Lagrangian density  
+$$
+\mathcal L_{\text{disc}}
+   = -\tfrac14\,F^{\text{disc}}_{\mu\nu}\,F^{\mu\nu}_{\text{disc}} .
+$$  
+
+Applying the lattice Euler–Lagrange rule  
+$$
+\Delta_\alpha\!
+\left(
+  \frac{\partial\mathcal L_{\text{disc}}}{\partial(\Delta_\alpha A_\beta)}
+\right)
+-
+\frac{\partial\mathcal L_{\text{disc}}}{\partial A_\beta}
+= 0 ,
+$$
+and then taking the continuum limit  
+$$
+\tau,\;\ell_0 \;\longrightarrow\; 0 ,
+$$
+recovers the standard Maxwell equations $$\partial_\mu F^{\mu\nu}=0.$$
 
 ---
 
