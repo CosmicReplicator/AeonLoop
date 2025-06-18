@@ -96,8 +96,6 @@ title: 'Index'
         target="_blank">
         Digital Acoustic Oscillations
       </a>
-	        <a class="button" href="GRB.html" target="_blank">
-        GRB</a>
       <a class="button" href="geometry_and_energy.html" target="_blank">
         geometry and energy
       </a>
