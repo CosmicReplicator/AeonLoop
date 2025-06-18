@@ -231,6 +231,6 @@ for n in range(1000):
     Ez[200] += pulse(n)             # source
     energy.append(np.sum(Ez**2 + Hy**2))
 print("Max rel drift:", (max(energy) - min(energy)) / energy[0])
-
+```
 
 
