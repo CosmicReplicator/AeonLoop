@@ -85,8 +85,8 @@ No renormalisation, no series expansions—just the tick rule.
 
 ---
 
-## 3 Why only \(8/9\) of \(E_{\text{prim}}\) couples to bare mass
-The 8⁄3 lattice fills only an \(8/9\) fraction of a Euclidean 3-ball:
+## 3 Why only$$(8/9$$ of $$E_{\text{prim}}$$ couples to bare mass
+The 8⁄3 lattice fills only an $$8/9$$ fraction of a Euclidean 3-ball:
 
 $$
 \frac{V_{8/3}}{V_{3}} \;=\; \frac{8/3}{3} \;=\; \frac{8}{9},
@@ -100,7 +100,7 @@ $$
 
 ---
 
-## 4 Proton radius with the universal \(\beta_* = ⅓\)
+## 4 Proton radius with the universal $$\beta_* = ⅓$$
 
 ### 4.1 Proton-tick  
 
