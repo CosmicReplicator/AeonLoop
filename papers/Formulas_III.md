@@ -114,10 +114,10 @@ $$N \approx 10^{12}$$ ticks (≈ 190 Myr).
 **(a) One-loop running of the fine-structure constant**  
 
 $$
-\boxed
+\boxed{
 \alpha^{-1}(E)=\alpha^{-1}(0)
 -\frac{1}{3\pi}\sum_{f}Q_{f}^{2}\,
-      \ln\!\bigl(\tfrac{E^{2}}{m_{f}^{2}}\bigr)
+      \ln\!\bigl(\tfrac{E^{2}}{m_{f}^{2}}\bigr)}
 $$  
 
 For optical energies $$E_{0}=2.83\;\text{eV}$$ only the electron contributes, giving  
@@ -134,11 +134,11 @@ $$
 A full helix knot (seven ticks) cancels its residual twist at an energy cost  
 
 $$
-\boxed
+\boxed{
 \Lambda_{\text{step}}
 =\frac{3}{\alpha_{\!\text{eff}}(E_{0})
 \;\approx\;409.803}
-\tag{12.2}
+\tag{12.2}}
 $$  
 
 so the ladder obeys  
