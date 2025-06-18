@@ -4,11 +4,13 @@ title: "Fine-Structure Constant and Proton Radius from a Single Primordial Tick"
 ---
 
 ## Derivation of α and the Proton Radius on the 8⁄3 Spectral Lattice  
+
 *(Everything stems from one binary spin—no free knobs)*
 
 ---
 
 ### Abstract
+
 We embed all laboratory constants inside a discrete-time, error-correcting **tick** lattice born from a single primordial spin flip.  
 One tick,  
 
@@ -62,23 +64,29 @@ $$
 “An EM self-energy per tick equals one spin flip”:
 
 $$
-\frac{e^{2}}{4\pi\varepsilon_{0}L_e} \;=\; \frac{h}{\tau_e}.
+\frac{\alpha\,\hbar c}{L_e} \;=\; \frac{h}{\tau_e}.
 $$
 
 Solving gives  
 
 $$
-L_e \;=\; \frac{h\,\tau_e}{e^{2}/4\pi\varepsilon_{0}}
-      \;=\;\frac{\hbar}{m_e c}
-      \;\equiv\; \lambda_C .
+L_e
+  \;=\;
+  \frac{h\,\tau_e}{\alpha\,\hbar c}
+  \;=\;
+  \frac{\hbar}{m_e c}
+  \;\equiv\;
+  \lambda_C .
 $$
 
 ### 2.3 α falls out inevitably  
 
 $$
-\alpha \;=\; \frac{r_e}{\lambda_C}
-           \;=\;\frac{e^{2}}{4\pi\varepsilon_{0}\hbar c}
-           \;=\;\frac{1}{137.035\,999}.
+\alpha
+  \;=\;
+  \frac{r_e}{\lambda_C}
+  \;=\;
+  \frac{1}{137.035\,999}.
 $$
 
 No renormalisation, no series expansions—just the tick rule.
