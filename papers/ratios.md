@@ -18,13 +18,14 @@ of length
 $$\tau = 0.600\;\text{ps}$$—  
 fixes an entire zoo of seemingly unrelated fractions:
 
-| Category | Ratio | Job |
-|----------|-------|-----|
-| Holonomy & closure | **7**  &rightarrow; **720 °** | one heptad resets global phase |
-| Effective dimension | **8⁄3** &rightarrow; **1⁄3** | fractal shell vs. 4 π missing ⅓-D |
-| Spin/energy slope | **5⁄3** | ladder gradient |
-| Mass/energy skew | **8⁄9** | bookkeeping factor in $$E=\tfrac89 mc^{2}$$ |
-| Scale bridge | **3⁄α** &rightarrow; **½ α** | electroweak–QCD link & fine-structure splittings |
+| Category              | Ratio Path                                                         | Job                                                          |
+|-----------------------|--------------------------------------------------------------------|--------------------------------------------------------------|
+| Holonomy & closure    | $$7 \;\longrightarrow\; 720^{\circ}$$                              | one heptad resets global phase                               |
+| Effective dimension   | $$\dfrac{8}{3} \;\longrightarrow\; \dfrac{1}{3}$$                  | fractal shell vs. \(4\pi\) missing \( \tfrac13 \)-D          |
+| Spin / energy slope   | $$\dfrac{5}{3}$$                                                   | ladder gradient                                              |
+| Mass / energy skew    | $$\dfrac{8}{9}$$                                                   | bookkeeping factor in $$E=\tfrac{8}{9}\,mc^{2}$$             |
+| Scale bridge          | $$\dfrac{3}{\alpha} \;\longrightarrow\; \tfrac12\,\alpha$$         | electroweak–QCD link & fine-structure splittings             |
+
 
 With only those locked ratios—and **no** dark sector—we reproduce galactic
 rotation curves, Bullet-cluster lensing offsets, CMB peak ratios, and the
