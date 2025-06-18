@@ -42,8 +42,9 @@ With baryons alone these constants reproduce rotation curves, lensing offsets, a
 
 ## 1 Effective Spatial Dimension ( $$D_{\rm eff}=2.667$$ )
 
-Classical gravity integrates over \(4\pi r^{2}\) shells, giving  
-\(\Phi \propto r^{-1}\).  
+Classical gravity integrates over $$4\pi r^{2}$$ shells, giving  
+$$\Phi \propto r^{-1}.$$
+
 In a fractal pre-geometry the differential volume becomes  
 
 $$
