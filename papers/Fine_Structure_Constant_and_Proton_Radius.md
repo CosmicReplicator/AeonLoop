@@ -85,7 +85,7 @@ No renormalisation, no series expansions—just the tick rule.
 
 ---
 
-## 3 Why only$$(8/9$$ of $$E_{\text{prim}}$$ couples to bare mass
+## 3 Why only$$8/9$$ of $$E_{\text{prim}}$$ couples to bare mass
 The 8⁄3 lattice fills only an $$8/9$$ fraction of a Euclidean 3-ball:
 
 $$
