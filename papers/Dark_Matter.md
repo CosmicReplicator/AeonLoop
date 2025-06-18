@@ -107,3 +107,4 @@ A naive analyst would call the 2.2× gap “dark matter”; here it is pure geom
 $$
 T=\frac{1}{f}=6.000\,000\,000\times10^{-13}\ {\rm s}
   =0.600\,000\,
+  $$
