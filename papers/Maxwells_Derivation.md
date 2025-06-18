@@ -220,17 +220,29 @@ At base resolution, nature may compute in digital ticks, not smooth reels.
 ## Appendix A — 10-Line FDTD Demo  
 
 ```python
-import numpy as np, matplotlib.pyplot as plt
-c, tau, dx = 3e8, 0.6e-12, 0.179875e-3
-Nx = 400; Ez = np.zeros(Nx); Hy = np.zeros(Nx)
-pulse = lambda n: np.exp(-((n-30)/10)**2)
+import numpy as np
+import matplotlib.pyplot as plt
+
+# constants tied to the tick lattice
+c   = 3e8              # m/s
+tau = 0.6e-12          # s
+dx  = 0.179875e-3      # m  (light-step)
+
+Nx  = 400
+Ez  = np.zeros(Nx)     # electric field (z-component)
+Hy  = np.zeros(Nx)     # magnetic field (y-component)
+
+pulse  = lambda n: np.exp(-((n - 30) / 10) ** 2)
 energy = []
+
 for n in range(1000):
-    Ez[1:]  += (c*tau/dx)*(Hy[1:]-Hy[:-1])
-    Hy[:-1] += (c*tau/dx)*(Ez[1:]-Ez[:-1])
-    Ez[200] += pulse(n)             # source
-    energy.append(np.sum(Ez**2 + Hy**2))
+    Ez[1:]  += (c * tau / dx) * (Hy[1:]  - Hy[:-1])   # E-update
+    Hy[:-1] += (c * tau / dx) * (Ez[1:]  - Ez[:-1])   # H-update
+    Ez[200] += pulse(n)                               # soft source
+    energy.append(np.sum(Ez**2 + Hy**2))              # Poynting check
+
 print("Max rel drift:", (max(energy) - min(energy)) / energy[0])
+
 ```
 
 
