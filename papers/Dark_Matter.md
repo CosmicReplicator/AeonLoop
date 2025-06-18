@@ -1,5 +1,5 @@
 ---
-layout: papers
+layout: default
 title: "Dark Matter with Numbers — A Tick-Fractal Re-Calibration"
 mathjax: true
 ---
