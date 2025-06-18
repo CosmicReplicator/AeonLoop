@@ -183,7 +183,7 @@ $$
 \text{(ii) } |x_i - x_j| \le \Delta x
 }
 $$
-(i.e.\ same tick index and separation $\le 0.1799\,$mm).  
+(i.e.\ same tick index and separation $$\le 0.1799\,$$mm).  
 Disturb either condition → decoheres in a single tick.
 
 ---
