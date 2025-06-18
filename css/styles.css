@@ -203,7 +203,8 @@ header {
 
 h1,
 h2,
-h3 {
+h3 
+h4{
   font-family: Georgia, 'Times New Roman', serif;
   font-weight: bold;
   color: #f5f5dc;
@@ -225,7 +226,8 @@ h1 {
 
 /* --- h2 & h3 --------------------------------------------------*/
 h2,
-h3 {
+h3
+h4 {
   background: linear-gradient(135deg, #777, #999);
   color: #f5f5dc;
   padding: 10px 20px;
@@ -238,6 +240,9 @@ h2 {
   font-size: 1.5em;
 }
 h3 {
+  font-size: 1em;
+} /* optional extra gap */
+h4 {
   font-size: 1em;
 } /* optional extra gap */
 
