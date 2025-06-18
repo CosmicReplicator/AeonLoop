@@ -201,7 +201,7 @@ One primordial tick sets **every** length- and coupling-scale in laboratory phys
 
 ### Next milestones
 1. **Tick-based lepton and quark mass spectrum** — treat masses as resonant tick-counts within the 8⁄3 lattice.  
-2. **Neutrino mixings** — test whether the geometry enforces the observed \(\theta_{12},\theta_{23},\theta_{13}\) hierarchy.  
+2. **Neutrino mixings** — test whether the geometry enforces the observed $$\theta_{12},\;\theta_{23},\;\theta_{13}$$ hierarchy.  
 3. **CMB damping-tail cutoff** — predict the ℓ-range where fractal dimensionality truncates Silk damping; upcoming CMB-S4 data can falsify this within a decade.
 
 ---
