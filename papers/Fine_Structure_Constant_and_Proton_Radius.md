@@ -195,7 +195,7 @@ One primordial tick sets **every** length- and coupling-scale in laboratory phys
      0.82\,\text{fm},
   $$  
 
-  in line with the 2023 PDG average \(0.832 \pm 0.001\,\text{fm}\).
+  in line with the 2023 PDG average $$0.832 \pm 0.001\,\text{fm}$$.
 
 ---
 
