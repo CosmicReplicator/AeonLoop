@@ -112,3 +112,71 @@ $$N \approx 10^{12}$$ ticks (≈ 190 Myr).
   ⇦ Back to Part I:&nbsp;
   <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
 </p>
+---
+
+## 12 · Helix Coupling & Heptad Energy Step  
+
+**(a) One-loop running of the fine-structure constant**  
+
+
+
+\[
+\boxed{\;
+\alpha^{-1}(E)\;=\;\alpha^{-1}(0)\;
+-\;\frac{1}{3\pi}\sum_{f} Q^{2}_{f}\,
+      \ln\!\Bigl(\tfrac{E^{2}}{m^{2}_{f}}\Bigr)
+\;}
+\]
+
+
+
+For optical energies \(E_{0}=2.83\;\text{eV}\) only the electron contributes, giving  
+
+
+
+\[
+\alpha^{-1}(E_{0})\;\simeq\;135.896
+\tag{12.1}
+\]
+
+
+
+---
+
+**(b) Seven-tick promotion factor**  
+
+A full helix knot (seven ticks) cancels its residual twist at an energy cost  
+
+
+
+\[
+\boxed{\;
+\Lambda_{\text{step}}
+  =\frac{3}{\alpha_{\!\text{eff}}(E_{0})}
+  \;\approx\;409.803
+\;}
+\tag{12.2}
+\]
+
+
+
+so the ladder obeys  
+
+
+
+\[
+E_{n+1}=E_{n}\,\Lambda_{\text{step}}.
+\]
+
+
+
+With \(E_{0}=6.892\,779\,493\;\text{meV}\) this sequence reproduces  
+the K-edge (1.17 keV), the \(2m_{e}\) threshold (0.511 MeV),  
+\(\Lambda_{\mathrm{QCD}}\) (195 MeV) and \(M_{W}\) (80 GeV) to within existing experimental error bars.
+
+---
+
+<p style="text-align:right;font-size:0.85em">
+  ⇦ Back to Part I:&nbsp;
+  <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
+</p>

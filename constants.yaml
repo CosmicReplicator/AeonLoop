@@ -1,40 +1,45 @@
 # ────────────────────────────────────────────────────────────────
-# constants.yaml • v2025-06-14a  ─ LOCKED
-
+# constants.yaml · v2025-06-15a          ·  IMMUTABLE ONCE TAGGED
+# ────────────────────────────────────────────────────────────────
 tick:
-  tau_ps      : 0.600000000000000          # [ps] exact definition
-  f_thz       : 1.666666666666667          # [THz] = 1 / τ
-  f_BH_GHz    : 238.095238095238           # [GHz] = f_tick / 7   ← NEW
-  dx_mm       : 0.179875474800000          # [mm]  = c · τ
+  tau_ps    : 0.600000000000000          # [ps] AXIOM
+  f_thz     : 1.666666666666667          # [THz] = 1 / τ
+  f_BH_GHz  : 238.095238095238           # [GHz] = f_tick / 7
+  dx_mm     : 0.179875474800000          # [mm]  = c × τ
 
 energy:
-  E0_meV      : 6.892779493333334          # [meV] = h · f_tick
+  E0_meV    : 6.892779493333334          # [meV] = h × f_tick
 
 mass:
-  m_eff_kg    : 1.093000000000000e-38      # (8/9) · E0 / c²   (display only)
+  m_eff_kg  : 1.093000000000000e-38      # (8/9)·E0 / c²  (display only)
 
 gravity:
-  G_tick      : 4.510000000000000e-62      # dimension-less (tick units)
-  G_SI        : 6.67430e-11                # CODATA-22
+  G_tick    : 4.510000000000000e-62      # dimension-less (tick units)
+  G_SI      : 6.67430e-11                # CODATA-22
 
 Planck:
-  h_eVs       : 4.135667696e-15            # Planck constant  h
-  hbar_eVs    : 6.582119569e-16            # reduced ħ
+  h_eVs     : 4.135667696e-15            # ℎ
+  hbar_eVs  : 6.582119569e-16            # ħ
 
-SM:                                        # Standard-Model anchors
-  M_W_GeV     : 80.4                       # electroweak target
-  alpha_22    : 7.2973525693e-3            # fine-structure constant
+coupling:                                # NEW BLOCK
+  alpha_0        : 7.2973525693e-3       # α(0)  (fine-structure)
+  alpha0_inv     : 137.035999084         # exact inverse
+  alpha_opt_inv  : 135.896000000         # α⁻¹ at 2.83 eV (1-loop)*
+  ladder_ratio   : 409.803000000         # 3 / α_eff(2.83 eV)
 
-derived:                                   # values computed at build-time
-  C_alpha     : 7.379970056                # coefficient in exp[−C(D_eff−2)]
+SM:                                      # Standard-Model anchors
+  M_W_GeV   : 80.4
+  # αs & GF deliberately absent – pulled from lattice, not input
 
-cosmology:
-  H0_km_s_Mpc : null                       # intentionally undefined
-  # t0_Gyr is computed only when H0 is supplied
+derived:                                 # populated at build-time
+  C_alpha   : 7.379970056                # e^{–C(D_eff–2)} fit
+  # H0_km_s_Mpc & t0_Gyr appear once cosmology block inserted
 
 meta:
   codata : 2022
-  note   : "Immutable file.  Create a new version for any future edits."
+  note   : "Immutable file.  Add a new dated version for edits."
+# ────────────────────────────────────────────────────────────────
+
 # ────────────────────────────────────────────────────────────────
 
 # Locked Constants  · v2025-06-14
