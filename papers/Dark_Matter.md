@@ -8,22 +8,23 @@ mathjax: true
 
 | Quantity | Symbol / Expression | Value |
 |----------|---------------------|-------|
-| Tick period | $$\tau$$ | **0.600 000 000 ps** |
-| Tick frequency | $$f=\dfrac{1}{\tau}$$ | **1.666 666 666 666 7 THz** |
-| Light-step | $$\Delta x = c\,\tau$$ | **0.179 875 474 8 mm** |
-| Tick energy | $$E_{0}=h\,f$$ | **6.892 779 493 meV** |
-| Effective mass | $$m_{\text{eff}}=\dfrac{8}{9}\,\dfrac{E_{0}}{c^{2}}$$ | **1.093 × 10^{-38}\;{\rm kg}** |
-| Dimension-less gravity | $$G_{\text{tick}}$$ | **4.51 × 10^{-62}** |
-| Newton constant | $$G$$ | **6.674 30 × 10^{-11}\;{\rm m^{3}\,kg^{-1}\,s^{-2}}** |
-| Planck constant | $$h$$ | **4.135 667 696 × 10^{-15}\;{\rm eV\,s}** |
-| Reduced Planck | $$\hbar$$ | **6.582 119 569 × 10^{-16}\;{\rm eV\,s}** |
-| W-boson mass | $$M_{W}$$ | **79.800 GeV** |
-| Fine-structure | $$\alpha(0)$$ | **7.297 352 5693 × 10^{-3}** |
-| α-coefficient | $$C_{\alpha}$$ | **7.379 970 056** |
-| Effective dimension | $$D_{\text{eff}}$$ | **\dfrac{8}{3}=2.666\,\overline{6}** |
+| Tick period          | $$\tau$$                                   | $$0.600\,000\,000\;\text{ps}$$ |
+| Tick frequency       | $$f=\dfrac{1}{\tau}$$                      | $$1.666\,666\,666\,666\,7\;\text{THz}$$ |
+| Light-step           | $$\Delta x = c\,\tau$$                     | $$0.179\,875\,474\,8\;\text{mm}$$ |
+| Tick energy          | $$E_{0}=h\,f$$                             | $$6.892\,779\,493\;\text{meV}$$ |
+| Effective mass       | $$m_{\text{eff}}=\dfrac{8}{9}\,\dfrac{E_{0}}{c^{2}}$$ | $$1.093\times10^{-38}\;\text{kg}$$ |
+| Dimension-less gravity | $$G_{\text{tick}}$$                     | $$4.51\times10^{-62}$$ |
+| Newton constant      | $$G$$                                      | $$6.674\,30\times10^{-11}\;\text{m}^{3}\,\text{kg}^{-1}\,\text{s}^{-2}$$ |
+| Planck constant      | $$h$$                                      | $$4.135\,667\,696\times10^{-15}\;\text{eV\,s}$$ |
+| Reduced Planck       | $$\hbar$$                                  | $$6.582\,119\,569\times10^{-16}\;\text{eV\,s}$$ |
+| W-boson mass         | $$M_{W}$$                                  | $$79.800\;\text{GeV}$$ |
+| Fine-structure       | $$\alpha(0)$$                              | $$7.297\,352\,5693\times10^{-3}$$ |
+| α-coefficient        | $$C_{\alpha}$$                             | $$7.379\,970\,056$$ |
+| Effective dimension  | $$D_{\text{eff}}$$                         | $$\dfrac{8}{3}=2.666\overline{6}$$ |
 
-*CODATA-22 uncertainties in \(c\) and \(h\) are < 10⁻⁹;  
-all digits above are mutually consistent to < 5 × 10⁻¹⁴ relative error.*
+*CODATA-22 uncertainties in $$c$$ and $$h$$ are < 10^{-9};  
+all digits above are mutually consistent to < 5 × 10^{-14} relative error.*
+
 
 ---
 
