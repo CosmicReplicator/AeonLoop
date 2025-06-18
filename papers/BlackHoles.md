@@ -71,7 +71,7 @@ mass once $J$ saturates the spin limit.  Two fiducial points:
 | 2. Centrifugal stall (first tick) | $$r_{\text{cen}}=\dfrac{L^{2}}{GMm^{2}}$$ | Angular momentum halts radial motion | Forms razor-thin proto-disc at one lattice tick above $$\rho_{\text{lock}}$$ |
 | 3. Casimir disc locks (ticks 2-3) | $$\rho_{\text{lock}} = \dfrac{7\ell_{0}}{2\pi}$$ | ISCO in GR language                | Mode mismatch ↔ Casimir pressure $$P_{\rm C}$$—energy starts storing coherently |
 | 4. Battery charges (ticks 3-6) | $$E_{\text{batt}}\!\uparrow$$ | Magnetic/viscous heating in GR      | Lattice volume cap $$\Delta V_{\max}/\tau$$ throttles inflow; field coherence ⇒ **no time passage** inside |
-| 5. GRB discharge (tick 7) | $$t_{\rm GRB}=7\tau\approx4.2\,$ps (rest)$$ | Jet breakout / Blandford–Znajek     | Battery empties in one 7-tick cascade → observed ms-scale GRB after redshift |
+| 5. GRB discharge (tick 7) | $$t_{\rm GRB}=7\tau\approx4.2\,ps (rest)$$ | Jet breakout / Blandford–Znajek     | Battery empties in one 7-tick cascade → observed ms-scale GRB after redshift |
 | 6. Frozen remnant | $$R_{\infty}=\Gamma\rho_{\text{lock}}$$ | “Kerr BH” of mass $$M$$, spin $$a_\ast$$ | Disc now at steady state; inflow regulated exactly at lattice limit—no further collapse |
 
 
