@@ -175,12 +175,13 @@ alpha bridge.
 
 ## 5 Galactic & Cosmic Tests  
 
-| Observable | ΛCDM patch | Tick-fractal result |
-|------------|------------|---------------------|
-| Rotation curves | DM halo $$\rho\propto r^{-2}$$ | $$G_{\rm eff}=G(r/r_{0})^{0.333}$$ flattens $$v(r)$$ |
-| Bullet-cluster lens | Collision-less DM | Phase-drift potential separates mass from gas |
-| CMB ratio $$\ell_{2}/\ell_{1}$$ | $$\Omega_{\rm DM}\simeq0.27$$ | 2.667-D horizon fits with baryons only |
-| $$\sigma_{8}$$ amplitude | Early DM clustering | Early phase-locked inhomogeneities |
+| Observable (scale)        | ΛCDM Remedy                                      | Tick-Fractal Mechanism                                  |
+|---------------------------|--------------------------------------------------|---------------------------------------------------------|
+| Galaxy rotation curves    | DM halo $$\rho\propto r^{-2}$$                   | $$G_{\rm eff}(r)=G\,(r/r_{0})^{0.333}$$ → flat $$v(r)$$ |
+| Bullet-cluster lensing    | Collision-less DM                                | Phase-drift potential outruns gas                       |
+| CMB peak ratio $$\ell_{2}/\ell_{1}$$ | $$\Omega_{\rm DM}\simeq0.27$$                  | 2.667-D sound horizon fits with baryons only            |
+| Matter-power amplitude $$\sigma_{8}$$ | Early DM seeding of structure               | Early phase-locked inhomogeneities                      |
+
 
 ---
 
