@@ -64,8 +64,7 @@ $$
 
 ## 2 Digital Tick ( $$\tau = 0.600\;{\rm ps}$$ )
 
-Time advances in global 0.600 ps steps.  
-Because \(\tau\) is exact,
+Time advances in global 0.600 ps steps, Because $$\tau$$ is exact,
 
 $$
 f = \frac{1}{\tau}
