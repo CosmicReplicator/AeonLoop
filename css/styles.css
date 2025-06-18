@@ -203,7 +203,7 @@ header {
 
 h1,
 h2,
-h3 
+h3, 
 h4{
   font-family: Georgia, 'Times New Roman', serif;
   font-weight: bold;
@@ -226,7 +226,7 @@ h1 {
 
 /* --- h2 & h3 --------------------------------------------------*/
 h2,
-h3
+h3,
 h4 {
   background: linear-gradient(135deg, #777, #999);
   color: #f5f5dc;
