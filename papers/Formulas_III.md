@@ -114,7 +114,6 @@ $$N \approx 10^{12}$$ ticks (≈ 190 Myr).
 </p>
 ---
 
----
 
 ## 12 · Helix Coupling & Heptad Energy Step  
 
@@ -157,8 +156,6 @@ $$
 With $$E_{0}=6.892\,779\,493\;\text{meV}$$ this sequence reproduces  
 the K-edge (1.17 keV), the $$2m_{e}$$ threshold (0.511 MeV),  
 $$\Lambda_{\mathrm{QCD}}$$ (195 MeV) and $$M_{W}$$ (80 GeV) to within existing experimental error bars.
-
----
 
 ---
 
