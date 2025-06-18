@@ -5,7 +5,7 @@ mathjax: true
 status: draft
 ---
 
-# Tick-Fractal Black-Hole Primer  
+### Tick-Fractal Black-Hole Primer  
 *why Schwarzschild is impossible, why collapse freezes into a 7-tick battery, and why GRBs—not Hawking quanta—are the natural exhaust*
 
 > *The lattice—not GR—sets curvature. Phase arithmetic rules everything; the
@@ -15,7 +15,7 @@ status: draft
 
 ---
 
-## 0 One universal ruler  
+### 0 One universal ruler  
 
 | Constant | Definition | Value |
 |----------|------------|-------|
@@ -25,7 +25,7 @@ status: draft
 
 ---
 
-## 1 Why a non-rotating hole can never form  
+### 1 Why a non-rotating hole can never form  
 
 A collapsing shell stalls when  
 
@@ -43,7 +43,7 @@ counter-term.
 
 ---
 
-## 2 How the macro “horizon” appears  
+### 2 How the macro “horizon” appears  
 
 Define the amplification factor
 
@@ -62,7 +62,7 @@ mass once $J$ saturates the spin limit.  Two fiducial points:
 ---
  
 
-## 3 Step-wise Collapse Sequence  
+### 3 Step-wise Collapse Sequence  
 
 | Stage (tick frame) | Radius or variable                     | Physical picture (classical)        | Tick-fractal reading                                                  |
 |--------------------|----------------------------------------|-------------------------------------|-----------------------------------------------------------------------|
@@ -77,7 +77,7 @@ mass once $J$ saturates the spin limit.  Two fiducial points:
 
 ---
 
-## 4 Invariant tying geometry and energy  
+### 4 Invariant tying geometry and energy  
 
 $$
 I
@@ -133,8 +133,8 @@ $$
 $$  
 
 locking the plasma into a razor-thin **Casimir disc**.
-
-#### 4.1.1 Tick-lattice volume cap  
+ ---
+### 4.1.1 Tick-lattice volume cap  
 
 Each tick admits at most  
 
@@ -151,8 +151,8 @@ $$
 
 Anything above that piles up and must partition into coherent disc modes
 instead of crossing the boundary.
-
-#### 4.1.2 Casimir pressure & coherent energy storage  
+ ---
+### 4.1.2 Casimir pressure & coherent energy storage  
 
 Mode mismatch sets a standing Casimir pressure  
 
@@ -173,7 +173,10 @@ $$
 
 until bipolar channels self-organise and dump a **GRB-class discharge**.
 
-#### 4.1.3 Observable consequences  
+ ---
+
+
+### 4.1.3 Observable consequences  
 
 | Prediction            | Standard accretion view | Tick-fract. battery signature |
 |-----------------------|------------------------|--------------------------------|
@@ -188,7 +191,13 @@ until bipolar channels self-organise and dump a **GRB-class discharge**.
 > metering energy in strict $$\Delta V_{\max}/\tau$$ quanta and emptying
 > in a single GRB when the lattice says “full.”*
 
-#### 4.1.4 Temporal null — coherence cancels the ticks  
+ --- 
+
+
+### 4.1.4 Temporal null — coherence cancels the ticks
+
+
+
 
 The global tick $$\tau$$ erases phase errors. Inside the coherent battery  
 
@@ -202,9 +211,9 @@ $$
 
 so the trapped field experiences **no proper time** until discharge.
 
----
+----
 
-## 5 Casimir friction & GRB exhaust  
+### 5 Casimir friction & GRB exhaust  
 
 $$
 \lambda_{\text{c}} \sim \pi c\tau \approx 0.6\;\text{mm},
@@ -212,9 +221,9 @@ $$
 \dot E_{\max} = \frac{h}{\tau^{2}}.
 $$
 
----
+----
 
-## 6 Predictions  
+### 6 Predictions  
 
 | Observable                 | Tick-fract. claim                                     | Test instrument |
 |----------------------------|-------------------------------------------------------|-----------------|
