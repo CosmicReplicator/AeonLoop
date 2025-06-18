@@ -40,9 +40,9 @@ f_{\rm BH} = \frac{1}{7\tau}
             = 238.095\;\text{GHz}\;(\pm0.001\;\text{GHz}),
 $$  
 
-where the uncertainty reflects CODATA $c$ and $\tau$ error bars.
+where the uncertainty reflects CODATA $$c$$ and $\tau$ error bars.
 
-Once $f_{\rm BH}$ is measured we gain an *observer-anchored* $\tau$.  
+Once $$f_{\rm BH}$$ is measured we gain an *observer-anchored* $\tau$.  
 Insert directly into  
 
 $$
@@ -52,7 +52,7 @@ t_0 = 0.625\,\frac{R_0}{c}
 $$  
 
 making the cosmic age a function of $f_{\rm BH}$ alone—no distance ladder needed.  
-Here $G_{\rm tick}$ is the lattice-renormalised Newton constant (eq. 17 in “Resolved Classical Challenges”); $G_{\rm SI}$ is the CODATA value.
+Here $$G_{\rm tick}$$ is the lattice-renormalised Newton constant (eq. 17 in “Resolved Classical Challenges”); $$G_{\rm SI}$$ is the CODATA value.
 
 ---
 
@@ -60,7 +60,7 @@ Here $G_{\rm tick}$ is the lattice-renormalised Newton constant (eq. 17 in “Re
 
 | Task | Owner | Due date | Note |
 |------|-------|----------|------|
-| Verify coefficient in $f_{\rm BH}=1/(7\tau)$ (15 sig-fig) | both | 2025-06-20 | Pull latest CODATA $c$ |
+| Verify coefficient in $$f_{\rm BH}=1/(7\tau)$$ (15 sig-fig) | both | 2025-06-20 | Pull latest CODATA $c$ |
 | Scrape EHT visibilities (230–250 GHz) for periodic residuals | me | 2025-06-22 | Public data: M87\*, Sgr A\* [^eht] |
 | Draft lab sonic-BH proposal (BEC / water-tank) at kHz-scaled 240 GHz | you | 2025-06-29 | Map THz → kHz scaling |
 | Patch cosmic-age routine `age_from_horizon_freq(f_BH)` | me | 2025-06-24 |  |
