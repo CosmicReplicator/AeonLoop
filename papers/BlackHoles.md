@@ -106,7 +106,7 @@ $$
 
 ---
 
-### 4.7 Rotating Casimir Battery — how the disc governs in- and out-flow  
+### 4.1 Rotating Casimir Battery — how the disc governs in- and out-flow  
 
 **Set-up.**  
 Infalling plasma spirals to the *centrifugal radius*
@@ -134,7 +134,7 @@ $$
 
 locking the plasma into a razor-thin **Casimir disc**.
 
-#### 4.7.1 Tick-lattice volume cap  
+#### 4.1.1 Tick-lattice volume cap  
 
 Each tick admits at most  
 
@@ -152,7 +152,7 @@ $$
 Anything above that piles up and must partition into coherent disc modes
 instead of crossing the boundary.
 
-#### 4.7.2 Casimir pressure & coherent energy storage  
+#### 4.1.2 Casimir pressure & coherent energy storage  
 
 Mode mismatch sets a standing Casimir pressure  
 
@@ -173,7 +173,7 @@ $$
 
 until bipolar channels self-organise and dump a **GRB-class discharge**.
 
-#### 4.7.3 Observable consequences  
+#### 4.1.3 Observable consequences  
 
 | Prediction            | Standard accretion view | Tick-fract. battery signature |
 |-----------------------|------------------------|--------------------------------|
@@ -188,7 +188,7 @@ until bipolar channels self-organise and dump a **GRB-class discharge**.
 > metering energy in strict $$\Delta V_{\max}/\tau$$ quanta and emptying
 > in a single GRB when the lattice says “full.”*
 
-#### 4.7.4 Temporal null — coherence cancels the ticks  
+#### 4.1.4 Temporal null — coherence cancels the ticks  
 
 The global tick $$\tau$$ erases phase errors. Inside the coherent battery  
 
