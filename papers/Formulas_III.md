@@ -108,12 +108,6 @@ $$N \approx 10^{12}$$ ticks (≈ 190 Myr).
 
 ---
 
-<p style="text-align:right;font-size:0.85em">
-  ⇦ Back to Part I:&nbsp;
-  <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
-</p>
----
-
 
 ## 12 · Helix Coupling & Heptad Energy Step  
 
