@@ -153,6 +153,41 @@ $$\Lambda_{\mathrm{QCD}}$$ (195 MeV) and $$M_{W}$$ (80 GeV) to within existing e
 
 ---
 
+## 13 · Logical Corollaries (zero new parameters)
+
+### 13.1 Curvature = the missing one-third dimension
+$$
+\boxed{
+R \;=\; \frac{1}{3\,\Delta x^{2}}
+}
+\quad\bigl(D_{\text{eff}} = 3,\;8/3\text{ in the lattice}\bigr)
+$$
+Spacetime appears $$8/3$$-D in the flat lattice; real space is 3-D.  
+The leftover $$1/3$$ shows up as curvature—no extra fields required.
+
+---
+
+### 13.2 No arrow of time—only the tick
+The Universe is indexed by the integer frame count  
+$$ t \;\mapsto\; t + n\tau,\qquad n\in\mathbb Z. $$
+“Forward” and “backward” are undefined; only *how many* ticks have elapsed matters.
+
+---
+
+### 13.3 Entanglement as frame-sharing
+Two world-lines remain phase-locked iff  
+$$
+\boxed{
+\text{(i) } n_i = n_j
+\;\;\land\;\;
+\text{(ii) } |x_i - x_j| \le \Delta x
+}
+$$
+(i.e.\ same tick index and separation $\le 0.1799\,$mm).  
+Disturb either condition → decoheres in a single tick.
+
+---
+
 <p style="text-align:right;font-size:0.85em">
   ⇦ Back to Part I:&nbsp;
   <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
