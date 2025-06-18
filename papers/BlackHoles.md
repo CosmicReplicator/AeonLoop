@@ -37,7 +37,7 @@ $$
  \;\approx\; 0.30 ,
 $$  
 
-leaving $\;\sim30\%$ of the classical escape energy unaccounted for; the
+leaving $$\;\sim30\%$$ of the classical escape energy unaccounted for; the
 lattice rejects further infall unless angular momentum provides a centrifugal
 counter-term.
 
@@ -72,7 +72,7 @@ mass once $J$ saturates the spin limit.  Two fiducial points:
 | 3. Casimir disc locks (ticks 2-3) | $$\rho_{\text{lock}} = \dfrac{7\ell_{0}}{2\pi}$$ | ISCO in GR language                | Mode mismatch ↔ Casimir pressure $$P_{\rm C}$$—energy starts storing coherently |
 | 4. Battery charges (ticks 3-6) | $$E_{\text{batt}}\!\uparrow$$ | Magnetic/viscous heating in GR      | Lattice volume cap $$\Delta V_{\max}/\tau$$ throttles inflow; field coherence ⇒ **no time passage** inside |
 | 5. GRB discharge (tick 7) | $$t_{\rm GRB}=7\tau\approx4.2\,$ps (rest)$$ | Jet breakout / Blandford–Znajek     | Battery empties in one 7-tick cascade → observed ms-scale GRB after redshift |
-| 6. Frozen remnant | $$R_{\infty}=\Gamma\rho_{\text{lock}}$$ | “Kerr BH” of mass $$M$$, spin $$a_\*$$ | Disc now at steady state; inflow regulated exactly at lattice limit—no further collapse |
+| 6. Frozen remnant | $$R_{\infty}=\Gamma\rho_{\text{lock}}$$ | “Kerr BH” of mass $$M$$, spin $$a_\ast$$ | Disc now at steady state; inflow regulated exactly at lattice limit—no further collapse |
 
 
 ---
