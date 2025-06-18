@@ -25,7 +25,8 @@ title: 'Index'
       <!--<a class="button" href="Test_Page.html" target="_blank">Test Page</a>-->
       <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
       <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
-      <a class="button" href="Formulas_III.html" target="_blank">Formula III</a>
+      <a class="button" href="Formulas_III.html" target="_blank">Formula III</a> 
+      <a class="button" href="ratios.html" target="_blank">ratios</a>
       <a class="button" href="Chiral_Closure_Lemma.html" target="_blank">Chiral Closure Lemma</a>
       <a class="button"
         href="Resolved_classical_challenges.html"
