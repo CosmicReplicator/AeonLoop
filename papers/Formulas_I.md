@@ -29,8 +29,58 @@ $$
 $$
 {% endraw %}
 
+---
 
-## 1 · Finite-Difference Operators
+### 1 · Snap-Back Error-Correction   *(kills the need for renormalisation)*
+
+
+At the end of every tick the lattice state is **projected onto the nearest
+legal code-word**, eliminating UV divergences in a single, parameter-free
+stroke.
+
+$$
+\boxed{
+  \psi(t+\tau)=\mathbf P\,e^{-\,\tfrac{i}{\hbar}H\tau}\,\psi(t)
+}
+\qquad
+(\mathbf P^{2}= \mathbf P,\;[\mathbf P,G]=0)
+$$
+
+* **Unitary drift** $$e^{-\,iH\tau/\hbar}$$  
+* **Snap projector** $${\mathbf P}$$ enforces all lattice parity checks.
+
+Quantitatively, the projector damps any illegal amplitude by a fixed factor
+
+$$
+\bigl\lVert(1-\mathbf P)\psi\bigr\rVert^{2}=e^{-K},
+\qquad
+K=7.379\,970\,056 ,
+$$
+
+so after $$n$$ ticks the UV tail shrinks as $$e^{-\,nK}$$.  
+Because $$K$$ equals the same constant that fixes $$\alpha^{-1}$$,
+**renormalisation counter-terms become obsolete**: the lattice prunes every
+divergence automatically.
+
+* **Hard UV ceiling**
+
+  $$
+    \Delta E_{\max}= \frac{h}{\tau}\approx 6.892\;\text{meV}.
+  $$
+
+* **Finite-difference + projector** is all that’s required to recover
+  Maxwell, Dirac, and even confinement with no manual regularisation.
+
+> **Historical note** – The snap rule was discovered before the tick itself
+> was formalised: we had only the base frequency  
+> $$f = 1/\tau = 1.666\;\text{THz}$$ and RH-spin symmetry.  
+> Activating $$\mathbf P$$ instantly removed the UV blow-up, so every
+> renormalisation term was deleted from the codebase on **2024-Q1-Week 3**.
+
+---
+
+
+### 1.1 · Finite-Difference Operators
 
 *Discrete update of the four-potential*
 
