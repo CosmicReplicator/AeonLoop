@@ -1,7 +1,7 @@
 ---
 layout: papers
 title:  "Lorentz Transformations"
-nav_order: 2
+nav_order: 5
 ---
 
 # Lorentz Transformations — the Digital-Tick Perspective
