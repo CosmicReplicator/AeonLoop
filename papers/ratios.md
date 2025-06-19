@@ -61,16 +61,7 @@ Everything downstream is integer arithmetic.
 
 ## 3  Ratio Map (one-glance guide)
 
-```text
-     7  ─────→ 720°
-     │
-8/3 ─┤      5/3
-     │        │
-     ▼        ▼
-    1/3      8/9
-        │
-    3/α → ½α
- ``` 
+
 ---
 {% raw %}
 <div class="mermaid" markdown="0">
