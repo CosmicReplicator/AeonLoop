@@ -9,7 +9,7 @@ mathjax: true
 
 | Target | Why it matters | Where data will come from |
 |--------|---------------|---------------------------|
-| 1. Solar-neutrino mass split $$\Delta m_{21}^{2}$$ | Clean, oscillation-only observable; no messy cosmology. | JUNO (~2026) will reach $$\pm0.3\%$$ precision. |
+| 1. Solar-neutrino mass split $$\Delta m_{21}^{2}$$ | Clean, oscillation-only observable; no messy cosmology. | JUNO (≈ 2026) will reach $$\pm0.3\%$$ precision. |
 | 2. Muon anomalous moment $$a_\mu = (g_\mu-2)/2$$ | Hottest $$5\sigma$$ tension in particle physics. | Fermilab E989 final result (2025–26). |
 | 3. Tick-snap geometry of a 200-atom peptide | Proof that the 0.6 ps projector scales to real biochemistry. | Compare to 0.90 Å X-ray or cryo-EM structures. |
 
