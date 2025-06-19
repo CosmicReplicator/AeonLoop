@@ -22,17 +22,17 @@ Below: derivations, one-liner numbers, and how each can **falsify** the lattice.
 #### 1.1  Lattice argument in four steps  
 
 1. **Weak coupling from same constants**  
-   $$\alpha_{2}^{-1}\;=\;1+\dfrac{2}{\beta_\*}=1+6 \;=\;7.$$
+   $$\alpha_{2}^{-1}\;=\;1+\dfrac{2}{\beta_}=1+6 \;=\;7.$$
 
 2. **Yukawa phase deficit**  
    Each lepton family gets a mass “kick”  
-   $$\delta m_f = \dfrac{\hbar}{\tau}\Bigl(\dfrac{\beta_\*}{3}\Bigr)^{\!f},\qquad  
-   \beta_\*=\dfrac13,\;f=0,1,2.$$
+   $$\delta m_f = \dfrac{\hbar}{\tau}\Bigl(\dfrac{\beta_}{3}\Bigr)^{\!f},\qquad  
+   \beta_=\dfrac13,\;f=0,1,2.$$
 
 3. **Mass-square difference**  
    $$\Delta m_{21}^{2}= (\,\delta m_2)^{2}-(\,\delta m_1)^{2}  
      =\Bigl(\dfrac{\hbar}{\tau}\Bigr)^{\!2}
-       \Bigl[\Bigl(\dfrac{\beta_\*}{3}\Bigr)^{4}-\Bigl(\dfrac{\beta_\*}{3}\Bigr)^{2}\Bigr].$$
+       \Bigl[\Bigl(\dfrac{\beta_}{3}\Bigr)^{4}-\Bigl(\dfrac{\beta_}{3}\Bigr)^{2}\Bigr].$$
 
 4. **Plug numbers**  
    $$\hbar/\tau = 1.10\times10^{-21}\ \text{J}=6.88\times10^{-3}\ \text{eV},$$  
