@@ -5,7 +5,7 @@ mathjax: true
 ---
 
 # Ratio Geometry in the Tick-Fractal Framework  
-### locking 7, 8⁄3, 5⁄3, 4 π, ½ α, and 720 ° into one algebraic loop
+### locking 7, 8⁄3, 5⁄3, 4π, ½ α, and 720 ° into one algebraic loop
 
 > *Version 2025-06-18 — draft for internal circulation*
 
@@ -18,7 +18,7 @@ of length
 $$\tau = 0.600\;\text{ps}$$—  
 fixes an entire zoo of seemingly unrelated fractions:
 
-| Category              | Ratio Path                                                         | Job                                                          |
+| Category              | **Ratio Path**                                                        | Job                                                          |
 |-----------------------|--------------------------------------------------------------------|--------------------------------------------------------------|
 | Holonomy & closure    | $$7 \;\longrightarrow\; 720^{\circ}$$                              | one heptad resets global phase                               |
 | Effective dimension   | $$\dfrac{8}{3} \;\longrightarrow\; \dfrac{1}{3}$$                  | fractal shell vs. $$4\pi$$ missing $$\tfrac13$$-D          |
@@ -62,15 +62,27 @@ Everything downstream is integer arithmetic.
 ## 3  Ratio Map (one-glance guide)
 
 ```text
-     7 ————→ 720°
+     7  ─────→ 720°
      │
-8/3—┤      5/3
-     │       │
-     ▼       ▼
-    1/3     8/9
+8/3 ─┤      5/3
+     │        │
+     ▼        ▼
+    1/3      8/9
         │
-    3/α → ½α  
+    3/α → ½α
  ``` 
+---
+{% raw %}
+```mermaid
+graph TD
+  A7[7] --> B720[720°]
+  D8_3[8/3] --> A1_3[1/3]
+  D8_3 --> E5_3[5/3]
+  E5_3 --> F8_9[8/9]
+  C3a[3/α] --> Ghalfα[½ α]
+```
+{% endraw %}
+
 ---
 
 ## 4 Derivations  
@@ -97,15 +109,18 @@ tick-fractal space replaces the exponent $$2$$ by $$D_{\text{eff}}-1$$:
 
 $$
 dV_{\text{eff}}
-\;=\;
-r^{\,D_{\text{eff}}-1}dr
-\;=\;
-r^{\,\tfrac{8}{3}-1}dr
-\;=\;
-r^{\,\tfrac{2}{3}}dr
-\;=\;
-\bigl(4\pi r^{2}\bigr)\,r^{-1/3}dr .
+  \;=\;
+  r^{D_{\text{eff}}-1}\,dr
+  \;=\;
+  r^{\tfrac{8}{3}-1}\,dr
+  \;=\;
+  r^{\tfrac23}\,dr
+  \;\;\Longrightarrow\;\;
+  dV_{\text{eff}}
+  \;=\;
+  (4\pi r^{2})\,r^{-1/3}\,dr .
 $$
+
 
 The missing $$\tfrac{1}{3}$$ dimension appears in curvature
 
