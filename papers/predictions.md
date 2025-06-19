@@ -19,31 +19,67 @@ Below: derivations, one-liner numbers, and how each can **falsify** the lattice.
 
 ### 1 Solar-neutrino mass split  $$\boxed{\Delta m_{21}^{2}}$$  
 
-#### 1.1  Lattice argument in four steps  
 
-1. **Weak coupling from same constants**  
-   $$\alpha_{2}^{-1}\;=\;1+\dfrac{2}{\beta_}=1+6 \;=\;7.$$
+#### 1.1 Lattice argument in four steps  
 
-2. **Yukawa phase deficit**  
-   Each lepton family gets a mass “kick”  
-   $$\delta m_f = \dfrac{\hbar}{\tau}\Bigl(\dfrac{\beta_}{3}\Bigr)^{\!f},\qquad  
-   \beta_=\dfrac13,\;f=0,1,2.$$
-
-3. **Mass-square difference**  
-   $$\Delta m_{21}^{2}= (\,\delta m_2)^{2}-(\,\delta m_1)^{2}  
-     =\Bigl(\dfrac{\hbar}{\tau}\Bigr)^{\!2}
-       \Bigl[\Bigl(\dfrac{\beta_}{3}\Bigr)^{4}-\Bigl(\dfrac{\beta_}{3}\Bigr)^{2}\Bigr].$$
-
-4. **Plug numbers**  
-   $$\hbar/\tau = 1.10\times10^{-21}\ \text{J}=6.88\times10^{-3}\ \text{eV},$$  
-   so  
+1. **Weak coupling re-expressed through the lattice exponent**
 
    $$
-   \boxed{\Delta m_{21}^{2}=7.40\times10^{-5}\;\text{eV}^2}.
-   $$  
+   \alpha_2^{-1}
+      \;=\;
+      1+\frac{2}{\beta_{\star}}
+      \;=\;
+      1+\frac{2}{\tfrac13}
+      \;=\;7 ,
+   $$
 
-Current PDG world average $$7.42\pm0.21\times10^{-5}\;\text{eV}^2$$—only the second decimal is in play.  
-**Fail rule:** if JUNO finds $$|\Delta m_{21}^{2}-7.40|>0.03\times10^{-5}$$ the lattice flunks.
+   where the universal running exponent is  
+   $$
+   \beta_{\star}\;=\;\frac13 .
+   $$
+
+2. **Yukawa phase deficit for each lepton family**
+
+   $$
+   \delta m_{f}
+      \;=\;
+      \frac{\hbar}{\tau}\,
+      \Bigl(\frac{\beta_{\star}}{3}\Bigr)^{f},
+   \qquad
+   f=0,1,2 .
+   $$
+
+3. **Solar mass-square difference**
+
+   $$
+   \Delta m_{21}^{2}
+      \;=\;
+      (\delta m_2)^2-(\delta m_1)^2
+      \;=\;
+      \Bigl(\frac{\hbar}{\tau}\Bigr)^{2}
+      \Bigl[
+        \Bigl(\frac{\beta_{\star}}{3}\Bigr)^{4}
+        -
+        \Bigl(\frac{\beta_{\star}}{3}\Bigr)^{2}
+      \Bigr].
+   $$
+
+4. **Numerical plug-in**
+
+   $$\dfrac{\hbar}{\tau}=1.10\times10^{-21}\ \text{J}=6.88\times10^{-3}\ \text{eV},$$  
+
+   $$
+   \boxed{\;
+      \Delta m_{21}^{2}=7.40\times10^{-5}\ \text{eV}^{2}
+   \;}
+   $$
+
+   PDG world average:  
+   $$7.42\pm0.21\times10^{-5}\ \text{eV}^{2}.$$
+
+**Fail rule:** if JUNO measures  
+$$\bigl|\Delta m_{21}^{2}-7.40\bigr|>0.03\times10^{-5}\ \text{eV}^{2}$$  
+the lattice hypothesis is falsified.
 
 ---
 
