@@ -73,15 +73,16 @@ Everything downstream is integer arithmetic.
  ``` 
 ---
 {% raw %}
-```mermaid
+<div class="mermaid" markdown="0">
 graph TD
   A7[7] --> B720[720°]
   D8_3[8/3] --> A1_3[1/3]
   D8_3 --> E5_3[5/3]
   E5_3 --> F8_9[8/9]
   C3a[3/α] --> Ghalfα[½ α]
-```
+</div>
 {% endraw %}
+}
 
 ---
 
