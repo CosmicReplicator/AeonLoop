@@ -13,8 +13,8 @@ Time to weaponise it.
 
 ## 1 Explode one axiom into **five falsifiable observables**
 
-| Observable                                    | Under-fill prediction                                                                                              | Why it’s clean                                      |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| Observable                                    | Under-fill prediction                                                                                                | Why it’s clean                                      |
+|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | **Weak-lensing slope** $$\kappa(R)$$          | $$G_{\text{eff}}(R)=G_{\text{tick}}\,[1-\Phi(R)]^{-1}$$ → $$\dfrac{d\ln\kappa}{d\ln R}=+\tfrac13$$ *(≈ 4 % rise per decade in $$R$$)*    | DES Y3 & LSST DR1 stacks are in hand               |
 | **BAO acoustic scale**                        | $$r_s^{\text{tick}}=\sqrt{\tfrac83}\,r_s^{\text{rad}}$$                                                            | Pure geometry—no galaxy-bias nuisance              |
 | **Type-Ia SN brightness tilt**                | $$\mu(z)=5\log_{10}D_L(z)$$ with $$D_L$$ gaining a $$+\tfrac13$$ term                                             | Pantheon+ catalogue is public                       |
