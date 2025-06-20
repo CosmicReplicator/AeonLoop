@@ -115,6 +115,7 @@ title: 'Index'
 	  theproject</a>
       <a class="button" href="EinsteinsMissingOne-Third.html" target="_blank">Einstein’s Missing One-Third</a>
 	  <a class="button" href="predictions.html" target="_blank">Predictions</a>
+	  <a class="button" href="Sub_tick.html" target="_blank">Sub tick</a>
     </div>
   </section>
 </div>
