@@ -26,7 +26,7 @@ Time to weaponise it.
 $$
 \displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}
 $$
- (under-fill nearly flat at AU)  Messenger, Cassini, LLR data already archived  
+ (under-fill nearly flat at AU)          Messenger, Cassini, LLR data already archived  
 
 
 One exponent, **$$D_{\text{eff}}=\tfrac83$$**, five telescopes, zero free knobs.  
