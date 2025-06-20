@@ -21,15 +21,13 @@ Time to weaponise it.
 | **Type-Ia SN brightness tilt**                | $$\mu(z)=5\log_{10}D_L(z)$$ with $$D_L$$ gaining a $$+\tfrac13$$ term                                             | Pantheon+ catalogue is public                       |
 | **Frame-drag in halos**                       | Extra twist $$\Omega(R)\propto R^{-1/3}$$ explains flat rotations sans dark matter                                  | Same $$D_{\text{eff}}=\tfrac83$$ exponent shows up    |
 <!-- Insert the Solar-system information as its own row spanning all columns -->
-<tr>
-  <td colspan="3" style="text-align: center; padding-top: 0.5em;">
-    <strong>Solar-system</strong> $$\dot{G}/G$$ <strong>bound</strong> – 
-    $$\displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}$$ 
-    (under-fill nearly flat at AU)
-    <br>
-    Messenger, Cassini, LLR data already archived
-  </td>
-</tr>
+
+| **Solar-system** $$\dot{G}/G$$ **bound** | 
+$$
+\displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}
+$$
+ (under-fill nearly flat at AU) | Messenger, Cassini, LLR data already archived |
+
 
 One exponent, **$$D_{\text{eff}}=\tfrac83$$**, five telescopes, zero free knobs.  
 Any single failure kills the model—reviewers will love the audacity.
