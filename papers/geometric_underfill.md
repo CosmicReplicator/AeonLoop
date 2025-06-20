@@ -13,15 +13,23 @@ Time to weaponise it.
 
 ## 1 Explode one axiom into **five falsifiable observables**
 
+
 | Observable                                    | Under-fill prediction                                                                                                | Why it’s clean                                      |
 |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | **Weak-lensing slope** $$\kappa(R)$$          | $$G_{\text{eff}}(R)=G_{\text{tick}}\,[1-\Phi(R)]^{-1}$$ → $$\dfrac{d\ln\kappa}{d\ln R}=+\tfrac13$$ *(≈ 4 % rise per decade in $$R$$)*    | DES Y3 & LSST DR1 stacks are in hand               |
 | **BAO acoustic scale**                        | $$r_s^{\text{tick}}=\sqrt{\tfrac83}\,r_s^{\text{rad}}$$                                                            | Pure geometry—no galaxy-bias nuisance              |
 | **Type-Ia SN brightness tilt**                | $$\mu(z)=5\log_{10}D_L(z)$$ with $$D_L$$ gaining a $$+\tfrac13$$ term                                             | Pantheon+ catalogue is public                       |
-| **Solar-system** $$\dot{G}/G$$ **bound** | $$\displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}$$ (under-fill nearly flat at AU) | Messenger, Cassini, LLR data already archived |
-(under-fill nearly flat at AU) | Messenger, Cassini, LLR data already archived |
-
 | **Frame-drag in halos**                       | Extra twist $$\Omega(R)\propto R^{-1/3}$$ explains flat rotations sans dark matter                                  | Same $$D_{\text{eff}}=\tfrac83$$ exponent shows up    |
+<!-- Insert the Solar-system information as its own row spanning all columns -->
+<tr>
+  <td colspan="3" style="text-align: center; padding-top: 0.5em;">
+    <strong>Solar-system</strong> $$\dot{G}/G$$ <strong>bound</strong> – 
+    $$\displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}$$ 
+    (under-fill nearly flat at AU)
+    <br>
+    Messenger, Cassini, LLR data already archived
+  </td>
+</tr>
 
 One exponent, **$$D_{\text{eff}}=\tfrac83$$**, five telescopes, zero free knobs.  
 Any single failure kills the model—reviewers will love the audacity.
