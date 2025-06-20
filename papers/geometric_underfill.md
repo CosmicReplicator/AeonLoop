@@ -22,9 +22,9 @@ Time to weaponise it.
 
 ---
 <!-- Insert the Solar-system information as its own row spanning all columns -->
- **Solar-system** $$\dot{G}/G$$ **bound**  
+ **Solar-system** $$\dot{G}/G$$ **bound**  |  
 $$
-\displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}
+\displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}  | 
 $$
  (under-fill nearly flat at AU)          Messenger, Cassini, LLR data already archived  
 
