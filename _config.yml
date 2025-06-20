@@ -2,10 +2,10 @@ markdown: kramdown
 author: "jonsvein Heinesen"
 
 kramdown:
-  math_engine: mathjax            # enable math
-  math_delimiters: dollar         # accept $…$ and $$…$$ as well
-  math_engine_opts:               # optional, but tidy
+  math_engine: mathjax
+  math_engine_opts:
     preview: false
+
 
 plugins:
   - jekyll-mermaid
