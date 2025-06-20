@@ -3,6 +3,7 @@ layout: default
 title: "Sub tick"
 mathjax: true
 ---
+
 # Sub Tick: Merging Schrödinger’s Evolution with Heisenberg’s Uncertainty
 
 **Abstract**  
