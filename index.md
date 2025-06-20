@@ -33,7 +33,7 @@ title: 'AeonLoop'
     </section>
 	<!-- Button to access the README file (hosted on GitHub, for example) -->
 <section>
-  <a href="https://github.com/CosmicReplicator/AeonLoop/blob/main/README.md" class="button" target="_blank">
+  <a href="https://cosmicreplicator.github.io/AeonLoop/papers/README.html" class="button" target="_blank">
     Read the Full README
   </a>
 </section>
