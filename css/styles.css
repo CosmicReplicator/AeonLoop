@@ -49,6 +49,12 @@ body {
   font-size: 18px;
   /* no global centring — block-quotes & lists stay aligned */
 }
+/* Force MathJax display math in table cells to appear inline */
+table td mjx-container[display="true"],
+table th mjx-container[display="true"] {
+  display: inline !important;
+  vertical-align: middle; /* Adjust vertical alignment if needed */
+}
 
 /* ===============================================================
    FLEXIBLE SHEET  –– width = longest equation
