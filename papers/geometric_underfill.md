@@ -22,6 +22,7 @@ Time to weaponise it.
 $$
 \displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}
 $$
+$$\displaystyle\left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}$$
  (under-fill nearly flat at AU) | Messenger, Cassini, LLR data already archived |
 
 | **Frame-drag in halos**                       | Extra twist $$\Omega(R)\propto R^{-1/3}$$ explains flat rotations sans dark matter                                  | Same $$D_{\text{eff}}=\tfrac83$$ exponent shows up    |
