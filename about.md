@@ -4,14 +4,58 @@ title: "About"
 permalink: /about/
 ---
 
-# About This Project
+# **AeonLoop**
 
-Welcome to our exploration of a truly innovative interface between digital computation and the physical universe. Our project is born from the insight that the processes of our universe might not be entirely continuous but instead composed of discrete, quantized units—what we call **“ticks.”** Using ideas from quantum physics, theoretical modeling, and philosophical inquiry, we strive to uncover whether these digital ticks underpin the cosmos.
+*A digital playground where a single tick ($$\tau = 0.600\;\text{ps}$$) reinvents the saga of cosmology and quantum theory—tick by tick, revealing truth deeper.*
 
-Across this site you’ll find detailed expositions on topics such as the **Digital Tick Model**, AeonLoop explanations, and other frameworks that challenge conventional interpretations of continuity in nature. Our work covers not only the scientific and mathematical rationale behind these concepts but also their broader philosophical implications.
+> **Working Motto**  
+> “The GR metric is nothing but a field of tick counters; curvature is a map of missing ticks.”
 
-At its core, our theory suggests that what we perceive as a continuous universe may, in fact, be an emergent phenomenon built upon innumerable tiny, discrete energy exchanges. Each tick represents a fundamental unit of change, inviting us to rethink how energy, matter, and time interact at the smallest scales.
+---
 
-Whether you’re a researcher, a student, or simply a curious explorer, we invite you to dive into our content and join us in investigating these profound ideas. If you have any questions, suggestions, or proposals for collaboration, feel free to email us at **1.7thz.theory@gmail.com**.
+## Why Bother With Another Framework?
 
-Thank you for visiting—together, let’s delve into the digital fabric of our universe.
+1. **Discrete First, Continuous Second**  
+   We lock in a fixed tick, $$\tau = 0.600\;\text{ps}$$, and *derive* smooth spacetime as a coarse-grained average. The continuum emerges—it isn’t assumed.
+
+2. **Two Axioms, Dozens of Payoffs**  
+   With only $$\tau$$ and an effective dimension $$D_{\mathrm{eff}} = \tfrac83$$, we naturally reproduce:  
+   - The strong/weak ladder: $$195\;\text{MeV} \to 80\;\text{GeV}$$  
+   - Newton’s constant $$G$$ and the minuscule cosmic $$\Lambda$$  
+   - The solar-wind turbulence slope of $$-1.667$$  
+   - Several Standard Model anomalies—all without extra parameters.
+
+3. **Ad-Hoc Free and Engineered for Depth**  
+   Every number is either a lattice consequence or taken straight from experiment. No hand-tuned knobs. Activate the “thin deeper” mode—here simplicity exposes the hidden structure.
+
+---
+
+## Core Modules (Under Active Development)
+
+| Module                        | One-liner Description                                                               |
+|-------------------------------|-------------------------------------------------------------------------------------|
+| **CosmicReplicator**          | Deterministic Friedmann solver—one tick per update                                  |
+| **FracCalc**                  | Recasts integrals: every computation adopts the $$D_{\mathrm{eff}}=\tfrac83$$ exponent |
+| **Emergent $$h, G, \alpha$$** | Fundamental constants extracted directly from the tick lattice                      |
+| **Planck-Scale Discreteness** | Automatic UV cutoff; renormalization simply drops out                              |
+| **Rotational Combinatorics**  | Seven-tick closure yields the lepton mass ladder                                    |
+| **Hidden Physics**            | Muon $$g\!-\!2$$ and B-anomalies emerge via a natural chirality imbalance           |
+
+---
+
+## Cheat-Sheet Keywords
+
+`Digital Tick` • `2.667D Geometry` • `1.667 THz Clock`  
+`Discrete Spacetime` • `Quantum Geometry` • `Ad-hoc Free` • *Thin Deeper*
+
+---
+
+## Repo Tour
+
+```text
+papers/             polished write-ups (PDF + MD)
+ladder/             energy-ladder derivations
+calculator/         CLI: query any derived constant
+scripts/            one-off data pulls (Swift, Fermi, DESI…)
+tests/              CI sanity (MathJax, links, CSS size)
+yaml/constants.yaml  ← 🔒 v2025-06-14 — the single source of numbers
