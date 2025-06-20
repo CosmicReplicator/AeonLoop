@@ -118,7 +118,7 @@ title: 'Index'
 	  <a class="button" href="Sub_tick.html" target="_blank">Sub tick</a>
 	  <a class="button" href="weak_force.html" target="_blank">Weak Force</a>
 	  <a class="button" href="force_unification.html" target="_blank">Force Unification</a>
-	  math_test<a class="button" href="math_test.html" target="_blank">math test</a>
+	  <a class="button" href="math_test.html" target="_blank">math test</a>
 	  
     </div>
   </section>
