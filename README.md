@@ -46,7 +46,7 @@ mathjax: true
 ## Cheat-Sheet Keywords
 
 `Digital Tick` • `2.667D Geometry` • `1.667 THz Clock`  
-`Discrete Spacetime` • `Quantum Geometry` • `Ad-hoc Free` • *Thin Deeper*
+`Discrete Spacetime` • `Quantum Geometry` • `Ad-hoc Free` 
 
 ---
 
