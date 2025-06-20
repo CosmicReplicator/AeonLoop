@@ -1,63 +1,61 @@
 ---
 layout: default
 title: "README"
-nav_order: 1
 mathjax: true
 ---
 
 # **AeonLoop**
 
-*A playground where a single digital tick ( $$\tau = 0.600\;\text{ps}$$ ) tries to retell the whole saga of cosmology and quantum theory.*
+*A digital playground where a single tick ($$\tau = 0.600\;\text{ps}$$) reinvents the saga of cosmology and quantum theory—tick by tick, revealing truth deeper.*
 
-> **Working motto**  
+> **Working Motto**  
 > “The GR metric is nothing but a field of tick counters; curvature is a map of missing ticks.”
 
 ---
 
-## Why bother with another framework?
+## Why Bother With Another Framework?
 
-1. **Discrete first, continuous second**  
-   We fix one rigid tick $$\tau = 0.600\;\text{ps}$$ and *derive* smooth spacetime as a coarse-grained average. No continuum is assumed up front.
+1. **Discrete First, Continuous Second**  
+   We lock in a fixed tick, $$\tau = 0.600\;\text{ps}$$, and *derive* smooth spacetime as a coarse-grained average. The continuum emerges—it isn’t assumed.
 
-2. **Two axioms, dozens of pay-offs**  
-   From just $$\tau$$ and an effective dimension  
-   $$D_{\mathrm{eff}} = \tfrac83$$ we reproduce  
-   * the strong/weak ladder $$195\;\text{MeV}\to80\;\text{GeV}$$,  
-   * Newton’s $$G$$ and the tiny cosmic $$\Lambda$$,  
-   * the solar-wind turbulence slope $$-1.667$$,  
-   * and several SM anomalies—*without* new free parameters.
+2. **Two Axioms, Dozens of Payoffs**  
+   With only $$\tau$$ and an effective dimension $$D_{\mathrm{eff}} = \tfrac83$$, we naturally reproduce:  
+   - The strong/weak ladder: $$195\;\text{MeV} \to 80\;\text{GeV}$$  
+   - Newton’s constant $$G$$ and the minuscule cosmic $$\Lambda$$  
+   - The solar-wind turbulence slope of $$-1.667$$  
+   - Several Standard Model anomalies—all without extra parameters.
 
-3. **Ad-hoc free**  
-   Every number is either a lattice consequence or taken straight from experiment. No hand-tuned knobs.
-
----
-
-## Core Modules (work in progress)
-
-| Module | One-liner |
-|--------|-----------|
-| **CosmicReplicator** | Deterministic Friedmann update, one tick per step |
-| **FracCalc** | All integrals acquire the $$D_{\mathrm{eff}}=\tfrac83$$ exponent |
-| **Emergent $$h,G,\alpha$$** | Fundamental constants as lattice outputs |
-| **Planck-Scale Discreteness** | Built-in UV cut-off; renormalisation disappears |
-| **Rotational Combinatorics** | Seven-tick closure ⇒ lepton mass ladder |
-| **Hidden Physics** | Muon $$g\!-\!2$$ & B-anomalies via chirality imbalance |
+3. **Ad-Hoc Free and Engineered for Depth**  
+   Every number is either a lattice consequence or taken straight from experiment. No hand-tuned knobs. Activate the “thin deeper” mode—here simplicity exposes the hidden structure.
 
 ---
 
-## Cheat-sheet keywords
+## Core Modules (Under Active Development)
 
-`Digital Tick` • `2.667D geometry` • `1.667 THz clock`  
-`Discrete Spacetime` • `Quantum Geometry` • `Ad-hoc-free`
+| Module                        | One-liner Description                                                               |
+|-------------------------------|-------------------------------------------------------------------------------------|
+| **CosmicReplicator**          | Deterministic Friedmann solver—one tick per update                                  |
+| **FracCalc**                  | Recasts integrals: every computation adopts the $$D_{\mathrm{eff}}=\tfrac83$$ exponent |
+| **Emergent $$h, G, \alpha$$** | Fundamental constants extracted directly from the tick lattice                      |
+| **Planck-Scale Discreteness** | Automatic UV cutoff; renormalization simply drops out                              |
+| **Rotational Combinatorics**  | Seven-tick closure yields the lepton mass ladder                                    |
+| **Hidden Physics**            | Muon $$g\!-\!2$$ and B-anomalies emerge via a natural chirality imbalance           |
 
 ---
 
-## Repo tour
+## Cheat-Sheet Keywords
+
+`Digital Tick` • `2.667D Geometry` • `1.667 THz Clock`  
+`Discrete Spacetime` • `Quantum Geometry` • `Ad-hoc Free` • *Thin Deeper*
+
+---
+
+## Repo Tour
 
 ```text
-papers/            polished write-ups  (PDF + MD)
-ladder/            energy-ladder derivations
-calculator/        CLI: query any derived constant
-scripts/           one-off data pulls (Swift, Fermi, DESI…)
-tests/             CI sanity (MathJax, links, CSS size)
-yaml/constants.yaml   ← 🔒 v2025-06-14 — single source of numbers
+papers/             polished write-ups (PDF + MD)
+ladder/             energy-ladder derivations
+calculator/         CLI: query any derived constant
+scripts/            one-off data pulls (Swift, Fermi, DESI…)
+tests/              CI sanity (MathJax, links, CSS size)
+yaml/constants.yaml  ← 🔒 v2025-06-14 — the single source of numbers

@@ -31,6 +31,13 @@ title: 'AeonLoop'
     <section>
       <a href="Calculator/" class="button">Open Full Digital‑Tick Calculator</a>
     </section>
+	<!-- Button to access the README file (hosted on GitHub, for example) -->
+<section>
+  <a href="https://github.com/CosmicReplicator/AeonLoop/blob/main/README.md" class="button" target="_blank">
+    Read the Full README
+  </a>
+</section>
+
   </main>
 
   <!-- Add the comment section right before the closing body tag -->
