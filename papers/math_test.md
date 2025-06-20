@@ -110,4 +110,20 @@ $$
 **Note:** If one omits a matching delimiter, for example:
 
 ```latex
+```
+
 $$\left( \frac{a}{b}$$
+
+# Minimal Math Test
+
+Inline math with dollars: $a + b = c$.
+
+Inline math with LaTeX delimiter: \( \frac{a}{b} \).
+
+Display math with dollars:
+
+$$
+\int_0^1 x^2 \, dx = \frac{1}{3}
+$$
+
+Display math with LaTeX delimiter:
