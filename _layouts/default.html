@@ -49,7 +49,7 @@
         {% include toc.html html=content class="page-toc" h_min=2 h_max=3 %}
       {%- endunless -%}
 
-      {{ content }}
+      {{ content | safe }}
     </main>
      
     <footer>
