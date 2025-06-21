@@ -26,4 +26,3 @@ title: "Index"
     </section>
   {% endfor %}
 </div>
-_sections
