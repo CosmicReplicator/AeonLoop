@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Index'
+title: "Index"
 ---
 
 <h1>My Collection</h1>

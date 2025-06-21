@@ -1,6 +1,6 @@
 ---
 layout: no_background
-title: 'AeonLoop'
+title: "AeonLoop"
 ---
 
 <div>
