@@ -16,3 +16,7 @@ mermaid:
   config:
     startOnLoad: true
     securityLevel: loose
+collections:
+  papers:
+    output: true
+    permalink: /paper/:name/
