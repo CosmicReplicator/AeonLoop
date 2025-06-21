@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>{{ page.title }}</title>
-<link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
 
   <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
   {% if page.description %}
@@ -22,32 +22,10 @@
   ">
 
   <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
-<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
-
-<!-- ─── MathJax (supports $, $$, \( \), 
-
-\[ \]
-
-) ────────────────────────── -->
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-    displayMath: [ ['$$', '$$'], ['\ 
-	\[', '\\]
-
-'] ],
-    processEscapes: true  // so \$ prints a real dollar
-  }
-};
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
+  <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
 
   <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
-
+  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
@@ -73,10 +51,13 @@ window.MathJax = {
 
       {{ content }}
     </main>
-
-    <footer>{% include footer.html %}</footer>
+     
+    <footer>
+      {% include footer.html %}
+    </footer>
   </div>
+
+  <!-- Include MathJax configuration and script at the end of the body -->
+  {% include mathjax.html %}
 </body>
 </html>
-
-

@@ -1,0 +1,21 @@
+{% raw %}
+<script>
+  window.MathJax = {
+    loader: { load: ['input/tex', 'output/chtml'] },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\
+
+\[', '\\]
+
+']],
+      macros: {} /* add custom macros here */
+    },
+    options: { skipHtmlTags: ['script', 'style', 'pre', 'code'] },
+    startup: { typeset: false }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+{% endraw %}
+
+

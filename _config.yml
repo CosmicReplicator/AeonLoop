@@ -2,9 +2,10 @@ markdown: kramdown
 author: "jonsvein Heinesen"
 
 kramdown:
-  math_engine: mathjax
-  math_engine_opts:
-    preview: false
+  input: GFM
+  parse_block_html: true
+  math_engine: null
+
 
 
 plugins:
