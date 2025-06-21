@@ -19,4 +19,4 @@ mermaid:
 collections:
   papers:
     output: true
-    permalink: /paper/:name/
+    permalink: /papers/:name/
