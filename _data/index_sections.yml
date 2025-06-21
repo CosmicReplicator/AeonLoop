@@ -1,0 +1,19 @@
+sections:
+  - id: "section1"
+    title: "I. Fundamentals & Foundations"
+    buttons:
+      - text: "Formula I"
+        url: "Formulas_I.html"
+      - text: "Formula II"
+        url: "Formulas_II.html"
+      - text: "Formula III"
+        url: "Formulas_III.html"
+      # ... add more buttons as needed
+  - id: "section2"
+    title: "II. Digital Tick Model & Quantization"
+    buttons:
+      - text: "Derivation of G"
+        url: "Derivation_of_G.html"
+      - text: "Digital Molecule"
+        url: "Digital_Molecule.html"
+  # ... add additional sections for 3, 4, 5, and 6
