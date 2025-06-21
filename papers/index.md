@@ -23,6 +23,7 @@ title: 'Index'
     <h3>I. Fundamentals &amp; Foundations</h3>
     <div class="button-container">
       <!--<a class="button" href="Test_Page.html" target="_blank">Test Page</a>-->
+	  
       <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
       <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
       <a class="button" href="Formulas_III.html" target="_blank">Formula III</a> 
@@ -52,9 +53,7 @@ title: 'Index'
   <section id="section2">
     <h3>II. Digital Tick Model &amp; Quantization</h3>
     <div class="button-container">
-      <a class="button" href="A_Cascade_of_Resonant_Steps.html" target="_blank">
-        A Cascade of Resonant Steps
-      </a>
+	
       <a class="button" href="Derivation_of_G.html" target="_blank">
         Derivation of G</a>
       <a class="button" href="Digital_Molecule.html" target="_blank">
@@ -65,6 +64,7 @@ title: 'Index'
   <section id="section3"> 
     <h3>III. Temporal &amp; Energy Dynamics</h3>
 <div class="button-container">
+
       <a class="button" href="Calibration.html" target="_blank">Calibration</a>
     </div>
   </section>
@@ -92,6 +92,7 @@ title: 'Index'
   <section id="section6">
     <h3>VI. Miscellaneous &amp; Overarching Concepts</h3>
     <div class="button-container">
+	
       <a class="button"
         href="Digital_Acoustic_Oscillations.html"
         target="_blank">
