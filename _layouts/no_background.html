@@ -6,13 +6,20 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<body>
+  </head>
+  <body>
     <div class="no-bg-container">
       <header>
         <!-- Your site header/navigation goes here -->
       </header>
-      <main>{% include sections.html %} {{ content }}</main>
-      <footer>{% include footer.html %}</footer>
+      <main>
+        {% include sections.html %}
+        {{ content }}
+      </main>
+      <footer>
+        {% include footer.html %}
+      </footer>
     </div>
   </body>
 </html>
+
