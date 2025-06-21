@@ -1,4 +1,4 @@
-index---
+---
 layout: default
 title: "Index"
 ---
