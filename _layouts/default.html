@@ -44,14 +44,14 @@
       </p>
     </header>
 
-    <main class="paper-body">
-      {%- unless page.no_toc -%}
-        {% include toc.html html=content class="page-toc" h_min=2 h_max=3 %}
-      {%- endunless -%}
+<main class="paper-body">
+  {%- unless page.no_toc -%}
+    {% include toc.html html=content class="page-toc" h_min=2 h_max=3 %}
+  {%- endunless -%}
+  {{ content | safe }}
+</main>
 
-      {{ content | safe }}
-    </main>
-     
+</main> 
     <footer>
       {% include footer.html %}
     </footer>
