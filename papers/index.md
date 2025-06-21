@@ -21,7 +21,7 @@ title: "Index"
 <div class="index-scroll-container">
   <section id="section1">
     <h3>I. Fundamentals &amp; Foundations</h3>
-    <div class="button-container">
+<div class="button-container">
       <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
       <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
       <a class="button" href="Formulas_III.html" target="_blank">Formula III</a>
@@ -36,40 +36,40 @@ title: "Index"
     </div>
   </section>
 
-  <section id="section2">
+<section id="section2">
     <h3>II. Digital Tick Model &amp; Quantization</h3>
-    <div class="button-container">
+<div class="button-container">
       <a class="button" href="Derivation_of_G.html" target="_blank">Derivation of G</a>
       <a class="button" href="Digital_Molecule.html" target="_blank">Digital Molecule</a>
     </div>
   </section>
 
-  <section id="section3">
+<section id="section3">
     <h3>III. Temporal &amp; Energy Dynamics</h3>
-    <div class="button-container">
+<div class="button-container">
       <a class="button" href="Calibration.html" target="_blank">Calibration</a>
     </div>
   </section>
 
-  <section id="section4">
+<section id="section4">
     <h3>IV. Cosmology, Gravity &amp; Dark Matter</h3>
-    <div class="button-container">
+<div class="button-container">
       <a class="button" href="Dark_Matter.html" target="_blank">Dark Matter</a>
       <a class="button" href="GRB.html" target="_blank">GRB</a>
       <a class="button" href="BlackHoles.html" target="_blank">BlackHoles</a>
     </div>
   </section>
 
-  <section id="section5">
+<section id="section5">
     <h3>V. Additional Models, Pitfalls &amp; Error Corrections</h3>
-    <div class="button-container">
+<div class="button-container">
       <a class="button" href="TriplePoint.html" target="_blank">TriplePoint</a>
     </div>
   </section>
 
-  <section id="section6">
+<section id="section6">
     <h3>VI. Miscellaneous &amp; Overarching Concepts</h3>
-    <div class="button-container">
+<div class="button-container">
       <a class="button" href="Digital_Acoustic_Oscillations.html" target="_blank">Digital Acoustic Oscillations</a>
       <a class="button" href="geometry_and_energy.html" target="_blank">geometry and energy</a>
       <a class="button" href="geometric_underfill.html" target="_blank">geometric underfill</a>
