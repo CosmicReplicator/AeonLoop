@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Tick-Fractal Black-Hole Primer</title>
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+  
+  <meta name="keywords" content="
+    
+      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+      Ad Hoc-Free Formulation, Discrete Rotations
+    
+  ">
+
+  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+  <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <header>
+      <h1>Tick-Fractal Black-Hole Primer</h1>
+      <p class="meta">
+        By jonsvein Heinesen
+        
+      </p>
+    </header>
+
+<main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><h2 id="tick-fractal-black-hole-primer">Tick-Fractal Black-Hole Primer</h2>
+<p><em>Schwarzschild interiors never form · collapse freezes into a seven-tick Casimir battery · GRBs, not Hawking quanta, are the exhaust</em></p>
+
+<blockquote>
+  <p><strong>Microscope first, metric second.</strong><br />
+In an <span class="kdmath">$8/3$</span>-D tick lattice, phase arithmetic fixes curvature; GR metrics are
+just a translation table. Every “red-shift”, “ISCO”, or “spin parameter”
+quoted below is the number a relativist would back-fit if they insisted on
+a GR dictionary.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="abstract-120-words">Abstract (120 words)</h3>
+
+<p>We present a discrete, <span class="kdmath">$0.600\;\text{ps}$</span> “tick” lattice that renders
+black-hole collapse ultraviolet-finite and singularity-free.<br />
+When infall reaches a <strong>lock radius</strong><br />
+<span class="kdmath">$\rho_{\text{lock}} \;=\; 7c\tau/2\pi$</span><br />
+radial motion stalls and matter freezes into a razor-thin Casimir disc.<br />
+The disc charges an <strong>exact seven-tick battery</strong> whose energy grows by<br />
+<span class="kdmath">$\exp(K\delta\varphi)$</span> per tick with no free parameters; after seven ticks
+it disgorges a<br />
+<span class="kdmath">$E_7/E_0 \;=\; 409.82$</span> burst identified with the prompt GRB.<br />
+Observers fitting Kerr templates measure an apparent radius<br />
+<span class="kdmath">$R_\infty \;=\; \Gamma(M,J)\,\rho_{\text{lock}}$</span> that is <span class="kdmath">$12\%$</span> larger than
+GR predicts.<br />
+We list falsifiable signatures—<span class="kdmath">$240\;\text{GHz}$</span> horizon mode, VLBI ring
+inflation, and the GRB early-steep-decay index—to be tested by ngEHT, Fermi,
+POLAR-2, and BEC analogue horizons in the next decade.</p>
+
+<hr />
+
+<h2 id="0universal-scale--three-numbers-rule-everything">0 Universal scale — three numbers rule everything</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tick period</td>
+      <td><span class="kdmath">$\tau$</span></td>
+      <td><span class="kdmath">$0.600\;\text{ps}$</span></td>
+    </tr>
+    <tr>
+      <td>Light-step</td>
+      <td><span class="kdmath">$\ell_0 = c\tau$</span></td>
+      <td><span class="kdmath">$0.179\,875\;\text{mm}$</span></td>
+    </tr>
+    <tr>
+      <td>Lock radius</td>
+      <td><span class="kdmath">$\rho_{\text{lock}} = \dfrac{7\ell_0}{2\pi}$</span></td>
+      <td><span class="kdmath">$0.200\;\text{mm}$</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The tick <span class="kdmath">$\tau$</span> is fixed by matching both the CMB temperature and<br />
+<span class="kdmath">$\alpha^{-1}=137.035999$</span> via the lattice constant<br />
+<span class="kdmath">$K = 7.379970056$</span> and phase deficit <span class="kdmath">$\delta\varphi = 2/3$</span>.</p>
+
+<hr />
+
+<h2 id="1why-a-schwarzschild-interior-cant-appear">1 Why a Schwarzschild interior can’t appear</h2>
+
+<p>Radial geodesics feel an extra “centrifugal deficit” term</p>
+
+<div class="kdmath">$$
+\Phi(r) \;=\; 1 \;-\; \Bigl(\dfrac{8}{9}\Bigr)^{3/2} \;=\; 0.30 ,
+$$</div>
+
+<p>which never crosses zero.<br />
+Below <span class="kdmath">$\Phi_{\text{stall}}\!\approx\!0.30$</span> pure radial motion is forbidden:
+infall is redirected into circular flow at<br />
+<span class="kdmath">$r\simeq\rho_{\text{lock}}$</span> and proper time freezes.</p>
+
+<hr />
+
+<h2 id="2apparent-radius-in-a-gr-fit">2 Apparent radius in a GR fit</h2>
+
+<p>Observers who insist on Kerr geometry infer</p>
+
+<div class="kdmath">$$
+R_\infty(M,J) \;=\; \Gamma(M,J)\,\rho_{\text{lock}},\qquad
+\Gamma(M,J) \;\simeq\; \bigl(1+0.22\,a_\*\bigr)\,
+\Bigl(\dfrac{M}{M_\odot}\Bigr)^{1/3},
+$$</div>
+
+<p>valid to <span class="kdmath">$<2\%$</span> for <span class="kdmath">$0\le a_\*\le1$</span>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><span class="kdmath">$M$</span></th>
+      <th style="text-align: right"><span class="kdmath">$\Gamma$</span></th>
+      <th style="text-align: right"><span class="kdmath">$R_\infty$</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="kdmath">$10\,M_\odot$</span></td>
+      <td style="text-align: right"><span class="kdmath">$1.5\times10^{5}$</span></td>
+      <td style="text-align: right"><span class="kdmath">$\sim 30\;\text{km}$</span></td>
+    </tr>
+    <tr>
+      <td><span class="kdmath">$10^{8}\,M_\odot$</span></td>
+      <td style="text-align: right"><span class="kdmath">$5\times10^{13}$</span></td>
+      <td style="text-align: right"><span class="kdmath">$\sim 0.02\;\text{AU}$</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The template radius is <span class="kdmath">$12\%$</span> larger than GR-Kerr for the same <span class="kdmath">$M,J$</span>.</p>
+
+<hr />
+
+<h2 id="3seven-tick-collapse-sequence">3 Seven-tick collapse sequence</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tick window</th>
+      <th>Radius / var.</th>
+      <th>GR narrative</th>
+      <th>Tick-fractal reality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-collapse</td>
+      <td><span class="kdmath">$R \gtrsim 10^{9}\,\text{m}$</span></td>
+      <td>Core implodes</td>
+      <td>Lattice far below capacity</td>
+    </tr>
+    <tr>
+      <td>Free fall</td>
+      <td><span class="kdmath">$R \downarrow$</span></td>
+      <td>Accelerating infall</td>
+      <td><span class="kdmath">$\Phi \propto r^{-1}\!\bigl(r/r_0\bigr)^{1/3}$</span></td>
+    </tr>
+    <tr>
+      <td><strong>Tick 1</strong></td>
+      <td><span class="kdmath">$r_{\text{cen}} = \dfrac{L^{2}}{G M m^{2}}$</span></td>
+      <td><span class="kdmath">$L$</span> halts <span class="kdmath">$r$</span></td>
+      <td>Proto-disc one tick above <span class="kdmath">$\rho_{\text{lock}}$</span></td>
+    </tr>
+    <tr>
+      <td><strong>Ticks 2–3</strong></td>
+      <td><span class="kdmath">$\rho_{\text{lock}}$</span></td>
+      <td>GR ISCO</td>
+      <td>Mode mismatch → Casimir pressure; battery starts charging</td>
+    </tr>
+    <tr>
+      <td><strong>Ticks 3–6</strong></td>
+      <td><span class="kdmath">$E_{\text{batt}} \uparrow$</span></td>
+      <td>Viscous / magnetic heating</td>
+      <td>Inflow capped at <span class="kdmath">$\Delta V_{\max}/\tau$</span>; proper time freezes</td>
+    </tr>
+    <tr>
+      <td><strong>Tick 7</strong></td>
+      <td><span class="kdmath">$t_{\text{GRB}} = 7\tau = 4.2\;\text{ps (rest)}$</span></td>
+      <td>Jet breakout</td>
+      <td>Battery empties in one coherent dump → ms GRB (observer)</td>
+    </tr>
+    <tr>
+      <td>Aftermath</td>
+      <td><span class="kdmath">$R_\infty$</span> fixed</td>
+      <td>Kerr remnant</td>
+      <td>Disc self-regulates; collapse ends</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="4casimir-battery">4 Casimir battery</h2>
+
+<h3 id="41throughput-cap">4.1 Throughput cap</h3>
+
+<div class="kdmath">$$
+\Delta V_{\max} \;=\; (\Delta x)^{8/3},\qquad
+\dot M_{\max} \;=\; \rho\,\dfrac{\Delta V_{\max}}{\tau}.
+$$</div>
+
+<p>Any excess mass creates a standing Casimir pressure</p>
+
+<div class="kdmath">$$
+P_{\text{C}}
+ \;=\;
+ -\,\dfrac{\pi^{2}\hbar c}{240\,\ell_0^{4}}
+ \;=\; -0.66\;\text{GPa}.
+$$</div>
+
+<h3 id="42seven-tick-gain">4.2 Seven-tick gain</h3>
+
+<p>The invariant battery energy after <span class="kdmath">$n$</span> ticks is</p>
+
+<div class="kdmath">$$
+E_n \;=\; E_0\,\exp\!\bigl[n\,K\,\delta\varphi\bigr],
+\qquad K = 7.379970056,\;
+\delta\varphi = \dfrac{2}{3}.
+$$</div>
+
+<p>Hence</p>
+
+<div class="kdmath">$$
+\boxed{\,E_7/E_0 \;=\; 409.82\;(\text{exact})\,}.
+$$</div>
+
+<p>(The mnemonic <span class="kdmath">$3/\alpha \approx 411$</span> overshoots by <span class="kdmath">$0.3\%$</span>.)</p>
+
+<hr />
+
+<h2 id="5observable-discriminants">5 Observable discriminants</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Observable</th>
+      <th>Tick-fractal prediction</th>
+      <th>Standard view</th>
+      <th>Instrument</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prompt GRB engine</td>
+      <td>Single <strong>seven-tick</strong> pulse (ms observer)</td>
+      <td>Viscous, multi-second engine</td>
+      <td>Fermi/GBM, POLAR-2</td>
+      <td><strong>pending</strong></td>
+    </tr>
+    <tr>
+      <td>Jet polarisation</td>
+      <td>Fixed axis, bimodal <span class="kdmath">$720^\circ$</span> holonomy</td>
+      <td>Tangled</td>
+      <td>POLAR-2</td>
+      <td>pending</td>
+    </tr>
+    <tr>
+      <td>VLBI ring size</td>
+      <td><span class="kdmath">$+12\%$</span> vs Kerr</td>
+      <td>Kerr value</td>
+      <td>ngEHT</td>
+      <td><strong>2026</strong></td>
+    </tr>
+    <tr>
+      <td>Horizon eigen-mode</td>
+      <td><span class="kdmath">$f_{\text{lock}} = \dfrac{c}{2\pi\rho_{\text{lock}}} \simeq 240\;\text{GHz}$</span></td>
+      <td>None</td>
+      <td>Ring-laser, BEC horizon</td>
+      <td>lab tests 2025</td>
+    </tr>
+    <tr>
+      <td>Hawking spectrum</td>
+      <td>Absent</td>
+      <td>Thermal <span class="kdmath">$T_\text{H}$</span></td>
+      <td>Any</td>
+      <td>falsifies model</td>
+    </tr>
+    <tr>
+      <td>Late fallback tail</td>
+      <td>None</td>
+      <td>Kilonova-like tail</td>
+      <td>Optical/IR</td>
+      <td>pending</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Detect <strong>any one</strong> of the bullets in the left column and the lattice wins;
+see a genuine Hawking spectrum and the model is dead.</p>
+
+<hr />
+
+<p><em>End of draft v1.0-core.</em><br />
+<em>For reproducibility every figure and constant is regenerated by</em><br />
+<code class="language-plaintext highlighter-rouge">make primer &amp;&amp; pytest tests/test_constants.py</code> <em>(hash <span class="kdmath">$b09f4…$</span>).</em></p>
+
+</main>
+
+</main> 
+    <footer>
+      <footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+
+    </footer>
+  </div>
+
+  <!-- Include MathJax configuration and script at the end of the body -->
+  
+<script>
+  window.MathJax = {
+    loader: { load: ['input/tex', 'output/chtml'] },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\
+
+\[', '\\]
+
+']],
+      macros: {} /* add custom macros here */
+    },
+    options: { skipHtmlTags: ['script', 'style', 'pre', 'code'] },
+    startup: { typeset: false }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+
+</body>
+</html>

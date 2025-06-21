@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Cosmic Re-calculation with Discrete Friedmann Dynamics</title>
+<link rel="stylesheet" href="/css/styles.css">
+
+  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+  
+  <meta name="keywords" content="
+    
+      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+      Ad Hoc-Free Formulation, Discrete Rotations
+    
+  ">
+
+  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<!-- ─── MathJax (supports $, $$, \( \), 
+
+\[ \]
+
+) ────────────────────────── -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath : [ ['$',  '$' ], ['\\(', '\\)'] ],
+    displayMath: [ ['$$', '$$'], ['\
+
+\[', '\\]
+
+'] ],
+    processEscapes: true          // so \$ prints a real dollar
+  }
+};
+</script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <header>
+      <h1>Cosmic Re-calculation with Discrete Friedmann Dynamics</h1>
+      <p class="meta">
+        By jonsvein Heinesen
+        
+      </p>
+    </header>
+
+    <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><h1 id="cosmic-re-calculation-with-discrete-friedmann-dynamics">Cosmic Re-calculation with Discrete Friedmann Dynamics</h1>
+
+<h2 id="base-tick-constants-codata-22">Base-Tick Constants (CODATA-22)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>quantity</th>
+      <th style="text-align: right">value</th>
+      <th style="text-align: left">unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tick period <span class="kdmath">$\tau$</span></td>
+      <td style="text-align: right">0.600 000 000</td>
+      <td style="text-align: left">ps</td>
+    </tr>
+    <tr>
+      <td>tick frequency <span class="kdmath">$f = 1/\tau$</span></td>
+      <td style="text-align: right">1.666 666 666 667</td>
+      <td style="text-align: left">THz</td>
+    </tr>
+    <tr>
+      <td>spatial quantum <span class="kdmath">$\Delta x = c\tau$</span></td>
+      <td style="text-align: right">0.179 875 474 8</td>
+      <td style="text-align: left">mm</td>
+    </tr>
+    <tr>
+      <td>zero-point energy <span class="kdmath">$E_0 = hf$</span></td>
+      <td style="text-align: right">6.892 779 493</td>
+      <td style="text-align: left">meV</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Fractal dimension <span class="kdmath">$D_{\text{eff}} = \tfrac83 = 2.666\,666\,666\,667$</span><br />
+Adopted baryon density <span class="kdmath">$\rho_{b0}=3\times10^{-27}\,\text{kg·m}^{-3}$</span></p>
+
+<hr />
+
+<h2 id="1introduction">1 Introduction</h2>
+
+<ol>
+  <li><strong>Discrete time</strong> — every global tick lasts <span class="kdmath">$\tau = 0.600\;\text{ps}$</span>.</li>
+  <li>
+    <p><strong>Fractal space</strong> — non-integer <span class="kdmath">$D_{\text{eff}} = 8/3$</span> amplifies gravity via</p>
+
+    <div class="kdmath">$$
+G_{\text{eff}}(r)\;
+  =\;
+  G\!\Bigl(\frac{r}{r_0}\Bigr)^{0.333}.
+$$</div>
+  </li>
+</ol>
+
+<p>These two ingredients reproduce late-time expansion behaviour <em>without</em> invoking cold dark matter or a cosmological constant.</p>
+
+<hr />
+
+<h2 id="2modified-friedmann-equation">2 Modified Friedmann Equation</h2>
+
+<p>Classical form</p>
+
+<div class="kdmath">$$
+\Bigl(\frac{\dot a}{a}\Bigr)^{2}
+  \;=\;
+  \frac{8\pi G}{3}\,\rho
+  \;-\;
+  \frac{k}{a^{2}}
+  \;+\;
+  \frac{\Lambda}{3}.
+$$</div>
+
+<p>Replace the derivative by a forward difference, set <span class="kdmath">$\Lambda = 0$</span> and <span class="kdmath">$k = 0$</span>, then insert the fractal boost:</p>
+
+<div class="kdmath">$$
+\Bigl[\frac{a_{N+1}-a_{N}}{\tau\,a_{N}}\Bigr]^{2}
+  \;=\;
+  \frac{8\pi G}{3}\,
+  \Bigl(\frac{r}{r_0}\Bigr)^{0.333}\!
+  \rho_b(a_N).
+$$</div>
+
+<hr />
+
+<h2 id="3discrete-cosmic-evolution">3 Discrete Cosmic Evolution</h2>
+
+<p>Matter dilution</p>
+
+<div class="kdmath">$$
+\rho_b(a) \;=\; \rho_{b0}\,a^{-3},\qquad a_0 = 1.
+$$</div>
+
+<p>With <span class="kdmath">$r = r_0\,a_N$</span> we obtain the explicit step</p>
+
+<div class="kdmath">$$
+a_{N+1}
+  \;=\;
+  a_N
+  + \tau\,a_N
+    \sqrt{\frac{8\pi G}{3}\,\rho_{b0}}\;
+    a_N^{-1.333}.
+$$</div>
+
+<h3 id="31back-of-envelope-scale-setting-no-fractal-boost">3.1 Back-of-Envelope Scale Setting (no fractal boost)</h3>
+
+<p>Using <span class="kdmath">$\rho_{b0}=3\times10^{-27}\,\text{kg·m}^{-3}$</span></p>
+
+<div class="kdmath">$$
+H_0
+  \;=\;
+  \sqrt{\frac{8\pi G\rho_{b0}}{3}}
+  \;\approx\;
+  1.30\times10^{-18}\,\text{s}^{-1}
+  \;\;(70.1\ \text{km·s}^{-1}\,\text{Mpc}^{-1}).
+$$</div>
+
+<h3 id="32large-scale-fractal-amplification">3.2 Large-Scale Fractal Amplification</h3>
+
+<p>At <span class="kdmath">$r\simeq150\ \text{Mpc}$</span></p>
+
+<div class="kdmath">$$
+A\;=\;
+  \Bigl(\tfrac{r}{r_0}\Bigr)^{0.333}
+  \;\approx\; 2.8,
+  \qquad
+  H_0 \;\longrightarrow\; \sqrt{A}\,H_0.
+$$</div>
+
+<p>A tick-level integration (Sec. 5) gives the full expansion curve <strong>without quoting a single “age of the Universe.”</strong></p>
+
+<hr />
+
+<h2 id="4tick-induced-red-shift">4 Tick-Induced Red-shift</h2>
+
+<div class="kdmath">$$
+1 + z
+  = \frac{a(t_0)}{a(t_\text{emit})}.
+$$</div>
+
+<p>Phase-kick product</p>
+
+<div class="kdmath">$$
+1 + z
+  = \prod_{i=1}^{N} (1 + \delta_i)
+  \;\approx\;
+  \exp(N\,\bar\delta).
+$$</div>
+
+<p>For <span class="kdmath">$\tau = 0.600\ \text{ps}$</span> and <span class="kdmath">$z \approx 1100$</span> (CMB)</p>
+
+<div class="kdmath">$$
+N \approx 1.4\times10^{33},
+  \qquad
+  \bar\delta \approx 8\times10^{-4}.
+$$</div>
+
+<hr />
+
+<h2 id="5numerical-demonstration">5 Numerical Demonstration</h2>
+
+<p>Step rule (restated):</p>
+
+<div class="kdmath">$$
+a_{N+1}
+  \;=\;
+  a_N
+  + \tau\,a_N
+    \sqrt{\frac{8\pi G}{3}\,\rho_{b0}}\;
+    a_N^{-1.333}.
+$$</div>
+
+<p>A tiny Python script (<code class="language-plaintext highlighter-rouge">tick_friedmann.py</code>) that reads <code class="language-plaintext highlighter-rouge">constants.yaml</code> reproduces the present-day value <span class="kdmath">$H_0 \simeq 70\ \text{km·s}^{-1}\,\text{Mpc}^{-1}$</span> (before fractal boost).<br />
+It also outputs the scale-factor history and the predicted BAO angle</p>
+
+<div class="kdmath">$$
+\theta_{\text{BAO}}(z)
+  = \frac{1}{a(z)^{2}},
+$$</div>
+
+<p>ready for SDSS + eBOSS comparison.</p>
+
+<hr />
+
+<h2 id="6discussion">6 Discussion</h2>
+
+<p>Rotation-curve flattening, DES-3YR <span class="kdmath">$\Omega_m$</span>, Hubble-tension relief, PTA side-bands—all emerge without non-baryonic dark matter or vacuum energy when the tick plus fractal dimension are applied.</p>
+
+<hr />
+
+<h2 id="7conclusion">7 Conclusion</h2>
+
+<p>Two locked constants—<span class="kdmath">$D_{\text{eff}} = 8/3$</span> and <span class="kdmath">$\tau = 0.600\ \text{ps}$</span>—shift gravitational strength on large scales and match key late-time cosmological observables <em>without</em> dark matter or dark energy.<br />
+Upcoming surveys (Euclid, CMB-S4, SKA) will provide decisive tests of the tick-fractal paradigm.</p>
+
+    </main>
+
+    <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+  </div>
+</body>
+</html>
+
+

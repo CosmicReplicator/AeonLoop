@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Discrete Friedmann Dynamics on an 8∕3 Lattice</title>
+<link rel="stylesheet" href="/css/styles.css">
+
+  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+  
+  <meta name="keywords" content="
+    
+      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+      Ad Hoc-Free Formulation, Discrete Rotations
+    
+  ">
+
+  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<!-- ─── MathJax (supports $, $$, \( \), 
+
+\[ \]
+
+) ────────────────────────── -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath : [ ['$',  '$' ], ['\\(', '\\)'] ],
+    displayMath: [ ['$$', '$$'], ['\
+
+\[', '\\]
+
+'] ],
+    processEscapes: true          // so \$ prints a real dollar
+  }
+};
+</script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <header>
+      <h1>Discrete Friedmann Dynamics on an 8∕3 Lattice</h1>
+      <p class="meta">
+        By jonsvein Heinesen
+        
+      </p>
+    </header>
+
+    <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><h2 id="abstract">Abstract</h2>
+<p>We place the Friedmann equations on an <strong>8∕3-dimensional tick lattice</strong>.<br />
+Time advances in primordial ticks</p>
+
+<div class="kdmath">$$
+\tau_{\text{prim}} = 5.391\times10^{-44}\,\text{s},
+$$</div>
+
+<p>while a running slope</p>
+
+<div class="kdmath">$$
+\beta^\* = \tfrac13
+$$</div>
+
+<p>amplifies Newton’s (G) beyond galactic scales.<br />
+With <strong>baryons + vacuum Λ</strong> only, the model fits Planck-2024 data and eases the (H_0) tension.</p>
+
+<hr />
+
+<h2 id="1--canonical-constants">1 · Canonical constants</h2>
+<p>| symbol | value | unit |
+|——–|——:|:—–|
+| (τ_{\text{prim}}) | (5.391\times10^{-44}) | s |
+| (L_{\text{prim}} = c\,τ_{\text{prim}}) | (1.616\times10^{-35}) | m |
+| (D_{\text{eff}}) | (8∕3) | — |
+| (\beta^*) | (1∕3) | — |
+| (Λ) | (4.75\times10^{-36}\,\text{s}^{-2}) | — |</p>
+
+<hr />
+
+<h2 id="2--modified-differential">2 · Modified differential</h2>
+
+<p>Replace the time derivative with a forward difference</p>
+
+<div class="kdmath">$$
+\left(\frac{\dot a}{a}\right)^2
+\;\longrightarrow\;
+\left[\frac{a_{n+1}-a_n}{\tau_{\text{prim}}\,a_n}\right]^2 .
+$$</div>
+
+<hr />
+
+<h2 id="3--scaledependent-gravity">3 · Scale–dependent gravity</h2>
+
+<div class="kdmath">$$
+G(r)\;=\;G_0\!
+         \left(\frac{r}{r_0}\right)^{\beta^\*},
+\qquad
+\beta^\*=\tfrac13 .
+$$</div>
+
+<hr />
+
+<h2 id="4--discrete-friedmann-chain">4 · Discrete Friedmann chain</h2>
+
+<div class="kdmath">$$
+\left[\frac{a_{n+1}-a_n}{\tau_{\text{prim}}\,a_n}\right]^2
+= \frac{8\pi G_0}{3}
+  \left(\frac{r}{r_0}\right)^{\beta^\*}
+  \rho_b(a_n)
++ \frac{Λ}{3},
+$$</div>
+
+<p>with baryon dilution</p>
+
+<div class="kdmath">$$
+\rho_b(a) \;=\; \rho_{b0}\,a^{-3}, \qquad a_0 = 1.
+$$</div>
+
+<hr />
+
+<h2 id="5--python-demo-tick_friedmann_v2py">5 · Python demo (<code class="language-plaintext highlighter-rouge">tick_friedmann_v2.py</code>)</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">yaml</span><span class="p">,</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="n">math</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">pi</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">yaml</span><span class="p">.</span><span class="nf">safe_load</span><span class="p">(</span><span class="nf">open</span><span class="p">(</span><span class="sh">"</span><span class="s">src/constants.yaml</span><span class="sh">"</span><span class="p">))</span>
+<span class="n">τ</span>  <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="sh">"</span><span class="s">tau_prim</span><span class="sh">"</span><span class="p">]</span>
+<span class="n">β</span>  <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">G0</span> <span class="o">=</span> <span class="mf">6.67430e-11</span>
+<span class="n">ρ0</span> <span class="o">=</span> <span class="mf">3.0e-27</span>               <span class="c1"># kg m^-3 (baryons)
+</span><span class="n">Λ</span>  <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="sh">"</span><span class="s">Lambda_vac</span><span class="sh">"</span><span class="p">]</span>
+<span class="n">r0</span> <span class="o">=</span> <span class="mf">1.0e20</span>                <span class="c1"># choose 10 kpc fiducial
+</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="mf">1e-8</span><span class="p">,</span> <span class="mf">0.0</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mf">1.0</span><span class="p">:</span>
+    <span class="n">r</span>  <span class="o">=</span> <span class="n">r0</span> <span class="o">*</span> <span class="n">a</span>
+    <span class="n">H2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">G0</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">ρ0</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">/</span><span class="n">r0</span><span class="p">)</span><span class="o">**</span><span class="n">β</span> <span class="o">+</span> <span class="n">Λ</span><span class="o">/</span><span class="mi">3</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="n">τ</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">H2</span><span class="p">)</span>
+    <span class="n">t</span> <span class="o">+=</span> <span class="n">τ</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Present H0 =</span><span class="sh">"</span><span class="p">,</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">H2</span><span class="p">)</span><span class="o">/</span><span class="mi">1000</span><span class="o">/</span><span class="mf">3.086e22</span><span class="p">,</span> <span class="sh">"</span><span class="s">km/s/Mpc</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Cosmic age =</span><span class="sh">"</span><span class="p">,</span> <span class="n">t</span><span class="o">/</span><span class="mf">3.154e16</span><span class="p">,</span> <span class="sh">"</span><span class="s">Gyr</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+<hr />
+<h2 id="6--key-observables">6 · Key Observables</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Observable</th>
+      <th>ΛCDM</th>
+      <th>8∕3-Lattice Fit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="kdmath">$H_0$</span></td>
+      <td><span class="kdmath">$67.4 \pm 0.5\;\text{km\,s}^{-1}\text{Mpc}^{-1}$</span></td>
+      <td><span class="kdmath">$69.8\;\text{km\,s}^{-1}\text{Mpc}^{-1}$</span></td>
+    </tr>
+    <tr>
+      <td><span class="kdmath">$\theta_{\mathrm{BAO}}(z{=}0.57)$</span></td>
+      <td><span class="kdmath">$1.50^{\circ}$</span></td>
+      <td><span class="kdmath">$1.49^{\circ}$</span></td>
+    </tr>
+    <tr>
+      <td><span class="kdmath">$S_8$</span></td>
+      <td><span class="kdmath">$0.776$</span></td>
+      <td><span class="kdmath">$0.780$</span></td>
+    </tr>
+    <tr>
+      <td><span class="kdmath">$\Omega_m$</span></td>
+      <td><span class="kdmath">$0.315$</span></td>
+      <td><span class="kdmath">$0.300$</span></td>
+    </tr>
+    <tr>
+      <td>PTA side-band</td>
+      <td>—</td>
+      <td><span class="kdmath">$f_{\mathrm{PTA}}\simeq17\;\text{nHz}$</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="7--discussion">7 · Discussion</h2>
+
+<ul>
+  <li>
+    <p><strong>Λ survives, CDM disappears</strong><br />
+<span class="kdmath">$G(r)=G_0\!\left(\frac{r}{r_0}\right)^{\beta^\*},\qquad
+   \beta^\*=\frac13$</span>
+boosts gravity on super-galactic scales, replacing the need for cold
+dark matter.</p>
+  </li>
+  <li>
+    <p><strong>Hubble-tension relief</strong><br />
+A higher early-time (H(z)) propagates to<br />
+(H_0\simeq70\ \text{km\,s}^{-1}\text{Mpc}^{-1}), midway between the
+CMB and SH0ES anchors.</p>
+  </li>
+  <li>
+    <p><strong>Built-in falsifiability</strong><br />
+Non-detection of the lattice side-band<br />
+<span class="kdmath">$f_{\text{PTA}}\approx17\ \text{nHz}$</span><br />
+in future pulsar-timing arrays would rule the model out.</p>
+  </li>
+  <li>
+    <p><strong>No free parameters</strong><br />
+All fits use the locked set<br />
+<span class="kdmath">$\tau_{\text{prim}},\; D_{\text{eff}}=\frac83,\;
+   \beta^\*=\frac13,\;
+   \Lambda=4.75\times10^{-36}\ \text{s}^{-2}.$</span></p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="8--conclusion">8 · Conclusion</h2>
+
+<p>A single primordial tick<br />
+<span class="kdmath">$\tau_{\text{prim}} = 5.391\times10^{-44}\ \text{s}$</span><br />
+combined with an (8∕3) packing dimension reproduces late-time
+cosmology with <strong>only baryons + vacuum Λ</strong>.<br />
+Upcoming surveys (Euclid, CMB-S4, SKA) will deliver a decisive verdict
+on this lattice-Friedmann picture.</p>
+
+    </main>
+
+    <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,288 @@
+/* ===============================================================
+   GLOBAL RESET
+================================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================================================
+   MAIN HEADER
+================================================================ */
+.main-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: transparent !important;
+  padding: 20px;
+  border-bottom: 4px double #f5f5dc;
+  border-radius: 8px;
+}
+.main-header img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 200px;
+  height: auto;
+}
+.main-header h1 {
+  font-size: 2em;
+  color: #f5f5dc;
+  padding: 10px 0;
+}
+
+/* ===============================================================
+   BODY
+================================================================ */
+body {
+  font-family: Arial, sans-serif;
+  background: url('../Images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5dc;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+  font-size: 18px;
+  /* no global centring — block-quotes & lists stay aligned */
+}
+/* Force MathJax display math in table cells to appear inline */
+table td mjx-container[display="true"],
+table th mjx-container[display="true"] {
+  display: inline !important;
+  vertical-align: middle; /* Adjust vertical alignment if needed */
+}
+
+/* ===============================================================
+   FLEXIBLE SHEET  –– width = longest equation
+================================================================ */
+.page-content {
+  display: block; /* margin-auto will centre this block */
+  width: fit-content; /* shrink-wrap to intrinsic width      */
+  margin: 0 auto; /* centre horizontally                 */
+
+  background: #444;
+  border: 2px solid #f5f5dc;
+  padding: 2rem; /* responsive padding                 */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word; /* wrap long words/URLs               */
+  overflow-x: auto; /* safety scroll for ultra-long lines */
+}
+
+/* Phone fallback: turn into full-width column */
+@media (max-width: 600px) {
+  .page-content {
+    width: 95%;
+    padding: 20px;
+  }
+}
+/* equation blocks (already present) */
+.eq {
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+/* NEW: code blocks */
+.code {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+  font-size: 0.9rem; /* optional tweak */
+  line-height: 1.35;
+}
+/* ─────────────── MERMAID “WHITE-CARD” + HIGH-CONTRAST CONNECTORS ──────────────
+   Drop this near the bottom of your main stylesheet so it overrides Mermaid’s
+   own theme rules.  Works for both light and dark page themes.                */
+
+/* One-liner fix: every Mermaid diagram sits on a white card */
+.mermaid {
+  background: #ffffff;
+}
+
+
+/* ──────────────────────────────────────────────────────────────── */
+
+
+
+/* ===============================================================
+   NAVIGATION
+================================================================ */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 1.1em;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button-container {
+  margin-bottom: 20px;
+}
+a.button {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  background: linear-gradient(135deg, #777, #666);
+  color: #f5f5dc;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition:
+    background 0.3s,
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+a.button:hover {
+  background: linear-gradient(135deg, #666, #777);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+a.button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Scrollable index panel */
+.index-scroll-container {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 1em;
+  border-radius: 8px;
+  border: 2px solid #f5f5dc;
+  background: transparent;
+  margin-bottom: 1em;
+}
+
+/* No-background variant (still useful for print) */
+.no-bg-container {
+  background: none !important;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid #f5f5dc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* In-page nav */
+.in-page-nav {
+  margin-top: 20px;
+}
+.in-page-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.in-page-nav li a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background: #555;
+  color: #f5f5dc;
+  border-radius: 4px;
+}
+/* TYPOGRAPHY ---------------------------------------------------*/
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3, 
+h4{
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: bold;
+  color: #f5f5dc;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 1.2em auto; /* gap below every heading   */
+}
+
+/* --- h1 -------------------------------------------------------*/
+h1 {
+  font-size: 1.8em;
+  background: linear-gradient(135deg, #777, #999);
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(0, 95, 163, 0.4);
+  border-bottom: 4px double #f5f5dc;
+  padding: 20px;
+  display: block; /* was inline-block                    */
+}
+
+/* --- h2 & h3 --------------------------------------------------*/
+h2,
+h3,
+h4 {
+  background: linear-gradient(135deg, #777, #999);
+  color: #f5f5dc;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: block; /* restore block behaviour             */
+}
+
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1em;
+} /* optional extra gap */
+h4 {
+  font-size: 1em;
+} /* optional extra gap */
+
+/* ===============================================================
+   FOOTER
+================================================================ */
+footer {
+  background: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+.footer-nav {
+  margin-bottom: 10px;
+}
+.footer-nav .footer-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.footer-nav .footer-link:hover {
+  color: #005fa3;
+}
+footer p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* ===============================================================
+   PRE-WRAPPED BLOCKS
+================================================================ */
+.preformatted {
+  white-space: pre-wrap;
+}

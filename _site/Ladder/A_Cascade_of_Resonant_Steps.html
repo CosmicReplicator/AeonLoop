@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>A Cascade of Resonant Steps</title>
+<link rel="stylesheet" href="/css/styles.css">
+
+  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+  
+  <meta name="keywords" content="
+    
+      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+      Ad Hoc-Free Formulation, Discrete Rotations
+    
+  ">
+
+  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<!-- ─── MathJax (supports $, $$, \( \), 
+
+\[ \]
+
+) ────────────────────────── -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath : [ ['$',  '$' ], ['\\(', '\\)'] ],
+    displayMath: [ ['$$', '$$'], ['\
+
+\[', '\\]
+
+'] ],
+    processEscapes: true          // so \$ prints a real dollar
+  }
+};
+</script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <header>
+      <h1>A Cascade of Resonant Steps</h1>
+      <p class="meta">
+        By jonsvein Heinesen
+        
+      </p>
+    </header>
+
+    <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><div>
+  <h2>From Digital Ticks to Emergent Forces: A Cascade of Resonant Steps</h2>
+
+  <h3>Abstract</h3>
+  <p>
+    We propose a discrete-time framework in which nature updates every&nbsp;≈
+    0.6 ps. That invariant “tick” (≈ 1.667 THz, 6.89 meV) seeds a resonant
+    energy ladder whose per-step amplifier is \(Q \simeq 409.78\). In five steps
+    the ladder lands on the electroweak scale (~ 80 GeV) while step 4 coincides
+    with the QCD confinement scale (~ 195 MeV). Continuing to steps 6–8 projects
+    ~ 32.6 TeV, 13.4 PeV, and 5.47 EeV, hinting that the entire hierarchy of
+    forces is an arithmetic consequence of a single digital tick.
+  </p>
+
+  <h3>1.&nbsp;Introduction</h3>
+  <p>
+    The origin of the strong/weak hierarchy remains a central puzzle in
+    high-energy physics. Instead of continuous renormalisation, we consider a
+    <em>digital-tick</em>
+    model: the universe advances in equal time quanta. Earlier work showed that
+    a seven-segment phase-locking condition fixes geometrical constants; here we
+    extend that logic to energy-scale emergence.
+  </p>
+  <p>
+    A 0.6 ps tick implies a base frequency 1.667 THz and, via \(E = h f\), a
+    base quantum \(E_0 \approx 6.89\;\text{meV}\). We ask: what fixed multiplier
+    \(Q\) maps that seed to the electroweak scale after precisely five resonant
+    steps?
+  </p>
+
+  <h3>2.&nbsp;Deriving the Step Multiplier</h3>
+  <p>Requiring step 5 to reach \(E_5 \approx 80\;\text{GeV}\) gives</p>
+  <p style="margin: 0">\[ Q^5 \;=\; \frac{E_5}{E_0}. \]</p>
+  <p style="margin: 0">
+    \[ \frac{80\times10^{9}\;\text{eV}}{6.89\times10^{-3}\;\text{eV}}
+    \;\approx\; 1.158\times10^{13}, \]
+  </p>
+  <p style="margin: 0">
+    \[ Q \;\approx\; \bigl(1.158\times10^{13}\bigr)^{1/5} \;\approx\; 409.78. \]
+  </p>
+  <p>
+    Thus each rung multiplies energy by \(Q \approx 4.10\times10^{2}\). The
+    resulting ladder is:
+  </p>
+
+  <table>
+    <tr>
+      <th>Step</th>
+      <th>Energy</th>
+      <th>Remarks</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>6.89 meV</td>
+      <td>Base tick</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>6.89 meV × 409.78 ≈ 2.83 eV</td>
+      <td>Atomic scale</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2.83 eV × 409.78 ≈ 1.16 keV</td>
+      <td>X-ray scale</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1.16 keV × 409.78 ≈ 0.475 MeV</td>
+      <td>Sub-MeV</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0.475 MeV × 409.78 ≈ 194.7 MeV</td>
+      <td>Strong (QCD)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>194.7 MeV × 409.78 ≈ 79.8 GeV</td>
+      <td>Electroweak</td>
+    </tr>
+  </table>
+
+  <h3>3.&nbsp;Forces from the Ladder</h3>
+  <p>
+    Step 4 reproduces the canonical QCD scale where hadronic confinement sets
+    in; the very next rung lands on the W/Z-boson mass window. In this picture
+    the weak interaction
+    <em>emerges directly</em>
+    from the strong-force plateau rather than from an unrelated high-energy
+    cut-off.
+  </p>
+
+  <h3>4.&nbsp;Beyond the Electroweak Step</h3>
+  <p>Applying the same \(Q\) further:</p>
+  <ul>
+    <li>
+      <strong>Step 6:</strong>
+      79.8 GeV × 409.78 ≈ 32.6 TeV
+    </li>
+    <li>
+      <strong>Step 7:</strong>
+      32.6 TeV × 409.78 ≈ 13.4 PeV
+    </li>
+    <li>
+      <strong>Step 8:</strong>
+      13.4 PeV × 409.78 ≈ 5.47 EeV
+    </li>
+  </ul>
+
+  <table>
+    <tr>
+      <th>Step</th>
+      <th>Energy</th>
+      <th>Units</th>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>79.8 GeV</td>
+      <td>Electroweak</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>32,600 GeV</td>
+      <td>≈ 32.6 TeV</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>13,360,000 GeV</td>
+      <td>≈ 13.4 PeV</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>
+        5.47 × 10
+        <sup>9</sup>
+        GeV
+      </td>
+      <td>≈ 5.47 EeV</td>
+    </tr>
+  </table>
+  <p>
+    The PeV-to-EeV domain overlaps observed knees in cosmic-ray spectra,
+    suggesting that the same tick-driven resonance may govern both particle and
+    astrophysical phenomena.
+  </p>
+
+  <h3>5.&nbsp;Discussion</h3>
+  <p>
+    A single multiplier \(Q\) reproduces the strong and electroweak scales
+    <em>and</em>
+    projects smoothly into the ultra-high-energy realm. Because \(Q\) is
+    determined once the electroweak target is fixed, the model avoids arbitrary
+    fine-tuning. The digital-tick paradigm therefore offers a compact
+    alternative to traditional renormalisation-group flow.
+  </p>
+
+  <h3>6.&nbsp;Conclusions</h3>
+  <p>
+    Starting from a 0.6 ps tick (6.89 meV) and an empirically anchored
+    multiplier \(Q \approx 409.78\), a five-step resonant cascade lands on 79.8
+    GeV, with the strong-force scale appearing one rung below. Extending the
+    same factor yields natural predictions in the TeV-to-EeV range. Ongoing work
+    will derive \(Q\) from first-principles lattice geometry and seek
+    observational signatures of discrete-tick harmonics.
+  </p>
+
+  <p style="font-size: 0.9em">
+    <sup>*</sup>
+    The six-rotation “closure” constant \(3/α ≈ 411.108\) arises in the
+    error-correction sector of the wider digital-tick programme; it is within
+    0.3 % of \(Q\) but not identical, and is kept separate throughout this
+    paper.
+  </p>
+</div>
+
+    </main>
+
+    <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+  </div>
+</body>
+</html>
+
+
