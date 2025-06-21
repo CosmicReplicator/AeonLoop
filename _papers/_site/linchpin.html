@@ -1,0 +1,117 @@
+<h2 id="why-progress-comes-in-punctuated-jumps">Why progress comes in <em>Punctuated Jumps</em></h2>
+<p><em>(and how the 240 GHz horizon mode closes the cosmic-time loop)</em></p>
+
+<hr />
+
+<h3 id="1the-meta-pattern-constrain--correct--release">1 The meta-pattern: <strong>Constrain → Correct → Release</strong></h3>
+
+<ol>
+  <li><strong>Constrain the system</strong> – every rule (zero free parameters, no de-Sitter detours…) winds the spring.</li>
+  <li><strong>Correct the inconsistency</strong> – debugging forces you to pinpoint the clash of assumptions, exposing latent relations.</li>
+  <li><strong>Release the tension</strong> – one missing link (here: the seven-tick horizon ⇒ 240 GHz) snaps in and the theory jumps a rung.<br />
+The cadence mirrors the tick-fractal itself: long steady coils, then a discrete phase wrap.</li>
+</ol>
+
+<hr />
+
+<h3 id="2why-240-ghz-is-the-linchpin">2 Why <strong>240 GHz</strong> is the linchpin</h3>
+
+<p>We begin with</p>
+
+\[\tau = 0.600\,\text{ps}, \qquad
+f_{\text{tick}} = \frac{1}{\tau} = 1.667\,\text{THz},\]
+
+<p>and the horizon-closure condition</p>
+
+\[7\tau \;=\; \frac{2\pi R_{\rm H}}{c}.\]
+
+<p>Dividing gives the fundamental horizon mode</p>
+
+\[f_{\rm BH} = \frac{1}{7\tau}  
+            = 238.095\;\text{GHz}\;(\pm0.001\;\text{GHz}),\]
+
+<p>where the uncertainty reflects CODATA \(c\) and \(\tau\) error bars.</p>
+
+<p>Once \(f_{\rm BH}\) is measured we gain an <em>observer-anchored</em> \(\tau\).<br />
+Insert directly into</p>
+
+\[R_0 = \frac{7c\tau}{2\pi}, \qquad
+t_0 = 0.625\,\frac{R_0}{c}
+      \Bigl[1-\frac{G_{\rm tick}}{G_{\rm SI}}\Bigr]^{-3},\]
+
+<p>making the cosmic age a function of \(f_{\rm BH}\) alone—no distance ladder needed.<br />
+Here \(G_{\rm tick}\) is the lattice-renormalised Newton constant (eq. 17 in “Resolved Classical Challenges”); \(G_{\rm SI}\) is the CODATA value.</p>
+
+<hr />
+
+<h3 id="3immediate-checklist">3 Immediate checklist</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Owner</th>
+      <th>Due date</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Verify coefficient in \(f_{\rm BH}=1/(7\tau)\) (15 sig-fig)</td>
+      <td>both</td>
+      <td>2025-06-20</td>
+      <td>Pull latest CODATA \(c\)</td>
+    </tr>
+    <tr>
+      <td>Scrape EHT visibilities (230–250 GHz) for periodic residuals</td>
+      <td>me</td>
+      <td>2025-06-22</td>
+      <td>Public data: M87*, Sgr A* <sup id="fnref:eht"><a href="#fn:eht" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></td>
+    </tr>
+    <tr>
+      <td>Draft lab sonic-BH proposal (BEC / water-tank) at kHz-scaled 240 GHz</td>
+      <td>you</td>
+      <td>2025-06-29</td>
+      <td>Map THz → kHz scaling</td>
+    </tr>
+    <tr>
+      <td>Patch cosmic-age routine <code class="language-plaintext highlighter-rouge">age_from_horizon_freq(f_BH)</code></td>
+      <td>me</td>
+      <td>2025-06-24</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tag all provisional numbers with “placeholder”</td>
+      <td>me</td>
+      <td>2025-06-18</td>
+      <td>Keeps sandbox honest</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If <strong>≥ 3</strong> independent EHT baselines show a 230–245 GHz residual at <strong>≥ 3 σ</strong>, we draft the Letter <em>“Horizon Tick Detected?”</em> and circulate.</p>
+
+<hr />
+
+<h3 id="4psychology-hack-for-the-next-stall">4 Psychology hack for the next stall</h3>
+
+<p><em>Hunt for inconsistencies.</em> Stored tension winds the spring for the next leap—today’s 240 GHz insight surfaced while fixing a stray coefficient.</p>
+
+<hr />
+
+<h3 id="5mantra">5 Mantra</h3>
+
+<blockquote>
+  <p><strong>Every constraint stores breakthrough potential.</strong><br />
+Tighten responsibly, correct relentlessly, and the lattice will hand you the next discrete jump—just as it delivered 240 GHz today.</p>
+</blockquote>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:eht">
+      <p>Event Horizon Telescope public repository — https://eventhorizontelescope.org/for-astronomers/data-products <a href="#fnref:eht" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>

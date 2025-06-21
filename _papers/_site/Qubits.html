@@ -1,0 +1,276 @@
+<h2 id="1introduction--beyond-superposition">1 Introduction — Beyond Superposition</h2>
+
+<p>Standard quantum computing leans on <strong>temporal superposition</strong></p>
+
+\[\lvert\psi\rangle = \alpha\,\lvert 0\rangle + \beta\,\lvert 1\rangle ,\]
+
+<p>kept coherent for milliseconds.<br />
+In the <strong>tick-fract​al universe</strong> superposition evaporates as a usable
+resource after <strong>one tick</strong></p>
+
+\[\tau = 0.600\;\text{ps}.\]
+
+<p>Any probe spanning more than a tick meets a <em>collapsed</em> state, so long
+(T_2) engineering is off-target.  Computational power resides in
+<strong>spatial entanglement</strong> confined to a microscopic “tick envelope.”</p>
+
+<hr />
+
+<h2 id="2helix-lock-lemma--the-tick-envelope">2 Helix-Lock Lemma — the Tick Envelope</h2>
+
+<p>A null world-line advances a straight pitch</p>
+
+\[\ell_0 = c\,\tau = 0.180\;\text{mm}\]
+
+<p>while twisting by</p>
+
+\[\frac{2\pi}{7}\]
+
+<p>per tick.<br />
+After <strong>seven</strong> ticks it closes on itself, tracing a circle of
+circumference</p>
+
+\[C = 7\,\ell_0 = 1.260\;\text{mm},\]
+
+<p>and therefore the universal lock radius</p>
+
+\[\rho_{\text{lock}} = \frac{C}{2\pi} \approx 0.200\;\text{mm}. \tag{1}\]
+
+<p>The extra</p>
+
+\[0.02\;\text{mm}\]
+
+<p>over \(\ell_0\) embodies the residual phase</p>
+
+\[0.381\;\text{rad}\]
+
+<p>per tick that upgrades matter packing from \(\tfrac83\) to \(\tfrac93\).</p>
+
+<hr />
+<div class="note">
+
+  <h3 id="the-two-lengths-you-must-never-confuse">The Two Lengths You Must Never Confuse</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>What it measures</th>
+        <th style="text-align: right">Numeric value</th>
+        <th>Used for</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>\(\ell_0\)</td>
+        <td><strong>Straight-line</strong> advance of a null world-line in one tick (no twist)</td>
+        <td style="text-align: right">\(0.180\;\text{mm}\)</td>
+        <td>The <em>actual spatial disc</em> that can be occupied within one tick.  All qubit hardware must fit inside this radius.</td>
+      </tr>
+      <tr>
+        <td>\(\rho_{\text{helix}}\)</td>
+        <td><strong>Arc-length</strong> a null world-line must travel to add the extra residual phase \(0.381\;\text{rad}\) per tick and close after seven ticks</td>
+        <td style="text-align: right">\(0.200\;\text{mm}\) (from \(C = 7\ell_0 = 1.26\;\text{mm}\))</td>
+        <td>A bookkeeping length that belongs to the <em>path</em>, not to the disc.  It guarantees the phase-knot closes; it does <strong>not</strong> enlarge the spatial envelope.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Key takeaway</strong> –<br />
+Hardware lives in a real-space circle of radius \(0.18\;\text{mm}\).<br />
+The larger \(0.20\;\text{mm}\) appears only when you unroll the helix
+onto its curved path; it never demands more physical acreage on the chip.</p>
+
+</div>
+
+<hr />
+
+<div class="note">
+
+  <h3 id="true-3-d-vs-simulated-3-d">True 3-D vs. Simulated 3-D</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>System</th>
+        <th>Lattice action</th>
+        <th>Seven-tick closure radius</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Spinning BH core</strong></td>
+        <td>Matter <strong>really</strong> completes the missing \(\tfrac19\) of 3-D packing; no residual phase needed.</td>
+        <td>\(\ell_0 = 0.180\;\text{mm}\)</td>
+      </tr>
+      <tr>
+        <td><strong>Tick-fract​al qubit</strong></td>
+        <td>Cannot compress physically, so it <strong>simulates</strong> the last \(\tfrac19\) via an extra \(0.381\) rad twist each tick.</td>
+        <td>\(\rho_{\text{lock}} \approx 0.200\;\text{mm}\)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><em>The additional \(0.02\;\text{mm}\) is the spatial budget that stands in
+for the density the qubit can never physically supply.</em></p>
+
+</div>
+
+<hr />
+
+<h2 id="3tick-limited-qubits">3 Tick-Limited Qubits</h2>
+
+<h3 id="31resource-table">3.1 Resource Table</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Conventional QC</th>
+      <th>Tick-Fract​al QC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coherence window</td>
+      <td>ms-scale</td>
+      <td>single tick \(\tau\)</td>
+    </tr>
+    <tr>
+      <td>Quantum resource</td>
+      <td>Temporal superposition</td>
+      <td><strong>Spatial entanglement on disc radius \(\rho_{\text{lock}}\)</strong></td>
+    </tr>
+    <tr>
+      <td>Decoherence hazard</td>
+      <td>Environment</td>
+      <td>Tick boundary</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="32macro-qubit-register">3.2 Macro-Qubit Register</h3>
+
+<ul>
+  <li><strong>Register size</strong> — Any set of physical qubits whose wave-functions
+fit inside the <strong>0.20 mm disc</strong> behaves as one logical qubit.</li>
+  <li><strong>Collective gates</strong> — Operate on the entire disc within one tick;
+logic lives in spatial patterns, not time evolution.</li>
+</ul>
+
+<h3 id="33topologically-protected-logical-states">3.3 Topologically Protected Logical States</h3>
+
+<p>Define</p>
+
+\[\lvert 0\rangle : \text{clockwise 7-tick helix},
+\qquad
+\lvert 1\rangle : \text{counter-clockwise helix}.\]
+
+<p>Flipping demands at least \(3.5\) ticks → sub-tick noise cannot trigger
+logical errors.</p>
+
+<hr />
+
+<h2 id="4hardware-consequences">4 Hardware Consequences</h2>
+
+<h3 id="41gate-redesign">4.1 Gate Redesign</h3>
+
+<ul>
+  <li><strong>Hadamard</strong> → quarter-helix pulse ( \(1.75\) ticks ).</li>
+  <li><strong>Pauli-X</strong> → half-helix ( \(3.5\) ticks ).</li>
+  <li><strong>CNOT</strong> → overlapping helix pairs inside the same 0.20 mm disc.</li>
+</ul>
+
+<h3 id="42error-correction-without-long-t_2">4.2 Error Correction without Long \(T_2\)</h3>
+
+<ul>
+  <li>Syndromes captured <strong>inside one tick</strong> — no phase tracking across
+ticks.</li>
+  <li>Memory stores <em>spatial</em> correlations, immune to slow drift.</li>
+</ul>
+
+<hr />
+
+<h2 id="5foundations--predictions">5 Foundations &amp; Predictions</h2>
+
+<h3 id="51scaling-laws">5.1 Scaling Laws</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Conventional QC</th>
+      <th>Tick-Fract​al QC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logical-state scaling</td>
+      <td>\(\mathcal O(2^n)\) via superposition</td>
+      <td>\(\mathcal O(n)\) macro-qubits via disc tiling</td>
+    </tr>
+    <tr>
+      <td>Limiting factor</td>
+      <td>\(T_2\) coherence</td>
+      <td>Helix-lock radius \(\rho_{\text{lock}}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="52experimental-tests">5.2 Experimental Tests</h3>
+
+<ol>
+  <li><strong>Entanglement on 0.20 mm disc</strong> — Build a superconducting or
+photonic ring of diameter \(2\rho_{\text{lock}}\approx0.40\;\text{mm}\)
+and violate Bell inequalities within one tick.</li>
+  <li><strong>Synchrony collapse \(&gt;\tau\)</strong> — Test whether correlations vanish
+once operations span more than one tick.</li>
+  <li><strong>Algorithm probe</strong> — Run a 2-qubit Grover search; speed-up should
+plateau if gate sequence exceeds \(\tau\).</li>
+</ol>
+
+<hr />
+
+<h2 id="6conclusion--quantum-computing-without-long-superposition">6 Conclusion — Quantum Computing without Long Superposition</h2>
+
+<ul>
+  <li>Superposition stops being a resource beyond <strong>0.600 ps</strong>.</li>
+  <li>The <strong>0.200 mm helix-lock disc</strong> supplies a protected, topological
+playground.</li>
+  <li>Quantum hardware must pivot from coherence-time engineering to
+<strong>sub-tick spatial orchestration</strong>.</li>
+</ul>
+
+<hr />
+
+<h3 id="next-actions">Next Actions</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Owner</th>
+      <th>ETA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Formalise helix-gate algebra</td>
+      <td>you</td>
+      <td>1 week</td>
+    </tr>
+    <tr>
+      <td>Build 0.40 mm ring prototype</td>
+      <td>lab partner</td>
+      <td>2 weeks</td>
+    </tr>
+    <tr>
+      <td>Submit tick-qubit theory preprint</td>
+      <td>both</td>
+      <td>1 month</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Tick-fract​al quantum logic now stands as a falsifiable blueprint.<br />
+Time to build— and, if nature objects, to break —it.</em></p>
