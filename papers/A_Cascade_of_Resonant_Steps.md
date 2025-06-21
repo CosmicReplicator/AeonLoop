@@ -169,7 +169,7 @@ leads naturally to a discrete hierarchy of energies. Here we establish that the 
 $$
 E_{n} = Q^{\,n}\,E_{0},
 $$
-is a necessary—and invariant—consequence of the theory’s structure. In doing so, we show that while conventional approaches sometimes “smuggle in” scale‑dependent factors (e.g. using $3/\alpha$ as a geometric constant), our derivation demonstrates that energy and geometry are fundamentally distinct: energy occupies geometry, rather than defining it.
+is a necessary—and invariant—consequence of the theory’s structure. In doing so, we show that while conventional approaches sometimes “smuggle in” scale‑dependent factors (e.g. using $$3/\alpha$$ as a geometric constant), our derivation demonstrates that energy and geometry are fundamentally distinct: energy occupies geometry, rather than defining it.
 
 ---
 
