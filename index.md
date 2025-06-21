@@ -1,5 +1,5 @@
 ---
-layout: no_ba
+layout: no_bg
 title: "AeonLoop"
 ---
 
