@@ -22,8 +22,6 @@ title: "Index"
   <section id="section1">
     <h3>I. Fundamentals &amp; Foundations</h3>
     <div class="button-container">
-      <!-- Uncomment or remove items as needed -->
-      <!--<a class="button" href="Test_Page.html" target="_blank">Test Page</a>-->
       <a class="button" href="Formulas_I.html" target="_blank">Formula I</a>
       <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
       <a class="button" href="Formulas_III.html" target="_blank">Formula III</a>
@@ -37,6 +35,7 @@ title: "Index"
       <a class="button" href="Maxwells_Derivation.html" target="_blank">Maxwell's Derivation</a>
     </div>
   </section>
+
   <section id="section2">
     <h3>II. Digital Tick Model &amp; Quantization</h3>
     <div class="button-container">
@@ -44,12 +43,14 @@ title: "Index"
       <a class="button" href="Digital_Molecule.html" target="_blank">Digital Molecule</a>
     </div>
   </section>
-  <section id="section3"> 
+
+  <section id="section3">
     <h3>III. Temporal &amp; Energy Dynamics</h3>
     <div class="button-container">
       <a class="button" href="Calibration.html" target="_blank">Calibration</a>
     </div>
   </section>
+
   <section id="section4">
     <h3>IV. Cosmology, Gravity &amp; Dark Matter</h3>
     <div class="button-container">
@@ -58,12 +59,14 @@ title: "Index"
       <a class="button" href="BlackHoles.html" target="_blank">BlackHoles</a>
     </div>
   </section>
+
   <section id="section5">
     <h3>V. Additional Models, Pitfalls &amp; Error Corrections</h3>
     <div class="button-container">
       <a class="button" href="TriplePoint.html" target="_blank">TriplePoint</a>
     </div>
   </section>
+
   <section id="section6">
     <h3>VI. Miscellaneous &amp; Overarching Concepts</h3>
     <div class="button-container">
