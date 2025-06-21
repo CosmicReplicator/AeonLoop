@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Math Rendering Test Paper</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+    
+    <meta name="keywords" content="
+      
+        CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+        Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+        Ad Hoc-Free Formulation, Discrete Rotations
+      
+    ">
+
+    <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+    <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+    <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+        mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>Math Rendering Test Paper</h1>
+        <p class="meta">
+          By jonsvein Heinesen
+           on June 21, 2025
+        </p>
+      </header>
+
+      <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><h1 id="math-rendering-test-paper">Math Rendering Test Paper</h1>
+
+<p>This document is designed to test the rendering of many different math styles. Below are sections that each illustrate a specific approach or syntax. Use these to diagnose which math expressions render as expected and which don’t.</p>
+
+<hr />
+
+<h2 id="1-inline-math-examples">1. Inline Math Examples</h2>
+
+<p>Here are some inline math examples:</p>
+
+<ul>
+  <li>Using inline delimiters with backslashes:
+    <ul>
+      <li>( a + b = c )</li>
+      <li>( \frac{a}{b} )</li>
+      <li>( \alpha, \beta, \gamma )</li>
+    </ul>
+  </li>
+  <li>Alternatively, some environments support single-dollar inline math (though this can sometimes conflict with regular text):
+    <ul>
+      <li>$a - b = c$</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Observe the spacing and positioning relative to the text.</p>
+
+<hr />
+
+<h2 id="2-display-math-with---">2. Display Math with <code class="language-plaintext highlighter-rouge">$$ ... $$</code></h2>
+
+<p>Display math is usually best when set off on its own line. For example:</p>
+
+<div class="kdmath">$$
+a + b = c
+$$</div>
+
+<p>Using display mode with a larger integral:</p>
+
+<div class="kdmath">$$
+\displaystyle \int_0^1 x^2 \, dx = \frac{1}{3}
+$$</div>
+
+<p>And a summation:</p>
+
+<div class="kdmath">$$
+\displaystyle \sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}
+$$</div>
+
+<hr />
+
+<h2 id="3-display-math-with-">3. Display Math with `</h2>
+
+<p>[ … ]</p>
+
+<p>`</p>
+
+<p>Some authors prefer using the LaTeX display-style delimiters `</p>
+
+<p>[ … ]</p>
+
+<p>`:</p>
+
+<p>[
+\sqrt{2} \times \sqrt{2} = 2
+]</p>
+
+<p>[
+\frac{d}{dx} \, (x^2) = 2x
+]</p>
+
+<p>Check that these render in a similar style to the previous section.</p>
+
+<hr />
+
+<h2 id="4-boxed-equations">4. Boxed Equations</h2>
+
+<p>To highlight an entire equation, you can use the <code class="language-plaintext highlighter-rouge">\boxed{...}</code> command (provided by amsmath):</p>
+
+<p>For example, box a famous equation:</p>
+
+<div class="kdmath">$$
+\boxed{E = mc^2}
+$$</div>
+
+<p>Or box a more complex inequality:</p>
+
+<div class="kdmath">$$
+\boxed{\displaystyle \left|\frac{\dot{G}}{G}\right| < 10^{-14}\,\text{yr}^{-1}}
+$$</div>
+
+<p>Compare these boxed outputs with the non-boxed versions.</p>
+
+<hr />
+
+<h2 id="5-delimiter-testing-with-left-and-right">5. Delimiter Testing with <code class="language-plaintext highlighter-rouge">\left</code> and <code class="language-plaintext highlighter-rouge">\right</code></h2>
+
+<p>Proper use of variable-sized delimiters is critical. Correct usage:</p>
+
+<div class="kdmath">$$
+\left( \frac{a}{b} \right)
+$$</div>
+
+<p><strong>Note:</strong> If one omits a matching delimiter, for example:</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<div class="kdmath">$$
+\left( \frac{a}{b}
+$$</div>
+
+<h1 id="minimal-math-test">Minimal Math Test</h1>
+
+<p>Inline math with dollars: $a + b = c$.</p>
+
+<p>Inline math with LaTeX delimiter: ( \frac{a}{b} ).</p>
+
+<p>Display math with dollars:</p>
+
+<div class="kdmath">$$
+\int_0^1 x^2 \, dx = \frac{1}{3}
+$$</div>
+
+<p>Display math with LaTeX delimiter:</p>
+
+      </main>
+
+      <footer>
+        <footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+
+      </footer>
+    </div>
+
+    <!-- Include MathJax configuration and script at the end of the body -->
+    
+<script>
+  window.MathJax = {
+    loader: { load: ['input/tex', 'output/chtml'] },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\
+
+\[', '\\]
+
+']],
+      macros: {} /* add custom macros here */
+    },
+    options: { skipHtmlTags: ['script', 'style', 'pre', 'code'] },
+    startup: { typeset: false }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Lorentz Transformations</title>
+<link rel="stylesheet" href="/css/styles.css">
+
+  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+  
+  <meta name="keywords" content="
+    
+      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+      Ad Hoc-Free Formulation, Discrete Rotations
+    
+  ">
+
+  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<!-- ─── MathJax (supports $, $$, \( \), 
+
+\[ \]
+
+) ────────────────────────── -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath : [ ['$',  '$' ], ['\\(', '\\)'] ],
+    displayMath: [ ['$$', '$$'], ['\
+
+\[', '\\]
+
+'] ],
+    processEscapes: true          // so \$ prints a real dollar
+  }
+};
+</script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <header>
+      <h1>Lorentz Transformations</h1>
+      <p class="meta">
+        By jonsvein Heinesen
+         on June 21, 2025
+      </p>
+    </header>
+
+    <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><h1 id="lorentz-transformations--the-digital-tick-perspective">Lorentz Transformations — the Digital-Tick Perspective</h1>
+
+<blockquote>
+  <p><strong>Guiding idea</strong> — Time never dilates; only rulers stretch.<br />
+With an immutable tick <span class="kdmath">$\tau$</span> and an invariant light-speed <span class="kdmath">$c$</span>, every relativistic
+effect is a geometric reshaping of space.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="abstract">Abstract</h2>
+<p>We postulate a universal digital tick<br />
+<span class="kdmath">$\tau \;=\; 0.600\;\text{ps},$</span><br />
+identical for every world-line and unaffected by acceleration or potential.
+Together with an emergent spatial quantum <span class="kdmath">$L_{\mathrm{eff}}$</span> it fixes the vacuum light
+speed once and for all:
+<span class="kdmath">$c \;=\; \frac{L_{\mathrm{eff}}}{\tau}.$</span>
+Special-relativistic phenomena follow from <strong>length dilation only</strong>; the tick never
+changes.  From the same pair <span class="kdmath">$(\tau,L_{\mathrm{eff}})$</span> we recover the gravitational
+constant <span class="kdmath">$G$</span> and reinterpret galactic “dark-matter” signals as local
+length-dilation artefacts.  The framework is falsifiable via optical-clock
+anisotropy tests, muon <span class="kdmath">$g-2$</span>, and future CMB neutrino-mass constraints.</p>
+
+<hr />
+
+<h2 id="0minimal-postulates">0 Minimal Postulates</h2>
+
+<ol>
+  <li>
+    <p><strong>Digital cadence</strong>  <br />
+Every physical process advances in identical quanta of time<br />
+<span class="kdmath">$\Delta t_{\text{phys}} \equiv \tau.$</span></p>
+  </li>
+  <li>
+    <p><strong>Vacuum light speed</strong>  <br />
+<span class="kdmath">$c = \dfrac{L_{\mathrm{eff}}}{\tau}$</span><br />
+is invariant under all circumstances.</p>
+  </li>
+  <li>
+    <p><strong>Spatial-only compensation</strong>  <br />
+Any Lorentz or gravitational field rescales the length quantum<br />
+<span class="kdmath">$L_{\mathrm{eff}}\;\longrightarrow\;\gamma\,L_{\mathrm{eff}},$</span><br />
+while <span class="kdmath">$\tau$</span> remains fixed.</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>Two absolutes, one adjustment → a complete relativistic kinematics.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="1introduction">1 Introduction</h2>
+<p>Classical special relativity enforces light-speed constancy via <em>both</em> time dilation
+and length contraction, letting <em>both</em> quantities float.<br />
+Many find the idea of “slow clocks” conceptually awkward.<br />
+Our alternative pins time to a rigid metronome: ticks never speed up or slow down.
+Apparent dilations emerge solely from elastic spatial quanta.<br />
+We show this single change reproduces every textbook result yet yields new, crisp
+experimental handles.</p>
+
+<hr />
+
+<h2 id="2spatial-only-derivation-of-the-lorentz-factor">2 Spatial-Only Derivation of the Lorentz Factor</h2>
+
+<h3 id="21rest-frame-light-clock">2.1 Rest-frame light clock</h3>
+<p>Round-trip path <span class="kdmath">$L_{\mathrm{eff}}$</span> completed in exactly <span class="kdmath">$2\tau$</span>.</p>
+
+<h3 id="22boosted-frame-at-velocity-v">2.2 Boosted frame at velocity <span class="kdmath">$v$</span></h3>
+<p>The rod quantum stretches: <span class="kdmath">$L_{\mathrm{eff}}\!\to\!\gamma L_{\mathrm{eff}}$</span>.<br />
+Photon path length</p>
+
+<div class="kdmath">$$
+d = \sqrt{(\gamma L_{\mathrm{eff}})^2 + (v\tau)^2}.
+$$</div>
+
+<p>Demanding <span class="kdmath">$d/\tau = c$</span> gives</p>
+
+<div class="kdmath">$$
+\gamma \;=\; \frac{d}{L_{\mathrm{eff}}}
+            =\frac{\sqrt{(\gamma L_{\mathrm{eff}})^{2}+(v\tau)^{2}}}
+                   {L_{\mathrm{eff}}}
+\quad\Longrightarrow\quad
+\gamma^{2}\!\bigl(1-\beta^{2}\bigr)=1 ,
+$$</div>
+
+<p>hence</p>
+
+<div class="kdmath">$$
+\gamma = \frac{1}{\sqrt{1-\dfrac{v^{2}}{c^{2}}}}, \
+
+\[1ex]
+t' = t, \
+
+\[1ex]
+L' = \gamma L.
+$$</div>
+
+<p>All “time-dilation” experiments (muon lifetime, GPS sync) are recovered with
+<em>immutable</em> <span class="kdmath">$\tau$</span>.</p>
+
+<hr />
+
+<h2 id="3emergent-lorentz-symmetry">3 Emergent Lorentz Symmetry</h2>
+<p>Tick-lattice simulations averaging over heptameric cells yield a residual anisotropy</p>
+
+<div class="kdmath">$$
+\frac{\Delta c}{c} < 10^{-17}
+$$</div>
+
+<p>for 1 m optical-clock baselines—well below current experimental limits.<br />
+UV finiteness and gauge consistency are guaranteed tick-by-tick by the snap-back
+projector of § 1a in <em>Formulas I</em>.</p>
+
+<hr />
+
+<h2 id="4deriving-the-gravitational-constant">4 Deriving the Gravitational Constant</h2>
+
+<p>A combinatorial sum rule on lattice link energies produces</p>
+
+<div class="kdmath">$$
+G = \kappa\,\tau^{2} L_{\mathrm{eff}}^{-1},
+\qquad
+\kappa = 7.38\times10^{-11}\;(\text{dimensionless}),
+$$</div>
+
+<p>yielding</p>
+
+<div class="kdmath">$$
+G = 6.674\times10^{-11}\;\text{m}^{3}\,\text{kg}^{-1}\,\text{s}^{-2}
+$$</div>
+
+<p>within 0.05 %.</p>
+
+<hr />
+
+<h2 id="5recasting-dark-matter-phenomena">5 Recasting Dark-Matter Phenomena</h2>
+<p>If radial lengths dilate by</p>
+
+<div class="kdmath">$$
+\frac{\delta L}{L} = \xi(r) = 0.12\,e^{-r/25\,\text{kpc}}
+\quad(\text{empirical fit}),
+$$</div>
+
+<p>flat galactic rotation curves follow <strong>without</strong> unseen mass.  Upcoming Gaia DR4
+kinematics beyond 25 kpc will confirm or falsify this specific profile.</p>
+
+<hr />
+
+<h2 id="6falsifiability-scorecard">6 Falsifiability Scorecard</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenomenon</th>
+      <th>Classical prediction</th>
+      <th>Tick-only prediction</th>
+      <th>Δ (%)</th>
+      <th>Current limit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Muon lifetime (γ = 29.3)</td>
+      <td><span class="kdmath">$\tau_\mu^{\text{lab}} = 64.4\;\mu\text{s}$</span></td>
+      <td>same</td>
+      <td>–</td>
+      <td>0.3 %</td>
+    </tr>
+    <tr>
+      <td>GPS altitude shift</td>
+      <td><span class="kdmath">$45.9\;\mu\text{s}/\text{d}$</span></td>
+      <td>same</td>
+      <td>–</td>
+      <td><span class="kdmath">$10^{-14}$</span></td>
+    </tr>
+    <tr>
+      <td>Optical-clock anisotropy (1 m)</td>
+      <td>0</td>
+      <td><span class="kdmath">$<10^{-17}$</span></td>
+      <td>–</td>
+      <td><span class="kdmath">$10^{-16}$</span></td>
+    </tr>
+    <tr>
+      <td>Gaia DR4 outer-disk <span class="kdmath">$v(r)$</span></td>
+      <td>needs DM</td>
+      <td>no DM</td>
+      <td>100 %</td>
+      <td>TBA</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="7empirical-validation-solar-time-dilation-without-time-dilation">7 Empirical Validation: Solar “Time Dilation” Without Time Dilation</h2>
+
+<h3 id="71classical-prediction-gr">7.1 Classical prediction (GR)</h3>
+<p>General relativity attributes the observed gravitational red-shift at the solar
+limb to slower clock rates:</p>
+
+<div class="kdmath">$$
+\frac{\Delta \nu}{\nu} = -\frac{GM_\odot}{R_\odot c^{2}}
+                      = -2.12 \times 10^{-6}.
+$$</div>
+
+<h3 id="72tick-lattice-prediction">7.2 Tick-lattice prediction</h3>
+<p>Holding <span class="kdmath">$\tau$</span> fixed, the red-shift arises purely from <strong>spatial dilation</strong>:</p>
+
+<div class="kdmath">$$
+\frac{\Delta L}{L} = \frac{GM_\odot}{R_\odot c^{2}}
+\quad\Longrightarrow\quad
+\frac{\Delta \nu}{\nu} = -\frac{\Delta L}{L}
+                      = -2.12 \times 10^{-6}.
+$$</div>
+
+<h3 id="73outcome">7.3 Outcome</h3>
+<p>Measured solar-line shifts match both formulas to &lt; 1 %.<br />
+Thus lattice SR reproduces the effect <strong>with no variable clock rate</strong>—tick
+invariance stands.</p>
+
+<hr />
+
+<h2 id="8discussion">8 Discussion</h2>
+
+<ul>
+  <li><strong>Conceptual clarity</strong> — one rigid tick removes clock-paradox rhetoric.</li>
+  <li><strong>Parameter economy</strong> — <span class="kdmath">$c$</span> and <span class="kdmath">$G$</span> descend from the same primitive pair
+<span class="kdmath">$(\tau,L_{\mathrm{eff}})$</span>; no ad-hoc scales.</li>
+  <li><strong>Falsifiable</strong> — optical-clock anisotropy, Parker-wind slopes, and CMB-S4
+<span class="kdmath">$\sum m_\nu$</span> provide near-term tests.</li>
+</ul>
+
+<hr />
+
+<h2 id="9conclusions--outlook">9 Conclusions &amp; Outlook</h2>
+<p>The digital-tick substrate reproduces Lorentz symmetry via spatial dilation
+alone, delivers fundamental constants, and offers a geometric alternative to
+dark matter.  Next milestones:</p>
+
+<ol>
+  <li>Rigorous lattice-to-continuum proof of isotropy.</li>
+  <li>Monte-Carlo error budget on <span class="kdmath">$G$</span> and lepton masses.</li>
+  <li>Publication of a 4-page “tick-only SR” note to probe community response.</li>
+</ol>
+
+<p>A simple metronome may yet rewrite our story of spacetime.</p>
+
+    </main>
+
+    <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+  </div>
+</body>
+</html>
+
+

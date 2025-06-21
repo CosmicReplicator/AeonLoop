@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Calibration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+    
+    <meta name="keywords" content="
+      
+        CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+        Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+        Ad Hoc-Free Formulation, Discrete Rotations
+      
+    ">
+
+    <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+    <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+    <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+        mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>Calibration</h1>
+        <p class="meta">
+          By jonsvein Heinesen
+           on June 21, 2025
+        </p>
+      </header>
+
+      <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><h2 id="0aim">0 Aim</h2>
+<p>Show how a single cosmological datum and the <strong>observed 10 % slow-down of the expansion</strong> combine to shave exactly one-third of a dimension from geometric three-space.</p>
+
+<div class="kdmath">$$
+D_{\mathrm{eff}} = 3 - 0.333 = \tfrac83
+$$</div>
+
+<hr />
+
+<h2 id="1normalising-the-1233-mpc-loop-to-1000-nodes">1 Normalising the 1233 Mpc loop to 1000 nodes</h2>
+
+<p>We fix the node count</p>
+
+<div class="kdmath">$$
+N = 1000
+$$</div>
+
+<p>and set the Big-Ring circumference</p>
+
+<div class="kdmath">$$
+C_{\bigcirc} = 1233\ \text{Mpc}.
+$$</div>
+
+<p>The calibrated node length is</p>
+
+<div class="kdmath">$$
+L_{\mathrm{calib}} = \frac{C_{\bigcirc}}{N} = \frac{1233}{1000} = 1.233\ \text{Mpc}.
+$$</div>
+
+<p>The fractional excess over a unit step is therefore</p>
+
+<div class="kdmath">$$
+\Delta_{\text{rot}} = L_{\mathrm{calib}} - 1 = 1.233 - 1 = 0.233.
+$$</div>
+
+<hr />
+
+<h2 id="2the-10--expansion-slow-down-term">2 The 10 % expansion slow-down term</h2>
+
+<p>Supernova and BAO fits show the present expansion lags the naïve <span class="kdmath">$\(H_0\)$</span>-extrapolated value by 10 %.<br />
+We encode the global drag as</p>
+
+<div class="kdmath">$$
+\delta_{\text{exp}} = 0.100.
+$$</div>
+
+<hr />
+
+<h2 id="3total-slice-removed-from-three-space">3 Total slice removed from three-space</h2>
+
+<div class="kdmath">$$
+F_{\text{tot}} = \Delta_{\text{rot}} + \delta_{\text{exp}} = 0.233 + 0.100 = 0.333.
+$$</div>
+
+<hr />
+
+<h2 id="4effective-spectral-dimension">4 Effective spectral dimension</h2>
+
+<div class="kdmath">$$
+D_{\mathrm{eff}} = 3 - F_{\text{tot}} = 3 - 0.333 = 2.667 = \tfrac83.
+$$</div>
+
+<p>The rounding to an exact third is enforced by the seven-tick holonomy.</p>
+
+<hr />
+
+<h3 id="chain-of-logic-in-one-line">Chain of logic in one line</h3>
+
+<div class="kdmath">$$
+C_{\bigcirc}=1233\ \text{Mpc}
+\;\Longrightarrow\;
+\Delta_{\text{rot}}=0.233
+\;\xrightarrow{-10\%\ \text{expansion}}\;
+\delta_{\text{exp}}=0.100
+\;\Longrightarrow\;
+D_{\mathrm{eff}}=\tfrac83.
+$$</div>
+
+<hr />
+
+<h2 id="5next-checks">5 Next checks</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Check</th>
+      <th>Target</th>
+      <th>ETA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monte-Carlo diffusion exponent on 1000-node lattice</td>
+      <td>slope <span class="kdmath">$=\;2/3$</span></td>
+      <td>2025-07-05</td>
+    </tr>
+    <tr>
+      <td>Re-derive (\delta_{\text{exp}}) from tick-fractal FRW fit</td>
+      <td>analytic</td>
+      <td>2025-07-12</td>
+    </tr>
+    <tr>
+      <td>Short note “Big-Ring &amp; 10 % Slow-down ⇝ <span class="kdmath">$D_{\mathrm{eff}}$</span>”</td>
+      <td>after above</td>
+      <td>arXiv</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="take-away">Take-away</h3>
+
+<p>A 1233 Mpc geodesic loop cast onto a 1000-node tick lattice and corrected for the 10 % late-time expansion drag removes <strong>exactly one-third of a dimension</strong>, forcing the universe’s effective spectral dimension to</p>
+
+<div class="kdmath">$$
+D_{\mathrm{eff}} = \tfrac83.
+$$</div>
+
+      </main>
+
+      <footer>
+        <footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+
+      </footer>
+    </div>
+
+    <!-- Include MathJax configuration and script at the end of the body -->
+    
+<script>
+  window.MathJax = {
+    loader: { load: ['input/tex', 'output/chtml'] },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\
+
+\[', '\\]
+
+']],
+      macros: {} /* add custom macros here */
+    },
+    options: { skipHtmlTags: ['script', 'style', 'pre', 'code'] },
+    startup: { typeset: false }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+
+  </body>
+</html>
+

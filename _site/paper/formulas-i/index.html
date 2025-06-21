@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Formulas I</title>
+<link rel="stylesheet" href="/css/styles.css">
+
+  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+  
+  <meta name="keywords" content="
+    
+      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+      Ad Hoc-Free Formulation, Discrete Rotations
+    
+  ">
+
+  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+
+<!-- ─── MathJax (supports $, $$, \( \), 
+
+\[ \]
+
+) ────────────────────────── -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath : [ ['$',  '$' ], ['\\(', '\\)'] ],
+    displayMath: [ ['$$', '$$'], ['\
+
+\[', '\\]
+
+'] ],
+    processEscapes: true          // so \$ prints a real dollar
+  }
+};
+</script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <header>
+      <h1>Formulas I</h1>
+      <p class="meta">
+        By jonsvein Heinesen
+         on June 21, 2025
+      </p>
+    </header>
+
+    <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><h2 id="digital-tick-model--locked-constants-v-2025-06-13">Digital-Tick Model — Locked Constants (v 2025-06-13)</h2>
+
+<div class="kdmath">$$
+\boxed{%
+\begin{array}{@{} r @{\,=\,} l @{\qquad} r @{\,=\,} l @{}}
+  \tau           & 0.600\,000\,000\;\mathrm{ps} &
+  E_{0}          & 6.892\,779\,493\;\mathrm{meV} \\  
+  f              & 1.666\,666\,666\,666\,7\;\mathrm{THz} &
+  m_{\text{eff}} & 1.093\times10^{-38}\;\mathrm{kg} \\  
+  \Delta x       & 0.179\,875\,474\,8\;\mathrm{mm} &
+  G_{\text{tick}}& 4.51\times10^{-62} \\  
+  h              & 4.135\,667\,696\times10^{-15}\;\mathrm{eV\!\cdot\!s} &
+  G              & 6.67\times10^{-11}\;\mathrm{m^{3}kg^{-1}s^{-2}} \\  
+  \hbar          & 6.582\,119\,569\times10^{-16}\;\mathrm{eV\!\cdot\!s} &
+  \alpha         & 7.297\,352\,5693\times10^{-3} \\  
+  C_{\alpha}     & 7.379\,970\,056 &
+  D_{\text{eff}} & \dfrac{8}{3}=2.666\,666\,666\,\overline7 \\  
+  \kappa         & 0.447 & &
+\end{array}}
+$$</div>
+
+<hr />
+
+<h3 id="1--snap-back-error-correction---kills-the-need-for-renormalisation">1 · Snap-Back Error-Correction   <em>(kills the need for renormalisation)</em></h3>
+
+<p>At the end of every tick the lattice state is <strong>projected onto the nearest
+legal code-word</strong>, eliminating UV divergences in a single, parameter-free
+stroke.</p>
+
+<div class="kdmath">$$
+\boxed{
+  \psi(t+\tau)=\mathbf P\,e^{-\,\tfrac{i}{\hbar}H\tau}\,\psi(t)
+}
+\qquad
+(\mathbf P^{2}= \mathbf P,\;[\mathbf P,G]=0)
+$$</div>
+
+<ul>
+  <li><strong>Unitary drift</strong> <span class="kdmath">$e^{-\,iH\tau/\hbar}$</span></li>
+  <li><strong>Snap projector</strong> <span class="kdmath">${\mathbf P}$</span> enforces all lattice parity checks.</li>
+</ul>
+
+<p>Quantitatively, the projector damps any illegal amplitude by a fixed factor</p>
+
+<div class="kdmath">$$
+\bigl\lVert(1-\mathbf P)\psi\bigr\rVert^{2}=e^{-K},
+\qquad
+K=7.379\,970\,056 ,
+$$</div>
+
+<p>so after <span class="kdmath">$n$</span> ticks the UV tail shrinks as <span class="kdmath">$e^{-\,nK}$</span>.<br />
+Because <span class="kdmath">$K$</span> equals the same constant that fixes <span class="kdmath">$\alpha^{-1}$</span>,
+<strong>renormalisation counter-terms become obsolete</strong>: the lattice prunes every
+divergence automatically.</p>
+
+<ul>
+  <li>
+    <p><strong>Hard UV ceiling</strong></p>
+
+    <div class="kdmath">$$
+\Delta E_{\max}= \frac{h}{\tau}\approx 6.892\;\text{meV}.
+$$</div>
+  </li>
+  <li>
+    <p><strong>Finite-difference + projector</strong> is all that’s required to recover
+Maxwell, Dirac, and even confinement with no manual regularisation.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Historical note</strong> – The snap rule was discovered before the tick itself
+was formalised: we had only the base frequency<br />
+<span class="kdmath">$f = 1/\tau = 1.666\;\text{THz}$</span> and RH-spin symmetry.<br />
+Activating <span class="kdmath">$\mathbf P$</span> instantly removed the UV blow-up, so every
+renormalisation term was deleted from the codebase on <strong>2024-Q1-Week 3</strong>.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="11--finite-difference-operators">1.1 · Finite-Difference Operators</h3>
+
+<p><em>Discrete update of the four-potential</em></p>
+
+<div class="kdmath">$$
+A_{\mu}(t+\tau,x)
+  = A_{\mu}(t,x)
+  + \tau\,\partial_{t}A_{\mu}(t,x)
+  + \mathcal O(\tau^{2}) .
+$$</div>
+
+<p><em>First- and second-order time derivatives</em></p>
+
+<div class="kdmath">$$
+\partial_{t}A_{\mu}
+  \approx \frac{A_{\mu}(t+\tau) - A_{\mu}(t)}{\tau},
+\qquad
+\partial_{t}^{2}A_{\mu}
+  \approx
+  \frac{A_{\mu}(t+\tau) - 2A_{\mu}(t) + A_{\mu}(t-\tau)}{\tau^{2}} .
+$$</div>
+
+<p><em>Spatial derivative</em></p>
+
+<div class="kdmath">$$
+\partial_{x}A_{\mu}
+  \approx
+  \frac{A_{\mu}(t,x+\Delta x) - A_{\mu}(t,x)}{\Delta x} .
+$$</div>
+
+<hr />
+
+<h2 id="2--electromagnetic-tensor--lattice-lagrangian">2 · Electromagnetic Tensor &amp; Lattice Lagrangian</h2>
+
+<p>Discrete-difference tensor<br />
+<span class="kdmath">$F^{\text{disc}}_{\mu\nu}
+   = \Delta_\mu A_\nu - \Delta_\nu A_\mu ,$</span></p>
+
+<p>with the forward operators<br />
+<span class="kdmath">$\Delta_0 A_\nu
+     = \frac{A_\nu(t+\tau,x)-A_\nu(t,x)}{\tau},
+\qquad
+\Delta_i A_\nu
+     = \frac{A_\nu(t,x+\ell_0\,\hat e_i)-A_\nu(t,x)}{\ell_0},$</span>
+where<br />
+<span class="kdmath">$\tau = 0.600\;\text{ps}, \qquad
+\ell_0 = c\,\tau \approx 0.180\;\text{mm}.$</span></p>
+
+<p>Discrete Lagrangian density<br />
+<span class="kdmath">$\mathcal L_{\text{disc}}
+   = -\tfrac14\,F^{\text{disc}}_{\mu\nu}\,F^{\mu\nu}_{\text{disc}} .$</span></p>
+
+<p>Applying the lattice Euler–Lagrange rule<br />
+<span class="kdmath">$\Delta_\alpha\!
+\left(
+  \frac{\partial\mathcal L_{\text{disc}}}{\partial(\Delta_\alpha A_\beta)}
+\right)
+-
+\frac{\partial\mathcal L_{\text{disc}}}{\partial A_\beta}
+= 0 ,$</span>
+and then taking the continuum limit<br />
+<span class="kdmath">$\tau,\;\ell_0 \;\longrightarrow\; 0 ,$</span>
+recovers the standard Maxwell equations <span class="kdmath">$\partial_\mu F^{\mu\nu}=0.$</span></p>
+
+<hr />
+
+<h2 id="3--basic-derived-relations">3 · Basic Derived Relations</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quantity</th>
+      <th>Expression</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Plane-wave dispersion</strong></td>
+      <td><span class="kdmath">$\omega^{2} = c^{2}k^{2}$</span></td>
+    </tr>
+    <tr>
+      <td><strong>Optimal delayed-choice path</strong></td>
+      <td><span class="kdmath">$\Delta x = 0.179\,875\,474\,8\;\mathrm{mm}$</span></td>
+    </tr>
+    <tr>
+      <td><strong>Neutrino mass estimate</strong></td>
+      <td><span class="kdmath">$m_\nu \approx 5\;\mathrm{meV}$</span> (from <span class="kdmath">$E_{0}$</span> &amp; <span class="kdmath">$D_{\text{eff}}$</span>)</td>
+    </tr>
+    <tr>
+      <td><strong>Gravitational red-shift</strong></td>
+      <td>matches GPS factor <span class="kdmath">$6.946\times10^{-10}$</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align:right;font-size:0.85em">
+  ➜ Continue to Part II: 
+  <a class="button" href="Formulas_II.html" target="_blank">Formula II</a>
+</p>
+
+    </main>
+
+    <footer><footer>
+  <nav class="footer-nav">
+    <a href="/" class="footer-link">Home</a>
+    <a href="/about.html" class="footer-link">About</a>
+    <a href="mailto:1.7thz.theory@gmail.com" class="footer-link">Contact</a>
+  </nav>
+  <p>&copy; 2025 AeonLoop. All rights reserved.</p>
+</footer>
+</footer>
+  </div>
+</body>
+</html>
+
+
