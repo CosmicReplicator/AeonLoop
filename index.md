@@ -11,12 +11,13 @@ I'm still working on this page to ease the navigation, so bear with me.
 I'm currently uploading the written content! It's best to read it on a bigger screen, like a laptop or PC.
 
 
-[Open Papers Index](papers-index/){: .button}
+[Open Papers Index]({{ site.baseurl }}/papers-index/){: .button}
+
 
 
 [Open Full Digital‑Tick Calculator](Calculator/){: .button}
 
-[Read the Full README](readme/){: .button}
+[Read the Full README]({{ site.baseurl }}/papers/readme/){: .button}
 
 
 <div id="comments"></div>
