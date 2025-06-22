@@ -10,6 +10,6 @@ permalink: /papers-index.html
 <h1>Papers Index</h1>
 <ul>
   {% for paper in site.papers %}
-    <li><a href="{{ paper.url }}" class="button">{{ paper.title }}</a></li>
+    <li><a href="{{ paper.url | relative_url }}" class="button">{{ paper.title }}</a></li>
   {% endfor %}
 </ul>
