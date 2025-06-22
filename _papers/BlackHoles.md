@@ -1,9 +1,10 @@
 ---
 layout: default
-title: "Tick-Fractal Black-Hole Primer"
+title: "BlackHoles"
 mathjax: true
-status: draft            # 🧪 v1.0-core frozen
+permalink: /papers/blackholes/
 ---
+
 
 ## Tick-Fractal Black-Hole Primer  
 *Schwarzschild interiors never form · collapse freezes into a seven-tick Casimir battery · GRBs, not Hawking quanta, are the exhaust*

@@ -1,8 +1,10 @@
 ---
 layout: default
-title: "Qubits (Tick-Fractal Model)"
+title: "Qubits"
 mathjax: true
+permalink: /papers/qubits/
 ---
+
 
 ## 1 Introduction — Beyond Superposition  
 

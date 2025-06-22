@@ -2,7 +2,9 @@
 layout: default
 title: "Frontier"
 mathjax: true
+permalink: /papers/frontier/
 ---
+
 
 # Frontier  
 *A seven-tick closure unifies a 0.600 ps lattice clock with SU(3)×SU(2)×U(1)*

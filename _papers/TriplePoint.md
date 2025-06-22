@@ -1,7 +1,10 @@
 ---
-layout: papers
+layout: default
 title: 'TriplePoint'
+mathjax: true
+permalink: /papers/triplepoint/
 ---
+
 
 <p>
   In classical thermodynamics, the triple point of water is defined by the

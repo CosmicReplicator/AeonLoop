@@ -1,8 +1,10 @@
 ---
 layout: default
-title: "Tick–Fractal Electromagnetism: Maxwell’s Equations on a 0.600 ps Lattice"
+title: "theproject"
 mathjax: true
+permalink: /papers/theproject/
 ---
+
 
 # Tick–Fractal Electromagnetism  
 *A seven-edge plaquette makes Maxwell immune to lattice discreteness*

@@ -2,7 +2,9 @@
 layout: default
 title: "Linchpin"
 mathjax: true
+permalink: /papers/linchpin/
 ---
+
 
 ## Why progress comes in *Punctuated Jumps*  
 *(and how the 240 GHz horizon mode closes the cosmic-time loop)*  

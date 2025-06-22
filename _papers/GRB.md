@@ -2,6 +2,7 @@
 layout: papers
 title: "GRB"
 mathjax: true
+permalink: /papers/grb/
 ---
 
 # Tick–Fractal GRBs  

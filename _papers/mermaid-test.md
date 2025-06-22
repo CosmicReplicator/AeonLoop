@@ -1,7 +1,10 @@
 ---
 layout: papers
-title: Mermaid smoke test
+title: "Mermaid test"
+mathjax: true
+permalink: /papers/mermaid-test/
 ---
+
 
 {% raw %}
 <div class="mermaid" markdown="0">

@@ -2,7 +2,9 @@
 layout: default
 title: "Predictions"
 mathjax: true
+permalink: /papers/predictions/
 ---
+
 
 ## Three Blind-Test Targets for the Tick-Fractal Program  
 *(Lock the numbers now; let Nature grade us later.)*

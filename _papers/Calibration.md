@@ -1,9 +1,10 @@
 ---
 layout: default
 title: "Calibration"
-status: NOTE
 mathjax: true
+permalink: /papers/calibration/
 ---
+
 
 ## 0 Aim  
 Show how a single cosmological datum and the **observed 10 % slow-down of the expansion** combine to shave exactly one-third of a dimension from geometric three-space.

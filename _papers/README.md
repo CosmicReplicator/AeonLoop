@@ -2,7 +2,9 @@
 layout: default
 title: "README"
 mathjax: true
+permalink: /papers/readme/
 ---
+
 
 # **AeonLoop**
 

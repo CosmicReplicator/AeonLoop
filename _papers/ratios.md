@@ -1,8 +1,10 @@
 ---
 layout: default
-title: "All the Ratios in One Frame — 7 Ticks, 720 °, and the Fractal 4 π"
+title: "Ratios"
 mathjax: true
+permalink: /papers/ratios/
 ---
+
 
 # Ratio Geometry in the Tick-Fractal Framework  
 ### locking 7, 8⁄3, 5⁄3, 4π, ½ α, and 720 ° into one algebraic loop
