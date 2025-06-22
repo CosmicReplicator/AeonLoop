@@ -10,8 +10,9 @@ title: "AeonLoop"
 I'm still working on this page to ease the navigation, so bear with me.  
 I'm currently uploading the written content! It's best to read it on a bigger screen, like a laptop or PC.
 
-<a href="{{ '/papers/' | relative_url }}" class="button">Papers</a>
+<a href="{{ '/papers-index' | relative_url }}" class="button">Papers</a>
 
+[Open Papers Index](papers-index/){: .button}
 
 
 [Open Full Digital‑Tick Calculator](Calculator/){: .button}
