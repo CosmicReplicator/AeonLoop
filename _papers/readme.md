@@ -2,7 +2,7 @@
 layout: default
 title: "README"
 mathjax: true
-permalink: /papers/readme/
+permalink: /papers/readme
 ---
 
 

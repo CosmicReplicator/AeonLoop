@@ -2,7 +2,7 @@
 layout: default
 title: "Linchpin"
 mathjax: true
-permalink: /papers/linchpin/
+permalink: /papers/linchpin
 ---
 
 

@@ -2,7 +2,7 @@
 layout: papers
 title: "Discrete Friedmann"
 mathjax: true
-permalink: /papers/discrete-friedmann/
+permalink: /papers/discrete-friedmann
 ---
 
 ## Abstract  

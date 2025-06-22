@@ -2,7 +2,7 @@
 layout: default
 title: "geometry and energy"
 mathjax: true
-permalink: /papers/geometry-and-energy/
+permalink: /papers/geometry-and-energy
 ---
 
 

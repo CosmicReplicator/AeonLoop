@@ -2,7 +2,7 @@
 layout: default
 title: "theproject"
 mathjax: true
-permalink: /papers/theproject/
+permalink: /papers/theproject
 ---
 
 

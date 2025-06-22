@@ -2,7 +2,7 @@
 layout: default
 title: "Predictions"
 mathjax: true
-permalink: /papers/predictions/
+permalink: /papers/predictions
 ---
 
 

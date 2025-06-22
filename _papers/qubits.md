@@ -2,7 +2,7 @@
 layout: default
 title: "Qubits"
 mathjax: true
-permalink: /papers/qubits/
+permalink: /papers/qubits
 ---
 
 

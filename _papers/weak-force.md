@@ -2,7 +2,7 @@
 layout: default
 title: "Weak Force"
 mathjax: true
-permalink: /papers/weak-force/
+permalink: /papers/weak-force
 ---
 
 

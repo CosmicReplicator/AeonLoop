@@ -2,7 +2,7 @@
 layout: default
 title: "Calibration"
 mathjax: true
-permalink: /papers/calibration/
+permalink: /papers/calibration
 ---
 
 

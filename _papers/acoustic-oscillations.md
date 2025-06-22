@@ -2,7 +2,7 @@
 layout: papers
 title: "Acoustic Oscillations"
 mathjax: true
-permalink: /papers/acoustic-oscillations/
+permalink: /papers/acoustic-oscillations
 ---
 
 

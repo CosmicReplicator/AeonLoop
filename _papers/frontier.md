@@ -2,7 +2,7 @@
 layout: default
 title: "Frontier"
 mathjax: true
-permalink: /papers/frontier/
+permalink: /papers/frontier
 ---
 
 

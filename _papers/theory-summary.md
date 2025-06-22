@@ -2,7 +2,7 @@
 layout: default
 title: "Theory Summary"
 mathjax: true
-permalink: /papers/theory-summary/
+permalink: /papers/theory-summary
 ---
 
 

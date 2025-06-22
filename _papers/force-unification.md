@@ -2,7 +2,7 @@
 layout: papers
 title: "Force Unification"
 mathjax: true
-permalink: /papers/force-unification/
+permalink: /papers/force-unification
 ---
 
 

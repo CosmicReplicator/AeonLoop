@@ -2,7 +2,7 @@
 layout: default
 title: "Chiral Closure Lemma"
 mathjax: true
-permalink: /papers/chiral-closure-lemma/
+permalink: /papers/chiral-closure-lemma
 ---
 
 

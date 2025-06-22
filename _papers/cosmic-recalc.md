@@ -2,7 +2,7 @@
 layout: papers
 title: "Cosmic Re-calculation"
 mathjax: true
-permalink: /papers/cosmic-recalc/
+permalink: /papers/cosmic-recalc
 ---
 
 # Cosmic Re-calculation with Discrete Friedmann Dynamics

@@ -2,7 +2,7 @@
 layout: papers
 title: "Ladders"
 mathjax: true
-permalink: /papers/ladders/
+permalink: /papers/ladders
 ---
 
 ## Abstract  

@@ -2,7 +2,7 @@
 layout: default
 title: "Dark Matter"
 mathjax: true
-permalink: /papers/darkmatter/
+permalink: /papers/darkmatter
 ---
 
 

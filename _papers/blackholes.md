@@ -2,7 +2,7 @@
 layout: default
 title: "BlackHoles"
 mathjax: true
-permalink: /papers/blackholes/
+permalink: /papers/blackholes
 ---
 
 

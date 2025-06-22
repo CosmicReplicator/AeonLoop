@@ -2,7 +2,7 @@
 layout: papers
 title: "Lorentz Transformations"
 mathjax: true
-permalink: /papers/lorentz-transformations/
+permalink: /papers/lorentz-transformations
 ---
 
 

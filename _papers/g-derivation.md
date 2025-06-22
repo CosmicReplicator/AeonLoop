@@ -2,7 +2,7 @@
 layout: default
 title: "G Derivation"
 mathjax: true
-permalink: /papers/g-derivation/
+permalink: /papers/g-derivation
 ---
 
 

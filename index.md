@@ -13,8 +13,6 @@ I'm currently uploading the written content! It's best to read it on a bigger sc
 
 [Open Papers Index]({{ site.baseurl }}/papers-index){: .button}
 
-
-
 [Open Full Digital‑Tick Calculator](Calculator/){: .button}
 
 [Read the Full README]({{ site.baseurl }}/papers/readme){: .button}

@@ -2,7 +2,7 @@
 layout: default
 title: 'TriplePoint'
 mathjax: true
-permalink: /papers/triplepoint/
+permalink: /papers/triplepoint
 ---
 
 

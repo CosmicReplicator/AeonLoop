@@ -2,7 +2,7 @@
 layout: default
 title: "Molecules"
 mathjax: true
-permalink: /papers/molecules/
+permalink: /papers/molecules
 ---
 
 

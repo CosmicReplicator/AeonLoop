@@ -2,7 +2,7 @@
 layout: default
 title: "The Ladder"
 mathjax: true
-permalink: /papers/the-ladder/
+permalink: /papers/the-ladder
 ---
 
 

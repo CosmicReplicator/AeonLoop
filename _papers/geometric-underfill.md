@@ -2,7 +2,7 @@
 layout: default
 title: "Geometric UnderFill"
 mathjax: true
-permalink: /papers/geometric-underfill/
+permalink: /papers/geometric-underfill
 ---
 
 

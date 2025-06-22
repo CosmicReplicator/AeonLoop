@@ -2,7 +2,7 @@
 layout: default
 title: "Math Rendering Test Paper"
 mathjax: true
-permalink: /papers/math-rendering-test-paper/
+permalink: /papers/math-rendering-test-paper
 ---
 
 

@@ -2,7 +2,7 @@
 layout: default
 title: "Fine-Structure Constant and Proton Radius"
 mathjax: true
-permalink: /papers/fine-structure-constant-and-proton-radius/
+permalink: /papers/fine-structure-constant-and-proton-radius
 ---
 
 

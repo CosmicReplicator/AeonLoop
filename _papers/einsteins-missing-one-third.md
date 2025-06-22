@@ -2,7 +2,7 @@
 layout: default
 title: "Einstein’s Missing One-Third"
 mathjax: true
-permalink: /papers/einsteins-missing-one-third/
+permalink: /papers/einsteins-missing-one-third
 ---
 
 

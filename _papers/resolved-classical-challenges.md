@@ -2,7 +2,7 @@
 layout: default
 title: "Resolved Classical Challenges"
 mathjax: true
-permalink: /papers/resolved-classical-challenges/
+permalink: /papers/resolved-classical-challenges
 ---
 
 

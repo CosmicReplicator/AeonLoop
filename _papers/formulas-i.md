@@ -4,7 +4,7 @@ title: "Formulas I"
 series: formulas      # common tag for every formula paper
 order: 1              # 1, 2, 3, … in reading order
 mathjax: true
-permalink: /papers/formulas-i/
+permalink: /papers/formulas-i
 ---
 
 

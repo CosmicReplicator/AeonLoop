@@ -2,7 +2,7 @@
 layout: papers
 title: "Strong Force"
 mathjax: true
-permalink: /papers/strong-force/
+permalink: /papers/strong-force
 ---
 
 

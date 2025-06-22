@@ -2,7 +2,7 @@
 layout: default
 title: 'Test Page'
 mathjax: true
-permalink: /papers/test-page/
+permalink: /papers/test-page
 ---
 
 

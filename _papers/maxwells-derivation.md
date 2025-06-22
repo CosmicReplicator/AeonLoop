@@ -2,7 +2,7 @@
 layout: default
 title: "Maxwell’s Derivation"
 mathjax: true
-permalink: /papers/maxwells-derivation/
+permalink: /papers/maxwells-derivation
 ---
 
 

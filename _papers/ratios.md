@@ -2,7 +2,7 @@
 layout: default
 title: "Ratios"
 mathjax: true
-permalink: /papers/ratios/
+permalink: /papers/ratios
 ---
 
 

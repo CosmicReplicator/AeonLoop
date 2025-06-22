@@ -2,7 +2,7 @@
 layout: default
 title: "Sub tick"
 mathjax: true
-permalink: /papers/sub-tick/
+permalink: /papers/sub-tick
 ---
 
 

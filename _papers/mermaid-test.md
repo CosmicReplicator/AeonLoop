@@ -2,7 +2,7 @@
 layout: papers
 title: "Mermaid test"
 mathjax: true
-permalink: /papers/mermaid-test/
+permalink: /papers/mermaid-test
 ---
 
 
