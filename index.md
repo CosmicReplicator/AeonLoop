@@ -10,12 +10,12 @@ title: "AeonLoop"
 I'm still working on this page to ease the navigation, so bear with me.  
 I'm currently uploading the written content! It's best to read it on a bigger screen, like a laptop or PC.
 
-<a href="{{ '/papers-index.html' | relative_url }}" class="button">Papers</a>
+<a href="{{ '/papers.html' | relative_url }}" class="button">Papers</a>
 
 
 [Open Full Digital‑Tick Calculator](Calculator/){: .button}
 
-[Read the Full README](https://cosmicreplicator.github.io/AeonLoop/papers/README.html){: .button target="_blank"}
+[Read the Full README](https://cosmicreplicator.github.io/AeonLoop/papers/readme.html){: .button target="_blank"}
 
 
 <div id="comments"></div>
