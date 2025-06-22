@@ -1,70 +1,46 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Test Page</title>
-<link rel="stylesheet" href="/css/styles.css">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
 
-  <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
-  
-  <meta name="keywords" content="
+    <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
     
-      CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
-      Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
-      Ad Hoc-Free Formulation, Discrete Rotations
-    
-  ">
+    <meta name="keywords" content="
+      
+        CosmicReplicator, AeonLoop, Discrete Spacetime, Quantum Geometry,
+        Emergent Constants, 2.667D, Digital Tick, Fractional Dimensions,
+        Ad Hoc-Free Formulation, Discrete Rotations
+      
+    ">
 
-  <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
-<script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
+    <!-- ─── Polyfill ─────────────────────────────────────────────────────── -->
+    <script defer src="https://cdn.jsdelivr.net/npm/polyfill-library@3/dist/polyfill.min.js"></script>
 
-<!-- ─── MathJax (supports $, $$, \( \), 
+    <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+        mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
+      });
+    </script>
+  </head>
 
-\[ \]
+  <body>
+    <div class="page-content">
+      <header>
+        <h1>Test Page</h1>
+        <p class="meta">
+          By jonsvein Heinesen
+           on June 22, 2025
+        </p>
+      </header>
 
-) ────────────────────────── -->
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath : [ ['$',  '$' ], ['\\(', '\\)'] ],
-    displayMath: [ ['$$', '$$'], ['\
-
-\[', '\\]
-
-'] ],
-    processEscapes: true          // so \$ prints a real dollar
-  }
-};
-</script>
-<script defer
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-
-
-  <!-- ─── Mermaid ──────────────────────────────────────────────────────── -->
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
-      mermaid.initialize({ startOnLoad: true, theme, securityLevel: 'loose' });
-    });
-  </script>
-</head>
-
-<body>
-  <div class="page-content">
-    <header>
-      <h1>Test Page</h1>
-      <p class="meta">
-        By jonsvein Heinesen
-         on June 22, 2025
-      </p>
-    </header>
-
-    <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><div class="mermaid">
+      <main class="paper-body"><ul class="page-toc"><li class="h"><a href="#"></a></li></ul><div class="mermaid">
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph TB
     A[Energy Density] --&gt; B[Effective 2.667D Space]
     B --&gt; C["Discrete Ticks (1.667 THz)"]
@@ -76,9 +52,10 @@ window.MathJax = {
 <p>&lt;/body&gt;
 &lt;/html&gt;</p>
 
-    </main>
+      </main>
 
-    <footer><footer>
+      <footer>
+        <footer>
   <nav class="footer-nav">
     <a href="/" class="footer-link">Home</a>
     <a href="/about.html" class="footer-link">About</a>
@@ -86,9 +63,33 @@ window.MathJax = {
   </nav>
   <p>&copy; 2025 AeonLoop. All rights reserved.</p>
 </footer>
-</footer>
-  </div>
-</body>
-</html>
 
+      </footer>
+    </div>
+
+    <!-- Include MathJax configuration and script at the end of the body -->
+    
+<script>
+  window.MathJax = {
+    loader: { load: ['input/tex', 'output/chtml'] },
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\
+
+\[', '\\]
+
+']],
+      macros: {} /* add custom macros here */
+    },
+    options: { skipHtmlTags: ['script', 'style', 'pre', 'code'] },
+    startup: { typeset: false }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+
+  </body>
+</html>
 
