@@ -1,14 +1,12 @@
 ---
 layout: papers
 title: 'Formulas II'
-series: formulas      # common tag for every formula paper
-order: 2              # 1, 2, 3 … in reading order
+series: formulas
+order: 2
 mathjax: true
 permalink: /papers/formulas-ii
 ---
 
-
----
 {% raw %}
 <div class="mermaid" markdown="0">
 flowchart TD
@@ -21,62 +19,66 @@ flowchart TD
   G --| β = 1 / 3 --> H["a(t) ∼ t^{3/4}"]
   F --| β = 1 / 3 --> H
   E  -. "Q = 409.8" .-> G
-  
-  </div>
-  {% endraw %}
+</div>
+{% endraw %}
+
+## 4 · Cosmological-Constant Sketch
+
+$$
+\Lambda \sim \frac{1}{L_{\text{curv}}^{2}}, \quad
+L_{\text{curv}} \approx \left(\frac{\hbar c}{\rho_{\text{vac}}^{(3D)}}\right)^{1/4}
+$$
+
+$$
+L = \Delta x \approx 0.18~\text{mm}
+$$
+
+$$
+L_{\text{cosmo}} \sim 10^{26}~\text{m}
+$$
+
+$$
+\Rightarrow \Lambda \sim 10^{-52}~\text{m}^{-2}
+$$
+
 ---
 
-<h2>4 · Cosmological-Constant Sketch</h2>
+## 5 · Fine-Structure Constant from Fractal Geometry
 
-<div class="eq">
-  \[ \Lambda \;\sim\; \frac{1}{L_{\text{curv}}^{2}},\qquad L_{\text{curv}}
-  \;\approx\; \bigl(\hbar c/\rho_{\text{vac}}^{(3D)}\bigr)^{1/4}. \]
-</div>
+$$
+\alpha = \exp\left[-\,C_{\alpha}(D_{\text{eff}} - 2)\right]
+= \exp\left[-\,7.379\,970\,056 \times \tfrac{2}{3}\right]
+\approx \frac{1}{137.035999}
+$$
 
-<p>
-  Hierarchy \(L=\Delta x\approx0.18\text{ mm}\) versus
-  \(L_{\text{cosmo}}\sim10^{26}\text{ m}\) suppresses \(\Lambda\) to
-  \(\sim10^{-52}\text{ m}^{-2}\).
-</p>
+---
 
-<hr />
+## 6 · Tick-Based Lorentz Block
 
-<h2>5 · Fine-Structure Constant from Fractal Geometry</h2>
+$$
+\gamma = \frac{1}{\sqrt{1 - \beta^2}}, \quad
+\beta = \frac{v \tau}{\Delta x} = \frac{v}{c}, \quad
+c = \frac{\Delta x}{\tau}
+$$
 
-<div class="eq">
-  \[ \alpha =\exp\!\bigl[-\,C_{\alpha}\,(D_{\text{eff}}-2)\bigr]
-  =\exp\!\bigl[-\,7.379\,970\,056\times\tfrac23\bigr]
-  \approx\frac{1}{137.035999}. \]
-</div>
+---
 
-<hr />
+## 7 · Quick-Look Examples
 
-<h2>6 · Tick-Based Lorentz Block</h2>
+- **GPS red-shift (1 m height)**  
+  $$
+  \Delta f / f = 1.09 \times 10^{-16}
+  $$
 
-<div class="eq">
-  \[ \gamma =\frac{1}{\sqrt{\,1-\beta^{2}\,}}, \qquad
-  \beta=\frac{v\,\tau}{\Delta x} =\frac{v}{c}, \qquad c=\frac{\Delta x}{\tau}.
-  \]
-</div>
+- **Tick density at Earth’s surface**  
+  $$
+  1 - 6.946 \times 10^{-10}
+  $$
 
-<hr />
-
-<h2>7 · Quick-Look Examples</h2>
-
-<ul>
-  <li>
-    <strong>GPS red-shift (1 m height)</strong>
-    \(\Delta f/f = 1.09\times10^{-16}\)
-  </li>
-  <li>
-    <strong>Tick density at Earth’s surface</strong>
-    \(1-6.946\times10^{-10}\)
-  </li>
-  <li>
-    <strong>Missing-brick curvature slice</strong>
-    \(1/9\) of the nine-brick ledger
-  </li>
-</ul>
+- **Missing-brick curvature slice**  
+  $$
+  \frac{1}{9} \text{ of the nine-brick ledger}
+  $$
 
 <p style="text-align: right; font-size: 0.85em">
   ⇦ to Part III:&nbsp;

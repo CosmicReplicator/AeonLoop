@@ -192,5 +192,5 @@ Disturb either condition → decoheres in a single tick.
 
 <p style="text-align:right;font-size:0.85em">
   ⇦ Back to Part I:&nbsp;
-  <a class="button" href="Formulas-i.html" target="_blank">Formula I</a>
+  <a class="button" href="formulas-i.html" target="_blank">Formula I</a>
 </p>
